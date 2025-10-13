@@ -8,16 +8,14 @@ import NosClients from './pages/NosClients'
 import APropos from './pages/APropos'
 import Questions from './pages/Questions'
 import Catalogue from './pages/Catalogue'
+import Enseignes from './pages/services/Enseignes'
+import MarquageVitrine from './pages/services/MarquageVitrine'
+import ImpressionGrandFormat from './pages/services/ImpressionGrandFormat'
+import MarquageVehicule from './pages/services/MarquageVehicule'
+import TextileEPI from './pages/services/TextileEPI'
+import Signaletique from './pages/services/Signaletique'
+import CreationGraphique from './pages/services/CreationGraphique'
 import './App.css'
-
-const ServiceDetail = () => (
-  <div className="min-h-screen pt-32 pb-20">
-    <div className="container mx-auto px-4">
-      <h1 className="text-4xl font-bold mb-6">Détail du Service</h1>
-      <p className="text-xl text-gray-600">Page en construction...</p>
-    </div>
-  </div>
-)
 
 function App() {
   return (
@@ -26,7 +24,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/:slug" element={<ServiceDetail />} />
+          <Route path="/services/enseignes" element={<Enseignes />} />
+          <Route path="/services/marquage-vitrine" element={<MarquageVitrine />} />
+          <Route path="/services/impression-grand-format" element={<ImpressionGrandFormat />} />
+          <Route path="/services/marquage-vehicule" element={<MarquageVehicule />} />
+          <Route path="/services/textile-epi" element={<TextileEPI />} />
+          <Route path="/services/signaletique" element={<Signaletique />} />
+          <Route path="/services/creation-graphique" element={<CreationGraphique />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/nos-clients" element={<NosClients />} />
           <Route path="/a-propos" element={<APropos />} />
