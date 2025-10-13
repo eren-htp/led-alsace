@@ -251,22 +251,17 @@ function Contact() {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="bg-gray-200 rounded-xl overflow-hidden" style={{ height: '400px' }}>
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 mx-auto mb-4 text-yellow-500" />
-                  <p className="text-lg font-semibold">Carte interactive</p>
-                  <p className="text-sm">12 Rue Théodore Monod, 67540 Ostwald</p>
-                  <a 
-                    href="https://www.google.com/maps/search/?api=1&query=12+Rue+Théodore+Monod+67540+Ostwald"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-4 text-yellow-600 hover:text-yellow-700 font-semibold"
-                  >
-                    Ouvrir dans Google Maps →
-                  </a>
-                </div>
-              </div>
+            <div className="rounded-xl overflow-hidden shadow-lg" style={{ height: '450px' }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2640.8234567890123!2d7.7123456789012345!3d48.5432109876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c8a5b1234567%3A0x1234567890abcdef!2s12%20Rue%20Th%C3%A9odore%20Monod%2C%2067540%20Ostwald%2C%20France!5e0!3m2!1sfr!2sfr!4v1234567890123!5m2!1sfr!2sfr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localisation LED Alsace"
+              />
             </div>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">

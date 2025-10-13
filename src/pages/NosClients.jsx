@@ -44,6 +44,40 @@ function NosClients() {
     }
   ]
 
+  const clients = [
+    { name: "HB Toiture", sector: "Couverture et zinguerie" },
+    { name: "Kool", sector: "Commerce" },
+    { name: "Le Foch", sector: "Restaurant" },
+    { name: "SNCF", sector: "Transport ferroviaire" },
+    { name: "Select Habitat", sector: "Immobilier" },
+    { name: "ProControle", sector: "Contrôle technique" },
+    { name: "Divino", sector: "Restaurant" },
+    { name: "Premium Cars", sector: "Garage automobile" },
+    { name: "Aubade", sector: "Salle de bains" },
+    { name: "Planet Lunch", sector: "Restauration" },
+    { name: "Peugeot Saverne", sector: "Concessionnaire" },
+    { name: "Muc Habitat", sector: "Construction" },
+    { name: "MGEN", sector: "Mutuelle" },
+    { name: "Le Pin Parasol", sector: "Restaurant" },
+    { name: "Le Confidentiel", sector: "Restaurant" },
+    { name: "Label Dent", sector: "Dentiste" },
+    { name: "Le Sofitel", sector: "Hôtel" },
+    { name: "Honey Room", sector: "Commerce" },
+    { name: "H-Line Automobiles", sector: "Garage" },
+    { name: "Goia", sector: "Restaurant" },
+    { name: "Gaziantep", sector: "Restaurant" },
+    { name: "Garage Maylaender", sector: "Carrosserie" },
+    { name: "Garage Link", sector: "Automobiles" },
+    { name: "Francesca", sector: "Restaurant italien" },
+    { name: "Finay", sector: "Commerce" },
+    { name: "Etandex", sector: "Bâtiment" },
+    { name: "Elsass Viande", sector: "Boucherie" },
+    { name: "E. Leclerc", sector: "Grande distribution" },
+    { name: "Mobalpa", sector: "Cuisine" },
+    { name: "One Kebab", sector: "Restauration rapide" },
+    { name: "Madagascar", sector: "Commerce" }
+  ]
+
   return (
     <div className="min-h-screen bg-white">
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
@@ -57,7 +91,7 @@ function NosClients() {
               <span className="text-yellow-400">confiance</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Plus de 500 entreprises alsaciennes nous ont fait confiance depuis 2014
+              Plus de 2115 entreprises alsaciennes nous ont fait confiance depuis 2014
             </p>
           </div>
         </div>
@@ -67,8 +101,8 @@ function NosClients() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-black mb-2">500+</div>
-              <div className="text-black/80 font-semibold">Clients Satisfaits</div>
+              <div className="text-4xl md:text-5xl font-bold text-black mb-2">+1120</div>
+              <div className="text-black/80 font-semibold">Enseignes Réalisées</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-black mb-2">98%</div>
@@ -79,8 +113,8 @@ function NosClients() {
               <div className="text-black/80 font-semibold">Clients Fidèles</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-black mb-2">4.9/5</div>
-              <div className="text-black/80 font-semibold">Note Moyenne</div>
+              <div className="text-4xl md:text-5xl font-bold text-black mb-2">+2115</div>
+              <div className="text-black/80 font-semibold">Clients Satisfaits</div>
             </div>
           </div>
         </div>
@@ -115,6 +149,32 @@ function NosClients() {
                   <p className="font-bold text-gray-900">{testimonial.name}</p>
                   <p className="text-sm text-gray-600">{testimonial.company}</p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Nos Références
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Ils ont choisi LED Alsace pour améliorer leur visibilité
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {clients.map((client, index) => (
+              <div 
+                key={index}
+                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 hover:border-yellow-500 hover:shadow-lg transition-all duration-300 text-center"
+              >
+                <Building2 className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
+                <h3 className="font-bold text-gray-900 mb-1">{client.name}</h3>
+                <p className="text-sm text-gray-600">{client.sector}</p>
               </div>
             ))}
           </div>

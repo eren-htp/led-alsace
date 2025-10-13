@@ -11,24 +11,34 @@ import realisation6 from '../assets/realisations/realisation_one_kebab.webp'
 import realisation7 from '../assets/realisations/realisation_mjr.webp'
 import realisation8 from '../assets/realisations/realisation_madagascar.webp'
 import realisation9 from '../assets/realisations/realisation_leclerc.webp'
+import realisation10 from '../assets/realisations/realisation_pharmacie.webp'
+import realisation11 from '../assets/realisations/realisation_love.webp'
+import realisation12 from '../assets/realisations/realisation_perkko.webp'
+import realisation13 from '../assets/realisations/realisation_mobalpa.webp'
+import realisation14 from '../assets/realisations/realisation_anges.webp'
 
 function Realisations() {
   const navigate = useNavigate()
   const [selectedCategory, setSelectedCategory] = useState('Tous')
 
   const realisations = [
-    { title: "The Little Red Door", category: "Enseignes LED", image: realisation1, description: "Enseigne lumineuse pour restaurant" },
+    { title: "The Little Red Door", category: "Enseignes LED", image: realisation1, description: "Enseigne lumineuse restaurant" },
     { title: "Saturn Event", category: "Enseignes LED", image: realisation2, description: "Logo lumineux en relief" },
     { title: "Saveurs & Saisons", category: "Enseignes LED", image: realisation3, description: "Enseigne restaurant traditionnel" },
     { title: "Pro-Inter", category: "Enseignes LED", image: realisation4, description: "Enseigne lumineuse commerce" },
     { title: "Casa Julia", category: "Signalétique", image: realisation5, description: "Signalétique extérieure" },
     { title: "One Kebab", category: "Enseignes LED", image: realisation6, description: "Enseigne restauration rapide" },
-    { title: "MJR Pièces Auto", category: "Marquage Véhicule", image: realisation7, description: "Enseigne garage automobile" },
+    { title: "MJR Pièces Auto", category: "Enseignes LED", image: realisation7, description: "Enseigne garage automobile" },
     { title: "Madagascar", category: "Signalétique", image: realisation8, description: "Totem lumineux extérieur" },
-    { title: "E. Leclerc", category: "Marquage Vitrine", image: realisation9, description: "Aménagement vitrine commerce" }
+    { title: "E. Leclerc", category: "Marquage Vitrine", image: realisation9, description: "Aménagement vitrine" },
+    { title: "Pharmacie", category: "Enseignes LED", image: realisation10, description: "Croix de pharmacie LED" },
+    { title: "Love", category: "Enseignes LED", image: realisation11, description: "Enseigne boutique" },
+    { title: "Perkko", category: "Enseignes LED", image: realisation12, description: "Enseigne commerce" },
+    { title: "Mobalpa", category: "Marquage Vitrine", image: realisation13, description: "Vitrophanie cuisine" },
+    { title: "Les Anges Micro-Crèche", category: "Marquage Vitrine", image: realisation14, description: "Marquage vitrine crèche" }
   ]
 
-  const categories = ['Tous', 'Enseignes LED', 'Marquage Véhicule', 'Signalétique', 'Marquage Vitrine']
+  const categories = ['Tous', 'Enseignes LED', 'Marquage Vitrine', 'Signalétique']
   const filteredRealisations = selectedCategory === 'Tous' ? realisations : realisations.filter(r => r.category === selectedCategory)
 
   return (
