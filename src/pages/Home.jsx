@@ -109,7 +109,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden" style={{ minHeight: '80vh' }}>
+      <section className="relative overflow-hidden pt-20" style={{ minHeight: '80vh' }}>
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           {heroImages.map((img, index) => (
