@@ -67,14 +67,14 @@ function ModelItem({ model }) {
           className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ${isNight ? 'opacity-100' : 'opacity-0'}`}
         />
 
-        {/* Toggle jour/nuit */}
+        {/* Toggle jour/nuit avec cursor-pointer */}
         <div className="absolute top-4 right-4 z-10">
           <button
             onClick={() => setIsNight(!isNight)}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all duration-300 ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all duration-300 cursor-pointer hover:scale-105 ${
               isNight 
-                ? 'bg-gray-800 text-white' 
-                : 'bg-yellow-400 text-gray-900'
+                ? 'bg-gray-800 text-white hover:bg-gray-700' 
+                : 'bg-yellow-400 text-gray-900 hover:bg-yellow-500'
             }`}
           >
             {isNight ? (
@@ -111,11 +111,6 @@ function ModelItem({ model }) {
             </li>
           ))}
         </ul>
-
-        {/* CTA */}
-        <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-colors duration-300">
-          Je veux une enseigne
-        </button>
       </div>
     </div>
   )
@@ -137,24 +132,24 @@ function ModelsShowcase() {
 
         {/* Bloc unique contenant les 4 modèles */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-7xl mx-auto">
-          <div className="flex flex-wrap gap-8 justify-center">
+          <div className="flex flex-wrap gap-8 justify-center mb-8">
             {models.map((model) => (
               <ModelItem key={model.id} model={model} />
             ))}
           </div>
-        </div>
 
-        {/* CTA global */}
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">
-            Tous nos modèles sont personnalisables en taille, couleur et finition
-          </p>
-          <a 
-            href="/contact" 
-            className="inline-block bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-300"
-          >
-            Voir tous nos modèles
-          </a>
+          {/* CTA unique pour tous les modèles */}
+          <div className="text-center pt-8 border-t border-gray-200">
+            <p className="text-gray-600 mb-6 text-lg">
+              Tous nos modèles sont personnalisables en taille, couleur et finition
+            </p>
+            <a 
+              href="/contact" 
+              className="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold text-lg px-10 py-4 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Je veux une enseigne
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -162,3 +157,4 @@ function ModelsShowcase() {
 }
 
 export default ModelsShowcase
+
