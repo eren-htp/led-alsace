@@ -46,13 +46,13 @@ const models = [
   }
 ]
 
-function ModelCard({ model }) {
+function ModelItem({ model }) {
   const [isNight, setIsNight] = useState(false)
 
   return (
-    <div className="flex-shrink-0 w-80 bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+    <div className="flex-1 min-w-[250px]">
       {/* Image avec comparateur */}
-      <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden group">
+      <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden rounded-lg mb-4">
         {/* Image jour */}
         <img 
           src={model.imageDay} 
@@ -98,9 +98,9 @@ function ModelCard({ model }) {
       </div>
 
       {/* Contenu */}
-      <div className="p-6">
+      <div className="px-2">
         <h3 className="text-xl font-bold text-gray-900 mb-2">{model.name}</h3>
-        <p className="text-gray-600 mb-4">{model.description}</p>
+        <p className="text-gray-600 mb-4 text-sm">{model.description}</p>
         
         {/* Features */}
         <ul className="space-y-2 mb-6">
@@ -135,11 +135,13 @@ function ModelsShowcase() {
           </p>
         </div>
 
-        {/* Grid des modèles */}
-        <div className="flex gap-6 overflow-x-auto pb-4">
-          {models.map((model) => (
-            <ModelCard key={model.id} model={model} />
-          ))}
+        {/* Bloc unique contenant les 4 modèles */}
+        <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-7xl mx-auto">
+          <div className="flex flex-wrap gap-8 justify-center">
+            {models.map((model) => (
+              <ModelItem key={model.id} model={model} />
+            ))}
+          </div>
         </div>
 
         {/* CTA global */}
