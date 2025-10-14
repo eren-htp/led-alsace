@@ -50,7 +50,7 @@ function ModelCard({ model }) {
   const [isNight, setIsNight] = useState(false)
 
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+    <div className="flex-shrink-0 w-80 bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
       {/* Image avec comparateur */}
       <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden group">
         {/* Image jour */}
@@ -114,7 +114,7 @@ function ModelCard({ model }) {
 
         {/* CTA */}
         <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 rounded-lg transition-colors duration-300">
-          Demander un devis
+          Je veux une enseigne
         </button>
       </div>
     </div>
@@ -136,7 +136,7 @@ function ModelsShowcase() {
         </div>
 
         {/* Grid des modèles */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex gap-6 overflow-x-auto pb-4">
           {models.map((model) => (
             <ModelCard key={model.id} model={model} />
           ))}
