@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { Menu, X, Phone, Mail, MapPin, Lightbulb, ChevronDown } from 'lucide-react'
 import CallbackButton from './CallbackButton.jsx'
 import logoLedAlsace from '@/assets/logo-led-alsace.jpg'
+import logoIcon from '@/assets/logo-led-alsace-icon.png'
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -60,8 +61,9 @@ function Layout({ children }) {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center">
-              <img src={logoLedAlsace} alt="LED ALSACE" className="h-12 w-auto" />
+            <Link to="/" className="flex items-center space-x-3">
+              <img src={logoIcon} alt="LED ALSACE" className="h-16 w-16" />
+              <span className="text-2xl font-bold text-gray-900">LED ALSACE</span>
             </Link>
 
             {/* Desktop Menu */}
@@ -263,8 +265,9 @@ function Layout({ children }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             {/* Logo & Description */}
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center mb-4">
-                <img src={logoLedAlsace} alt="LED ALSACE" className="h-16 w-auto brightness-0 invert" />
+              <div className="flex items-center space-x-3 mb-4">
+                <img src={logoIcon} alt="LED ALSACE" className="h-16 w-16 brightness-0 invert" />
+                <span className="text-2xl font-bold">LED ALSACE</span>
               </div>
               <p className="text-gray-400 mb-4 leading-relaxed">
                 Votre partenaire de confiance pour tous vos projets d'enseignes LED, 
