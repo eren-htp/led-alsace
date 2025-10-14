@@ -5,6 +5,7 @@ import { Menu, X, Phone, Mail, MapPin, Lightbulb, ChevronDown, Instagram } from 
 import CallbackButton from './CallbackButton.jsx'
 import logoLedAlsace from '@/assets/logo-led-alsace.jpg'
 import logoIcon from '@/assets/logo-led-alsace-icon.png'
+import snapchatIcon from '@/assets/snapchat.png'
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -279,12 +280,10 @@ function Layout({ children }) {
                   href="https://snapchat.com/t/CLVnjhS4" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors p-2"
                   aria-label="Snapchat"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3 0 .719-.149 1.069-.38.42-.275.672-.512.996-.559.127-.019.255-.029.383-.029.535 0 .928.249 1.201.525.389.39.567.896.567 1.396 0 .478-.121.863-.294 1.178-.301.551-.779.977-1.486 1.325-.226.111-.45.199-.664.269.05.217.109.432.176.645.497 1.578 1.179 2.993 2.031 4.222.09.129.191.26.295.394.42.533.77 1.011.77 1.627 0 .58-.34 1.083-.96 1.417-.517.279-1.177.418-1.961.418-.346 0-.708-.024-1.076-.072-1.123-.146-2.193-.54-3.179-1.17-.494-.317-.958-.695-1.381-1.125-.424.43-.888.808-1.382 1.125-.986.63-2.056 1.024-3.179 1.17-.368.048-.73.072-1.076.072-.784 0-1.444-.139-1.961-.418-.62-.334-.96-.837-.96-1.417 0-.616.35-1.094.77-1.627.104-.134.205-.265.295-.394.852-1.229 1.534-2.644 2.031-4.222.067-.213.126-.428.176-.645-.214-.07-.438-.158-.664-.269-.707-.348-1.185-.774-1.486-1.325-.173-.315-.294-.7-.294-1.178 0-.5.178-1.006.567-1.396.273-.276.666-.525 1.201-.525.128 0 .256.01.383.029.324.047.576.284.996.559.35.231.769.38 1.069.38.198 0 .326-.045.401-.09-.008-.165-.018-.33-.03-.51l-.003-.06c-.104-1.628-.23-3.654.299-4.847 1.583-3.545 4.94-3.821 5.93-3.821z"/>
-                  </svg>
+                  <img src={snapchatIcon} alt="Snapchat" className="w-full h-full" />
                 </a>
               </div>
             </div>
