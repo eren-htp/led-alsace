@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { 
   Lightbulb, Car, Printer, Palette, Monitor, Scissors,
-  Shirt, Store, Stamp, Layers, Zap, Gift, FileText, ArrowRight
+  Shirt, Store, Stamp, Layers, Zap, Gift, FileText, ArrowRight, Users, Wifi
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
@@ -236,8 +236,98 @@ function Services() {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Additional Services Section */}
       <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Solutions Complémentaires
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Des services additionnels pour compléter votre projet
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="text-yellow-500 mb-4">
+                <Wifi className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Plaques NFC
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Plaques NFC pour fidéliser vos clients et les inviter à laisser un avis sur vos réseaux.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="text-yellow-500 mb-4">
+                <Monitor className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Écran LED grand format
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Écrans LED haute définition pour affichage dynamique et communication visuelle impactante.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="text-yellow-500 mb-4">
+                <Layers className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Gravure laser
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Gravure laser de précision sur différents matériaux pour personnaliser vos objets et supports.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="text-yellow-500 mb-4">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Site web
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Création de sites web professionnels et responsives pour renforcer votre présence en ligne.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="text-yellow-500 mb-4">
+                <Users className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Services pour les revendeurs
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Solutions dédiées aux professionnels : tarifs préférentiels, support technique et accompagnement.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="text-yellow-500 mb-4">
+                <FileText className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Autorisation auprès des mairies
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Accompagnement dans vos démarches administratives pour l'installation de vos enseignes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
