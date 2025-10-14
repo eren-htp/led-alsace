@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { 
-  Star, CheckCircle, Award, Clock, Users, ArrowRight, ChevronRight
+  Star, CheckCircle, Award, Clock, Users, ArrowRight, ChevronRight, MapPin, Zap
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import heroImage1 from '../assets/hero1.jpg'
@@ -28,9 +28,9 @@ function Home() {
       description: "Expertise reconnue depuis 2014 dans le domaine de l'enseigne et de la signalétique en Alsace."
     },
     {
-      icon: <CheckCircle className="w-12 h-12" />,
-      title: "Qualité garantie",
-      description: "Nous utilisons uniquement des matériaux et équipements de qualité professionnelle pour des résultats durables."
+      icon: <MapPin className="w-12 h-12" />,
+      title: "Fabrication Française",
+      description: "Toutes nos enseignes et solutions de signalétique sont fabriquées localement en Alsace, dans notre atelier situé à Ostwald, près de Strasbourg. En choisissant LED Alsace, vous soutenez un savoir-faire français et une production responsable, sans sous-traitance à l'étranger. Qualité, traçabilité et réactivité sont au cœur de notre engagement."
     },
     {
       icon: <Users className="w-12 h-12" />,
@@ -38,9 +38,9 @@ function Home() {
       description: "De la conception à l'installation, nous gérons votre projet de A à Z avec un accompagnement personnalisé."
     },
     {
-      icon: <Clock className="w-12 h-12" />,
+      icon: <Zap className="w-12 h-12" />,
       title: "Réactivité",
-      description: "Devis rapide et gratuit, suivi personnalisé de votre projet. Votre satisfaction est notre priorité."
+      description: "Devis en 24h garanti ! Suivi personnalisé de votre projet et réponse rapide à toutes vos demandes. Votre satisfaction est notre priorité."
     }
   ]
 
@@ -95,7 +95,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-32 overflow-hidden">
+      <section className="relative overflow-hidden" style={{ minHeight: '80vh' }}>
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           {heroImages.map((img, index) => (
@@ -115,7 +115,7 @@ function Home() {
           ))}
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
           <div className="max-w-3xl">
             <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
               <span className="text-yellow-400 font-semibold">✨ Depuis 2014 en Alsace</span>
