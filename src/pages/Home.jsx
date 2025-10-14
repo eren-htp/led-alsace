@@ -12,6 +12,10 @@ import ModelsShowcase from '../components/ModelsShowcase.jsx'
 import enseigneLedImg from '../assets/services/enseigne-led.jpg'
 import signaletiqueImg from '../assets/services/signaletique.jpg'
 import marquageTextileImg from '../assets/services/marquage-textile.jpg'
+import marquageVitrineImg from '../assets/services/marquagevitrine.jpg'
+import impressionGrandFormatImg from '../assets/services/impressiongrandformat.jpg'
+import marquageVehiculeImg from '../assets/services/marquagevoiture.webp'
+import creationGraphiqueImg from '../assets/services/créationgraphique.jpg'
 
 function Home() {
   const navigate = useNavigate()
@@ -224,90 +228,8 @@ function Home() {
             </p>
           </div>
 
-          {/* Tous les services */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
-            <div className="bg-gray-50 p-6 rounded-xl hover:bg-yellow-50 transition-all duration-300 hover:shadow-lg cursor-pointer" onClick={() => navigate('/services/enseignes')}>
-              <div className="text-yellow-500 mb-3">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Enseignes</h3>
-              <p className="text-sm text-gray-600">Enseignes LED lumineuses</p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl hover:bg-yellow-50 transition-all duration-300 hover:shadow-lg cursor-pointer" onClick={() => navigate('/services/marquage-vitrine')}>
-              <div className="text-yellow-500 mb-3">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Marquage Vitrine</h3>
-              <p className="text-sm text-gray-600">Adhésifs et vitrines</p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl hover:bg-yellow-50 transition-all duration-300 hover:shadow-lg cursor-pointer" onClick={() => navigate('/services/impression')}>
-              <div className="text-yellow-500 mb-3">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Impression Grand Format</h3>
-              <p className="text-sm text-gray-600">Bâches, kakémonos, roll-up</p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl hover:bg-yellow-50 transition-all duration-300 hover:shadow-lg cursor-pointer" onClick={() => navigate('/services/marquage-vehicules')}>
-              <div className="text-yellow-500 mb-3">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Marquage Véhicules</h3>
-              <p className="text-sm text-gray-600">Covering et adhésifs</p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl hover:bg-yellow-50 transition-all duration-300 hover:shadow-lg cursor-pointer" onClick={() => navigate('/services/textile')}>
-              <div className="text-yellow-500 mb-3">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Textile et E.P.I</h3>
-              <p className="text-sm text-gray-600">Flocage et personnalisation</p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl hover:bg-yellow-50 transition-all duration-300 hover:shadow-lg cursor-pointer" onClick={() => navigate('/services/signaletique')}>
-              <div className="text-yellow-500 mb-3">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Signalétique</h3>
-              <p className="text-sm text-gray-600">Intérieure et extérieure</p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl hover:bg-yellow-50 transition-all duration-300 hover:shadow-lg cursor-pointer" onClick={() => navigate('/services/creation-graphique')}>
-              <div className="text-yellow-500 mb-3">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Création Graphique</h3>
-              <p className="text-sm text-gray-600">Design professionnel</p>
-            </div>
-          </div>
-
-          {/* Services phares avec images */}
-          <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Nos Services Phares
-            </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Découvrez nos expertises principales qui font notre réputation
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* Tous les services en grandes cartes */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {/* Enseignes lumineuses */}
             <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="relative h-64 overflow-hidden">
@@ -380,6 +302,98 @@ function Home() {
                   variant="link" 
                   className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
                   onClick={() => navigate('/services/marquage-textile')}
+                >
+                  En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Marquage Vitrine */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={marquageVitrineImg} 
+                  alt="Marquage vitrine professionnel" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Marquage Vitrine</h3>
+                <p className="text-gray-200 mb-4">Adhésifs et personnalisation de vitrines professionnelles</p>
+                <Button 
+                  variant="link" 
+                  className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
+                  onClick={() => navigate('/services/marquage-vitrine')}
+                >
+                  En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Impression Grand Format */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={impressionGrandFormatImg} 
+                  alt="Impression grand format" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Impression Grand Format</h3>
+                <p className="text-gray-200 mb-4">Bâches, kakémonos, roll-up et supports publicitaires</p>
+                <Button 
+                  variant="link" 
+                  className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
+                  onClick={() => navigate('/services/impression')}
+                >
+                  En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Marquage Véhicules */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={marquageVehiculeImg} 
+                  alt="Marquage véhicules et covering" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Marquage Véhicules</h3>
+                <p className="text-gray-200 mb-4">Covering, adhésifs et habillage de flotte automobile</p>
+                <Button 
+                  variant="link" 
+                  className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
+                  onClick={() => navigate('/services/marquage-vehicules')}
+                >
+                  En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Création Graphique */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={creationGraphiqueImg} 
+                  alt="Création graphique et design" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Création Graphique</h3>
+                <p className="text-gray-200 mb-4">Design professionnel pour votre identité visuelle</p>
+                <Button 
+                  variant="link" 
+                  className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
+                  onClick={() => navigate('/services/creation-graphique')}
                 >
                   En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
                 </Button>
