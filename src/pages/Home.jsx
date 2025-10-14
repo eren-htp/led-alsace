@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import heroImage1 from '../assets/hero1.jpg'
 import heroImage2 from '../assets/hero2.jpg'
 import heroImage3 from '../assets/hero3.jpg'
+import ClientsSlider from '../components/ClientsSlider.jsx'
 
 function Home() {
   const navigate = useNavigate()
@@ -158,6 +159,9 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* Slider logos clients */}
+      <ClientsSlider />
 
       {/* Advantages Section */}
       <section className="py-20 bg-gray-50">
