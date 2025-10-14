@@ -132,8 +132,8 @@ function Services() {
               <span className="text-yellow-400 font-semibold">Nos Solutions</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Innovez avec nos solutions adaptées à{' '}
-              <span className="text-yellow-400">votre vision</span>
+              Des solutions sur mesure pour mettre en{' '}
+              <span className="text-yellow-400 animate-glow">lumière</span> vos projets
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               De l'enseigne LED à la signalétique complète, nous proposons une gamme complète de solutions professionnelles pour donner vie à vos projets.
