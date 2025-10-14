@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { 
   Lightbulb, Car, Printer, Palette, Monitor, Scissors,
-  Shirt, Store, Stamp, Layers, Wifi, ArrowRight
+  Shirt, Store, Stamp, Layers, Zap, Gift, FileText, ArrowRight
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ function Services() {
   const mainServices = [
     {
       icon: <Lightbulb className="w-12 h-12" />,
-      title: "Enseignes LED",
+      title: "Enseignes lumineuses",
       slug: "enseignes",
       description: "Enseignes lumineuses sur mesure : lettres individuelles LED, caissons lumineux, panneaux digitaux. Plusieurs matériaux et finitions disponibles pour une visibilité optimale jour et nuit.",
       features: [
@@ -20,19 +20,6 @@ function Services() {
         "Panneaux LED digitaux",
         "Enseignes néon LED flexibles",
         "Installation et maintenance"
-      ]
-    },
-    {
-      icon: <Car className="w-12 h-12" />,
-      title: "Marquage Véhicule",
-      slug: "marquage-vehicule",
-      description: "Marquage professionnel pour tous vos véhicules et utilitaires. Indispensable pour votre visibilité et communication d'entreprise. Covering complet ou partiel.",
-      features: [
-        "Covering total ou partiel",
-        "Adhésifs découpés",
-        "Marquage vitres",
-        "Flocage magnétique",
-        "Tous types de véhicules"
       ]
     },
     {
@@ -49,8 +36,99 @@ function Services() {
       ]
     },
     {
+      icon: <Shirt className="w-12 h-12" />,
+      title: "Marquage textile",
+      slug: "marquage-textile",
+      description: "Marquage textile et vente de vêtements de travail, E.P.I (Équipements de Protection Individuelle). Personnalisation de tous vos textiles professionnels.",
+      features: [
+        "Flocage textile",
+        "Broderie personnalisée",
+        "Sérigraphie",
+        "Vêtements de travail",
+        "E.P.I personnalisés"
+      ]
+    },
+    {
+      icon: <Car className="w-12 h-12" />,
+      title: "Marquage véhicule",
+      slug: "marquage-vehicule",
+      description: "Marquage professionnel pour tous vos véhicules et utilitaires. Indispensable pour votre visibilité et communication d'entreprise. Covering complet ou partiel.",
+      features: [
+        "Covering total ou partiel",
+        "Adhésifs découpés",
+        "Marquage vitres",
+        "Flocage magnétique",
+        "Tous types de véhicules"
+      ]
+    },
+    {
+      icon: <Zap className="w-12 h-12" />,
+      title: "Néon LED",
+      slug: "neon-led",
+      description: "Néons LED flexibles et personnalisés pour une ambiance unique. Design moderne et économie d'énergie pour vos espaces commerciaux et événementiels.",
+      features: [
+        "Néon LED flexible",
+        "Formes personnalisées",
+        "Couleurs au choix",
+        "Faible consommation",
+        "Installation intérieure/extérieure"
+      ]
+    },
+    {
+      icon: <Store className="w-12 h-12" />,
+      title: "Vitrophanie",
+      slug: "vitrophanie",
+      description: "Solutions pour le marquage de vos vitrines et façades avec adhésifs découpés ou micro-perforés. Visibilité maximale pour votre commerce.",
+      features: [
+        "Adhésifs découpés",
+        "Micro-perforé",
+        "Covering vitrine",
+        "Lettres adhésives",
+        "Pose professionnelle"
+      ]
+    },
+    {
+      icon: <Printer className="w-12 h-12" />,
+      title: "Impression adhésif grand format",
+      slug: "impression-adhesif-grand-format",
+      description: "Impression grand format sur adhésif pour tous vos besoins : bâches, kakémonos, adhésifs muraux. Qualité professionnelle garantie.",
+      features: [
+        "Bâches publicitaires",
+        "Kakémonos",
+        "Adhésifs muraux",
+        "Impression sur dibond",
+        "Toiles canvas"
+      ]
+    },
+    {
+      icon: <FileText className="w-12 h-12" />,
+      title: "Impression papier",
+      slug: "impression-papier",
+      description: "Impression offset ou numérique pour papeterie, carterie, livres et tous supports papier. Du petit au grand format.",
+      features: [
+        "Cartes de visite",
+        "Flyers et dépliants",
+        "Affiches",
+        "Brochures",
+        "Papeterie d'entreprise"
+      ]
+    },
+    {
+      icon: <Gift className="w-12 h-12" />,
+      title: "Objets publicitaires",
+      slug: "objets-publicitaires",
+      description: "Large gamme d'objets publicitaires personnalisés pour promouvoir votre marque. Goodies et cadeaux d'entreprise sur mesure.",
+      features: [
+        "Stylos personnalisés",
+        "Mugs et gourdes",
+        "Clés USB",
+        "Textiles publicitaires",
+        "Accessoires de bureau"
+      ]
+    },
+    {
       icon: <Palette className="w-12 h-12" />,
-      title: "Création Graphique",
+      title: "Création graphique",
       slug: "creation-graphique",
       description: "Design de A à Z : logo, flyer, affiche, menu, carte de visite, roll-up, drapeau, sticker. Votre identité visuelle entre de bonnes mains.",
       features: [
@@ -62,16 +140,16 @@ function Services() {
       ]
     },
     {
-      icon: <Printer className="w-12 h-12" />,
-      title: "Impression Grand Format",
-      slug: "impression-grand-format",
-      description: "Impression sur tout support : papier, adhésif, toile, bâche, dibond. Qualité professionnelle pour vos supports de communication.",
+      icon: <Layers className="w-12 h-12" />,
+      title: "Découpe laser",
+      slug: "decoupe-laser",
+      description: "Gravure laser sur différents matériaux pour rendre votre marque immortelle. Précision et qualité pour tous vos projets.",
       features: [
-        "Bâches publicitaires",
-        "Kakémonos",
-        "Adhésifs muraux",
-        "Impression sur dibond",
-        "Toiles canvas"
+        "Gravure sur bois",
+        "Gravure sur métal",
+        "Gravure sur verre",
+        "Découpe précise",
+        "Personnalisation fine"
       ]
     },
     {
@@ -86,39 +164,6 @@ function Services() {
         "Lettres découpées",
         "Formes personnalisées"
       ]
-    }
-  ]
-
-  const additionalServices = [
-    {
-      icon: <Shirt className="w-8 h-8" />,
-      title: "Textile & EPI",
-      description: "Marquage textile et vente de vêtements de travail, E.P.I (Équipements de Protection Individuelle)."
-    },
-    {
-      icon: <Store className="w-8 h-8" />,
-      title: "Marquage Vitrine",
-      description: "Solutions pour le marquage de vos vitrines et façades avec adhésifs découpés ou micro-perforés."
-    },
-    {
-      icon: <Printer className="w-8 h-8" />,
-      title: "Impression Offset",
-      description: "Impression offset ou numérique pour papeterie, carterie, livres et tous supports papier."
-    },
-    {
-      icon: <Stamp className="w-8 h-8" />,
-      title: "Tampons",
-      description: "Tampons personnalisés pour factures, devis et papiers administratifs, tampons de fidélité."
-    },
-    {
-      icon: <Layers className="w-8 h-8" />,
-      title: "Gravures",
-      description: "Gravure laser sur différents matériaux pour rendre votre marque immortelle."
-    },
-    {
-      icon: <Wifi className="w-8 h-8" />,
-      title: "Plaques NFC",
-      description: "Plaques NFC pour fidéliser vos clients et les inviter à laisser un avis sur vos réseaux."
     }
   ]
 
@@ -147,7 +192,7 @@ function Services() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos Solutions Principales
+              Nos Solutions Complètes
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Des solutions professionnelles et sur mesure pour tous vos besoins en signalétique et communication visuelle
@@ -191,41 +236,8 @@ function Services() {
         </div>
       </section>
 
-      {/* Additional Services Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Solutions Complémentaires
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Une gamme étendue de solutions pour répondre à tous vos besoins
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {additionalServices.map((service, index) => (
-              <div 
-                key={index}
-                className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100"
-              >
-                <div className="text-yellow-500 mb-4">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Process Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
