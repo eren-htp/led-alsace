@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
 import { Menu, X, Phone, Mail, MapPin, Lightbulb, ChevronDown } from 'lucide-react'
+import CallbackButton from './CallbackButton.jsx'
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -330,6 +331,9 @@ function Layout({ children }) {
           </div>
         </div>
       </footer>
+      
+      {/* Bouton flottant "Être rappelé" */}
+      <CallbackButton />
     </div>
   )
 }
