@@ -4,6 +4,14 @@ import {
   Shirt, Store, Stamp, Layers, Zap, Gift, FileText, ArrowRight, Users, Wifi
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import enseigneLumineuse from '../assets/services/Enseigne-lumineuse.jpg'
+import signaletiqueImg from '../assets/services/signaletique.jpg'
+import textileImg from '../assets/services/textile.jpg'
+import vehiculeImg from '../assets/services/vehicule.jpg'
+import neonLedImg from '../assets/services/led-neon.jpg'
+import vitrophanieImg from '../assets/services/vitrophanie.jpg'
+import adhesifGrandFormatImg from '../assets/services/addessifgrandformat.jpg'
+import impressionPapierImg from '../assets/services/impressionpapier.jpg'
 
 function Services() {
   const navigate = useNavigate()
@@ -13,6 +21,7 @@ function Services() {
       icon: <Lightbulb className="w-12 h-12" />,
       title: "Enseignes lumineuses",
       slug: "enseignes",
+      image: enseigneLumineuse,
       description: "Enseignes lumineuses sur mesure : lettres individuelles LED, caissons lumineux, panneaux digitaux. Plusieurs matériaux et finitions disponibles pour une visibilité optimale jour et nuit.",
       features: [
         "Lettres boîtier rétro-éclairées",
@@ -26,6 +35,7 @@ function Services() {
       icon: <Monitor className="w-12 h-12" />,
       title: "Signalétique",
       slug: "signaletique",
+      image: signaletiqueImg,
       description: "Panneaux de chantier, stop trottoir, éléments de signalétique, drapeaux. Solutions complètes pour votre communication extérieure et intérieure.",
       features: [
         "Panneaux de chantier",
@@ -39,6 +49,7 @@ function Services() {
       icon: <Shirt className="w-12 h-12" />,
       title: "Marquage textile",
       slug: "marquage-textile",
+      image: textileImg,
       description: "Marquage textile et vente de vêtements de travail, E.P.I (Équipements de Protection Individuelle). Personnalisation de tous vos textiles professionnels.",
       features: [
         "Flocage textile",
@@ -52,6 +63,7 @@ function Services() {
       icon: <Car className="w-12 h-12" />,
       title: "Marquage véhicule",
       slug: "marquage-vehicule",
+      image: vehiculeImg,
       description: "Marquage professionnel pour tous vos véhicules et utilitaires. Indispensable pour votre visibilité et communication d'entreprise. Covering complet ou partiel.",
       features: [
         "Covering total ou partiel",
@@ -65,6 +77,7 @@ function Services() {
       icon: <Zap className="w-12 h-12" />,
       title: "Néon LED",
       slug: "neon-led",
+      image: neonLedImg,
       description: "Néons LED flexibles et personnalisés pour une ambiance unique. Design moderne et économie d'énergie pour vos espaces commerciaux et événementiels.",
       features: [
         "Néon LED flexible",
@@ -78,6 +91,7 @@ function Services() {
       icon: <Store className="w-12 h-12" />,
       title: "Vitrophanie",
       slug: "vitrophanie",
+      image: vitrophanieImg,
       description: "Solutions pour le marquage de vos vitrines et façades avec adhésifs découpés ou micro-perforés. Visibilité maximale pour votre commerce.",
       features: [
         "Adhésifs découpés",
@@ -91,6 +105,7 @@ function Services() {
       icon: <Printer className="w-12 h-12" />,
       title: "Impression adhésif grand format",
       slug: "impression-adhesif-grand-format",
+      image: adhesifGrandFormatImg,
       description: "Impression grand format sur adhésif pour tous vos besoins : bâches, kakémonos, adhésifs muraux. Qualité professionnelle garantie.",
       features: [
         "Bâches publicitaires",
@@ -104,6 +119,7 @@ function Services() {
       icon: <FileText className="w-12 h-12" />,
       title: "Impression papier",
       slug: "impression-papier",
+      image: impressionPapierImg,
       description: "Impression offset ou numérique pour papeterie, carterie, livres et tous supports papier. Du petit au grand format.",
       features: [
         "Cartes de visite",
@@ -203,33 +219,47 @@ function Services() {
             {mainServices.map((service, index) => (
               <div 
                 key={index}
-                className="group bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
-                <div className="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
+                {/* Image Banner - 20% height */}
+                {service.image && (
+                  <div className="h-32 overflow-hidden">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                )}
+                
+                {/* Content */}
+                <div className="p-8">
+                  <div className="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+                  <ul className="space-y-2 mb-6">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start text-sm text-gray-600">
+                        <span className="text-yellow-500 mr-2">✓</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button 
+                    onClick={() => navigate(`/services/${service.slug}`)}
+                    variant="outline"
+                    className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-50 group-hover:bg-yellow-500 group-hover:text-white"
+                  >
+                    En savoir plus
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  {service.description}
-                </p>
-                <ul className="space-y-2 mb-6">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start text-sm text-gray-600">
-                      <span className="text-yellow-500 mr-2">✓</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Button 
-                  onClick={() => navigate(`/services/${service.slug}`)}
-                  variant="outline"
-                  className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-50 group-hover:bg-yellow-500 group-hover:text-white"
-                >
-                  En savoir plus
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
               </div>
             ))}
           </div>
