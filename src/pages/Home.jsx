@@ -9,6 +9,9 @@ import heroImage2 from '../assets/hero2.jpg'
 import heroImage3 from '../assets/hero3.jpg'
 import ClientsSlider from '../components/ClientsSlider.jsx'
 import ModelsShowcase from '../components/ModelsShowcase.jsx'
+import enseigneLedImg from '../assets/services/enseigne-led.jpg'
+import signaletiqueImg from '../assets/services/signaletique.jpg'
+import marquageTextileImg from '../assets/services/marquage-textile.jpg'
 
 function Home() {
   const navigate = useNavigate()
@@ -70,21 +73,27 @@ function Home() {
 
   const testimonials = [
     {
-      name: "Marie Dubois",
-      company: "Restaurant Le Gourmet",
-      text: "LED Alsace a réalisé notre enseigne lumineuse et le résultat est exceptionnel ! Professionnalisme et qualité au rendez-vous.",
+      name: "Responsable Achat",
+      company: "E. Leclerc",
+      text: "Nous avons fait appel à LED Alsace pour le remplacement de nos enseignes lumineuses extérieures. Le résultat est impeccable : visibilité parfaite, finitions soignées, et une installation rapide malgré les contraintes techniques de notre site. Mention spéciale à l'équipe pour son professionnalisme et sa capacité à gérer un projet de cette ampleur dans les délais. Nos clients nous repèrent de loin désormais, même de nuit.",
       rating: 5
     },
     {
-      name: "Pierre Martin",
-      company: "Garage Auto Plus",
-      text: "Très satisfait du marquage de nos véhicules. Travail soigné, délais respectés. Je recommande vivement !",
+      name: "Responsable RH",
+      company: "KS Groupe",
+      text: "Nous cherchions un partenaire réactif et fiable pour floquer nos tenues professionnelles à l'image de notre groupe. LED Alsace a su répondre à nos attentes avec une qualité d'impression irréprochable et une tenue dans le temps qui résiste à nos conditions de travail exigeantes. Livraison rapide, conseils personnalisés et service client au top : nous recommandons vivement.",
       rating: 5
     },
     {
-      name: "Sophie Laurent",
-      company: "Boutique Élégance",
-      text: "De la conception à l'installation, l'équipe a été à l'écoute et très professionnelle. Notre vitrine est magnifique !",
+      name: "Chef d'entreprise",
+      company: "Finay",
+      text: "Besoin urgent de panneaux pour plusieurs chantiers en cours, LED Alsace a répondu présent. Commande traitée en 48h, visuels conformes, impression nette et matériaux résistants. Le rapport qualité-prix est excellent. C'est rassurant de pouvoir compter sur un prestataire local aussi fiable pour nos besoins en signalétique.",
+      rating: 5
+    },
+    {
+      name: "Responsable Marketing",
+      company: "France Solar",
+      text: "Notre flotte de véhicules avait besoin d'un marquage visible, moderne et cohérent avec notre identité. LED Alsace a su transformer nos utilitaires en véritables supports de communication. Le rendu est dynamique, professionnel et attire clairement l'attention. Installation rapide et finitions impeccables, même sur les surfaces complexes. Une très belle collaboration.",
       rating: 5
     }
   ]
@@ -216,55 +225,82 @@ function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-yellow-50 to-white border border-yellow-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="text-yellow-500 mb-4">
-                <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
+            {/* Enseignes lumineuses */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={enseigneLedImg} 
+                  alt="Enseignes lumineuses LED" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Enseignes LED</h3>
-              <p className="text-gray-600 mb-4">Enseignes lumineuses sur mesure pour une visibilité maximale</p>
-              <Button 
-                variant="link" 
-                className="text-yellow-600 p-0"
-                onClick={() => navigate('/services/enseignes')}
-              >
-                En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
-              </Button>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-black">
+                  SERVICE PHARE
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Enseignes Lumineuses</h3>
+                <p className="text-gray-200 mb-4">Enseignes LED sur mesure pour une visibilité maximale jour et nuit</p>
+                <Button 
+                  variant="link" 
+                  className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
+                  onClick={() => navigate('/services/enseignes')}
+                >
+                  En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
+                </Button>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="text-blue-500 mb-4">
-                <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+            {/* Signalétique */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={signaletiqueImg} 
+                  alt="Signalétique professionnelle" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Signalétique</h3>
-              <p className="text-gray-600 mb-4">Solutions complètes de signalétique intérieure et extérieure</p>
-              <Button 
-                variant="link" 
-                className="text-blue-600 p-0"
-                onClick={() => navigate('/services/signaletique')}
-              >
-                En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
-              </Button>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-black">
+                  SERVICE PHARE
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Signalétique</h3>
+                <p className="text-gray-200 mb-4">Solutions complètes de signalétique intérieure et extérieure</p>
+                <Button 
+                  variant="link" 
+                  className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
+                  onClick={() => navigate('/services/signaletique')}
+                >
+                  En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
+                </Button>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-white border border-green-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="text-green-500 mb-4">
-                <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                </svg>
+            {/* Marquage Textile */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={marquageTextileImg} 
+                  alt="Marquage textile et flocage" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Création Graphique</h3>
-              <p className="text-gray-600 mb-4">Design professionnel pour votre identité visuelle</p>
-              <Button 
-                variant="link" 
-                className="text-green-600 p-0"
-                onClick={() => navigate('/services/creation-graphique')}
-              >
-                En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
-              </Button>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-black">
+                  SERVICE PHARE
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Marquage Textile</h3>
+                <p className="text-gray-200 mb-4">Flocage et personnalisation de vos textiles professionnels</p>
+                <Button 
+                  variant="link" 
+                  className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
+                  onClick={() => navigate('/services/marquage-textile')}
+                >
+                  En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -334,18 +370,18 @@ function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300"
+                className="bg-white p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
               >
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-yellow-500 text-yellow-500" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 italic leading-relaxed">
+                <p className="text-gray-700 mb-6 italic leading-relaxed flex-grow text-sm">
                   "{testimonial.text}"
                 </p>
                 <div className="border-t pt-4">
