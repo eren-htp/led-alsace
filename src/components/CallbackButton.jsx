@@ -14,30 +14,36 @@ function CallbackButton() {
     setSubmitStatus(null)
 
     try {
-      // Créer le corps de l'email
-      const emailBody = `
-Nouvelle demande de rappel depuis le site LED Alsace
+      // Utiliser Formspree pour envoyer l'email directement
+      const response = await fetch('https://formspree.io/f/xgvevvjp', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: 'fdev@ledalsace.fr',
+          nom: formData.nom,
+          telephone: formData.telephone,
+          _subject: `🔔 Demande de rappel - ${formData.nom}`,
+          _replyto: 'fdev@ledalsace.fr',
+          message: `Nouvelle demande de rappel depuis le site LED Alsace\n\nNom: ${formData.nom}\nTéléphone: ${formData.telephone}\n\nDate: ${new Date().toLocaleString('fr-FR')}`
+        }),
+      })
 
-Nom: ${formData.nom}
-Téléphone: ${formData.telephone}
-
-Date: ${new Date().toLocaleString('fr-FR')}
-      `.trim()
-
-      // Utiliser mailto pour ouvrir le client email
-      const mailtoLink = `mailto:fdev@ledalsace.fr?subject=Demande de rappel - ${formData.nom}&body=${encodeURIComponent(emailBody)}`
-      
-      window.location.href = mailtoLink
-
-      setSubmitStatus('success')
-      setFormData({ nom: '', telephone: '' })
-      
-      // Fermer le popup après 2 secondes
-      setTimeout(() => {
-        setIsOpen(false)
-        setSubmitStatus(null)
-      }, 2000)
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ nom: '', telephone: '' })
+        
+        // Fermer le popup après 2 secondes
+        setTimeout(() => {
+          setIsOpen(false)
+          setSubmitStatus(null)
+        }, 2000)
+      } else {
+        setSubmitStatus('error')
+      }
     } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error)
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
@@ -155,3 +161,4 @@ Date: ${new Date().toLocaleString('fr-FR')}
 }
 
 export default CallbackButton
+
