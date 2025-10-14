@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
 import { Menu, X, Phone, Mail, MapPin, Lightbulb, ChevronDown } from 'lucide-react'
 import CallbackButton from './CallbackButton.jsx'
+import logoLedAlsace from '@/assets/logo-led-alsace.jpg'
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -59,11 +60,8 @@ function Layout({ children }) {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-                <Lightbulb className="w-6 h-6 text-black" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">LED ALSACE</span>
+            <Link to="/" className="flex items-center">
+              <img src={logoLedAlsace} alt="LED ALSACE" className="h-12 w-auto" />
             </Link>
 
             {/* Desktop Menu */}
@@ -265,11 +263,8 @@ function Layout({ children }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             {/* Logo & Description */}
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-                  <Lightbulb className="w-6 h-6 text-black" />
-                </div>
-                <span className="text-2xl font-bold">LED ALSACE</span>
+              <div className="flex items-center mb-4">
+                <img src={logoLedAlsace} alt="LED ALSACE" className="h-16 w-auto brightness-0 invert" />
               </div>
               <p className="text-gray-400 mb-4 leading-relaxed">
                 Votre partenaire de confiance pour tous vos projets d'enseignes LED, 
