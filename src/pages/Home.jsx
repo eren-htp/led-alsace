@@ -42,7 +42,7 @@ function Home() {
     },
     {
       icon: <Users className="w-12 h-12" />,
-      title: "Service complet",
+      title: "Solution complète",
       description: "De la conception à l'installation, nous gérons votre projet de A à Z avec un accompagnement personnalisé."
     },
     {
@@ -185,7 +185,7 @@ function Home() {
               Pourquoi choisir LED Alsace ?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Une expertise reconnue et un service complet pour tous vos projets d'enseignes et de signalétique
+              Une expertise reconnue et une solution complète pour tous vos projets d'enseignes et de signalétique
             </p>
           </div>
 
@@ -213,22 +213,22 @@ function Home() {
       {/* Models Showcase Section */}
       <ModelsShowcase />
 
-      {/* Services Preview Section */}
+      {/* Solutions Preview Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-4 py-2 bg-yellow-100 rounded-full">
-              <span className="text-yellow-700 font-semibold">Nos Services</span>
+              <span className="text-yellow-700 font-semibold">Nos Solutions</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Des solutions adaptées à vos besoins
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              De l'enseigne LED à la signalétique complète, découvrez notre gamme de services professionnels
+              De l'enseigne LED à la signalétique complète, découvrez notre gamme de solutions professionnelles
             </p>
           </div>
 
-          {/* Tous les services en grandes cartes */}
+          {/* Toutes les solutions en grandes cartes */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {/* Enseignes lumineuses */}
             <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
@@ -242,7 +242,7 @@ function Home() {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-black">
-                  SERVICE PHARE
+                  SOLUTION PHARE
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Enseignes Lumineuses</h3>
                 <p className="text-gray-200 mb-4">Enseignes LED sur mesure pour une visibilité maximale jour et nuit</p>
@@ -268,7 +268,7 @@ function Home() {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-black">
-                  SERVICE PHARE
+                  SOLUTION PHARE
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Signalétique</h3>
                 <p className="text-gray-200 mb-4">Solutions complètes de signalétique intérieure et extérieure</p>
@@ -294,7 +294,7 @@ function Home() {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-black">
-                  SERVICE PHARE
+                  SOLUTION PHARE
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Marquage Textile</h3>
                 <p className="text-gray-200 mb-4">Flocage et personnalisation de vos textiles professionnels</p>
@@ -408,7 +408,7 @@ function Home() {
               variant="outline"
               className="border-yellow-500 text-yellow-600 hover:bg-yellow-50"
             >
-              Voir tous nos services
+              Voir toutes nos solutions
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>

@@ -68,7 +68,7 @@ function Catalogue() {
               <span className="text-yellow-400">catalogues</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Téléchargez nos catalogues pour découvrir l'ensemble de nos produits et services
+              Téléchargez nos catalogues pour découvrir l'ensemble de nos produits et solutions
             </p>
           </div>
         </div>
@@ -125,7 +125,7 @@ function Catalogue() {
               Nos Produits
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Un aperçu de notre gamme complète de produits et services
+              Un aperçu de notre gamme complète de produits et solutions
             </p>
           </div>
 

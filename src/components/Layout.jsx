@@ -79,7 +79,7 @@ function Layout({ children }) {
                 Accueil
               </Link>
               
-              {/* Services Dropdown */}
+              {/* Solutions Dropdown */}
               <div 
                 className="relative"
                 onMouseEnter={handleMouseEnter}
@@ -93,7 +93,7 @@ function Layout({ children }) {
                       : 'text-gray-700 hover:text-yellow-600'
                   }`}
                 >
-                  Nos Services
+                  Nos Solutions
                   <ChevronDown className={`ml-1 w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
                 </Link>
                 
@@ -117,7 +117,7 @@ function Layout({ children }) {
                         to="/services"
                         className="block px-4 py-3 text-yellow-600 font-semibold hover:bg-yellow-50 transition-colors"
                       >
-                        Voir tous les services →
+                        Voir toutes les solutions →
                       </Link>
                     </div>
                   </div>
@@ -204,7 +204,7 @@ function Layout({ children }) {
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
                   className="flex items-center justify-between w-full text-gray-700 hover:text-yellow-600 transition-colors py-2"
                 >
-                  Nos Services
+                  Nos Solutions
                   <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
                 </button>
                 {isServicesOpen && (
@@ -222,7 +222,7 @@ function Layout({ children }) {
                       to="/services"
                       className="block text-yellow-600 font-semibold transition-colors py-2 text-sm"
                     >
-                      Voir tous les services →
+                      Voir toutes les solutions →
                     </Link>
                   </div>
                 )}
@@ -289,7 +289,7 @@ function Layout({ children }) {
               <h4 className="text-lg font-bold mb-4">Liens rapides</h4>
               <ul className="space-y-2">
                 <li><Link to="/" className="text-gray-400 hover:text-yellow-500 transition-colors">Accueil</Link></li>
-                <li><Link to="/services" className="text-gray-400 hover:text-yellow-500 transition-colors">Services</Link></li>
+                <li><Link to="/services" className="text-gray-400 hover:text-yellow-500 transition-colors">Solutions</Link></li>
                 <li><Link to="/realisations" className="text-gray-400 hover:text-yellow-500 transition-colors">Réalisations</Link></li>
                 <li><Link to="/a-propos" className="text-gray-400 hover:text-yellow-500 transition-colors">À Propos</Link></li>
                 <li><Link to="/contact" className="text-gray-400 hover:text-yellow-500 transition-colors">Contact</Link></li>

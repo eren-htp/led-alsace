@@ -114,12 +114,12 @@ function Contact() {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Service souhaité
+                    Solution souhaitée
                   </label>
                   <select 
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
                   >
-                    <option>Sélectionnez un service</option>
+                    <option>Sélectionnez une solution</option>
                     <option>Enseignes LED</option>
                     <option>Marquage véhicule</option>
                     <option>Signalétique</option>

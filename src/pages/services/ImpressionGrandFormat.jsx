@@ -45,7 +45,7 @@ function ImpressionGrandFormat() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-              <span className="text-yellow-400 font-semibold">Nos Services</span>
+              <span className="text-yellow-400 font-semibold">Nos Solutions</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Impression <span className="text-yellow-400">Grand Format</span>

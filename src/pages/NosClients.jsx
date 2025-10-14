@@ -127,7 +127,7 @@ function NosClients() {
               Témoignages Clients
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Découvrez ce que nos clients pensent de nos services
+              Découvrez ce que nos clients pensent de nos solutions
             </p>
           </div>
 

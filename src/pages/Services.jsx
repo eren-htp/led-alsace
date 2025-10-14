@@ -129,14 +129,14 @@ function Services() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-              <span className="text-yellow-400 font-semibold">Nos Services</span>
+              <span className="text-yellow-400 font-semibold">Nos Solutions</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Innovez avec nos services adaptés à{' '}
+              Innovez avec nos solutions adaptées à{' '}
               <span className="text-yellow-400">votre vision</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              De l'enseigne LED à la signalétique complète, nous proposons une gamme complète de services professionnels pour donner vie à vos projets.
+              De l'enseigne LED à la signalétique complète, nous proposons une gamme complète de solutions professionnelles pour donner vie à vos projets.
             </p>
           </div>
         </div>
@@ -147,7 +147,7 @@ function Services() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos Services Principaux
+              Nos Solutions Principales
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Des solutions professionnelles et sur mesure pour tous vos besoins en signalétique et communication visuelle
@@ -196,10 +196,10 @@ function Services() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Services Complémentaires
+              Solutions Complémentaires
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Une gamme étendue de services pour répondre à tous vos besoins
+              Une gamme étendue de solutions pour répondre à tous vos besoins
             </p>
           </div>
 
