@@ -135,8 +135,7 @@ function Home() {
               <span className="text-yellow-400 font-semibold">✨ Depuis 2014 en Alsace</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Des solutions sur mesure pour mettre en{' '}
-              <span className="text-yellow-400 animate-glow">lumière</span> vos projets
+              Donnez de l'éclat à votre entreprise avec des enseignes LED sur mesure
             </h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
               Spécialiste en signalétique et agencement intérieur et extérieur. 

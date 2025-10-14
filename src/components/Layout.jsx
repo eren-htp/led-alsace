@@ -57,9 +57,7 @@ function Layout({ children }) {
               
               {/* Solutions Dropdown */}
               <div 
-                className="relative"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                className="relative group"
               >
                 <Link
                   to="/services"
@@ -70,15 +68,10 @@ function Layout({ children }) {
                   }`}
                 >
                   Nos Solutions
-                  <ChevronDown className={`ml-1 w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" />
                 </Link>
                 
-                {isServicesOpen && (
-                  <div 
-                    className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 py-2 animate-in fade-in slide-in-from-top-2 duration-200"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                  >
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                     {services.map((service, index) => (
                       <Link
                         key={index}
@@ -96,8 +89,7 @@ function Layout({ children }) {
                         Voir toutes les solutions →
                       </Link>
                     </div>
-                  </div>
-                )}
+                </div>
               </div>
 
               <Link 
