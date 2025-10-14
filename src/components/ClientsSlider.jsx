@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React from 'react'
 
 // Import des logos
 import logoAreal from '@/assets/logos-clients/areal.jpg'
@@ -38,7 +38,7 @@ const logos = [
 ]
 
 function ClientsSlider() {
-  const [isPaused, setIsPaused] = useState(false)
+  // Animation continue sans pause
 
   return (
     <section className="py-12 bg-gray-50 border-y border-gray-200 overflow-hidden">
@@ -54,13 +54,9 @@ function ClientsSlider() {
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none" />
 
         {/* Container du slider avec animation */}
-        <div 
-          className="flex gap-12 items-center"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
+        <div className="flex gap-12 items-center">
           {/* Premier set de logos */}
-          <div className={`flex gap-12 items-center ${isPaused ? '' : 'animate-scroll'}`}>
+          <div className="flex gap-12 items-center animate-scroll">
             {logos.map((logo, index) => (
               <div 
                 key={`logo-1-${index}`}
@@ -76,7 +72,7 @@ function ClientsSlider() {
           </div>
 
           {/* Deuxième set de logos (duplication pour effet infini) */}
-          <div className={`flex gap-12 items-center ${isPaused ? '' : 'animate-scroll'}`}>
+          <div className="flex gap-12 items-center animate-scroll">
             {logos.map((logo, index) => (
               <div 
                 key={`logo-2-${index}`}
