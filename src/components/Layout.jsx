@@ -85,7 +85,8 @@ function Layout({ children }) {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <button 
+                <Link
+                  to="/services"
                   className={`flex items-center transition-colors ${
                     location.pathname.startsWith('/services') 
                       ? 'text-yellow-600 font-semibold' 
@@ -94,7 +95,7 @@ function Layout({ children }) {
                 >
                   Nos Services
                   <ChevronDown className={`ml-1 w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
-                </button>
+                </Link>
                 
                 {isServicesOpen && (
                   <div 
