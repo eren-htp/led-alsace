@@ -1,7 +1,36 @@
 import { Button } from '@/components/ui/button.jsx'
-import { Star, ArrowRight, Building2 } from 'lucide-react'
+import { Star, ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import CounterAnimation from '../components/CounterAnimation'
+
+// Import des logos clients
+import logoHBToiture from '../assets/logos-clients/hb-toiture.webp'
+import logoKool from '../assets/logos-clients/kool.webp'
+import logoLeFoch from '../assets/logos-clients/le-foch.webp'
+import logoSNCF from '../assets/logos-clients/sncf.webp'
+import logoSelectHabitat from '../assets/logos-clients/select-habitat.webp'
+import logoProControle from '../assets/logos-clients/procontrole.webp'
+import logoDivino from '../assets/logos-clients/divino.webp'
+import logoPremiumCars from '../assets/logos-clients/premium-cars.webp'
+import logoAubade from '../assets/logos-clients/aubade.webp'
+import logoPlanetLunch from '../assets/logos-clients/planet-lunch.webp'
+import logoPeugeotSaverne from '../assets/logos-clients/peugeot-saverne.webp'
+import logoMucHabitat from '../assets/logos-clients/muc-habitat.webp'
+import logoMGEN from '../assets/logos-clients/mgen.webp'
+import logoPinParasol from '../assets/logos-clients/le-pin-parasol.webp'
+import logoConfidentiel from '../assets/logos-clients/le-confidentiel.webp'
+import logoLabelDent from '../assets/logos-clients/label-dent.webp'
+import logoSofitel from '../assets/logos-clients/sofitel.webp'
+import logoHoneyRoom from '../assets/logos-clients/honey-room.webp'
+import logoHLine from '../assets/logos-clients/h-line.webp'
+import logoGoia from '../assets/logos-clients/goia.webp'
+import logoGaziantep from '../assets/logos-clients/gaziantep.webp'
+import logoGarageMaylaender from '../assets/logos-clients/garage-maylaender.webp'
+import logoGarageLink from '../assets/logos-clients/garage-link.webp'
+import logoFrancesca from '../assets/logos-clients/francesca.webp'
+import logoFinay from '../assets/logos-clients/finay.webp'
+import logoEtandex from '../assets/logos-clients/etandex.webp'
+import logoElsassViande from '../assets/logos-clients/elsass-viande.webp'
 
 function NosClients() {
   const navigate = useNavigate()
@@ -46,37 +75,33 @@ function NosClients() {
   ]
 
   const clients = [
-    { name: "HB Toiture", sector: "Couverture et zinguerie", logo: null },
-    { name: "Kool", sector: "Commerce", logo: null },
-    { name: "Le Foch", sector: "Restaurant", logo: null },
-    { name: "SNCF", sector: "Transport ferroviaire", logo: null },
-    { name: "Select Habitat", sector: "Immobilier", logo: null },
-    { name: "ProControle", sector: "Contrôle technique", logo: null },
-    { name: "Divino", sector: "Restaurant", logo: null },
-    { name: "Premium Cars", sector: "Garage automobile", logo: null },
-    { name: "Aubade", sector: "Salle de bains", logo: null },
-    { name: "Planet Lunch", sector: "Restauration", logo: null },
-    { name: "Peugeot Saverne", sector: "Concessionnaire", logo: null },
-    { name: "Muc Habitat", sector: "Construction", logo: null },
-    { name: "MGEN", sector: "Mutuelle", logo: null },
-    { name: "Le Pin Parasol", sector: "Restaurant", logo: null },
-    { name: "Le Confidentiel", sector: "Restaurant", logo: null },
-    { name: "Label Dent", sector: "Dentiste", logo: null },
-    { name: "Le Sofitel", sector: "Hôtel", logo: null },
-    { name: "Honey Room", sector: "Commerce", logo: null },
-    { name: "H-Line Automobiles", sector: "Garage", logo: null },
-    { name: "Goia", sector: "Restaurant", logo: null },
-    { name: "Gaziantep", sector: "Restaurant", logo: null },
-    { name: "Garage Maylaender", sector: "Carrosserie", logo: null },
-    { name: "Garage Link", sector: "Automobiles", logo: null },
-    { name: "Francesca", sector: "Restaurant italien", logo: null },
-    { name: "Finay", sector: "Commerce", logo: null },
-    { name: "Etandex", sector: "Bâtiment", logo: null },
-    { name: "Elsass Viande", sector: "Boucherie", logo: null },
-    { name: "E. Leclerc", sector: "Grande distribution", logo: null },
-    { name: "Mobalpa", sector: "Cuisine", logo: null },
-    { name: "One Kebab", sector: "Restauration rapide", logo: null },
-    { name: "Madagascar", sector: "Commerce", logo: null }
+    { name: "HB Toiture", sector: "Couverture et zinguerie", logo: logoHBToiture },
+    { name: "Kool", sector: "Commerce", logo: logoKool },
+    { name: "Le Foch", sector: "Restaurant", logo: logoLeFoch },
+    { name: "SNCF", sector: "Transport ferroviaire", logo: logoSNCF },
+    { name: "Select Habitat", sector: "Immobilier", logo: logoSelectHabitat },
+    { name: "ProControle", sector: "Contrôle technique", logo: logoProControle },
+    { name: "Divino", sector: "Restaurant", logo: logoDivino },
+    { name: "Premium Cars", sector: "Garage automobile", logo: logoPremiumCars },
+    { name: "Aubade", sector: "Salle de bains", logo: logoAubade },
+    { name: "Planet Lunch", sector: "Restauration", logo: logoPlanetLunch },
+    { name: "Peugeot Saverne", sector: "Concessionnaire", logo: logoPeugeotSaverne },
+    { name: "Muc Habitat", sector: "Construction", logo: logoMucHabitat },
+    { name: "MGEN", sector: "Mutuelle", logo: logoMGEN },
+    { name: "Le Pin Parasol", sector: "Restaurant", logo: logoPinParasol },
+    { name: "Le Confidentiel", sector: "Restaurant", logo: logoConfidentiel },
+    { name: "Label Dent", sector: "Dentiste", logo: logoLabelDent },
+    { name: "Le Sofitel", sector: "Hôtel", logo: logoSofitel },
+    { name: "Honey Room", sector: "Commerce", logo: logoHoneyRoom },
+    { name: "H-Line Automobiles", sector: "Garage", logo: logoHLine },
+    { name: "Goia", sector: "Restaurant", logo: logoGoia },
+    { name: "Gaziantep", sector: "Restaurant", logo: logoGaziantep },
+    { name: "Garage Maylaender", sector: "Carrosserie", logo: logoGarageMaylaender },
+    { name: "Garage Link", sector: "Automobiles", logo: logoGarageLink },
+    { name: "Francesca", sector: "Restaurant italien", logo: logoFrancesca },
+    { name: "Finay", sector: "Commerce", logo: logoFinay },
+    { name: "Etandex", sector: "Bâtiment", logo: logoEtandex },
+    { name: "Elsass Viande", sector: "Boucherie", logo: logoElsassViande }
   ]
 
   return (
@@ -179,15 +204,15 @@ function NosClients() {
             {clients.map((client, index) => (
               <div 
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 hover:border-yellow-500 hover:shadow-lg transition-all duration-300 text-center"
+                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 hover:border-yellow-500 hover:shadow-lg transition-all duration-300 text-center group"
               >
-                {client.logo ? (
-                  <div className="h-16 flex items-center justify-center mb-3">
-                    <img src={client.logo} alt={client.name} className="max-h-full max-w-full object-contain" />
-                  </div>
-                ) : (
-                  <Building2 className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-                )}
+                <div className="h-20 flex items-center justify-center mb-4">
+                  <img 
+                    src={client.logo} 
+                    alt={client.name} 
+                    className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-300" 
+                  />
+                </div>
                 <h3 className="font-bold text-gray-900 mb-1">{client.name}</h3>
                 <p className="text-sm text-gray-600">{client.sector}</p>
               </div>
