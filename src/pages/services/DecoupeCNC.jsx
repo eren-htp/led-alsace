@@ -291,7 +291,7 @@ function DecoupeCNC() {
       {/* FAQ */}
       <FAQ 
         title="Questions fréquentes sur la découpe CNC"
-        items={[
+        faqs={[
           {
             question: "Qu'est-ce que la découpe CNC et en quoi est-elle utile pour les entreprises ?",
             answer: "La découpe CNC (Computer Numerical Control) est une méthode de découpe assistée par ordinateur, réalisée à l'aide d'une fraiseuse pilotée numériquement. Contrairement au laser, la découpe CNC retire de la matière mécaniquement, ce qui permet de travailler des matériaux plus épais et d'obtenir des formes en volume, des rainurages ou des assemblages précis. Elle est idéale pour des projets techniques, des pièces sur-mesure, du mobilier ou de la signalétique grand format."

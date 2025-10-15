@@ -114,7 +114,7 @@ function NeonLED() {
       {/* FAQ */}
       <FAQ 
         title="Questions fréquentes sur les néons LED"
-        items={[
+        faqs={[
           {
             question: "Quelle est la différence entre un néon LED et un néon traditionnel au gaz ?",
             answer: "Un néon traditionnel est un tube de verre rempli de gaz (néon ou argon), éclairé par décharge électrique. Le néon LED, quant à lui, imite le rendu visuel du néon mais fonctionne grâce à des bandes de LED intégrées dans des gaines souples ou rigides. Il offre un rendu lumineux similaire avec de nombreux avantages : consommation réduite, absence de gaz, solidité accrue et personnalisation sur-mesure."

@@ -170,7 +170,7 @@ function DecoupeLaser() {
       {/* FAQ */}
       <FAQ 
         title="Questions fréquentes sur la découpe laser"
-        items={[
+        faqs={[
           {
             question: "Qu'est-ce que la découpe laser et quels sont ses avantages pour les entreprises ?",
             answer: "La découpe laser est une technique de fabrication qui utilise un faisceau laser très précis pour découper ou graver des matériaux tels que le bois, l'aluminium, le plexiglas ou le carton. Elle permet de réaliser des formes complexes avec une précision millimétrique, sans contact mécanique ni bavure. C'est une solution idéale pour les professionnels souhaitant produire des pièces sur-mesure, des éléments décoratifs, des enseignes ou des prototypes de haute qualité."

@@ -137,7 +137,7 @@ function ImpressionPapier() {
       {/* FAQ */}
       <FAQ 
         title="Questions fréquentes sur l'impression papier"
-        items={[
+        faqs={[
           {
             question: "Quels types de supports papier propose LED ALSACE pour les professionnels ?",
             answer: "LED ALSACE propose une large gamme de supports papier adaptés à tous les besoins de communication : Flyers, dépliants, brochures, Cartes de visite, Affiches (A4 à A0), Têtes de lettre et papeterie commerciale, Menus et fiches techniques, Chemises à rabats, blocs-notes, carnets. Tous nos produits sont imprimés en haute définition avec des papiers rigides ou souples, classiques ou premium (mat, brillant, recyclé, texturé...)."

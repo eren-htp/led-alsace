@@ -159,7 +159,7 @@ function Vitrophanie() {
       {/* FAQ */}
       <FAQ 
         title="Questions fréquentes sur la vitrophanie"
-        items={[
+        faqs={[
           {
             question: "Qu'est-ce que la vitrophanie et à quoi sert-elle pour une entreprise ?",
             answer: "La vitrophanie est une technique d'habillage des vitrines ou surfaces vitrées à l'aide de films adhésifs imprimés ou découpés. Elle permet de communiquer visuellement, de valoriser l'image de marque, d'assurer une protection solaire ou visuelle, voire d'informer les passants (horaires, promotions, logo). C'est une solution idéale pour les commerces, agences, bureaux, centres médicaux ou showrooms."
