@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import CounterAnimation from '../components/CounterAnimation'
 
 // Import des logos clients
-import logoHBToiture from '../assets/logos-clients/hb-toiture.webp'
+import logoHBToiture from '../assets/logos-clients/hb-toiture.jpg'
 import logoKool from '../assets/logos-clients/kool.jpg'
 import logoLeFoch from '../assets/logos-clients/le-foch.webp'
 import logoSNCF from '../assets/logos-clients/sncf.webp'
