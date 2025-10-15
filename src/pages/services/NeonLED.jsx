@@ -24,7 +24,7 @@ function NeonLED() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-600 via-pink-500 to-yellow-400 text-white py-20">
+      <section className="relative bg-gradient-to-br from-blue-600 via-blue-500 to-yellow-400 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
@@ -39,7 +39,7 @@ function NeonLED() {
             <Button 
               onClick={() => navigate('/contact')} 
               size="lg" 
-              className="bg-white text-purple-600 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+              className="bg-white text-blue-600 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
             >
               Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -54,7 +54,7 @@ function NeonLED() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {avantages.map((avantage, index) => (
               <div key={index} className="text-center p-6 rounded-2xl hover:bg-gray-50 transition-all">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <avantage.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{avantage.title}</h3>
@@ -73,7 +73,7 @@ function NeonLED() {
             <div className="grid md:grid-cols-2 gap-4">
               {applications.map((app, index) => (
                 <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-xl hover:shadow-lg transition-all">
-                  <Check className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <Check className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <span className="text-lg">{app}</span>
                 </div>
               ))}
@@ -94,7 +94,7 @@ function NeonLED() {
               { num: "04", title: "Installation", desc: "Pose et mise en service" }
             ].map((step, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl font-bold text-purple-200 mb-4">{step.num}</div>
+                <div className="text-5xl font-bold text-blue-200 mb-4">{step.num}</div>
                 <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                 <p className="text-gray-600">{step.desc}</p>
               </div>
@@ -104,11 +104,11 @@ function NeonLED() {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-yellow-500">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Projet de néon LED sur mesure ?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Contactez-nous pour créer votre néon LED personnalisé</p>
-          <Button onClick={() => navigate('/contact')} size="lg" className="bg-white text-purple-600 hover:bg-gray-100 font-bold text-lg px-8 py-6">
+          <Button onClick={() => navigate('/contact')} size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-bold text-lg px-8 py-6">
             Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>
