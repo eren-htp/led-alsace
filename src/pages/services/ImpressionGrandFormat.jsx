@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, ChevronLeft, ChevronRight, Check, Star, Printer, Maximize2, Package, Zap, Image as ImageIcon, FileText } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import FAQ from '../../components/FAQ'
 import realisation1 from '../../assets/realisations/realisation_casa_julia.webp'
 import realisation2 from '../../assets/realisations/realisation_madagascar.webp'
 import realisation3 from '../../assets/realisations/realisation_leclerc.webp'
@@ -309,6 +310,52 @@ function ImpressionGrandFormat() {
           </div>
         </div>
       </section>
+
+      <FAQ 
+        title="Questions fréquentes sur l'impression adhésif grand format"
+        faqs={[
+          {
+            question: "Qu'est-ce qu'un adhésif grand format et à quoi sert-il pour une entreprise ?",
+            answer: "Un adhésif grand format est un support autocollant imprimé sur mesure, destiné à couvrir de grandes surfaces comme des vitrines, des murs, des panneaux ou des véhicules. C'est un outil de communication visuelle impactant, parfait pour attirer l'attention, diffuser un message commercial ou habiller un espace professionnel. Il peut être temporaire (opération promo) ou permanent (habillage de façade ou déco intérieure)."
+          },
+          {
+            question: "Quels types d'adhésifs grand format propose LED ALSACE ?",
+            answer: "LED ALSACE imprime sur une large gamme d'adhésifs professionnels : Vinyle monomère pour les surfaces planes et l'intérieur, Vinyle polymère pour l'extérieur longue durée, Vinyle coulé pour les formes complexes (véhicules, bosselages), Micro-perforé pour vitrine (visibilité extérieure), et Dépoli imprimé pour effet sablé décoratif. Nous proposons également des films avec pelliculage de protection (anti-UV, anti-graffiti, mat ou brillant)."
+          },
+          {
+            question: "Quelle est la différence entre un adhésif monomère et polymère ?",
+            answer: "Le vinyle monomère est plus économique, idéal pour les applications intérieures ou temporaires sur surfaces planes. Il a une durée de vie moyenne de 2 à 3 ans. Le vinyle polymère, plus résistant, est adapté à une exposition extérieure ou prolongée (jusqu'à 7 ans). Il est plus stable dans le temps et convient aux surfaces légèrement courbes."
+          },
+          {
+            question: "Peut-on utiliser un adhésif grand format en extérieur dans le Grand Est ?",
+            answer: "Oui. Tous nos adhésifs destinés à l'extérieur sont conçus pour résister aux intempéries, au gel, à la pluie et aux UV. Nous utilisons des encres éco-solvants ou UV avec lamination de protection pour garantir la tenue des couleurs dans le temps. Nos produits sont testés pour supporter les conditions climatiques spécifiques du Grand Est."
+          },
+          {
+            question: "Est-ce que l'adhésif grand format peut être retiré sans abîmer le support ?",
+            answer: "Oui. Si l'adhésif est retiré dans les délais conseillés (selon la colle utilisée) et sur une surface propre, il ne laisse pas de traces. Nous utilisons des colles adaptées (permanentes ou enlevables), selon que le projet soit temporaire (soldes, événement, promo) ou permanent (habillage mural ou vitrine)."
+          },
+          {
+            question: "Est-ce que LED ALSACE peut poser les adhésifs sur site ?",
+            answer: "Oui. Nos équipes se déplacent dans toute l'Alsace et le Grand Est pour poser vos adhésifs grands formats dans les règles de l'art. La pose professionnelle garantit un résultat sans bulles, sans plis et une excellente tenue dans le temps, que ce soit sur vitrine, panneau, véhicule, ou cloison intérieure."
+          },
+          {
+            question: "Peut-on imprimer un visuel personnalisé sur un adhésif grand format ?",
+            answer: "Absolument. Vous pouvez nous fournir vos fichiers graphiques (PDF, AI, EPS, etc.), ou confier la création à notre studio graphique intégré. Nous optimisons les fichiers pour un rendu haute définition, respect des couleurs, et adaptation parfaite au format choisi."
+          },
+          {
+            question: "Quels sont les formats possibles pour l'impression d'un adhésif grand format ?",
+            answer: "Nous imprimons sur mesure, jusqu'à 1,60 m de laize en un seul lé, avec possibilité de raccords pour couvrir des surfaces très grandes. Que ce soit pour une vitrine de 5 mètres, un mur complet ou une façade de bâtiment, nous adaptons la mise en page et le fichier pour un rendu net et homogène."
+          },
+          {
+            question: "Quel est le délai moyen de production pour un adhésif grand format ?",
+            answer: "En général, la production prend entre 3 et 7 jours ouvrés, selon le type d'adhésif, le visuel et la finition demandée (pelliculage, découpe, etc.). Pour les projets urgents ou événementiels, nous proposons également un service express sous 48 h, sous réserve de faisabilité technique."
+          },
+          {
+            question: "LED ALSACE propose-t-elle la livraison ou l'installation hors Alsace ?",
+            answer: "Oui. Nous livrons dans toute la France métropolitaine et pouvons organiser une installation sur site dans le Grand Est (Strasbourg, Metz, Nancy, Mulhouse…) grâce à notre réseau de partenaires poseurs. Chaque projet est suivi de manière personnalisée, de la maquette à la pose finale."
+          }
+        ]}
+      />
     </div>
   )
 }
