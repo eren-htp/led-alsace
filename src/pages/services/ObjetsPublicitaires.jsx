@@ -194,7 +194,7 @@ function ObjetsPublicitaires() {
         items={[
           {
             question: "Qu'est-ce qu'un objet publicitaire et pourquoi en utiliser dans une stratégie d'entreprise ?",
-            answer: "Un objet publicitaire est un support physique personnalisé (stylo, mug, sac, clé USB, textile…) portant le logo ou le message d'une entreprise. C'est un outil puissant pour fidéliser les clients, augmenter la notoriété et marquer les esprits durablement. Contrairement à une publicité éphémère, l'objet reste dans le quotidien de vos prospects, ce qui renforce la mémorisation de votre marque."
+            answer: "Un objet publicitaire est un support physique personnalisé (stylo, mug, sac, clé USB, textile...) portant le logo ou le message d'une entreprise. C'est un outil puissant pour fidéliser les clients, augmenter la notoriété et marquer les esprits durablement. Contrairement à une publicité éphémère, l'objet reste dans le quotidien de vos prospects, ce qui renforce la mémorisation de votre marque."
           },
           {
             question: "Quels types d'objets publicitaires propose LED ALSACE ?",

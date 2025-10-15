@@ -129,7 +129,7 @@ function NeonLED() {
           },
           {
             question: "Le néon LED est-il personnalisable en forme, couleur et taille ?",
-            answer: "Absolument. Le néon LED est l'un des supports les plus flexibles du marché. Nous pouvons reproduire votre logo, signature, texte, forme spécifique dans des dizaines de couleurs et plusieurs types de finitions (lumière directe, indirecte, clignotante, RVB…). La taille est entièrement ajustable selon votre espace."
+            answer: "Absolument. Le néon LED est l'un des supports les plus flexibles du marché. Nous pouvons reproduire votre logo, signature, texte, forme spécifique dans des dizaines de couleurs et plusieurs types de finitions (lumière directe, indirecte, clignotante, RVB...). La taille est entièrement ajustable selon votre espace."
           },
           {
             question: "Quelle est la durée de vie moyenne d'un néon LED professionnel ?",

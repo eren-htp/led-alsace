@@ -140,11 +140,11 @@ function ImpressionPapier() {
         items={[
           {
             question: "Quels types de supports papier propose LED ALSACE pour les professionnels ?",
-            answer: "LED ALSACE propose une large gamme de supports papier adaptés à tous les besoins de communication : Flyers, dépliants, brochures, Cartes de visite, Affiches (A4 à A0), Têtes de lettre et papeterie commerciale, Menus et fiches techniques, Chemises à rabats, blocs-notes, carnets. Tous nos produits sont imprimés en haute définition avec des papiers rigides ou souples, classiques ou premium (mat, brillant, recyclé, texturé…)."
+            answer: "LED ALSACE propose une large gamme de supports papier adaptés à tous les besoins de communication : Flyers, dépliants, brochures, Cartes de visite, Affiches (A4 à A0), Têtes de lettre et papeterie commerciale, Menus et fiches techniques, Chemises à rabats, blocs-notes, carnets. Tous nos produits sont imprimés en haute définition avec des papiers rigides ou souples, classiques ou premium (mat, brillant, recyclé, texturé...)."
           },
           {
             question: "Quelle est la différence entre un flyer, une brochure et un dépliant ?",
-            answer: "Un flyer est un document simple (souvent A5 ou A6), sans pli, destiné à une diffusion rapide. Un dépliant est un document plié (2, 3 ou 4 volets), idéal pour présenter une offre ou un menu. Une brochure est un livret relié (agrafé, dos carré…), utilisé pour des contenus plus riches comme un catalogue, un dossier ou une présentation d'entreprise."
+            answer: "Un flyer est un document simple (souvent A5 ou A6), sans pli, destiné à une diffusion rapide. Un dépliant est un document plié (2, 3 ou 4 volets), idéal pour présenter une offre ou un menu. Une brochure est un livret relié (agrafé, dos carré...), utilisé pour des contenus plus riches comme un catalogue, un dossier ou une présentation d'entreprise."
           },
           {
             question: "Quels sont les grammages de papier disponibles pour l'impression ?",

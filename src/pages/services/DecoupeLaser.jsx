@@ -177,7 +177,7 @@ function DecoupeLaser() {
           },
           {
             question: "Quels matériaux peuvent être découpés au laser chez LED ALSACE ?",
-            answer: "LED ALSACE travaille sur une large gamme de matériaux compatibles avec la découpe laser : Bois (contreplaqué, MDF, peuplier…), Plexiglas / PMMA, Carton, papier épais, kraft, Aluminium anodisé (pour la gravure), PVC expansé, Dibond. Chaque matériau est testé et calibré pour garantir un résultat net, sans brûlure excessive, avec des bords propres."
+            answer: "LED ALSACE travaille sur une large gamme de matériaux compatibles avec la découpe laser : Bois (contreplaqué, MDF, peuplier...), Plexiglas / PMMA, Carton, papier épais, kraft, Aluminium anodisé (pour la gravure), PVC expansé, Dibond. Chaque matériau est testé et calibré pour garantir un résultat net, sans brûlure excessive, avec des bords propres."
           },
           {
             question: "Quelle est la différence entre découpe laser et gravure laser ?",
