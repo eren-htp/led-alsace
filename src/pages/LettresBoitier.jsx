@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { ChevronLeft, ChevronRight, Sun, Moon } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
@@ -6,12 +6,32 @@ import { useNavigate } from 'react-router-dom'
 // Import des images jour/nuit pour chaque modèle
 import G01Jour from '../assets/lettres-boitier/G01gunduz.png'
 import G01Nuit from '../assets/lettres-boitier/G01gece.png'
+import G02Jour from '../assets/lettres-boitier/G02gunduz.png'
+import G02Nuit from '../assets/lettres-boitier/G02gece.png'
+import G03Jour from '../assets/lettres-boitier/G03gunduz.png'
+import G03Nuit from '../assets/lettres-boitier/G03gece.png'
+import G04Jour from '../assets/lettres-boitier/G04gunduz.png'
+import G04Nuit from '../assets/lettres-boitier/G04gece.png'
 import G05Jour from '../assets/lettres-boitier/G05gunduz.png'
 import G05Nuit from '../assets/lettres-boitier/G05gece.png'
+import G06Jour from '../assets/lettres-boitier/G06gunduz.png'
+import G06Nuit from '../assets/lettres-boitier/G06gece.png'
+import G07Jour from '../assets/lettres-boitier/G07gunduz.png'
+import G07Nuit from '../assets/lettres-boitier/G07gece.png'
 import G08Jour from '../assets/lettres-boitier/G08gunduz.png'
 import G08Nuit from '../assets/lettres-boitier/G08gece.png'
+import G09Jour from '../assets/lettres-boitier/G09gunduz.png'
+import G09Nuit from '../assets/lettres-boitier/G09gece.png'
+import G10Jour from '../assets/lettres-boitier/G10gunduz.png'
+import G10Nuit from '../assets/lettres-boitier/G10gece.png'
+import G11Jour from '../assets/lettres-boitier/G11gunduz.png'
+import G11Nuit from '../assets/lettres-boitier/G11gece.png'
 import G14Jour from '../assets/lettres-boitier/G14gunduz.png'
 import G14Nuit from '../assets/lettres-boitier/G14gece.png'
+import G15Jour from '../assets/lettres-boitier/G15gunduz.png'
+import G15Nuit from '../assets/lettres-boitier/G15gece.png'
+import G16Jour from '../assets/lettres-boitier/G16gunduz.png'
+import G16Nuit from '../assets/lettres-boitier/G16gece.png'
 
 function LettresBoitier() {
   const navigate = useNavigate()
@@ -37,6 +57,54 @@ function LettresBoitier() {
       ]
     },
     {
+      code: 'G02',
+      title: 'Modèle G02',
+      imageJour: G02Jour,
+      imageNuit: G02Nuit,
+      description: 'Lettre boîtier avec éclairage frontal. Design classique pour une visibilité optimale.',
+      materiaux: 'Acier galvanisé',
+      lumiere: 'LED frontale',
+      montage: 'Fixation murale',
+      caracteristiques: [
+        'Éclairage frontal puissant',
+        'Design intemporel',
+        'Installation rapide',
+        'Maintenance facilitée'
+      ]
+    },
+    {
+      code: 'G03',
+      title: 'Modèle G03',
+      imageJour: G03Jour,
+      imageNuit: G03Nuit,
+      description: 'Lettre boîtier avec profil élégant. Parfait pour les enseignes haut de gamme.',
+      materiaux: 'Aluminium anodisé',
+      lumiere: 'LED périphérique',
+      montage: 'Fixation sur support',
+      caracteristiques: [
+        'Profil élégant',
+        'Finition premium',
+        'Éclairage homogène',
+        'Résistance optimale'
+      ]
+    },
+    {
+      code: 'G04',
+      title: 'Modèle G04',
+      imageJour: G04Jour,
+      imageNuit: G04Nuit,
+      description: 'Lettre boîtier moderne avec rétro-éclairage. Effet lumineux sophistiqué.',
+      materiaux: 'Acier inoxydable',
+      lumiere: 'LED rétro-éclairage',
+      montage: 'Fixation espacée',
+      caracteristiques: [
+        'Effet halo lumineux',
+        'Design moderne',
+        'Visibilité exceptionnelle',
+        'Installation professionnelle'
+      ]
+    },
+    {
       code: 'G05',
       title: 'Modèle G05',
       imageJour: G05Jour,
@@ -50,6 +118,38 @@ function LettresBoitier() {
         'Éclairage LED performant',
         'Installation facilitée',
         'Durabilité exceptionnelle'
+      ]
+    },
+    {
+      code: 'G06',
+      title: 'Modèle G06',
+      imageJour: G06Jour,
+      imageNuit: G06Nuit,
+      description: 'Lettre boîtier compacte avec éclairage intégré. Idéal pour espaces réduits.',
+      materiaux: 'Aluminium composite',
+      lumiere: 'LED intégrée',
+      montage: 'Fixation compacte',
+      caracteristiques: [
+        'Format compact',
+        'Éclairage optimisé',
+        'Gain de place',
+        'Installation simplifiée'
+      ]
+    },
+    {
+      code: 'G07',
+      title: 'Modèle G07',
+      imageJour: G07Jour,
+      imageNuit: G07Nuit,
+      description: 'Lettre boîtier avec profil large. Visibilité maximale à grande distance.',
+      materiaux: 'Acier renforcé',
+      lumiere: 'LED haute puissance',
+      montage: 'Fixation renforcée',
+      caracteristiques: [
+        'Profil large',
+        'Visibilité longue distance',
+        'Structure renforcée',
+        'Éclairage puissant'
       ]
     },
     {
@@ -69,6 +169,54 @@ function LettresBoitier() {
       ]
     },
     {
+      code: 'G09',
+      title: 'Modèle G09',
+      imageJour: G09Jour,
+      imageNuit: G09Nuit,
+      description: 'Lettre boîtier avec éclairage latéral. Effet lumineux unique et moderne.',
+      materiaux: 'Acier laqué',
+      lumiere: 'LED latérale',
+      montage: 'Fixation latérale',
+      caracteristiques: [
+        'Éclairage latéral',
+        'Effet visuel unique',
+        'Design innovant',
+        'Personnalisation avancée'
+      ]
+    },
+    {
+      code: 'G10',
+      title: 'Modèle G10',
+      imageJour: G10Jour,
+      imageNuit: G10Nuit,
+      description: 'Lettre boîtier avec double éclairage. Visibilité optimale dans toutes conditions.',
+      materiaux: 'Acier inoxydable premium',
+      lumiere: 'LED double face',
+      montage: 'Fixation double',
+      caracteristiques: [
+        'Double éclairage',
+        'Visibilité 360°',
+        'Qualité supérieure',
+        'Durabilité maximale'
+      ]
+    },
+    {
+      code: 'G11',
+      title: 'Modèle G11',
+      imageJour: G11Jour,
+      imageNuit: G11Nuit,
+      description: 'Lettre boîtier avec profil fin. Élégance et discrétion pour enseignes raffinées.',
+      materiaux: 'Aluminium fin',
+      lumiere: 'LED discrète',
+      montage: 'Fixation fine',
+      caracteristiques: [
+        'Profil ultra-fin',
+        'Design épuré',
+        'Éclairage discret',
+        'Esthétique moderne'
+      ]
+    },
+    {
       code: 'G14',
       title: 'Modèle G14',
       imageJour: G14Jour,
@@ -82,6 +230,38 @@ function LettresBoitier() {
         'Éclairage intelligent',
         'Résistance maximale',
         'Garantie longue durée'
+      ]
+    },
+    {
+      code: 'G15',
+      title: 'Modèle G15',
+      imageJour: G15Jour,
+      imageNuit: G15Nuit,
+      description: 'Lettre boîtier avec éclairage RGB. Personnalisation des couleurs pour un effet unique.',
+      materiaux: 'Acier laqué premium',
+      lumiere: 'LED RGB programmable',
+      montage: 'Fixation avec contrôleur',
+      caracteristiques: [
+        'Éclairage RGB',
+        'Couleurs personnalisables',
+        'Effets lumineux dynamiques',
+        'Contrôle à distance'
+      ]
+    },
+    {
+      code: 'G16',
+      title: 'Modèle G16',
+      imageJour: G16Jour,
+      imageNuit: G16Nuit,
+      description: 'Lettre boîtier grand format. Impact visuel maximal pour grandes enseignes.',
+      materiaux: 'Acier renforcé grand format',
+      lumiere: 'LED haute intensité',
+      montage: 'Fixation industrielle',
+      caracteristiques: [
+        'Grand format',
+        'Impact visuel maximal',
+        'Structure ultra-robuste',
+        'Éclairage haute intensité'
       ]
     }
   ]
@@ -111,6 +291,16 @@ function LettresBoitier() {
       setIsNight(night)
       setIsTransitioning(false)
     }, 300)
+  }
+
+  const goToModel = (index) => {
+    if (index !== currentIndex) {
+      setIsTransitioning(true)
+      setTimeout(() => {
+        setCurrentIndex(index)
+        setIsTransitioning(false)
+      }, 300)
+    }
   }
 
   return (
@@ -157,12 +347,14 @@ function LettresBoitier() {
                       src={currentImage} 
                       alt={currentModel.title}
                       className="max-w-full max-h-full object-contain"
+                      loading="lazy"
                     />
                   </div>
                   
                   {/* Navigation Arrows */}
                   <button
                     onClick={prevSlide}
+                    aria-label="Modèle précédent"
                     className={`absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg transition-all hover:scale-110 ${
                       isNight 
                         ? 'bg-gray-800/90 hover:bg-gray-800 text-white' 
@@ -173,6 +365,7 @@ function LettresBoitier() {
                   </button>
                   <button
                     onClick={nextSlide}
+                    aria-label="Modèle suivant"
                     className={`absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg transition-all hover:scale-110 ${
                       isNight 
                         ? 'bg-gray-800/90 hover:bg-gray-800 text-white' 
@@ -198,9 +391,11 @@ function LettresBoitier() {
                   <div className="flex justify-start mb-6">
                     <div className={`inline-flex items-center gap-2 rounded-full p-1 shadow-md ${
                       isNight ? 'bg-gray-700' : 'bg-gray-100'
-                    }`}>
+                    }`} role="group" aria-label="Mode d'affichage">
                       <button
                         onClick={() => toggleDayNight(false)}
+                        aria-label="Mode jour"
+                        aria-pressed={!isNight}
                         className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
                           !isNight 
                             ? 'bg-yellow-400 text-gray-900 shadow-md' 
@@ -212,6 +407,8 @@ function LettresBoitier() {
                       </button>
                       <button
                         onClick={() => toggleDayNight(true)}
+                        aria-label="Mode nuit"
+                        aria-pressed={isNight}
                         className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
                           isNight 
                             ? 'bg-gray-900 text-white shadow-md' 
@@ -293,18 +490,13 @@ function LettresBoitier() {
             </div>
 
             {/* Model Thumbnails */}
-            <div className="flex justify-center gap-4 mt-8">
+            <div className="flex flex-wrap justify-center gap-3 mt-8">
               {models.map((model, index) => (
                 <button
                   key={index}
-                  onClick={() => {
-                    setIsTransitioning(true)
-                    setTimeout(() => {
-                      setCurrentIndex(index)
-                      setIsTransitioning(false)
-                    }, 300)
-                  }}
-                  className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  onClick={() => goToModel(index)}
+                  aria-label={`Voir le modèle ${model.code}`}
+                  className={`px-4 py-2 rounded-lg font-semibold transition-all ${
                     currentIndex === index
                       ? 'bg-yellow-400 text-gray-900 shadow-lg scale-110'
                       : isNight 
