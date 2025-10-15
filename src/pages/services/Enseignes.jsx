@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Lightbulb, Clock, Award, Wrench, MapPin, Star } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
+import HeroSlider from '../../components/HeroSlider'
 import realisation1 from '../../assets/realisations/realisation_prointer.webp'
 import realisation2 from '../../assets/realisations/realisation_red_door.webp'
 import realisation3 from '../../assets/realisations/realisation_saturn.webp'
@@ -14,6 +15,12 @@ import enseigneDibond from '../../assets/EnseigneenDibond.JPG'
 import totemLumineux from '../../assets/Totem.JPG'
 import enseigneDoubleface from '../../assets/Enseignedoubleface.jpg'
 import neonLED from '../../assets/NéonLED.JPG'
+import enseigneLumineuse1 from '../../assets/Enseignelumineuse.JPG'
+import enseigneLumineuse2 from '../../assets/Enseignelumineuse2.jpg'
+import enseigneLumineuse3 from '../../assets/Enseignelumineuse3.JPG'
+import enseigneNonLumineuse1 from '../../assets/Enseignenonlumineuse.jpg'
+import enseigneNonLumineuse2 from '../../assets/Eseignenonlumineuse2.jpg'
+import enseigneNonLumineuse3 from '../../assets/Enseignenonlumineuse3.JPG'
 
 function Enseignes() {
   const navigate = useNavigate()
@@ -92,51 +99,26 @@ function Enseignes() {
     }
   ]
 
+  const heroImages = [
+    enseigneLumineuse1,
+    enseigneLumineuse2,
+    enseigneLumineuse3,
+    enseigneNonLumineuse1,
+    enseigneNonLumineuse2,
+    enseigneNonLumineuse3,
+    enseigneDibond,
+    enseigneDoubleface,
+    totemLumineux
+  ]
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
-        <div className="relative h-[500px] md:h-[600px] flex items-center">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmQ3MDAiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
-          <div className="absolute inset-0 bg-black/30"></div>
-          <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 mb-6 px-6 py-3 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-              <Star className="w-5 h-5 text-yellow-400" />
-              <span className="text-yellow-400 font-semibold text-lg">Solutions d'Enseignes LED</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Enseignes Lumineuses LED
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-8">
-              Donnez de la visibilité à votre entreprise avec nos enseignes LED sur mesure. 
-              Fabrication française, installation professionnelle et garantie longue durée.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                onClick={() => navigate('/contact')}
-                size="lg"
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105"
-              >
-                Demander un devis gratuit
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 font-bold text-lg px-8 py-6 rounded-full backdrop-blur-sm"
-                onClick={() => window.location.href = 'tel:0388044534'}
-              >
-                <svg className="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                03 88 044 534
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-      </section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Enseignes Lumineuses LED"
+        subtitle="Donnez de la visibilité à votre entreprise avec nos enseignes LED sur mesure. Fabrication française, installation professionnelle et garantie longue durée."
+      />
 
       {/* Autres Types d'Enseignes */}
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">

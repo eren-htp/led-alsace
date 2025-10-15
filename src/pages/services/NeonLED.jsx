@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Zap, Lightbulb, Palette, Shield } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
+import HeroSlider from '../../components/HeroSlider'
 import neonLED1 from '../../assets/NéonLED.JPG'
 import neonLED2 from '../../assets/NéonLED2.JPG'
 import neonLED3 from '../../assets/NéonLED3.JPG'
@@ -26,34 +27,16 @@ function NeonLED() {
     "Ambiance et mise en lumière"
   ]
 
+  const heroImages = [neonLED1, neonLED2, neonLED3, neonLED4]
+
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
-      <div className="relative h-[500px] md:h-[600px] flex items-center">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-              <span className="text-sm font-semibold">Néon LED sur mesure</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Illuminez votre espace avec du <span className="text-yellow-300">néon LED</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Design moderne, économique et durable. Créez l'ambiance parfaite pour votre entreprise.
-            </p>
-            <Button 
-              onClick={() => navigate('/contact')} 
-              size="lg" 
-              className="bg-white text-yellow-500 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
-            >
-              Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </div>
-        </div>
-            </div>
-</section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Illuminez votre espace avec du néon LED"
+        subtitle="Design moderne, économique et durable. Créez l'ambiance parfaite pour votre entreprise."
+      />
 
       {/* Avantages */}
       <section className="py-20 bg-white">

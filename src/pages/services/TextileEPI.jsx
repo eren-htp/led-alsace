@@ -2,6 +2,14 @@ import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Shirt, Award, Users, Sparkles } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
+import HeroSlider from '../../components/HeroSlider'
+import vesteSNCF from '../../assets/VesteSNCF.png'
+import vesteSNCFdos from '../../assets/VesteSNCFdos.png'
+import teeshirt from '../../assets/teeshirt.png'
+import vestesansmanche from '../../assets/vestesansmanche.png'
+import polo from '../../assets/Polo.png'
+import pull from '../../assets/pull.png'
+import veste from '../../assets/veste.png'
 
 function TextileEPI() {
   const navigate = useNavigate()
@@ -33,26 +41,16 @@ function TextileEPI() {
     { icon: Sparkles, title: "Finitions soignées", description: "Rendu professionnel garanti" }
   ]
 
+  const heroImages = [vesteSNCF, vesteSNCFdos, teeshirt, vestesansmanche, polo, pull, veste]
+
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
-      <div className="relative h-[500px] md:h-[600px] flex items-center">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-              <span className="text-yellow-400 font-semibold">Nos Solutions</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Textile & <span className="text-yellow-400">E.P.I.</span>
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              Marquage textile et vente de vêtements de travail, E.P.I. Personnalisez vos textiles professionnels avec logo et coordonnées
-            </p>
-          </div>
-        </div>
-      </div>
-      </section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Textile & E.P.I. Personnalisés"
+        subtitle="Marquage textile et vente de vêtements de travail, E.P.I. Personnalisez vos textiles professionnels avec logo et coordonnées."
+      />
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
