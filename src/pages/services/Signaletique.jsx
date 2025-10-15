@@ -2,32 +2,36 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, ChevronLeft, ChevronRight, Check, Star, Package, Building2, Car, SignpostBig, AlertTriangle, Image as ImageIcon } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import realisation1 from '../../assets/signaletique/ok-pro-control-900x1200.jpg'
+import realisation2 from '../../assets/signaletique/IMG_1726-900x1200.jpg'
+import realisation3 from '../../assets/signaletique/Club-alpin-site-internet_Plan-de-travail-1-1024x1024.jpg'
+import realisation4 from '../../assets/signaletique/enseigne-toile-tendue-lumineuse-salon-1200x1200.jpg'
 
 function Signaletique() {
   const navigate = useNavigate()
   const [currentSlide, setCurrentSlide] = useState(0)
 
-  // Réalisations pour le slider (placeholders pour l'instant)
+  // Réalisations pour le slider
   const realisations = [
     { 
-      image: "https://via.placeholder.com/1200x600/1a1a1a/FFD700?text=Procontrole",
+      image: realisation1,
       title: "Procontrole",
-      description: "Signalétique complète pour centre de contrôle technique"
+      description: "Totem signalétique pour centre de contrôle technique"
     },
     { 
-      image: "https://via.placeholder.com/1200x600/1a1a1a/FFD700?text=Le+Saint+Etienne",
+      image: realisation2,
       title: "Le Saint Etienne",
-      description: "Panneau publicitaire restaurant"
+      description: "Stop trottoir avec menu restaurant"
     },
     { 
-      image: "https://via.placeholder.com/1200x600/1a1a1a/FFD700?text=Institut+DUHO",
-      title: "Institut DUHO",
-      description: "Caisson ajouré lumineux institut de beauté"
+      image: realisation3,
+      title: "Club Alpin de Strasbourg",
+      description: "Plaque signalétique en dibond"
     },
     { 
-      image: "https://via.placeholder.com/1200x600/1a1a1a/FFD700?text=Cuisine+Allemagne",
-      title: "Cuisine d'Allemagne",
-      description: "Signalétique salon professionnel"
+      image: realisation4,
+      title: "Sachsen Küchen",
+      description: "Enseigne toile tendue lumineuse salon professionnel"
     }
   ]
 
