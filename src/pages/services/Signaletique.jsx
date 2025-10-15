@@ -110,15 +110,17 @@ function Signaletique() {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-10"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-50 cursor-pointer"
             aria-label="Image précédente"
+            type="button"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-10"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-50 cursor-pointer"
             aria-label="Image suivante"
+            type="button"
           >
             <ChevronRight className="w-6 h-6 text-white" />
           </button>
@@ -151,12 +153,13 @@ function Signaletique() {
           </div>
 
           {/* Slide Indicators */}
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-50">
             {realisations.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
+                type="button"
+                className={`w-3 h-3 rounded-full transition-all cursor-pointer ${
                   index === currentSlide 
                     ? 'bg-yellow-400 w-8' 
                     : 'bg-white/50 hover:bg-white/70'
