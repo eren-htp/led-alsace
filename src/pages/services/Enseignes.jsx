@@ -63,7 +63,8 @@ function Enseignes() {
     { icon: Lightbulb, title: "Technologie LED", description: "Économie d'énergie jusqu'à 80% par rapport aux enseignes traditionnelles" },
     { icon: Clock, title: "Longévité", description: "Durée de vie exceptionnelle de 50 000 heures minimum" },
     { icon: Award, title: "Qualité premium", description: "Matériaux haut de gamme résistants aux intempéries" },
-    { icon: Wrench, title: "Installation complète", description: "Pose professionnelle et service après-vente inclus" }
+    { icon: Wrench, title: "Installation complète", description: "Pose professionnelle et service après-vente inclus" },
+    { icon: MapPin, title: "Fabrication locale française", description: "Toutes nos enseignes et solutions de signalétique sont fabriquées localement en Alsace, dans notre atelier situé à Ostwald, près de Strasbourg. En choisissant LED Alsace, vous soutenez un savoir-faire français et une production responsable, sans sous-traitance à l’étranger. Qualité, traçabilité et réactivité sont au cœur de notre engagement." }
   ]
 
   return (
