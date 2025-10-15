@@ -13,6 +13,9 @@ import vitrophanieImg from '../assets/services/vitrophanie.jpg'
 import adhesifGrandFormatImg from '../assets/services/addessifgrandformat.jpg'
 import impressionPapierImg from '../assets/services/impressionpapier.jpg'
 import creationGraphiqueImg from '../assets/services/creation-graphique.jpg'
+import objetsPublicitairesImg from '../assets/ObjetsPublicitaire.png'
+import decoupeLaserImg from '../assets/DecoupeLaser.jpg'
+import decoupeCNCImg from '../assets/DecoupeCNC.jpg'
 
 function Services() {
   const navigate = useNavigate()
@@ -134,6 +137,7 @@ function Services() {
       icon: <Gift className="w-12 h-12" />,
       title: "Objets publicitaires",
       slug: "objets-publicitaires",
+      image: objetsPublicitairesImg,
       description: "Large gamme d'objets publicitaires personnalisés pour promouvoir votre marque. Goodies et cadeaux d'entreprise sur mesure.",
       features: [
         "Stylos personnalisés",
@@ -161,6 +165,7 @@ function Services() {
       icon: <Layers className="w-12 h-12" />,
       title: "Découpe laser",
       slug: "decoupe-laser",
+      image: decoupeLaserImg,
       description: "Gravure laser sur différents matériaux pour rendre votre marque immortelle. Précision et qualité pour tous vos projets.",
       features: [
         "Gravure sur bois",
@@ -174,6 +179,7 @@ function Services() {
       icon: <Scissors className="w-12 h-12" />,
       title: "Découpe CNC",
       slug: "decoupe-cnc",
+      image: decoupeCNCImg,
       description: "Découpe personnalisée de plaque PVC, alu, dibond. Précision et finitions impeccables pour tous vos projets sur mesure.",
       features: [
         "Découpe PVC",
