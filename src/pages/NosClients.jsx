@@ -5,7 +5,7 @@ import CounterAnimation from '../components/CounterAnimation'
 
 // Import des logos clients
 import logoHBToiture from '../assets/logos-clients/hb-toiture.webp'
-import logoKool from '../assets/logos-clients/kool.webp'
+import logoKool from '../assets/logos-clients/kool.jpg'
 import logoLeFoch from '../assets/logos-clients/le-foch.webp'
 import logoSNCF from '../assets/logos-clients/sncf.webp'
 import logoSelectHabitat from '../assets/logos-clients/select-habitat.webp'
