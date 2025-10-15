@@ -36,7 +36,7 @@ function DecoupeLaser() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-500 to-yellow-400 text-white py-20">
+      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
@@ -51,7 +51,7 @@ function DecoupeLaser() {
             <Button 
               onClick={() => navigate('/contact')} 
               size="lg" 
-              className="bg-white text-blue-600 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+              className="bg-white text-yellow-500 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
             >
               Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -65,15 +65,15 @@ function DecoupeLaser() {
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Matériaux compatibles</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {materiaux.map((mat, index) => (
-              <div key={index} className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-blue-500 hover:shadow-xl transition-all">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-yellow-500 rounded-xl flex items-center justify-center mb-4">
+              <div key={index} className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-yellow-400 hover:shadow-xl transition-all">
+                <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center mb-4">
                   <mat.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{mat.title}</h3>
                 <ul className="space-y-2">
                   {mat.types.map((type, i) => (
                     <li key={i} className="flex items-center gap-2 text-gray-600">
-                      <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                      <Check className="w-4 h-4 text-yellow-500 flex-shrink-0" />
                       <span>{type}</span>
                     </li>
                   ))}
@@ -92,7 +92,7 @@ function DecoupeLaser() {
             <div className="grid md:grid-cols-2 gap-4">
               {applications.map((app, index) => (
                 <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-xl hover:shadow-lg transition-all">
-                  <Scissors className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <Scissors className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" />
                   <span className="text-lg">{app}</span>
                 </div>
               ))}
@@ -107,8 +107,8 @@ function DecoupeLaser() {
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Avantages de la découpe laser</h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {avantages.map((avantage, index) => (
-              <div key={index} className="flex items-start gap-3 bg-gray-50 p-4 rounded-xl hover:bg-blue-50 transition-all">
-                <Star className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div key={index} className="flex items-start gap-3 bg-gray-50 p-4 rounded-xl hover:border-yellow-400 transition-all">
+                <Star className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" />
                 <span className="font-semibold">{avantage}</span>
               </div>
             ))}
@@ -130,7 +130,7 @@ function DecoupeLaser() {
               { icon: Layers, title: "Grandes séries", description: "Production industrielle" }
             ].map((service, index) => (
               <div key={index} className="bg-white p-6 rounded-2xl hover:shadow-lg transition-all text-center">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-yellow-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <service.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{service.title}</h3>
@@ -153,7 +153,7 @@ function DecoupeLaser() {
               { num: "04", title: "Finitions", desc: "Nettoyage et contrôle qualité" }
             ].map((step, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl font-bold text-blue-200 mb-4">{step.num}</div>
+                <div className="text-5xl font-bold text-yellow-200 mb-4">{step.num}</div>
                 <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                 <p className="text-gray-600">{step.desc}</p>
               </div>
@@ -163,11 +163,11 @@ function DecoupeLaser() {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-yellow-500">
+      <section className="py-20 bg-gradient-to-r from-gray-900 to-black">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Projet de découpe laser ?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Contactez-nous pour un devis personnalisé</p>
-          <Button onClick={() => navigate('/contact')} size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-bold text-lg px-8 py-6">
+          <Button onClick={() => navigate('/contact')} size="lg" className="bg-white text-yellow-500 hover:bg-gray-100 font-bold text-lg px-8 py-6">
             Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>

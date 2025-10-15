@@ -36,7 +36,7 @@ function Vitrophanie() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-cyan-600 via-blue-500 to-indigo-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
@@ -51,7 +51,7 @@ function Vitrophanie() {
             <Button 
               onClick={() => navigate('/contact')} 
               size="lg" 
-              className="bg-white text-cyan-600 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+              className="bg-white text-yellow-500 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
             >
               Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -65,8 +65,8 @@ function Vitrophanie() {
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Types de vitrophanie</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {types.map((type, index) => (
-              <div key={index} className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-cyan-500 hover:shadow-xl transition-all text-center">
-                <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div key={index} className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-yellow-400 hover:shadow-xl transition-all text-center">
+                <div className="w-14 h-14 bg-gradient-to-br from-gray-900 to-black rounded-xl flex items-center justify-center mx-auto mb-4">
                   <type.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{type.title}</h3>
@@ -85,7 +85,7 @@ function Vitrophanie() {
             <div className="grid md:grid-cols-2 gap-4">
               {applications.map((app, index) => (
                 <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-xl hover:shadow-lg transition-all">
-                  <Check className="w-6 h-6 text-cyan-600 flex-shrink-0 mt-1" />
+                  <Check className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" />
                   <span className="text-lg">{app}</span>
                 </div>
               ))}
@@ -100,8 +100,8 @@ function Vitrophanie() {
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Pourquoi choisir la vitrophanie ?</h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {avantages.map((avantage, index) => (
-              <div key={index} className="flex items-start gap-3 bg-gray-50 p-4 rounded-xl hover:bg-cyan-50 transition-all">
-                <Check className="w-6 h-6 text-cyan-600 flex-shrink-0 mt-1" />
+              <div key={index} className="flex items-start gap-3 bg-gray-50 p-4 rounded-xl hover:border-yellow-400 transition-all">
+                <Check className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" />
                 <span className="font-semibold">{avantage}</span>
               </div>
             ))}
@@ -123,7 +123,7 @@ function Vitrophanie() {
               { title: "Branding", description: "Renforcement de l'identité visuelle de l'entreprise" }
             ].map((usage, index) => (
               <div key={index} className="bg-white p-6 rounded-2xl hover:shadow-lg transition-all">
-                <h3 className="text-xl font-bold mb-2 text-cyan-600">{usage.title}</h3>
+                <h3 className="text-xl font-bold mb-2 text-yellow-500">{usage.title}</h3>
                 <p className="text-gray-600">{usage.description}</p>
               </div>
             ))}
@@ -143,7 +143,7 @@ function Vitrophanie() {
               { num: "04", title: "Pose", desc: "Installation professionnelle" }
             ].map((step, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl font-bold text-cyan-200 mb-4">{step.num}</div>
+                <div className="text-5xl font-bold text-yellow-200 mb-4">{step.num}</div>
                 <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                 <p className="text-gray-600">{step.desc}</p>
               </div>
@@ -153,11 +153,11 @@ function Vitrophanie() {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-600">
+      <section className="py-20 bg-gradient-to-r from-gray-900 to-black">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Projet de vitrophanie ?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Contactez-nous pour un devis personnalisé et une prise de mesures</p>
-          <Button onClick={() => navigate('/contact')} size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 font-bold text-lg px-8 py-6">
+          <Button onClick={() => navigate('/contact')} size="lg" className="bg-white text-yellow-500 hover:bg-gray-100 font-bold text-lg px-8 py-6">
             Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>
