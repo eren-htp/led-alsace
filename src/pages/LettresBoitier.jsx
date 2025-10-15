@@ -270,37 +270,19 @@ function LettresBoitier() {
   const currentImage = isNight ? currentModel.imageNuit : currentModel.imageJour
 
   const nextSlide = () => {
-    setIsTransitioning(true)
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % models.length)
-      setIsTransitioning(false)
-    }, 300)
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % models.length)
   }
 
   const prevSlide = () => {
-    setIsTransitioning(true)
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + models.length) % models.length)
-      setIsTransitioning(false)
-    }, 300)
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + models.length) % models.length)
   }
 
   const toggleDayNight = (night) => {
-    setIsTransitioning(true)
-    setTimeout(() => {
-      setIsNight(night)
-      setIsTransitioning(false)
-    }, 300)
+    setIsNight(night)
   }
 
   const goToModel = (index) => {
-    if (index !== currentIndex) {
-      setIsTransitioning(true)
-      setTimeout(() => {
-        setCurrentIndex(index)
-        setIsTransitioning(false)
-      }, 300)
-    }
+    setCurrentIndex(index)
   }
 
   return (
@@ -340,14 +322,13 @@ function LettresBoitier() {
                 <div className={`relative h-96 lg:h-auto transition-all duration-700 ${
                   isNight ? 'bg-gray-950' : 'bg-gray-100'
                 }`}>
-                  <div className={`w-full h-full flex items-center justify-center p-8 transition-opacity duration-300 ${
-                    isTransitioning ? 'opacity-0' : 'opacity-100'
-                  }`}>
+                  <div className="w-full h-full flex items-center justify-center p-8">
                     <img 
                       src={currentImage} 
                       alt={currentModel.title}
-                      className="max-w-full max-h-full object-contain"
+                      className="max-w-full max-h-full object-contain transition-opacity duration-300"
                       loading="lazy"
+                      key={`${currentIndex}-${isNight}`}
                     />
                   </div>
                   
@@ -384,9 +365,7 @@ function LettresBoitier() {
                 </div>
 
                 {/* Info Section */}
-                <div className={`p-8 lg:p-12 transition-opacity duration-300 ${
-                  isTransitioning ? 'opacity-0' : 'opacity-100'
-                }`}>
+                <div className="p-8 lg:p-12" key={currentIndex}>
                   {/* Day/Night Toggle - Inside Card */}
                   <div className="flex justify-start mb-6">
                     <div className={`inline-flex items-center gap-2 rounded-full p-1 shadow-md ${
