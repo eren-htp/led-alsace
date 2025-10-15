@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Eye, Shield, Palette, Sun } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import FAQ from '../../components/FAQ'
 import vitrophanie from '../../assets/Vitrophanie6.JPG'
 
 function Vitrophanie() {
@@ -154,6 +155,33 @@ function Vitrophanie() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FAQ 
+        title="Questions fréquentes sur la vitrophanie"
+        items={[
+          {
+            question: "Qu'est-ce que la vitrophanie et à quoi sert-elle pour une entreprise ?",
+            answer: "La vitrophanie est une technique d'habillage des vitrines ou surfaces vitrées à l'aide de films adhésifs imprimés ou découpés. Elle permet de communiquer visuellement, de valoriser l'image de marque, d'assurer une protection solaire ou visuelle, voire d'informer les passants (horaires, promotions, logo). C'est une solution idéale pour les commerces, agences, bureaux, centres médicaux ou showrooms."
+          },
+          {
+            question: "Quels sont les types de vitrophanie disponibles chez LED ALSACE ?",
+            answer: "LED ALSACE propose plusieurs types de vitrophanie selon les objectifs : Film micro-perforé (vision extérieure, opacité intérieure), Film sablé ou dépoli (effet verre gravé, pour intimité ou déco), Film plein imprimé (promotions, visuels marketing), Lettrage adhésif découpé (logo, horaires, coordonnées). Chaque projet est réalisé sur-mesure selon votre vitrine, votre identité visuelle et vos contraintes techniques."
+          },
+          {
+            question: "La vitrophanie est-elle compatible avec toutes les vitrines ou surfaces en verre ?",
+            answer: "Oui. Que ce soit pour une vitrine de magasin, une porte vitrée, une cloison de bureau, ou un espace d'accueil, les films adhésifs s'adaptent à la plupart des surfaces vitrées planes. Certains films nécessitent un nettoyage ou un traitement spécifique avant la pose pour assurer une adhérence optimale."
+          },
+          {
+            question: "Est-il possible de voir à travers une vitrophanie depuis l'intérieur ?",
+            answer: "Oui, avec les films micro-perforés, la vitrophanie reste opaque depuis l'extérieur, mais transparente depuis l'intérieur, un peu comme un film solaire. Cela permet de préserver la luminosité intérieure tout en assurant une communication visuelle extérieure impactante. C'est idéal pour les vitrines de boutiques ou agences en centre-ville."
+          },
+          {
+            question: "Combien de temps dure une vitrophanie professionnelle ?",
+            answer: "Une vitrophanie posée avec des vinyles professionnels (3M, Avery, etc.) a une durée de vie moyenne de 3 à 7 ans, selon l'exposition au soleil, aux intempéries et le type de film utilisé. En intérieur, la durée peut être encore plus longue. Un entretien adapté prolonge considérablement la durée de vie du marquage."
+          }
+        ]}
+      />
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-black">

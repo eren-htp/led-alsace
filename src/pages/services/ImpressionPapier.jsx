@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, FileText, Printer, Star, Package } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import FAQ from '../../components/FAQ'
 import impressionPapier from '../../assets/Impressionpapier.jpg'
 
 function ImpressionPapier() {
@@ -132,6 +133,33 @@ function ImpressionPapier() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FAQ 
+        title="Questions fréquentes sur l'impression papier"
+        items={[
+          {
+            question: "Quels types de supports papier propose LED ALSACE pour les professionnels ?",
+            answer: "LED ALSACE propose une large gamme de supports papier adaptés à tous les besoins de communication : Flyers, dépliants, brochures, Cartes de visite, Affiches (A4 à A0), Têtes de lettre et papeterie commerciale, Menus et fiches techniques, Chemises à rabats, blocs-notes, carnets. Tous nos produits sont imprimés en haute définition avec des papiers rigides ou souples, classiques ou premium (mat, brillant, recyclé, texturé…)."
+          },
+          {
+            question: "Quelle est la différence entre un flyer, une brochure et un dépliant ?",
+            answer: "Un flyer est un document simple (souvent A5 ou A6), sans pli, destiné à une diffusion rapide. Un dépliant est un document plié (2, 3 ou 4 volets), idéal pour présenter une offre ou un menu. Une brochure est un livret relié (agrafé, dos carré…), utilisé pour des contenus plus riches comme un catalogue, un dossier ou une présentation d'entreprise."
+          },
+          {
+            question: "Quels sont les grammages de papier disponibles pour l'impression ?",
+            answer: "Nous proposons des grammages de 90g à 400g, selon le type de document : Papier fin (90–120g) pour têtes de lettre ou notices, Papier standard (135–170g) pour flyers ou affiches, Papier rigide (250–400g) pour cartes de visite, couvertures, menus rigides. Nous vous conseillons sur le grammage adapté en fonction de l'usage et du rendu souhaité."
+          },
+          {
+            question: "L'impression papier est-elle adaptée pour les petites quantités ?",
+            answer: "Oui. Grâce à nos imprimantes numériques, nous pouvons produire de petites séries à partir de 10 exemplaires, tout en conservant une qualité professionnelle. Cela permet aux petites entreprises ou indépendants de tester des visuels, d'imprimer à la demande ou de personnaliser leurs documents."
+          },
+          {
+            question: "Est-il possible d'imprimer des papiers avec vernis, pelliculage ou finitions spéciales ?",
+            answer: "Oui. Nous proposons des finitions premium pour valoriser vos supports : Pelliculage mat, brillant ou soft-touch, Vernis sélectif pour faire ressortir un logo ou un visuel, Dorure à chaud, gaufrage, découpe à la forme. Ces finitions permettent de créer des supports haut de gamme, parfaits pour des salons, du haut de gamme ou des rendez-vous client stratégiques."
+          }
+        ]}
+      />
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-black">

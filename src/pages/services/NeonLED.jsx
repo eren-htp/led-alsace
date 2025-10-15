@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Zap, Lightbulb, Palette, Shield } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import FAQ from '../../components/FAQ'
 import neonLED1 from '../../assets/NéonLED.JPG'
 import neonLED2 from '../../assets/NéonLED2.JPG'
 import neonLED3 from '../../assets/NéonLED3.JPG'
@@ -109,6 +110,53 @@ function NeonLED() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FAQ 
+        title="Questions fréquentes sur les néons LED"
+        items={[
+          {
+            question: "Quelle est la différence entre un néon LED et un néon traditionnel au gaz ?",
+            answer: "Un néon traditionnel est un tube de verre rempli de gaz (néon ou argon), éclairé par décharge électrique. Le néon LED, quant à lui, imite le rendu visuel du néon mais fonctionne grâce à des bandes de LED intégrées dans des gaines souples ou rigides. Il offre un rendu lumineux similaire avec de nombreux avantages : consommation réduite, absence de gaz, solidité accrue et personnalisation sur-mesure."
+          },
+          {
+            question: "Pourquoi choisir un néon LED pour une enseigne ou une décoration professionnelle ?",
+            answer: "Le néon LED est un excellent choix pour les professionnels souhaitant un effet lumineux impactant, moderne et économique. Il attire l'œil, fonctionne en basse tension (sécurité), consomme peu d'énergie et peut être fabriqué dans toutes les formes : logo, slogan, pictogramme, etc. C'est aussi une solution durable, idéale pour les commerces, bars, restaurants, bureaux ou événements."
+          },
+          {
+            question: "Est-ce que le néon LED peut être utilisé en extérieur ?",
+            answer: "Oui. LED ALSACE propose des néons LED étanches (IP65 ou plus) adaptés à une utilisation en extérieur, résistants aux intempéries et aux variations de température. Que ce soit pour une façade de commerce ou une signalétique extérieure design, nous concevons des néons LED durables et sécurisés, avec une installation conforme aux normes."
+          },
+          {
+            question: "Le néon LED est-il personnalisable en forme, couleur et taille ?",
+            answer: "Absolument. Le néon LED est l'un des supports les plus flexibles du marché. Nous pouvons reproduire votre logo, signature, texte, forme spécifique dans des dizaines de couleurs et plusieurs types de finitions (lumière directe, indirecte, clignotante, RVB…). La taille est entièrement ajustable selon votre espace."
+          },
+          {
+            question: "Quelle est la durée de vie moyenne d'un néon LED professionnel ?",
+            answer: "Un néon LED de qualité professionnelle a une durée de vie moyenne comprise entre 30 000 et 50 000 heures, soit plusieurs années d'utilisation continue. Contrairement aux néons au gaz, il ne s'affaiblit pas progressivement et ne contient pas de composants fragiles (verre, électrodes). Un entretien minimal est suffisant."
+          },
+          {
+            question: "Est-ce que le néon LED est plus économique qu'un néon traditionnel ?",
+            answer: "Oui. Le néon LED consomme en moyenne 5 à 10 fois moins d'électricité qu'un néon au gaz pour un rendu équivalent. Il ne nécessite pas de transformateur haute tension, n'émet pas de chaleur excessive, et réduit fortement les coûts de maintenance. C'est un investissement rentable sur le long terme."
+          },
+          {
+            question: "Quels sont les délais pour fabriquer un néon LED sur-mesure chez LED ALSACE ?",
+            answer: "Les délais de production varient selon la complexité du design et la taille. En général, comptez 3 à 5 jours ouvrés pour un modèle simple, et 7 à 10 jours ouvrés pour une création sur-mesure (logo, forme spécifique). Chaque commande inclut une maquette validée avant fabrication et une livraison rapide dans le Grand Est."
+          },
+          {
+            question: "Est-ce que le néon LED chauffe ou présente un danger ?",
+            answer: "Non. Le néon LED fonctionne en basse tension (12V ou 24V), ce qui le rend très sûr, y compris dans les espaces accessibles au public. Il ne chauffe pas significativement, ne risque pas de se briser comme le verre, et peut être installé dans des lieux sensibles (enfants, ERP, etc.)."
+          },
+          {
+            question: "Peut-on fixer un néon LED sur tout type de surface ?",
+            answer: "Oui. Nos néons LED peuvent être fixés sur mur, vitrine, panneau ou support suspendu. Nous proposons des systèmes de fixation adaptés : entretoises, rails, colles spéciales ou ventouses pour les vitrines temporaires. Chaque projet inclut une étude de pose personnalisée."
+          },
+          {
+            question: "LED ALSACE propose-t-elle la création de néons LED pour les événements ou les salons ?",
+            answer: "Oui. Nous réalisons des néons LED événementiels pour stand, exposition, shooting photo ou décoration temporaire. Faciles à transporter et à installer, ils donnent un cachet visuel immédiat à votre espace. Nous proposons aussi la location courte durée pour certains modèles standards."
+          }
+        ]}
+      />
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-black">

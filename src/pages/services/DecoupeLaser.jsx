@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Zap, Layers, Scissors, Star } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import FAQ from '../../components/FAQ'
 import decoupeLaser from '../../assets/DécoupeLaser.jpg'
 
 function DecoupeLaser() {
@@ -165,6 +166,33 @@ function DecoupeLaser() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FAQ 
+        title="Questions fréquentes sur la découpe laser"
+        items={[
+          {
+            question: "Qu'est-ce que la découpe laser et quels sont ses avantages pour les entreprises ?",
+            answer: "La découpe laser est une technique de fabrication qui utilise un faisceau laser très précis pour découper ou graver des matériaux tels que le bois, l'aluminium, le plexiglas ou le carton. Elle permet de réaliser des formes complexes avec une précision millimétrique, sans contact mécanique ni bavure. C'est une solution idéale pour les professionnels souhaitant produire des pièces sur-mesure, des éléments décoratifs, des enseignes ou des prototypes de haute qualité."
+          },
+          {
+            question: "Quels matériaux peuvent être découpés au laser chez LED ALSACE ?",
+            answer: "LED ALSACE travaille sur une large gamme de matériaux compatibles avec la découpe laser : Bois (contreplaqué, MDF, peuplier…), Plexiglas / PMMA, Carton, papier épais, kraft, Aluminium anodisé (pour la gravure), PVC expansé, Dibond. Chaque matériau est testé et calibré pour garantir un résultat net, sans brûlure excessive, avec des bords propres."
+          },
+          {
+            question: "Quelle est la différence entre découpe laser et gravure laser ?",
+            answer: "La découpe laser traverse complètement le matériau pour créer une forme, tandis que la gravure laser modifie uniquement la surface du support pour inscrire un visuel, un texte ou un motif. Les deux techniques sont complémentaires : par exemple, on peut graver un logo sur une plaque, puis la découper à la forme souhaitée."
+          },
+          {
+            question: "LED ALSACE peut-elle produire des petites séries ou des pièces uniques en découpe laser ?",
+            answer: "Oui. La découpe laser est particulièrement adaptée aux prototypes, pièces uniques ou petites séries, sans frais de moule ni minimum de quantité. Cela permet aux artisans, commerçants ou industriels de tester un produit ou de répondre à un besoin ponctuel avec un coût maîtrisé."
+          },
+          {
+            question: "Quelle est la précision d'une découpe laser ?",
+            answer: "La découpe laser offre une précision au dixième de millimètre, idéale pour les formes complexes, les petites pièces ou les gravures détaillées. Cela permet d'obtenir des résultats impossibles à atteindre avec une découpe mécanique traditionnelle, tout en garantissant une finition propre et professionnelle."
+          }
+        ]}
+      />
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-black">

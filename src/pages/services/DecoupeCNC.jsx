@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Star, Scissors, Layers, Zap, Package, Settings, Ruler } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import FAQ from '../../components/FAQ'
 import decoupeCNC from '../../assets/DécoupeCNC.jpg'
 
 function DecoupeCNC() {
@@ -286,6 +287,33 @@ function DecoupeCNC() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FAQ 
+        title="Questions fréquentes sur la découpe CNC"
+        items={[
+          {
+            question: "Qu'est-ce que la découpe CNC et en quoi est-elle utile pour les entreprises ?",
+            answer: "La découpe CNC (Computer Numerical Control) est une méthode de découpe assistée par ordinateur, réalisée à l'aide d'une fraiseuse pilotée numériquement. Contrairement au laser, la découpe CNC retire de la matière mécaniquement, ce qui permet de travailler des matériaux plus épais et d'obtenir des formes en volume, des rainurages ou des assemblages précis. Elle est idéale pour des projets techniques, des pièces sur-mesure, du mobilier ou de la signalétique grand format."
+          },
+          {
+            question: "Quels matériaux peut-on découper avec une fraiseuse CNC chez LED ALSACE ?",
+            answer: "LED ALSACE propose la découpe CNC sur de nombreux matériaux rigides, dont : Bois massif, contreplaqué, MDF, PVC expansé, Forex, Plexiglas / PMMA, Aluminium composite type Dibond, Mousse dense, mousse PVC, mousse PE. Cette technique permet aussi bien de découper, de graver en surface, que de rainurer pour pliage ou d'usiner des formes complexes en volume."
+          },
+          {
+            question: "Quelle est la différence entre la découpe CNC et la découpe laser ?",
+            answer: "La découpe CNC utilise une fraise rotative qui enlève de la matière, tandis que le laser utilise un faisceau lumineux pour chauffer et découper. La CNC est recommandée pour les matériaux plus épais, les formes complexes avec profondeur, et les assemblages structurels. Elle permet également des effets de relief, ce que le laser ne peut pas faire."
+          },
+          {
+            question: "Est-ce que la découpe CNC permet de faire des lettrages en relief pour enseigne ?",
+            answer: "Oui. La CNC est particulièrement adaptée pour réaliser des lettres boîtiers, logos en relief ou éléments 3D en bois, PVC ou Dibond. Ces découpes peuvent être peintes, laquées, adhésivées ou montées sur entretoises, pour un effet haut de gamme et durable, en intérieur comme en extérieur."
+          },
+          {
+            question: "LED ALSACE peut-elle créer les fichiers techniques pour la découpe CNC ?",
+            answer: "Oui. Si vous ne disposez pas de fichiers au format vectoriel (DXF, SVG, etc.), notre studio graphique peut modéliser vos formes, adapter vos visuels, ou créer les fichiers à partir d'un croquis ou d'un brief technique. Nous vous fournissons toujours un BAT numérique pour validation avant lancement."
+          }
+        ]}
+      />
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 relative overflow-hidden">
