@@ -36,25 +36,29 @@ function DecoupeLaser() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-              <span className="text-sm font-semibold">Découpe de précision</span>
+      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
+        <div className="relative h-[500px] md:h-[600px] flex items-center">
+          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-block bg-yellow-500/20 backdrop-blur-sm px-6 py-3 rounded-full border border-yellow-500/30 mb-6">
+                <span className="text-yellow-400 font-semibold">Découpe de précision</span>
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                <span className="text-yellow-400">Découpe laser</span> professionnelle
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-200 mb-8">
+                Précision extrême pour vos projets de découpe et gravure sur tous matériaux
+              </p>
+              <Button 
+                onClick={() => navigate('/contact')} 
+                size="lg" 
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+              >
+                Demander un devis
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-yellow-300">Découpe laser</span> professionnelle
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Précision extrême pour vos projets de découpe et gravure sur tous matériaux
-            </p>
-            <Button 
-              onClick={() => navigate('/contact')} 
-              size="lg" 
-              className="bg-white text-yellow-500 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
-            >
-              Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
           </div>
         </div>
       </section>
