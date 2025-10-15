@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button.jsx'
-import { ArrowRight, Check, Lightbulb, Clock, Award, Wrench } from 'lucide-react'
+import { ArrowRight, Check, Lightbulb, Clock, Award, Wrench, MapPin } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import realisation1 from '../../assets/realisations/realisation_prointer.webp'
 import realisation2 from '../../assets/realisations/realisation_red_door.webp'
