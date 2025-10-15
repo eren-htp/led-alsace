@@ -2,6 +2,9 @@ import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Truck, Palette, Shield, Zap } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
+import HeroSlider from '../../components/HeroSlider'
+import marquageVehicule from '../../assets/Marquagevéhicule.jpg'
+import vehicule from '../../assets/Vhéicule.jpg'
 import realisation1 from '../../assets/realisations/realisation_bollore.webp'
 import realisation2 from '../../assets/realisations/realisation_saturn_renov.webp'
 import realisation3 from '../../assets/realisations/realisation_dard.webp'
@@ -46,26 +49,16 @@ function MarquageVehicule() {
     "Véhicules de chantier"
   ]
 
+  const heroImages = [marquageVehicule, vehicule]
+
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
-      <div className="relative h-[500px] md:h-[600px] flex items-center">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-              <span className="text-yellow-400 font-semibold">Nos Solutions</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Marquage <span className="text-yellow-400">Véhicule</span>
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              Du simple marquage avec le logo de votre entreprise jusqu'au covering complet de vos véhicules, de la simple voiture jusqu'au semi-remorque, chez LED ALSACE nous accordons vos véhicules à vos couleurs en les habillant avec un marquage adhésif
-            </p>
-          </div>
-        </div>
-            </div>
-</section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Marquage Véhicule Professionnel"
+        subtitle="Transformez vos véhicules en supports publicitaires mobiles avec notre marquage adhésif haute qualité."
+      />
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
