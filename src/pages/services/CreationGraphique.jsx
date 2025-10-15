@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Palette, FileText, Image, Layout } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import FAQ from '../../components/FAQ'
 
 function CreationGraphique() {
   const navigate = useNavigate()
@@ -140,6 +141,52 @@ function CreationGraphique() {
           </Button>
         </div>
       </section>
+
+      <FAQ 
+        title="Questions fréquentes sur la création graphique"
+        faqs={[
+          {
+            question: "En quoi consiste la création graphique pour une entreprise ?",
+            answer: "La création graphique regroupe l'ensemble des visuels qui permettent à une entreprise de communiquer efficacement : logo, charte graphique, supports imprimés, visuels digitaux… C'est un outil essentiel pour affirmer son identité, capter l'attention de ses cibles et transmettre des messages clairs et percutants. Une création graphique professionnelle renforce la crédibilité et la cohérence de la marque."
+          },
+          {
+            question: "Quels services de création graphique propose LED ALSACE ?",
+            answer: "LED ALSACE accompagne les entreprises du Grand Est dans tous leurs besoins graphiques : Création de logo et d'identité visuelle, Déclinaison de charte graphique, Conception de supports imprimés (flyers, brochures, cartes), Création de visuels pour réseaux sociaux ou sites web, et Habillage graphique d'enseignes, véhicules, vitrines, etc. Nous travaillons sur-mesure, selon vos besoins, votre secteur d'activité et vos contraintes."
+          },
+          {
+            question: "Quelle est la différence entre un graphiste freelance et un studio comme LED ALSACE ?",
+            answer: "Un studio comme LED ALSACE offre une approche complète et structurée : nous combinons les compétences graphiques, techniques et stratégiques pour livrer des visuels adaptés à chaque support (print, digital, signalétique…). Contrairement à un freelance isolé, nous pouvons gérer des projets complexes, multi-supports et suivre l'ensemble de la chaîne de production (de la création à l'impression ou la pose)."
+          },
+          {
+            question: "Pourquoi investir dans une charte graphique professionnelle ?",
+            answer: "La charte graphique garantit la cohérence visuelle de votre marque sur tous vos supports : logo, typographies, couleurs, mises en page… Elle renforce votre identité, facilite la reconnaissance de votre entreprise, et permet à tous vos partenaires ou collaborateurs de respecter une ligne graphique claire. C'est un outil indispensable pour structurer votre communication à long terme."
+          },
+          {
+            question: "Est-ce que LED ALSACE peut moderniser un logo existant ?",
+            answer: "Oui. Nous proposons des prestations de refonte ou d'optimisation de logo. Cela permet de moderniser un visuel vieillissant, de le rendre plus lisible (en impression, en petit format…), ou de l'adapter à de nouveaux usages (réseaux sociaux, signalétique, écran…). Nous conservons l'essence de votre identité tout en l'actualisant."
+          },
+          {
+            question: "Quels sont les formats de fichiers fournis à la fin d'un projet graphique ?",
+            answer: "Nous livrons tous les fichiers nécessaires à une utilisation professionnelle : Fichiers vectoriels (AI, EPS, PDF), Fichiers pour impression (PDF HD, CMJN), et Fichiers pour le web (PNG, JPEG, SVG, RVB). Selon le projet, nous pouvons également fournir des gabarits pour vos prochaines impressions ou publications digitales."
+          },
+          {
+            question: "Combien coûte une création graphique chez LED ALSACE ?",
+            answer: "Les tarifs dépendent de la nature du projet : création de logo, mise en page de support, déclinaisons multi-formats… À titre indicatif : Création de logo à partir de 390 € HT, Carte de visite dès 90 € HT, Flyer A5 recto-verso à partir de 120 € HT. Nous établissons toujours un devis personnalisé selon vos besoins."
+          },
+          {
+            question: "LED ALSACE peut-elle gérer à la fois la création graphique et l'impression ?",
+            answer: "Oui, c'est l'un de nos points forts. Nous assurons la création, l'optimisation des fichiers, l'impression et même la pose pour les supports comme les enseignes, panneaux ou vitrines. Cela vous garantit un résultat cohérent, des fichiers bien calibrés, et un interlocuteur unique du brief à la livraison."
+          },
+          {
+            question: "Quels logiciels utilise LED ALSACE pour la création graphique ?",
+            answer: "Nos graphistes travaillent avec les outils professionnels de référence : Adobe Illustrator, Photoshop, InDesign pour le print et le logo, Canva Pro pour certaines déclinaisons rapides, et Figma ou XD pour les maquettes web. Cette maîtrise nous permet de produire des fichiers parfaitement adaptés aux différents modes de production (impression, découpe, web…)."
+          },
+          {
+            question: "Est-ce que LED ALSACE propose des visuels pour les réseaux sociaux ou le web ?",
+            answer: "Oui. Nous réalisons des visuels adaptés aux formats Facebook, Instagram, LinkedIn, ainsi que des bannières web, des visuels pour newsletters, etc. Nous pouvons également décliner vos campagnes print en version digitale pour assurer une communication cohérente sur tous vos canaux."
+          }
+        ]}
+      />
     </div>
   )
 }
