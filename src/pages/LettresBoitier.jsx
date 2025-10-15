@@ -17,6 +17,7 @@ function LettresBoitier() {
   const navigate = useNavigate()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isNight, setIsNight] = useState(false)
+  const [isTransitioning, setIsTransitioning] = useState(false)
 
   const models = [
     {
@@ -89,17 +90,37 @@ function LettresBoitier() {
   const currentImage = isNight ? currentModel.imageNuit : currentModel.imageJour
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % models.length)
+    setIsTransitioning(true)
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % models.length)
+      setIsTransitioning(false)
+    }, 300)
   }
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + models.length) % models.length)
+    setIsTransitioning(true)
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + models.length) % models.length)
+      setIsTransitioning(false)
+    }, 300)
+  }
+
+  const toggleDayNight = (night) => {
+    setIsTransitioning(true)
+    setTimeout(() => {
+      setIsNight(night)
+      setIsTransitioning(false)
+    }, 300)
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className={`min-h-screen transition-colors duration-700 ${isNight ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <section className={`relative pt-32 pb-20 transition-colors duration-700 ${
+        isNight 
+          ? 'bg-gradient-to-br from-gray-950 to-gray-900 text-white' 
+          : 'bg-gradient-to-br from-gray-900 to-gray-800 text-white'
+      }`}>
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
@@ -117,78 +138,100 @@ function LettresBoitier() {
       </section>
 
       {/* Slider Section */}
-      <section className="py-20 bg-gray-50">
+      <section className={`py-20 transition-colors duration-700 ${isNight ? 'bg-gray-900' : 'bg-gray-50'}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            {/* Day/Night Toggle */}
-            <div className="flex justify-center mb-8">
-              <div className="inline-flex items-center gap-4 bg-white rounded-full p-2 shadow-lg">
-                <button
-                  onClick={() => setIsNight(false)}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-full transition-all ${
-                    !isNight 
-                      ? 'bg-yellow-400 text-gray-900 shadow-md' 
-                      : 'text-gray-600 hover:bg-gray-100'
-                  }`}
-                >
-                  <Sun className="w-5 h-5" />
-                  <span className="font-semibold">JOUR</span>
-                </button>
-                <button
-                  onClick={() => setIsNight(true)}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-full transition-all ${
-                    isNight 
-                      ? 'bg-gray-900 text-white shadow-md' 
-                      : 'text-gray-600 hover:bg-gray-100'
-                  }`}
-                >
-                  <Moon className="w-5 h-5" />
-                  <span className="font-semibold">NUIT</span>
-                </button>
-              </div>
-            </div>
-
             {/* Main Slider */}
-            <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div className={`relative rounded-2xl shadow-2xl overflow-hidden transition-all duration-700 ${
+              isNight ? 'bg-gray-800 border border-gray-700' : 'bg-white'
+            }`}>
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 {/* Image Section */}
-                <div className={`relative h-96 lg:h-auto ${isNight ? 'bg-gray-900' : 'bg-gray-100'}`}>
-                  <img 
-                    src={currentImage} 
-                    alt={currentModel.title}
-                    className="w-full h-full object-contain p-8 transition-opacity duration-500"
-                  />
+                <div className={`relative h-96 lg:h-auto transition-all duration-700 ${
+                  isNight ? 'bg-gray-950' : 'bg-gray-100'
+                }`}>
+                  <div className={`w-full h-full flex items-center justify-center p-8 transition-opacity duration-300 ${
+                    isTransitioning ? 'opacity-0' : 'opacity-100'
+                  }`}>
+                    <img 
+                      src={currentImage} 
+                      alt={currentModel.title}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
                   
                   {/* Navigation Arrows */}
                   <button
                     onClick={prevSlide}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 rounded-full p-3 shadow-lg transition-all hover:scale-110"
+                    className={`absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg transition-all hover:scale-110 ${
+                      isNight 
+                        ? 'bg-gray-800/90 hover:bg-gray-800 text-white' 
+                        : 'bg-white/90 hover:bg-white text-gray-900'
+                    }`}
                   >
                     <ChevronLeft className="w-6 h-6" />
                   </button>
                   <button
                     onClick={nextSlide}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 rounded-full p-3 shadow-lg transition-all hover:scale-110"
+                    className={`absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg transition-all hover:scale-110 ${
+                      isNight 
+                        ? 'bg-gray-800/90 hover:bg-gray-800 text-white' 
+                        : 'bg-white/90 hover:bg-white text-gray-900'
+                    }`}
                   >
                     <ChevronRight className="w-6 h-6" />
                   </button>
 
                   {/* Model Counter */}
-                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  <div className={`absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full text-sm font-semibold ${
+                    isNight ? 'bg-gray-800/90 text-white' : 'bg-black/70 text-white'
+                  }`}>
                     {currentIndex + 1} / {models.length}
                   </div>
                 </div>
 
                 {/* Info Section */}
-                <div className="p-8 lg:p-12">
+                <div className={`p-8 lg:p-12 transition-opacity duration-300 ${
+                  isTransitioning ? 'opacity-0' : 'opacity-100'
+                }`}>
+                  {/* Day/Night Toggle - Inside Card */}
+                  <div className="flex justify-start mb-6">
+                    <div className={`inline-flex items-center gap-2 rounded-full p-1 shadow-md ${
+                      isNight ? 'bg-gray-700' : 'bg-gray-100'
+                    }`}>
+                      <button
+                        onClick={() => toggleDayNight(false)}
+                        className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
+                          !isNight 
+                            ? 'bg-yellow-400 text-gray-900 shadow-md' 
+                            : isNight ? 'text-gray-300 hover:bg-gray-600' : 'text-gray-600 hover:bg-gray-200'
+                        }`}
+                      >
+                        <Sun className="w-4 h-4" />
+                        <span className="font-semibold text-sm">JOUR</span>
+                      </button>
+                      <button
+                        onClick={() => toggleDayNight(true)}
+                        className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
+                          isNight 
+                            ? 'bg-gray-900 text-white shadow-md' 
+                            : 'text-gray-600 hover:bg-gray-200'
+                        }`}
+                      >
+                        <Moon className="w-4 h-4" />
+                        <span className="font-semibold text-sm">NUIT</span>
+                      </button>
+                    </div>
+                  </div>
+
                   <div className="mb-6">
                     <span className="inline-block px-4 py-2 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg mb-4">
                       {currentModel.code}
                     </span>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                    <h2 className={`text-3xl font-bold mb-4 ${isNight ? 'text-white' : 'text-gray-900'}`}>
                       {currentModel.title}
                     </h2>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className={`leading-relaxed ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>
                       {currentModel.description}
                     </p>
                   </div>
@@ -200,8 +243,8 @@ function LettresBoitier() {
                         <span className="text-gray-900 font-bold">M</span>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-gray-900">Matériaux</h3>
-                        <p className="text-gray-600 text-sm">{currentModel.materiaux}</p>
+                        <h3 className={`font-semibold ${isNight ? 'text-white' : 'text-gray-900'}`}>Matériaux</h3>
+                        <p className={`text-sm ${isNight ? 'text-gray-400' : 'text-gray-600'}`}>{currentModel.materiaux}</p>
                       </div>
                     </div>
 
@@ -210,8 +253,8 @@ function LettresBoitier() {
                         <span className="text-gray-900 font-bold">L</span>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-gray-900">Lumière</h3>
-                        <p className="text-gray-600 text-sm">{currentModel.lumiere}</p>
+                        <h3 className={`font-semibold ${isNight ? 'text-white' : 'text-gray-900'}`}>Lumière</h3>
+                        <p className={`text-sm ${isNight ? 'text-gray-400' : 'text-gray-600'}`}>{currentModel.lumiere}</p>
                       </div>
                     </div>
 
@@ -220,18 +263,18 @@ function LettresBoitier() {
                         <span className="text-gray-900 font-bold">F</span>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-gray-900">Montage</h3>
-                        <p className="text-gray-600 text-sm">{currentModel.montage}</p>
+                        <h3 className={`font-semibold ${isNight ? 'text-white' : 'text-gray-900'}`}>Montage</h3>
+                        <p className={`text-sm ${isNight ? 'text-gray-400' : 'text-gray-600'}`}>{currentModel.montage}</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Characteristics */}
                   <div className="mb-8">
-                    <h3 className="font-bold text-gray-900 mb-3">Caractéristiques</h3>
+                    <h3 className={`font-bold mb-3 ${isNight ? 'text-white' : 'text-gray-900'}`}>Caractéristiques</h3>
                     <ul className="space-y-2">
                       {currentModel.caracteristiques.map((carac, idx) => (
-                        <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                        <li key={idx} className={`flex items-center gap-2 text-sm ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>
                           <span className="text-yellow-500">✓</span>
                           {carac}
                         </li>
@@ -254,11 +297,19 @@ function LettresBoitier() {
               {models.map((model, index) => (
                 <button
                   key={index}
-                  onClick={() => setCurrentIndex(index)}
+                  onClick={() => {
+                    setIsTransitioning(true)
+                    setTimeout(() => {
+                      setCurrentIndex(index)
+                      setIsTransitioning(false)
+                    }, 300)
+                  }}
                   className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                     currentIndex === index
                       ? 'bg-yellow-400 text-gray-900 shadow-lg scale-110'
-                      : 'bg-white text-gray-600 hover:bg-gray-100'
+                      : isNight 
+                        ? 'bg-gray-800 text-gray-300 hover:bg-gray-700' 
+                        : 'bg-white text-gray-600 hover:bg-gray-100'
                   }`}
                 >
                   {model.code}
@@ -270,13 +321,13 @@ function LettresBoitier() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-white">
+      <section className={`py-20 transition-colors duration-700 ${isNight ? 'bg-gray-800' : 'bg-white'}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className={`text-3xl md:text-4xl font-bold mb-8 text-center ${isNight ? 'text-white' : 'text-gray-900'}`}>
               Qu'est-ce que des lettres boîtiers ?
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-600">
+            <div className={`prose prose-lg max-w-none ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>
               <p className="mb-6">
                 Les lettres boîte sont un type de panneau conçu pour répondre aux besoins publicitaires des entreprises. 
                 Ces lettres sont créées en plaçant une structure corporelle sur un matériau épais. Cette structure corporelle 
@@ -284,14 +335,14 @@ function LettresBoitier() {
                 elles sont utilisées avec une fonction d'éclairage pour améliorer la visibilité pendant la nuit et le jour.
               </p>
               <p className="mb-6">
-                Chez <strong>LED ALSACE</strong>, nous fabriquons des lettres boîte personnalisées pour nos clients. 
+                Chez <strong className={isNight ? 'text-yellow-400' : 'text-gray-900'}>LED ALSACE</strong>, nous fabriquons des lettres boîte personnalisées pour nos clients. 
                 La conception de ces lettres peut être personnalisée en fonction des besoins et des attentes de chaque client. 
                 La source de lumière utilisée à l'intérieur des lettres peut être conçue pour être éclairée de l'avant, 
                 de l'arrière ou du côté. De plus, différentes formes et tailles de lettres peuvent être produites en utilisant 
                 différents matériaux pour la structure corporelle.
               </p>
               <p className="mb-6">
-                Les avantages des lettres boîte incluent leur <strong>durabilité</strong> et leur <strong>longue durée de vie</strong>. 
+                Les avantages des lettres boîte incluent leur <strong className={isNight ? 'text-yellow-400' : 'text-gray-900'}>durabilité</strong> et leur <strong className={isNight ? 'text-yellow-400' : 'text-gray-900'}>longue durée de vie</strong>. 
                 Étant donné qu'elles sont fabriquées à partir de matériaux de qualité, elles sont résistantes aux effets 
                 environnementaux et aux conditions météorologiques. De plus, la conception des lettres boîte peut être 
                 personnalisée pour refléter l'image de marque de l'entreprise.
@@ -308,7 +359,11 @@ function LettresBoitier() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
+      <section className={`py-20 transition-colors duration-700 ${
+        isNight 
+          ? 'bg-gradient-to-r from-yellow-500 to-yellow-600' 
+          : 'bg-gradient-to-r from-yellow-400 to-yellow-600'
+      }`}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
             Prêt à illuminer votre enseigne ?

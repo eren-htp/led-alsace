@@ -75,20 +75,21 @@ function Layout({ children }) {
                 
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                     {services.map((service, index) => (
-                      <div key={index}>
+                      <div key={index} className="relative group/item">
                         <Link
                           to={service.path}
                           className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
                         >
                           {service.name}
+                          {service.submenu && <span className="float-right">›</span>}
                         </Link>
                         {service.submenu && (
-                          <div className="pl-4 bg-gray-50">
+                          <div className="absolute left-full top-0 ml-1 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-200">
                             {service.submenu.map((sub, subIndex) => (
                               <Link
                                 key={subIndex}
                                 to={sub.path}
-                                className="block px-4 py-2 text-sm text-gray-600 hover:text-yellow-600 transition-colors border-l-2 border-yellow-400 ml-2"
+                                className="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors border-l-2 border-yellow-400"
                               >
                                 → {sub.name}
                               </Link>
