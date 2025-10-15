@@ -52,19 +52,19 @@ function APropos() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Notre Histoire
+                Notre histoire, ancrée en Alsace, tournée vers vos projets
               </h2>
             </div>
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p className="leading-relaxed">
-                Fondée en 2014 par Jean-Marc Weber, passionné par l'enseigne et la signalétique depuis plus de 20 ans, LED Alsace est née d'une vision simple : offrir aux entreprises alsaciennes des solutions d'enseignes LED de qualité professionnelle, avec un service personnalisé et un accompagnement de proximité.
+                LED Alsace est née de la volonté de proposer des solutions de signalétique modernes, durables et locales. Depuis nos débuts, nous avons accompagné des dizaines de commerçants, artisans, PME et collectivités dans la mise en valeur de leur identité visuelle.
               </p>
               <p className="leading-relaxed">
-                Installés à Ostwald, au cœur de l'agglomération strasbourgeoise, nous avons rapidement développé notre expertise pour devenir un acteur incontournable de la signalétique en Alsace. Notre atelier de production et notre showroom nous permettent de vous accueillir et de vous présenter nos réalisations.
+                De l'enseigne lumineuse à l'adhésif grand format, chaque projet est conçu, fabriqué et posé avec le souci du détail et une exigence de qualité constante. Basés en Alsace, nous maîtrisons l'ensemble de la chaîne de production pour offrir à nos clients un service rapide, fiable et personnalisé.
               </p>
               <p className="leading-relaxed">
-                Aujourd'hui, avec une équipe de professionnels passionnés, nous accompagnons chaque année des centaines d'entreprises dans leurs projets. De la TPE au grand compte, nous mettons le même soin et la même exigence de qualité dans chaque projet.
+                Aujourd'hui, LED Alsace continue d'évoluer, avec une même mission : donner de la visibilité à ceux qui font bouger notre territoire.
               </p>
             </div>
           </div>
