@@ -10,6 +10,10 @@ import realisation5 from '../../assets/realisations/realisation_one_kebab.webp'
 import realisation6 from '../../assets/realisations/realisation_pharmacie.webp'
 import realisation7 from '../../assets/realisations/realisation_love.webp'
 import realisation8 from '../../assets/realisations/realisation_perkko.webp'
+import enseigneDibond from '../../assets/EnseigneenDibond.JPG'
+import totemLumineux from '../../assets/Totem.JPG'
+import enseigneDoubleface from '../../assets/Enseignedoubleface.jpg'
+import neonLED from '../../assets/NéonLED.JPG'
 
 function Enseignes() {
   const navigate = useNavigate()
@@ -29,27 +33,27 @@ function Enseignes() {
     { 
       title: "Enseigne en dibond", 
       description: "Panneaux en aluminium composite légers et résistants pour une installation facile",
-      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Enseigne+Dibond"
+      image: enseigneDibond
     },
     { 
       title: "Totems lumineux", 
       description: "Structures verticales imposantes pour signalétique extérieure haute visibilité",
-      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Totem+Lumineux"
+      image: totemLumineux
     },
     { 
       title: "Enseigne drapeau double face", 
       description: "Signalétique perpendiculaire au mur, visible des deux côtés de la rue",
-      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Drapeau+Double+Face"
+      image: enseigneDoubleface
     },
     { 
       title: "Caisson ajouré lumineux", 
       description: "Caisson avec découpe personnalisée et rétro-éclairage LED pour un effet unique",
-      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Caisson+Ajoure"
+      image: enseigneDoubleface
     },
     { 
       title: "Néon LED", 
       description: "Effet néon moderne avec technologie LED économique et personnalisable",
-      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Neon+LED",
+      image: neonLED,
       link: "/services/neon-led"
     },
     { 
