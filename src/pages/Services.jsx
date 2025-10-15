@@ -12,6 +12,7 @@ import neonLedImg from '../assets/services/led-neon.jpg'
 import vitrophanieImg from '../assets/services/vitrophanie.jpg'
 import adhesifGrandFormatImg from '../assets/services/addessifgrandformat.jpg'
 import impressionPapierImg from '../assets/services/impressionpapier.jpg'
+import creationGraphiqueImg from '../assets/services/creation-graphique.jpg'
 
 function Services() {
   const navigate = useNavigate()
@@ -146,6 +147,7 @@ function Services() {
       icon: <Palette className="w-12 h-12" />,
       title: "Création graphique",
       slug: "creation-graphique",
+      image: creationGraphiqueImg,
       description: "Design de A à Z : logo, flyer, affiche, menu, carte de visite, roll-up, drapeau, sticker. Votre identité visuelle entre de bonnes mains.",
       features: [
         "Création de logo",

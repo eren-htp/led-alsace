@@ -24,13 +24,39 @@ function Enseignes() {
     { image: realisation8, title: "Perkko", description: "Enseigne commerce moderne" }
   ]
 
-  const types = [
-    { title: "Lettres boîtier LED", description: "Lettres individuelles lumineuses en relief, impact visuel maximal" },
-    { title: "Caissons lumineux", description: "Enseignes en caisson avec éclairage LED uniforme et puissant" },
-    { title: "Panneaux digitaux", description: "Écrans LED géants pour affichage dynamique et moderne" },
-    { title: "Enseignes dibond", description: "Panneaux en aluminium composite légers et résistants" },
-    { title: "Néon LED", description: "Effet néon moderne avec technologie LED économique" },
-    { title: "Totems lumineux", description: "Structures verticales imposantes pour signalétique extérieure" }
+  const autresTypes = [
+    { 
+      title: "Enseigne en dibond", 
+      description: "Panneaux en aluminium composite légers et résistants pour une installation facile",
+      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Enseigne+Dibond"
+    },
+    { 
+      title: "Totems lumineux", 
+      description: "Structures verticales imposantes pour signalétique extérieure haute visibilité",
+      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Totem+Lumineux"
+    },
+    { 
+      title: "Enseigne drapeau double face", 
+      description: "Signalétique perpendiculaire au mur, visible des deux côtés de la rue",
+      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Drapeau+Double+Face"
+    },
+    { 
+      title: "Caisson ajouré lumineux", 
+      description: "Caisson avec découpe personnalisée et rétro-éclairage LED pour un effet unique",
+      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Caisson+Ajoure"
+    },
+    { 
+      title: "Néon LED", 
+      description: "Effet néon moderne avec technologie LED économique et personnalisable",
+      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Neon+LED",
+      link: "/services/neon-led"
+    },
+    { 
+      title: "Écrans LED grand format", 
+      description: "Affichage dynamique haute définition pour communication visuelle impactante",
+      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Ecran+LED",
+      link: "/services/ecrans-led"
+    }
   ]
 
   const avantages = [
@@ -61,18 +87,39 @@ function Enseignes() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Types d'enseignes</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Des solutions adaptées à tous vos besoins de visibilité</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nos autres types d'enseignes</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Découvrez notre gamme complète de solutions d'enseignes</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {types.map((type, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border-2 border-gray-200 hover:border-yellow-500 hover:shadow-xl transition-all duration-300">
-                <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-4">
-                  <Check className="w-6 h-6 text-white" />
+            {autresTypes.map((type, index) => (
+              <div 
+                key={index} 
+                className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-yellow-500"
+                onClick={() => type.link && navigate(type.link)}
+                style={{ cursor: type.link ? 'pointer' : 'default' }}
+              >
+                <div className="relative h-48 overflow-hidden bg-gray-100">
+                  <img 
+                    src={type.image} 
+                    alt={type.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  {type.link && (
+                    <div className="absolute top-4 right-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
+                      En savoir plus
+                    </div>
+                  )}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{type.title}</h3>
-                <p className="text-gray-600">{type.description}</p>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">{type.title}</h3>
+                  <p className="text-gray-600">{type.description}</p>
+                  {type.link && (
+                    <div className="mt-4 flex items-center text-yellow-600 font-semibold">
+                      Découvrir <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  )}
+                </div>
               </div>
             ))}
           </div>
