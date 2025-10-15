@@ -51,8 +51,8 @@ function TextileEPI() {
             </p>
           </div>
         </div>
-            </div>
-</section>
+      </div>
+      </section>
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
