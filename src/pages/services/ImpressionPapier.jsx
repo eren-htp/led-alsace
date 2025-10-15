@@ -1,0 +1,147 @@
+import { Button } from '@/components/ui/button.jsx'
+import { ArrowRight, Check, FileText, Printer, Star, Package } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+
+function ImpressionPapier() {
+  const navigate = useNavigate()
+
+  const produits = [
+    { icon: FileText, title: "Flyers & Dépliants", description: "De A6 à A4, pliage 2 ou 3 volets" },
+    { icon: FileText, title: "Cartes de visite", description: "Grammages de 250g à 400g, finitions premium" },
+    { icon: FileText, title: "Affiches", description: "Formats A4 à A0, papier mat ou brillant" },
+    { icon: FileText, title: "Brochures & Catalogues", description: "Reliure agrafée ou dos carré collé" },
+    { icon: FileText, title: "Papeterie commerciale", description: "Têtes de lettre, enveloppes, blocs-notes" },
+    { icon: FileText, title: "Menus & Cartes", description: "Restaurants, bars, food trucks" }
+  ]
+
+  const finitions = [
+    "Pelliculage mat, brillant ou soft-touch",
+    "Vernis sélectif UV",
+    "Dorure à chaud",
+    "Gaufrage et embossage",
+    "Découpe à la forme",
+    "Reliure et façonnage"
+  ]
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 text-white py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+              <span className="text-sm font-semibold">Impression professionnelle</span>
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Impression <span className="text-yellow-300">papier</span> haute qualité
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-white/90">
+              Flyers, cartes de visite, brochures... Tous vos supports imprimés avec finitions premium
+            </p>
+            <Button 
+              onClick={() => navigate('/contact')} 
+              size="lg" 
+              className="bg-white text-blue-600 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+            >
+              Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Produits */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Nos produits d'impression</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {produits.map((produit, index) => (
+              <div key={index} className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-blue-500 hover:shadow-xl transition-all">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-4">
+                  <produit.icon className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">{produit.title}</h3>
+                <p className="text-gray-600">{produit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Finitions */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">Finitions premium disponibles</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {finitions.map((finition, index) => (
+                <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-xl hover:shadow-lg transition-all">
+                  <Star className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" />
+                  <span className="text-lg">{finition}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Grammages */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Grammages disponibles</h2>
+          <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
+            {[
+              { range: "90-120g", type: "Papier fin", usage: "Têtes de lettre, notices" },
+              { range: "135-170g", type: "Papier standard", usage: "Flyers, affiches" },
+              { range: "250-400g", type: "Papier rigide", usage: "Cartes de visite, menus" }
+            ].map((gram, index) => (
+              <div key={index} className="text-center p-6 bg-gray-50 rounded-2xl hover:bg-blue-50 transition-all">
+                <div className="text-3xl font-bold text-blue-600 mb-2">{gram.range}</div>
+                <h3 className="text-xl font-bold mb-2">{gram.type}</h3>
+                <p className="text-gray-600">{gram.usage}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Avantages */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Pourquoi choisir LED Alsace ?</h2>
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            {[
+              { icon: Printer, title: "Petites et grandes séries", description: "À partir de 10 exemplaires" },
+              { icon: Package, title: "Papiers écologiques", description: "Papiers recyclés et certifiés FSC" },
+              { icon: Star, title: "Service de création", description: "Studio graphique intégré" },
+              { icon: Check, title: "Délais rapides", description: "2 à 4 jours, express 24-48h" }
+            ].map((avantage, index) => (
+              <div key={index} className="flex gap-4 bg-white p-6 rounded-2xl hover:shadow-lg transition-all">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <avantage.icon className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">{avantage.title}</h3>
+                  <p className="text-gray-600">{avantage.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Besoin d'impressions papier ?</h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Contactez-nous pour un devis personnalisé</p>
+          <Button onClick={() => navigate('/contact')} size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-bold text-lg px-8 py-6">
+            Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
+          </Button>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default ImpressionPapier
+

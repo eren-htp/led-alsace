@@ -17,6 +17,11 @@ import Signaletique from './pages/services/Signaletique'
 import CreationGraphique from './pages/services/CreationGraphique'
 import LettresBoitier from './pages/LettresBoitier'
 import DecoupeCNC from './pages/services/DecoupeCNC'
+import NeonLED from './pages/services/NeonLED'
+import ImpressionPapier from './pages/services/ImpressionPapier'
+import ObjetsPublicitaires from './pages/services/ObjetsPublicitaires'
+import Vitrophanie from './pages/services/Vitrophanie'
+import DecoupeLaser from './pages/services/DecoupeLaser'
 import './App.css'
 
 function App() {
@@ -35,6 +40,11 @@ function App() {
           <Route path="/services/signaletique" element={<Signaletique />} />
           <Route path="/services/creation-graphique" element={<CreationGraphique />} />
           <Route path="/services/decoupe-cnc" element={<DecoupeCNC />} />
+          <Route path="/services/neon-led" element={<NeonLED />} />
+          <Route path="/services/impression-papier" element={<ImpressionPapier />} />
+          <Route path="/services/objets-publicitaires" element={<ObjetsPublicitaires />} />
+          <Route path="/services/vitrophanie" element={<Vitrophanie />} />
+          <Route path="/services/decoupe-laser" element={<DecoupeLaser />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/nos-clients" element={<NosClients />} />
           <Route path="/a-propos" element={<APropos />} />
