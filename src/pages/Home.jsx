@@ -15,7 +15,7 @@ import marquageTextileImg from '../assets/services/marquage-textile.jpg'
 import marquageVitrineImg from '../assets/services/marquagevitrine.jpg'
 import impressionGrandFormatImg from '../assets/services/impressiongrandformat.jpg'
 import marquageVehiculeImg from '../assets/services/marquagevoiture.webp'
-import creationGraphiqueImg from '../assets/services/créationgraphique.jpg'
+import creationGraphiqueImg from '../assets/services/creation-graphique.jpg'
 
 function Home() {
   const navigate = useNavigate()
