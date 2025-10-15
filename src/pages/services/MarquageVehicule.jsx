@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Truck, Palette, Shield, Zap } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import FAQ from '../../components/FAQ'
 import realisation1 from '../../assets/realisations/realisation_bollore.webp'
 import realisation2 from '../../assets/realisations/realisation_saturn_renov.webp'
 import realisation3 from '../../assets/realisations/realisation_dard.webp'
@@ -146,6 +147,52 @@ function MarquageVehicule() {
           </Button>
         </div>
       </section>
+
+      <FAQ 
+        title="Questions fréquentes sur le marquage véhicule"
+        faqs={[
+          {
+            question: "En quoi consiste le marquage véhicule pour les entreprises ?",
+            answer: "Le marquage véhicule consiste à appliquer des visuels (logo, coordonnées, slogans, visuels graphiques) sur une voiture, un utilitaire ou une flotte de véhicules. C'est un outil de communication mobile très efficace : chaque déplacement devient une opportunité de visibilité locale. C'est aussi un moyen de renforcer votre image de marque de façon professionnelle et cohérente."
+          },
+          {
+            question: "Quels types de marquage véhicule propose LED ALSACE ?",
+            answer: "LED ALSACE propose plusieurs formules selon vos objectifs : Lettrage simple (logo, téléphone, site web, adhésif découpé), Semi-covering (design couvrant partiellement le véhicule, souvent sur les flancs et l'arrière), Total covering (recouvrement complet avec un visuel impactant), et Magnétique amovible (pour un marquage temporaire et repositionnable). Chaque projet est conçu sur-mesure pour s'adapter à votre véhicule et votre image."
+          },
+          {
+            question: "Quelle est la différence entre lettrage adhésif et covering ?",
+            answer: "Le lettrage adhésif consiste à coller des éléments découpés (lettres, logos) directement sur la carrosserie, souvent de manière discrète et ciblée. Le covering, lui, est un habillage graphique plus large, qui recouvre tout ou partie du véhicule avec des impressions grand format. Il est idéal pour attirer l'œil et transmettre un message fort."
+          },
+          {
+            question: "Est-ce que le marquage véhicule est durable dans le temps ?",
+            answer: "Oui. LED ALSACE utilise des vinyles professionnels (Avery, 3M, Mactac) conçus pour résister aux UV, aux intempéries, au lavage et aux variations de température. La durabilité moyenne est de 5 à 7 ans, selon le type d'adhésif et l'exposition. Un entretien adapté permet de prolonger encore cette durée."
+          },
+          {
+            question: "Est-ce que le marquage véhicule peut s'enlever sans abîmer la peinture ?",
+            answer: "Oui. Un marquage posé dans les règles de l'art avec des vinyles de qualité s'enlève proprement, sans laisser de traces ni altérer la peinture d'origine. Cela permet d'actualiser le design ou de remettre un véhicule en configuration neutre lors d'une revente ou d'un changement d'activité."
+          },
+          {
+            question: "LED ALSACE peut-elle intervenir sur tout type de véhicule ?",
+            answer: "Absolument. Nous réalisons du marquage sur : Voitures de société (berlines, citadines), Utilitaires (L1, L2, L3, H1, H2…), Camions et poids lourds, Remorques, food trucks, véhicules de chantier. Chaque gabarit est pris en compte pour optimiser la surface visible et l'impact visuel."
+          },
+          {
+            question: "Faut-il prévoir une homologation ou déclaration pour un marquage véhicule ?",
+            answer: "Non, le marquage véhicule est considéré comme une publicité mobile et ne nécessite pas d'autorisation spécifique. En revanche, il doit rester conforme au Code de la route (pas de gêne à la visibilité, pas de message interdit). LED ALSACE respecte ces contraintes et vous conseille en cas de doute."
+          },
+          {
+            question: "Quels sont les avantages du marquage véhicule pour une entreprise locale ?",
+            answer: "C'est l'un des meilleurs retours sur investissement en communication locale. Chaque trajet ou stationnement génère des vues gratuites. Cela renforce votre notoriété dans votre zone de chalandise, professionnalise votre image, et facilite la mémorisation de vos coordonnées. Un véhicule marqué peut générer des dizaines de milliers d'impressions par mois."
+          },
+          {
+            question: "Quels sont les délais pour la pose d'un marquage véhicule ?",
+            answer: "Après validation du visuel, les délais de production sont en moyenne de 5 à 7 jours ouvrés. La pose en elle-même prend généralement une demi-journée à une journée complète, selon la complexité (lettrage simple vs total covering). Nous vous accueillons dans notre atelier ou intervenons sur site selon les besoins."
+          },
+          {
+            question: "Où intervient LED ALSACE pour du marquage véhicule dans le Grand Est ?",
+            answer: "Nous intervenons principalement en Alsace (Strasbourg, Colmar, Mulhouse), mais aussi dans toute la région Grand Est. Nos locaux sont situés à proximité de Strasbourg, et nous accueillons les professionnels du secteur pour la pose. Pour les flottes ou interventions groupées, un déplacement est possible sur site."
+          }
+        ]}
+      />
     </div>
   )
 }
