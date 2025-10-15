@@ -13,7 +13,9 @@ function Layout({ children }) {
   const location = useLocation()
 
   const services = [
-    { name: 'Enseignes', path: '/services/enseignes' },
+    { name: 'Enseignes', path: '/services/enseignes', submenu: [
+      { name: 'Lettres Boîtier', path: '/services/lettres-boitier' }
+    ]},
     { name: 'Marquage Vitrine', path: '/services/marquage-vitrine' },
     { name: 'Impression grand format', path: '/services/impression-grand-format' },
     { name: 'Marquage véhicules', path: '/services/marquage-vehicules' },
@@ -73,13 +75,27 @@ function Layout({ children }) {
                 
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                     {services.map((service, index) => (
-                      <Link
-                        key={index}
-                        to={service.path}
-                        className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
-                      >
-                        {service.name}
-                      </Link>
+                      <div key={index}>
+                        <Link
+                          to={service.path}
+                          className="block px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
+                        >
+                          {service.name}
+                        </Link>
+                        {service.submenu && (
+                          <div className="pl-4 bg-gray-50">
+                            {service.submenu.map((sub, subIndex) => (
+                              <Link
+                                key={subIndex}
+                                to={sub.path}
+                                className="block px-4 py-2 text-sm text-gray-600 hover:text-yellow-600 transition-colors border-l-2 border-yellow-400 ml-2"
+                              >
+                                → {sub.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     ))}
                     <div className="border-t border-gray-100 mt-2 pt-2">
                       <Link
