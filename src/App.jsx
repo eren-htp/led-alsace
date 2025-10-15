@@ -16,6 +16,7 @@ import TextileEPI from './pages/services/TextileEPI'
 import Signaletique from './pages/services/Signaletique'
 import CreationGraphique from './pages/services/CreationGraphique'
 import LettresBoitier from './pages/LettresBoitier'
+import DecoupeCNC from './pages/services/DecoupeCNC'
 import './App.css'
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/services/textile-epi" element={<TextileEPI />} />
           <Route path="/services/signaletique" element={<Signaletique />} />
           <Route path="/services/creation-graphique" element={<CreationGraphique />} />
+          <Route path="/services/decoupe-cnc" element={<DecoupeCNC />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/nos-clients" element={<NosClients />} />
           <Route path="/a-propos" element={<APropos />} />

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import CounterAnimation from '../components/CounterAnimation'
 import realisation1 from '../assets/realisations/realisation_red_door.webp'
 import realisation2 from '../assets/realisations/realisation_saturn.webp'
 import realisation3 from '../assets/realisations/realisation_saveurs.webp'
@@ -55,10 +56,30 @@ function Realisations() {
       <section className="py-12 bg-yellow-500">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div><div className="text-4xl md:text-5xl font-bold text-black mb-2">+1120</div><div className="text-black/80 font-semibold">Enseignes</div></div>
-            <div><div className="text-4xl md:text-5xl font-bold text-black mb-2">+490</div><div className="text-black/80 font-semibold">Marquages Véhicules</div></div>
-            <div><div className="text-4xl md:text-5xl font-bold text-black mb-2">+1540</div><div className="text-black/80 font-semibold">Chantiers</div></div>
-            <div><div className="text-4xl md:text-5xl font-bold text-black mb-2">+2115</div><div className="text-black/80 font-semibold">Clients Satisfaits</div></div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+                <CounterAnimation end={1120} prefix="+" />
+              </div>
+              <div className="text-black/80 font-semibold">Enseignes</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+                <CounterAnimation end={490} prefix="+" />
+              </div>
+              <div className="text-black/80 font-semibold">Marquages Véhicules</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+                <CounterAnimation end={1540} prefix="+" />
+              </div>
+              <div className="text-black/80 font-semibold">Chantiers</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+                <CounterAnimation end={2115} prefix="+" />
+              </div>
+              <div className="text-black/80 font-semibold">Clients Satisfaits</div>
+            </div>
           </div>
         </div>
       </section>
