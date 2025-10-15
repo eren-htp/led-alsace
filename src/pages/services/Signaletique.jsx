@@ -110,7 +110,7 @@ function Signaletique() {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-50 cursor-pointer"
+            className="absolute left-8 md:left-16 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-50 cursor-pointer"
             aria-label="Image précédente"
             type="button"
           >
@@ -118,7 +118,7 @@ function Signaletique() {
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-50 cursor-pointer"
+            className="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-50 cursor-pointer"
             aria-label="Image suivante"
             type="button"
           >
