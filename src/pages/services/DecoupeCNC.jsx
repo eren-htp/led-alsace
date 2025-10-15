@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Star, Scissors, Layers, Zap, Package, Settings, Ruler } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import decoupeCNC from '../../assets/DécoupeCNC.jpg'
 
 function DecoupeCNC() {
   const navigate = useNavigate()

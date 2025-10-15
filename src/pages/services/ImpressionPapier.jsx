@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, FileText, Printer, Star, Package } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import impressionPapier from '../../assets/Impressionpapier.jpg'
 
 function ImpressionPapier() {
   const navigate = useNavigate()

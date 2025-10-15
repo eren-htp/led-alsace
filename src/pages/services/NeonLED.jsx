@@ -1,6 +1,10 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Zap, Lightbulb, Palette, Shield } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import neonLED1 from '../../assets/NéonLED.JPG'
+import neonLED2 from '../../assets/NéonLED2.JPG'
+import neonLED3 from '../../assets/NéonLED3.JPG'
+import neonLED4 from '../../assets/NéonLED4.JPG'
 
 function NeonLED() {
   const navigate = useNavigate()

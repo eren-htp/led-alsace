@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
-import { ArrowRight, Check, Gift, Users, Briefcase, Coffee } from 'lucide-react'
+import { ArrowRight, Check, Package, Shirt, Coffee, Briefcase, Gift, Pen } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import objetsPublicitaires from '../../assets/ObjetsPublicitaire.png'
 
 function ObjetsPublicitaires() {
   const navigate = useNavigate()

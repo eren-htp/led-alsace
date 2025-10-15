@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Zap, Layers, Scissors, Star } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import decoupeLaser from '../../assets/DécoupeLaser.jpg'
 
 function DecoupeLaser() {
   const navigate = useNavigate()

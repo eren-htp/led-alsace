@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Eye, Shield, Palette, Sun } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import vitrophanie from '../../assets/Vitrophanie6.JPG'
 
 function Vitrophanie() {
   const navigate = useNavigate()
