@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Lightbulb, Clock, Award, Wrench, MapPin, Star } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import FAQ from '../../components/FAQ'
 import realisation1 from '../../assets/realisations/realisation_prointer.webp'
 import realisation2 from '../../assets/realisations/realisation_red_door.webp'
 import realisation3 from '../../assets/realisations/realisation_saturn.webp'
@@ -271,6 +272,36 @@ function Enseignes() {
           </div>
         </div>
       </section>
+
+      <FAQ 
+        title="Questions fréquentes sur les enseignes lumineuses"
+        faqs={[
+          {
+            question: "Quels sont les avantages d'une enseigne lumineuse pour une entreprise en Alsace ou dans le Grand Est ?",
+            answer: "Une enseigne lumineuse améliore considérablement la visibilité de votre entreprise, de jour comme de nuit. Dans une région comme le Grand Est, où la luminosité peut varier fortement selon les saisons, elle garantit un repérage optimal en toutes circonstances. Elle attire l'œil des passants, renforce votre image de marque et augmente naturellement le trafic client. C'est un excellent levier de notoriété locale."
+          },
+          {
+            question: "Quelle est la différence entre une enseigne LED et une enseigne néon ?",
+            answer: "Une enseigne LED utilise des diodes électroluminescentes pour diffuser la lumière, offrant une consommation énergétique très faible, une longue durée de vie et une grande résistance. Le néon, plus traditionnel, propose une lumière plus chaleureuse mais consomme davantage d'énergie, nécessite plus d'entretien et est plus fragile. Pour un usage professionnel, les LEDs sont aujourd'hui privilégiées."
+          },
+          {
+            question: "Quelle est la durée de vie moyenne d'une enseigne lumineuse LED ?",
+            answer: "Une enseigne LED de qualité professionnelle peut durer entre 30 000 et 50 000 heures d'utilisation, soit environ 8 à 10 ans en usage quotidien. Sa longévité dépend de plusieurs facteurs : qualité des composants, environnement (intempéries, pollution), maintenance, et installation conforme aux normes électriques."
+          },
+          {
+            question: "Quelles réglementations s'appliquent aux enseignes lumineuses en Alsace ?",
+            answer: "Dans le Grand Est, les enseignes lumineuses sont soumises au Règlement Local de Publicité (RLP) de chaque commune. Il précise les dimensions, la luminosité, les horaires d'allumage et l'emplacement autorisé. À Strasbourg par exemple, l'éclairage est limité à certaines plages horaires pour limiter la pollution visuelle. Il est essentiel de consulter votre mairie avant toute installation."
+          },
+          {
+            question: "Est-ce qu'une enseigne lumineuse consomme beaucoup d'électricité ?",
+            answer: "Non, pas si elle est équipée de modules LED récents. Une enseigne lumineuse bien conçue consomme en moyenne 80 % d'électricité en moins qu'un éclairage au néon. Elle est donc écologique et économique, notamment si vous optez pour une gestion intelligente de l'allumage (horloge, capteur crépusculaire, etc.)."
+          },
+          {
+            question: "LED ALSACE peut-elle se charger des démarches administratives pour mon enseigne lumineuse ?",
+            answer: "Oui. Chez LED ALSACE, nous vous accompagnons dans la constitution du dossier administratif (CERFA, plan de masse, visuel en situation, etc.) et la demande d'autorisation auprès de la mairie. Nous connaissons bien les particularités des RLP du Grand Est et facilitons vos démarches."
+          }
+        ]}
+      />
     </div>
   )
 }
