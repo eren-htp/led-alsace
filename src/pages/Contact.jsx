@@ -1,7 +1,10 @@
 import { Button } from '@/components/ui/button.jsx'
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Send, X } from 'lucide-react'
+import { useState } from 'react'
 
 function Contact() {
+  const [showCallbackModal, setShowCallbackModal] = useState(false)
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -237,7 +240,7 @@ function Contact() {
                   </li>
                 </ul>
                 <Button 
-                  onClick={() => window.location.href = 'tel:0388044534'}
+                  onClick={() => setShowCallbackModal(true)}
                   size="lg"
                   className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold"
                 >
@@ -310,6 +313,91 @@ function Contact() {
           </div>
         </div>
       </section>
+
+      {/* Popup Être rappelé */}
+      {showCallbackModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setShowCallbackModal(false)}>
+          <div className="bg-white rounded-2xl max-w-md w-full p-8 relative" onClick={(e) => e.stopPropagation()}>
+            <button 
+              onClick={() => setShowCallbackModal(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            
+            <div className="text-center mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-4">
+                <Phone className="w-8 h-8 text-yellow-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Être rappelé</h3>
+              <p className="text-gray-600">Laissez-nous vos coordonnées, nous vous rappelons rapidement</p>
+            </div>
+
+            <form className="space-y-4">
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Nom complet *
+                </label>
+                <input 
+                  type="text" 
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                  placeholder="Votre nom"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Téléphone *
+                </label>
+                <input 
+                  type="tel" 
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                  placeholder="06 12 34 56 78"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Meilleur moment pour vous rappeler
+                </label>
+                <select 
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                >
+                  <option>Matin (9h-12h)</option>
+                  <option>Après-midi (13h-18h)</option>
+                  <option>Indépendant</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Votre demande (optionnel)
+                </label>
+                <textarea 
+                  rows="3"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all resize-none"
+                  placeholder="Précisez votre besoin..."
+                ></textarea>
+              </div>
+
+              <Button 
+                type="submit"
+                size="lg"
+                className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold"
+              >
+                <Send className="mr-2 w-5 h-5" />
+                Demander à être rappelé
+              </Button>
+
+              <p className="text-xs text-gray-500 text-center">
+                Nous nous engageons à vous rappeler dans les meilleurs délais
+              </p>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
