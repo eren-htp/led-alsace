@@ -28,6 +28,7 @@ function CallbackModal({ isOpen, onClose }) {
       })
 
       if (response.ok) {
+        console.log("Formspree CallbackModal success:", await response.text());
         setSubmitStatus('success')
         setFormData({ nom: '', telephone: '' })
         
@@ -37,6 +38,7 @@ function CallbackModal({ isOpen, onClose }) {
           setSubmitStatus(null)
         }, 2000)
       } else {
+        console.error("Formspree CallbackModal error response:", await response.text());
         setSubmitStatus('error')
       }
     } catch (error) {

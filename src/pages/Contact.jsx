@@ -40,6 +40,7 @@ function Contact() {
       })
 
       if (response.ok) {
+        console.log("Formspree Contact success:", await response.text());
         setSubmitStatus('success')
         setFormData({
           prenom: '',
@@ -50,6 +51,7 @@ function Contact() {
           message: ''
         })
       } else {
+        console.error("Formspree Contact error response:", await response.text());
         setSubmitStatus('error')
       }
     } catch (error) {
