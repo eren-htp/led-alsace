@@ -13,9 +13,7 @@ function Layout({ children }) {
   const location = useLocation()
 
   const services = [
-    { name: 'Enseignes', path: '/services/enseignes', submenu: [
-      { name: 'Lettres Boîtier', path: '/services/lettres-boitier' }
-    ]},
+    { name: 'Enseignes', path: '/services/enseignes' },
     { name: 'Marquage Vitrine', path: '/services/marquage-vitrine' },
     { name: 'Impression grand format', path: '/services/impression-grand-format' },
     { name: 'Marquage véhicules', path: '/services/marquage-vehicules' },

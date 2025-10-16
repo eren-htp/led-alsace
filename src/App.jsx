@@ -16,7 +16,6 @@ import MarquageVehicule from './pages/services/MarquageVehicule'
 import TextileEPI from './pages/services/TextileEPI'
 import Signaletique from './pages/services/Signaletique'
 import CreationGraphique from './pages/services/CreationGraphique'
-import LettresBoitier from './pages/LettresBoitier'
 import DecoupeCNC from './pages/services/DecoupeCNC'
 import NeonLED from './pages/services/NeonLED'
 import ImpressionPapier from './pages/services/ImpressionPapier'
@@ -44,7 +43,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/enseignes" element={<Enseignes />} />
-          <Route path="/services/lettres-boitier" element={<LettresBoitier />} />
           <Route path="/services/marquage-vitrine" element={<MarquageVitrine />} />
           <Route path="/services/impression-grand-format" element={<ImpressionGrandFormat />} />
           <Route path="/services/marquage-vehicule" element={<MarquageVehicule />} />
