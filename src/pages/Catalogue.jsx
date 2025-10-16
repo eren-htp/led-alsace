@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { PageFlip } from 'page-flip'
 import { ZoomIn, ZoomOut, Home as HomeIcon, Menu, X, BookOpen, Volume2, VolumeX } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
+import { Link } from 'react-router-dom'
 
 import '../App.css'
 
@@ -193,7 +194,9 @@ function Catalogue() {
       <header className="bg-black/50 backdrop-blur-sm border-b border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 md:gap-4">
-            <h1 className="text-lg md:text-2xl font-bold text-yellow-400">LED Alsace</h1>
+            <Link to="/" className="text-lg md:text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition-colors cursor-pointer">
+              LED Alsace
+            </Link>
             <span className="text-gray-400 text-xs md:text-sm hidden sm:inline">Catalogue 2025</span>
           </div>
           <div className="flex items-center gap-2 md:gap-4">
