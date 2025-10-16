@@ -16,6 +16,10 @@ import creationGraphiqueImg from '../assets/services/creation-graphique.jpg'
 import objetsPublicitairesImg from '../assets/ObjetsPublicitaire.png'
 import decoupeLaserImg from '../assets/DecoupeLaser.jpg'
 import decoupeCNCImg from '../assets/DecoupeCNC.jpg'
+import enseigneDibondImg from '../assets/EnseigneenDibond.JPG'
+import totemsLumineuxImg from '../assets/Totem.JPG'
+import enseigneDrapeauImg from '../assets/Enseignedoubleface.jpg'
+import caissonAjoureImg from '../assets/Enseignelumineuse3.JPG'
 
 function Services() {
   const navigate = useNavigate()
@@ -286,89 +290,347 @@ function Services() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <button onClick={() => navigate('/services/enseigne-dibond')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
-              <div className="text-yellow-500 mb-4">
-                <Layers className="w-8 h-8" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Enseigne en Dibond */}
+            <div 
+              className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+              onClick={() => navigate('/services/enseigne-dibond')}
+            >
+              {/* Image Banner - 20% height */}
+              <div className="h-32 overflow-hidden">
+                <img 
+                  src={enseigneDibondImg} 
+                  alt="Enseigne en dibond"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Enseigne en dibond
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Enseignes légères et résistantes en composite aluminium. Idéales pour l'intérieur et l'extérieur.
-              </p>
-            </button>
+              
+              {/* Content */}
+              <div className="p-8">
+                <div className="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Layers className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
+                  Enseigne en dibond
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Enseignes légères et résistantes en composite aluminium. Idéales pour l'intérieur et l'extérieur.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Matériau composite léger
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Résistant aux intempéries
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Impression haute définition
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Intérieur et extérieur
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Durée de vie 10-15 ans
+                  </li>
+                </ul>
+                <Button 
+                  variant="outline"
+                  className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-50 group-hover:bg-yellow-500 group-hover:text-white"
+                >
+                  En savoir plus
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
+            </div>
 
-            <button onClick={() => navigate('/services/totems-lumineux')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
-              <div className="text-yellow-500 mb-4">
-                <Lightbulb className="w-8 h-8" />
+            {/* Totems Lumineux */}
+            <div 
+              className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+              onClick={() => navigate('/services/totems-lumineux')}
+            >
+              {/* Image Banner - 20% height */}
+              <div className="h-32 overflow-hidden">
+                <img 
+                  src={totemsLumineuxImg} 
+                  alt="Totems lumineux"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Totems lumineux
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Signalétique verticale lumineuse pour une visibilité maximale jour et nuit.
-              </p>
-            </button>
+              
+              {/* Content */}
+              <div className="p-8">
+                <div className="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Lightbulb className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
+                  Totems lumineux
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Signalétique verticale lumineuse pour une visibilité maximale jour et nuit.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Visibilité 24/7
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Simple ou double face
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Hauteur personnalisable
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Éclairage LED économique
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Installation professionnelle
+                  </li>
+                </ul>
+                <Button 
+                  variant="outline"
+                  className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-50 group-hover:bg-yellow-500 group-hover:text-white"
+                >
+                  En savoir plus
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
+            </div>
 
-            <button onClick={() => navigate('/services/enseigne-drapeau')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
-              <div className="text-yellow-500 mb-4">
-                <Store className="w-8 h-8" />
+            {/* Enseigne Drapeau Double Face */}
+            <div 
+              className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+              onClick={() => navigate('/services/enseigne-drapeau')}
+            >
+              {/* Image Banner - 20% height */}
+              <div className="h-32 overflow-hidden">
+                <img 
+                  src={enseigneDrapeauImg} 
+                  alt="Enseigne drapeau double face"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Enseigne drapeau double face
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Enseigne perpendiculaire visible des deux côtés de la rue. Impact visuel garanti.
-              </p>
-            </button>
+              
+              {/* Content */}
+              <div className="p-8">
+                <div className="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Store className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
+                  Enseigne drapeau double face
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Enseigne perpendiculaire visible des deux côtés de la rue. Impact visuel garanti.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Visibilité bidirectionnelle
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Lumineuse ou non lumineuse
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Fixation perpendiculaire
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Idéale centre-ville
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Formats sur mesure
+                  </li>
+                </ul>
+                <Button 
+                  variant="outline"
+                  className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-50 group-hover:bg-yellow-500 group-hover:text-white"
+                >
+                  En savoir plus
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
+            </div>
 
-            <button onClick={() => navigate('/services/caisson-ajoure')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
-              <div className="text-yellow-500 mb-4">
-                <Zap className="w-8 h-8" />
+            {/* Caisson Ajouré Lumineux */}
+            <div 
+              className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+              onClick={() => navigate('/services/caisson-ajoure')}
+            >
+              {/* Image Banner - 20% height */}
+              <div className="h-32 overflow-hidden">
+                <img 
+                  src={caissonAjoureImg} 
+                  alt="Caisson ajouré lumineux"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Caisson ajouré lumineux
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Design moderne avec découpes lumineuses. Effet de profondeur et contraste élégant.
-              </p>
-            </button>
+              
+              {/* Content */}
+              <div className="p-8">
+                <div className="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Zap className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
+                  Caisson ajouré lumineux
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Design moderne avec découpes lumineuses. Effet de profondeur et contraste élégant.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Effet 3D sophistiqué
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Découpe laser précise
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Éclairage LED ciblé
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Haut de gamme
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Personnalisation totale
+                  </li>
+                </ul>
+                <Button 
+                  variant="outline"
+                  className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-50 group-hover:bg-yellow-500 group-hover:text-white"
+                >
+                  En savoir plus
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
+            </div>
 
-            <button onClick={() => navigate('/services/neon-led')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
-              <div className="text-yellow-500 mb-4">
-                <Zap className="w-8 h-8" />
+            {/* Néon LED */}
+            <div 
+              className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+              onClick={() => navigate('/services/neon-led')}
+            >
+              {/* Image Banner - 20% height */}
+              <div className="h-32 overflow-hidden">
+                <img 
+                  src={neonLedImg} 
+                  alt="Néon LED"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Néon LED
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Éclairage LED flexible imitant le néon traditionnel. Design sur mesure et économique.
-              </p>
-            </button>
+              
+              {/* Content */}
+              <div className="p-8">
+                <div className="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Zap className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
+                  Néon LED
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Éclairage LED flexible imitant le néon traditionnel. Design sur mesure et économique.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Néon LED flexible
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Formes personnalisées
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Couleurs au choix
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Faible consommation
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Installation intérieure/extérieure
+                  </li>
+                </ul>
+                <Button 
+                  variant="outline"
+                  className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-50 group-hover:bg-yellow-500 group-hover:text-white"
+                >
+                  En savoir plus
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
+            </div>
 
-            <button onClick={() => navigate('/services/impression-grand-format')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
-              <div className="text-yellow-500 mb-4">
-                <Monitor className="w-8 h-8" />
+            {/* Écrans LED grand format */}
+            <div 
+              className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+              onClick={() => navigate('/services/impression-grand-format')}
+            >
+              {/* Image Banner - 20% height */}
+              <div className="h-32 overflow-hidden">
+                <img 
+                  src={adhesifGrandFormatImg} 
+                  alt="Écrans LED grand format"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Écrans LED grand format
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Affichage dynamique haute définition pour communication visuelle impactante.
-              </p>
-            </button>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-              <div className="text-yellow-500 mb-4">
-                <FileText className="w-8 h-8" />
+              
+              {/* Content */}
+              <div className="p-8">
+                <div className="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Monitor className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
+                  Écrans LED grand format
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Affichage dynamique haute définition pour communication visuelle impactante.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Affichage dynamique
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Haute définition
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Contenu programmable
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Intérieur et extérieur
+                  </li>
+                  <li className="flex items-start text-sm text-gray-600">
+                    <span className="text-yellow-500 mr-2">✓</span>
+                    Impact visuel maximal
+                  </li>
+                </ul>
+                <Button 
+                  variant="outline"
+                  className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-50 group-hover:bg-yellow-500 group-hover:text-white"
+                >
+                  En savoir plus
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Autorisation auprès des mairies
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Accompagnement dans vos démarches administratives pour l'installation de vos enseignes.
-              </p>
             </div>
           </div>
         </div>
