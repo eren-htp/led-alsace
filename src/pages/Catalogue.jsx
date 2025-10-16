@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { PageFlip } from 'page-flip'
-import { ZoomIn, ZoomOut, Home as HomeIcon, Menu, X, BookOpen } from 'lucide-react'
+import { ZoomIn, ZoomOut, Home as HomeIcon, Menu, X, BookOpen, Volume2, VolumeX } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
 
 import '../App.css'
@@ -39,6 +39,30 @@ function Catalogue() {
   const [isMobile, setIsMobile] = useState(false)
   const [showThumbnails, setShowThumbnails] = useState(false)
   const [showFooter, setShowFooter] = useState(false) // Nouveau state pour le footer
+  const [soundEnabled, setSoundEnabled] = useState(true) // État pour activer/désactiver le son
+
+  // Fonction pour jouer le son de tournage de page
+  const playPageFlipSound = () => {
+    if (!soundEnabled) return
+    
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)()
+    const oscillator = audioContext.createOscillator()
+    const gainNode = audioContext.createGain()
+    
+    oscillator.connect(gainNode)
+    gainNode.connect(audioContext.destination)
+    
+    // Créer un son de "swoosh" pour simuler le tournage de page
+    oscillator.type = 'sine'
+    oscillator.frequency.setValueAtTime(800, audioContext.currentTime)
+    oscillator.frequency.exponentialRampToValueAtTime(200, audioContext.currentTime + 0.2)
+    
+    gainNode.gain.setValueAtTime(0.3, audioContext.currentTime)
+    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2)
+    
+    oscillator.start(audioContext.currentTime)
+    oscillator.stop(audioContext.currentTime + 0.2)
+  }
 
   // Détecter si on est sur mobile
   useEffect(() => {
@@ -113,6 +137,7 @@ function Catalogue() {
 
       pageFlip.on('flip', (e) => {
         setCurrentPage(e.data)
+        playPageFlipSound() // Jouer le son à chaque tournage de page
       })
 
       pageFlipRef.current = pageFlip
@@ -221,6 +246,15 @@ function Catalogue() {
                 Miniatures
               </Button>
             )}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setSoundEnabled(!soundEnabled)}
+              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 h-8 w-8 p-0"
+              title={soundEnabled ? 'Désactiver le son' : 'Activer le son'}
+            >
+              {soundEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
+            </Button>
           </div>
         </div>
       </header>

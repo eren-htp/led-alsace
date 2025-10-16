@@ -7,7 +7,7 @@ import Contact from './pages/Contact'
 import Realisations from './pages/Realisations'
 import NosClients from './pages/NosClients'
 import APropos from './pages/APropos'
-import Questions from './pages/Questions'
+
 import Catalogue from './pages/Catalogue'
 import Enseignes from './pages/services/Enseignes'
 import MarquageVitrine from './pages/services/MarquageVitrine'
@@ -68,7 +68,7 @@ function App() {
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/nos-clients" element={<NosClients />} />
           <Route path="/a-propos" element={<APropos />} />
-          <Route path="/questions" element={<Questions />} />
+
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

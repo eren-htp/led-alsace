@@ -141,16 +141,7 @@ function Layout({ children }) {
               >
                 À Propos
               </Link>
-              <Link 
-                to="/questions" 
-                className={`transition-colors ${
-                  location.pathname === '/questions' 
-                    ? 'text-yellow-600 font-semibold' 
-                    : 'text-gray-700 hover:text-yellow-600'
-                }`}
-              >
-                Questions
-              </Link>
+
               <Link 
                 to="/catalogue" 
                 className={`transition-colors ${
@@ -235,12 +226,7 @@ function Layout({ children }) {
               >
                 À Propos
               </Link>
-              <Link 
-                to="/questions" 
-                className="block text-gray-700 hover:text-yellow-600 transition-colors py-2"
-              >
-                Questions
-              </Link>
+
               <Link 
                 to="/catalogue" 
                 className="block text-gray-700 hover:text-yellow-600 transition-colors py-2"
@@ -309,7 +295,7 @@ function Layout({ children }) {
                 <li><Link to="/realisations" className="text-gray-400 hover:text-yellow-500 transition-colors">Réalisations</Link></li>
                 <li><Link to="/nos-clients" className="text-gray-400 hover:text-yellow-500 transition-colors">Nos Clients</Link></li>
                 <li><Link to="/a-propos" className="text-gray-400 hover:text-yellow-500 transition-colors">À Propos</Link></li>
-                <li><Link to="/questions" className="text-gray-400 hover:text-yellow-500 transition-colors">Questions</Link></li>
+
                 <li><Link to="/catalogue" className="text-gray-400 hover:text-yellow-500 transition-colors">Catalogue</Link></li>
               </ul>
             </div>
