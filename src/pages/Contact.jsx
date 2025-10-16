@@ -28,8 +28,7 @@ function Contact() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email: 'eren795@manus.bot',
-          _replyto: formData.email,
+          email: formData.email,
           _subject: `📧 Demande de devis - ${formData.prenom} ${formData.nom}`,
           prenom: formData.prenom,
           nom: formData.nom,
