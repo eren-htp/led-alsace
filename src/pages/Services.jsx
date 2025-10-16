@@ -56,7 +56,7 @@ function Services() {
     {
       icon: <Shirt className="w-12 h-12" />,
       title: "Marquage textile",
-      slug: "marquage-textile",
+      slug: "textile-epi",
       image: textileImg,
       description: "Marquage textile et vente de vêtements de travail, E.P.I (Équipements de Protection Individuelle). Personnalisation de tous vos textiles professionnels.",
       features: [
@@ -112,7 +112,7 @@ function Services() {
     {
       icon: <Printer className="w-12 h-12" />,
       title: "Impression adhésif grand format",
-      slug: "impression-adhesif-grand-format",
+      slug: "impression-grand-format",
       image: adhesifGrandFormatImg,
       description: "Impression grand format sur adhésif pour tous vos besoins : bâches, kakémonos, adhésifs muraux. Qualité professionnelle garantie.",
       features: [
