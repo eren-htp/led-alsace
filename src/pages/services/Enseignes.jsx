@@ -3,6 +3,7 @@ import { ArrowRight, Check, Lightbulb, Clock, Award, Wrench, MapPin, Star } from
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
+import LettresBoitierSlider from '../../components/LettresBoitierSlider'
 import realisation1 from '../../assets/realisations/realisation_prointer.webp'
 import realisation2 from '../../assets/realisations/realisation_red_door.webp'
 import realisation3 from '../../assets/realisations/realisation_saturn.webp'
@@ -261,6 +262,9 @@ function Enseignes() {
           </div>
         </div>
       </section>
+
+      {/* Slider Lettres Boîtier */}
+      <LettresBoitierSlider />
 
       <FAQ 
         title="Questions fréquentes sur les enseignes lumineuses"
