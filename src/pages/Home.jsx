@@ -150,11 +150,11 @@ function Home() {
               <span className="text-yellow-400 font-semibold">✨ Depuis 2014 en Alsace</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Donnez de l'éclat à votre entreprise avec des enseignes LED sur mesure
+              Enseignes LED et Signalétique sur Mesure en Alsace
             </h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              Spécialiste en signalétique et agencement intérieur et extérieur. 
-              De la conception à l'installation, nous créons des enseignes qui marquent les esprits.
+              Spécialiste de la conception, fabrication et installation d'enseignes LED lumineuses 
+              à Strasbourg depuis 2014. Fabrication française à Ostwald. Devis gratuit en 24h.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
@@ -196,7 +196,7 @@ function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Pourquoi choisir LED Alsace ?
+              Pourquoi Choisir LED Alsace pour Vos Enseignes LED ?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Une expertise reconnue et une solution complète pour tous vos projets d'enseignes et de signalétique
@@ -235,7 +235,7 @@ function Home() {
               <span className="text-yellow-700 font-semibold">Nos Solutions</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Des solutions adaptées à vos besoins
+              Nos Solutions d'Enseignes LED et Signalétique en Alsace
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               De l'enseigne LED à la signalétique complète, découvrez notre gamme de solutions professionnelles
@@ -434,7 +434,7 @@ function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Comment ça marche ?
+              Comment Nous Créons Votre Enseigne LED : 4 Étapes Simples
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Un processus simple et transparent en 4 étapes pour concrétiser votre projet
@@ -474,7 +474,7 @@ function Home() {
               <span className="text-yellow-700 font-semibold">Témoignages</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Ils nous font confiance
+              Nos Clients Satisfaits : Avis sur Nos Enseignes LED
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Découvrez les retours de nos clients satisfaits
@@ -509,7 +509,7 @@ function Home() {
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
-            Prêt à donner vie à votre projet ?
+            Demandez Votre Devis Gratuit pour une Enseigne LED
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
             Demandez votre devis gratuit et sans engagement. Notre équipe vous répond rapidement.
