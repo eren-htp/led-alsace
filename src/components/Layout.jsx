@@ -3,9 +3,9 @@ import { Link, useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
 import { Menu, X, Phone, Mail, MapPin, Lightbulb, ChevronDown, Instagram } from 'lucide-react'
 import CallbackButton from './CallbackButton.jsx'
-import logoLedAlsace from '@/assets/logo-led-alsace.jpg'
-import logoIcon from '@/assets/logo-led-alsace-icon.png'
-import snapchatIcon from '@/assets/snapchat.png'
+import logoLedAlsace from '@/assets/logo-led-alsace.webp'
+import logoIcon from '@/assets/logo-led-alsace-icon.webp'
+import snapchatIcon from '@/assets/snapchat.webp'
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

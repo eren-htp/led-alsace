@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { Sun, Moon } from 'lucide-react'
 
 // Import des images des modèles
-import G01Gece from '@/assets/modeles/G01gece.png'
-import G01Gunduz from '@/assets/modeles/G01gunduz.png'
-import G05Gece from '@/assets/modeles/G05gece.png'
-import G05Gunduz from '@/assets/modeles/G05gunduz.png'
-import G08Gece from '@/assets/modeles/G08gece.png'
-import G08Gunduz from '@/assets/modeles/G08gunduz.png'
-import G14Gece from '@/assets/modeles/G14gece.png'
-import G14Gunduz from '@/assets/modeles/G14gunduz.png'
+import G01Gece from '@/assets/modeles/G01gece.webp'
+import G01Gunduz from '@/assets/modeles/G01gunduz.webp'
+import G05Gece from '@/assets/modeles/G05gece.webp'
+import G05Gunduz from '@/assets/modeles/G05gunduz.webp'
+import G08Gece from '@/assets/modeles/G08gece.webp'
+import G08Gunduz from '@/assets/modeles/G08gunduz.webp'
+import G14Gece from '@/assets/modeles/G14gece.webp'
+import G14Gunduz from '@/assets/modeles/G14gunduz.webp'
 
 const models = [
   {

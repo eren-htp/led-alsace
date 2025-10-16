@@ -3,8 +3,8 @@ import { ArrowRight, Check, Palette, FileText, Image, Layout } from 'lucide-reac
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
-import conceptionGraphique from '../../assets/ConceptionGraphique.jpg'
-import creationGraphiqueImg from '../../assets/creationgraphique.jpg'
+import conceptionGraphique from '../../assets/ConceptionGraphique.webp'
+import creationGraphiqueImg from '../../assets/creationgraphique.webp'
 
 function CreationGraphique() {
   const navigate = useNavigate()

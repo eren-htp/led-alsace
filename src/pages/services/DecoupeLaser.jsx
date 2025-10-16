@@ -3,8 +3,8 @@ import { ArrowRight, Check, Zap, Layers, Scissors, Star } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
-import decoupeLaser from '../../assets/DecoupeLaser.jpg'
-import decoupeLaserImg from '../../assets/DecoupeLaser.jpg'
+import decoupeLaser from '../../assets/DecoupeLaser.webp'
+import decoupeLaserImg from '../../assets/DecoupeLaser.webp'
 
 function DecoupeLaser() {
   const navigate = useNavigate()

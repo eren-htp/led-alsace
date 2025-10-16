@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { useNavigate } from 'react-router-dom'
 import { Monitor, Zap, Settings, Eye, TrendingUp, Clock, ArrowRight, Phone } from 'lucide-react'
 import { useState } from 'react'
-import heroImage from '../../assets/Enseignelumineuse2.jpg'
+import heroImage from '../../assets/Enseignelumineuse2.webp'
 
 function EcransLED() {
   const navigate = useNavigate()

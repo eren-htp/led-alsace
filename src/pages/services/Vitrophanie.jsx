@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
 import vitrophanie from '../../assets/Vitrophanie6.JPG'
-import vitrophanieImg from '../../assets/services/vitrophanie.jpg'
+import vitrophanieImg from '../../assets/services/vitrophanie.webp'
 
 function Vitrophanie() {
   const navigate = useNavigate()

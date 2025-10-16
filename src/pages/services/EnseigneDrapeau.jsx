@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import FAQ from '@/components/FAQ.jsx'
-import enseigneDoubleFaceImg from '@/assets/Enseignedoubleface.jpg'
+import enseigneDoubleFaceImg from '@/assets/Enseignedoubleface.webp'
 
 function EnseigneDrapeau() {
   return (

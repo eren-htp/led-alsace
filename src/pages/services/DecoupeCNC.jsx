@@ -3,8 +3,8 @@ import { ArrowRight, Check, Star, Scissors, Layers, Zap, Package, Settings, Rule
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
-import decoupeCNC from '../../assets/DecoupeCNC.jpg'
-import decoupeCNCImg from '../../assets/DecoupeCNC.jpg'
+import decoupeCNC from '../../assets/DecoupeCNC.webp'
+import decoupeCNCImg from '../../assets/DecoupeCNC.webp'
 
 function DecoupeCNC() {
   const navigate = useNavigate()

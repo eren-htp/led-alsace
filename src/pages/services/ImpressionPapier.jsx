@@ -3,8 +3,8 @@ import { ArrowRight, Check, FileText, Printer, Star, Package } from 'lucide-reac
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
-import impressionPapier from '../../assets/Impressionpapier.jpg'
-import impressionPapierImg from '../../assets/services/impressionpapier.jpg'
+import impressionPapier from '../../assets/Impressionpapier.webp'
+import impressionPapierImg from '../../assets/services/impressionpapier.webp'
 
 function ImpressionPapier() {
   const navigate = useNavigate()

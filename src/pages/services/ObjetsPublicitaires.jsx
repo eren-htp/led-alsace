@@ -3,7 +3,7 @@ import { ArrowRight, Check, Package, Shirt, Coffee, Briefcase, Gift, Pen, Users,
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
-import objetsPublicitaires from '../../assets/ObjetsPublicitaire.png'
+import objetsPublicitaires from '../../assets/ObjetsPublicitaire.webp'
 
 function ObjetsPublicitaires() {
   const navigate = useNavigate()
