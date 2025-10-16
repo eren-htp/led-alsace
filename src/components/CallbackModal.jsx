@@ -20,11 +20,11 @@ function CallbackModal({ isOpen, onClose }) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email: 'fdev@ledalsace.fr',
+          email: 'eren795@manus.bot',
           nom: formData.nom,
           telephone: formData.telephone,
           _subject: `🔔 Demande de rappel - ${formData.nom}`,
-          _replyto: 'fdev@ledalsace.fr',
+          _replyto: 'eren795@manus.bot',
           message: `Nouvelle demande de rappel depuis le site LED Alsace\n\nNom: ${formData.nom}\nTéléphone: ${formData.telephone}\n\nDate: ${new Date().toLocaleString('fr-FR')}`
         }),
       })

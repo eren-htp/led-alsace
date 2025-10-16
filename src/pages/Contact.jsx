@@ -5,6 +5,61 @@ import CallbackModal from '../components/CallbackModal'
 
 function Contact() {
   const [showCallbackModal, setShowCallbackModal] = useState(false)
+  const [formData, setFormData] = useState({
+    prenom: '',
+    nom: '',
+    email: '',
+    telephone: '',
+    solution: '',
+    message: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState(null)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    try {
+      const response = await fetch('https://formspree.io/f/xgvevvjp', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: 'eren795@manus.bot',
+          _replyto: formData.email,
+          _subject: `📧 Demande de devis - ${formData.prenom} ${formData.nom}`,
+          prenom: formData.prenom,
+          nom: formData.nom,
+          telephone: formData.telephone,
+          solution: formData.solution,
+          message: formData.message,
+          date: new Date().toLocaleString('fr-FR')
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({
+          prenom: '',
+          nom: '',
+          email: '',
+          telephone: '',
+          solution: '',
+          message: ''
+        })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error)
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <div className="min-h-screen bg-white">
@@ -66,7 +121,7 @@ function Contact() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Demandez votre devis gratuit
               </h2>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -75,6 +130,8 @@ function Contact() {
                     <input 
                       type="text" 
                       required
+                      value={formData.prenom}
+                      onChange={(e) => setFormData({...formData, prenom: e.target.value})}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
                       placeholder="Votre prénom"
                     />
@@ -86,6 +143,8 @@ function Contact() {
                     <input 
                       type="text" 
                       required
+                      value={formData.nom}
+                      onChange={(e) => setFormData({...formData, nom: e.target.value})}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
                       placeholder="Votre nom"
                     />
@@ -99,6 +158,8 @@ function Contact() {
                   <input 
                     type="email" 
                     required
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
                     placeholder="votre.email@exemple.com"
                   />
@@ -111,6 +172,8 @@ function Contact() {
                   <input 
                     type="tel" 
                     required
+                    value={formData.telephone}
+                    onChange={(e) => setFormData({...formData, telephone: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
                     placeholder="06 12 34 56 78"
                   />
@@ -121,6 +184,8 @@ function Contact() {
                     Solution souhaitée
                   </label>
                   <select 
+                    value={formData.solution}
+                    onChange={(e) => setFormData({...formData, solution: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
                   >
                     <option>Sélectionnez une solution</option>
@@ -141,18 +206,33 @@ function Contact() {
                   <textarea 
                     required
                     rows="5"
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all resize-none"
                     placeholder="Décrivez-nous votre projet..."
                   ></textarea>
                 </div>
 
+                {submitStatus === 'success' && (
+                  <div className="bg-green-50 border-2 border-green-500 text-green-700 px-4 py-3 rounded-lg text-center">
+                    ✓ Demande envoyée avec succès ! Nous vous répondons sous 24h.
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="bg-red-50 border-2 border-red-500 text-red-700 px-4 py-3 rounded-lg text-center">
+                    ✗ Erreur lors de l'envoi. Veuillez réessayer.
+                  </div>
+                )}
+
                 <Button 
                   type="submit"
+                  disabled={isSubmitting}
                   size="lg"
-                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg py-6"
+                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg py-6 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send className="mr-2 w-5 h-5" />
-                  Envoyer ma demande
+                  {isSubmitting ? 'Envoi en cours...' : 'Envoyer ma demande'}
                 </Button>
 
                 <p className="text-sm text-gray-600 text-center">
