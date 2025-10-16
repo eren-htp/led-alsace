@@ -3,10 +3,10 @@ import { ArrowRight, Check, Zap, Lightbulb, Palette, Shield } from 'lucide-react
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
-import neonLED1 from '../../assets/NéonLED.JPG'
-import neonLED2 from '../../assets/NéonLED2.JPG'
-import neonLED3 from '../../assets/NéonLED3.JPG'
-import neonLED4 from '../../assets/NéonLED4.JPG'
+import neonLED1 from '../../assets/NeonLED.JPG'
+import neonLED2 from '../../assets/NeonLED2.JPG'
+import neonLED3 from '../../assets/NeonLED3.JPG'
+import neonLED4 from '../../assets/NeonLED4.JPG'
 
 function NeonLED() {
   const navigate = useNavigate()
