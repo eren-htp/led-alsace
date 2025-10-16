@@ -189,9 +189,9 @@ function Catalogue() {
   }, [isFlipping, isMobile, currentPage, nextPage, prevPage, goToPage])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col">
-      {/* Header - Version mobile optimisée */}
-      <header className="bg-black/50 backdrop-blur-sm border-b border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 sticky top-0 z-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col pt-24">
+      {/* Header du catalogue - Déplacé en bas au-dessus des contrôles */}
+      <header className="bg-black/50 backdrop-blur-sm border-t border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 fixed bottom-16 left-0 right-0 z-40">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 md:gap-4">
             <Link to="/" className="text-lg md:text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition-colors cursor-pointer">
@@ -274,8 +274,8 @@ function Catalogue() {
           />
         </div>
 
-        {/* Controls - Version mobile optimisée */}
-        <div className={`absolute ${isMobile ? 'bottom-4 left-1/2 -translate-x-1/2' : 'bottom-8 left-1/2 -translate-x-1/2'} flex gap-2 md:gap-4 bg-black/70 backdrop-blur-sm px-3 md:px-6 py-2 md:py-3 rounded-full border border-yellow-500/30`}>
+        {/* Controls - Version mobile optimisée - Fixés tout en bas */}
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:gap-4 bg-black/70 backdrop-blur-sm px-3 md:px-6 py-2 md:py-3 rounded-full border border-yellow-500/30 z-50">
           <Button
             onClick={prevPage}
             disabled={isFlipping || currentPage === 0}
