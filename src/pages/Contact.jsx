@@ -167,12 +167,16 @@ function Contact() {
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between py-2 border-b border-gray-100">
-                    <span className="font-semibold text-gray-700">Lundi - Vendredi</span>
-                    <span className="text-gray-600">8h00 - 18h00</span>
+                    <span className="font-semibold text-gray-700">Lundi - Jeudi</span>
+                    <span className="text-gray-600">9h00 - 12h00 & 13h00 - 18h00</span>
+                  </div>
+                  <div className="flex justify-between py-2 border-b border-gray-100">
+                    <span className="font-semibold text-gray-700">Vendredi</span>
+                    <span className="text-gray-600">9h00 - 12h00</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-gray-100">
                     <span className="font-semibold text-gray-700">Samedi</span>
-                    <span className="text-gray-600">9h00 - 12h00</span>
+                    <span className="text-red-600 font-semibold">Fermé</span>
                   </div>
                   <div className="flex justify-between py-2">
                     <span className="font-semibold text-gray-700">Dimanche</span>
@@ -210,7 +214,7 @@ function Contact() {
               {/* Pourquoi nous contacter */}
               <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi nous contacter ?</h3>
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
                     <span className="text-yellow-500 mr-2 mt-1">✓</span>
                     <span className="text-gray-700">Devis gratuit et sans engagement</span>
@@ -232,6 +236,14 @@ function Contact() {
                     <span className="text-gray-700">Plus de 10 ans d'expérience</span>
                   </li>
                 </ul>
+                <Button 
+                  onClick={() => window.location.href = 'tel:0388044534'}
+                  size="lg"
+                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold"
+                >
+                  <Phone className="mr-2 w-5 h-5" />
+                  Être rappelé
+                </Button>
               </div>
             </div>
           </div>
