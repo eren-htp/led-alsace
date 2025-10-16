@@ -30,9 +30,13 @@ function Layout({ children }) {
     setIsServicesOpen(false)
   }
 
+  // Masquer la navbar et le footer sur la page catalogue
+  const isCataloguePage = location.pathname === '/catalogue'
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
+      {!isCataloguePage && (
       <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
@@ -253,6 +257,7 @@ function Layout({ children }) {
           )}
         </div>
       </nav>
+      )}
 
       {/* Main Content */}
       <main className="flex-grow">
@@ -260,6 +265,7 @@ function Layout({ children }) {
       </main>
 
       {/* Footer */}
+      {!isCataloguePage && (
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -356,9 +362,10 @@ function Layout({ children }) {
           </div>
         </div>
       </footer>
+      )}
       
       {/* Bouton flottant "Être rappelé" */}
-      <CallbackButton />
+      {!isCataloguePage && <CallbackButton />}
     </div>
   )
 }

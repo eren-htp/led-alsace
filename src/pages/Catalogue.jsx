@@ -1,10 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { PageFlip } from 'page-flip'
-import { Phone, Mail, ZoomIn, ZoomOut, Home as HomeIcon, Menu, X, BookOpen } from 'lucide-react'
+import { ZoomIn, ZoomOut, Home as HomeIcon, Menu, X, BookOpen } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog.jsx'
-import { Input } from '@/components/ui/input.jsx'
-import { Label } from '@/components/ui/label.jsx'
+
 import '../App.css'
 
 // Import des images optimisées en WebP
@@ -35,8 +33,7 @@ function Catalogue() {
   const pageFlipRef = useRef(null)
   const [currentPage, setCurrentPage] = useState(0)
   const [totalPages, setTotalPages] = useState(0)
-  const [isCallbackOpen, setIsCallbackOpen] = useState(false)
-  const [formData, setFormData] = useState({ nom: '', telephone: '' })
+
   const [zoom, setZoom] = useState(1)
   const [isFlipping, setIsFlipping] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -156,16 +153,6 @@ function Catalogue() {
 
   const zoomOut = () => {
     setZoom(prev => Math.max(prev - 0.2, 0.5))
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    
-    console.log('Demande de rappel:', formData)
-    
-    alert('Merci ! Nous vous rappellerons bientôt.')
-    setIsCallbackOpen(false)
-    setFormData({ nom: '', telephone: '' })
   }
 
   useEffect(() => {
@@ -399,53 +386,7 @@ function Catalogue() {
         </footer>
       )}
 
-      {/* Callback Dialog */}
-      <Dialog open={isCallbackOpen} onOpenChange={setIsCallbackOpen}>
-        <DialogTrigger asChild>
-          <Button className="fixed bottom-4 right-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full shadow-lg flex items-center gap-2 z-50">
-            <Phone className="w-5 h-5" />
-            Être rappelé
-          </Button>
-        </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px] bg-gray-800 text-white border-yellow-500/30">
-          <DialogHeader>
-            <DialogTitle className="text-yellow-400">Demande de rappel</DialogTitle>
-            <DialogDescription className="text-gray-300">
-              Laissez-nous vos coordonnées, nous vous rappellerons dans les plus brefs délais.
-            </DialogDescription>
-          </DialogHeader>
-          <form onSubmit={handleSubmit} className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="nom" className="text-right text-gray-300">
-                Nom
-              </Label>
-              <Input
-                id="nom"
-                value={formData.nom}
-                onChange={(e) => setFormData({ ...formData, nom: e.target.value })}
-                className="col-span-3 bg-gray-700 border-gray-600 text-white focus:ring-yellow-500 focus:border-yellow-500"
-                required
-              />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="telephone" className="text-right text-gray-300">
-                Téléphone
-              </Label>
-              <Input
-                id="telephone"
-                value={formData.telephone}
-                onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
-                className="col-span-3 bg-gray-700 border-gray-600 text-white focus:ring-yellow-500 focus:border-yellow-500"
-                type="tel"
-                required
-              />
-            </div>
-            <Button type="submit" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
-              Envoyer
-            </Button>
-          </form>
-        </DialogContent>
-      </Dialog>
+
     </div>
   )
 }
