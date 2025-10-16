@@ -21,6 +21,7 @@ import page12 from '../catalogue-assets/page-12.webp'
 import page13 from '../catalogue-assets/page-13.webp'
 import page14 from '../catalogue-assets/page-14.webp'
 import page15 from '../catalogue-assets/page-15.webp'
+import pageFlipSound from '../catalogue-assets/page-flip.wav'
 
 const pages = [
   page01, page02, page03, page04, page05,
@@ -45,23 +46,9 @@ function Catalogue() {
   const playPageFlipSound = () => {
     if (!soundEnabled) return
     
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)()
-    const oscillator = audioContext.createOscillator()
-    const gainNode = audioContext.createGain()
-    
-    oscillator.connect(gainNode)
-    gainNode.connect(audioContext.destination)
-    
-    // Créer un son de "swoosh" pour simuler le tournage de page
-    oscillator.type = 'sine'
-    oscillator.frequency.setValueAtTime(800, audioContext.currentTime)
-    oscillator.frequency.exponentialRampToValueAtTime(200, audioContext.currentTime + 0.2)
-    
-    gainNode.gain.setValueAtTime(0.3, audioContext.currentTime)
-    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2)
-    
-    oscillator.start(audioContext.currentTime)
-    oscillator.stop(audioContext.currentTime + 0.2)
+    const audio = new Audio(pageFlipSound)
+    audio.volume = 0.5 // Volume à 50%
+    audio.play().catch(err => console.log('Erreur lecture audio:', err))
   }
 
   // Détecter si on est sur mobile
