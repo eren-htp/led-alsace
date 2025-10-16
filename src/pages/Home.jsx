@@ -369,7 +369,7 @@ function Home() {
                 <Button 
                   variant="link" 
                   className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
-                  onClick={() => navigate('/services/marquage-vehicules')}
+                  onClick={() => navigate('/services/marquage-vehicule')}
                 >
                   En savoir plus <ArrowRight className="ml-1 w-4 h-4" />
                 </Button>

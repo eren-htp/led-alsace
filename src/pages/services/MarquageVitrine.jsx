@@ -1,6 +1,9 @@
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Eye, Sparkles, Sun, Droplets } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import HeroSlider from '../../components/HeroSlider'
+import marquageVitrine from '../../assets/marquagevitrine.jpg'
+import marquageVitrine2 from '../../assets/MarquageVitrine2.JPG'
 import realisation1 from '../../assets/realisations/realisation_leclerc.webp'
 import realisation2 from '../../assets/realisations/realisation_mobalpa.webp'
 import realisation3 from '../../assets/realisations/realisation_anges.webp'
@@ -30,26 +33,16 @@ function MarquageVitrine() {
     { icon: Droplets, title: "Facilité d'entretien", description: "Nettoyage simple et résistance aux intempéries" }
   ]
 
+  const heroImages = [marquageVitrine2, marquageVitrine]
+
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
-      <div className="relative h-[500px] md:h-[600px] flex items-center">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-              <span className="text-yellow-400 font-semibold">Nos Solutions</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Marquage <span className="text-yellow-400">Vitrine</span>
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              Nous vous proposons des solutions pour le marquage de vos vitrines et façades. Attirez l'attention, communiquez vos offres et décorez vos espaces avec style
-            </p>
-          </div>
-        </div>
-            </div>
-</section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Marquage Vitrine Professionnel"
+        subtitle="Nous vous proposons des solutions pour le marquage de vos vitrines et façades. Attirez l'attention, communiquez vos offres et décorez vos espaces avec style."
+      />
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">

@@ -16,7 +16,7 @@ function Layout({ children }) {
     { name: 'Enseignes', path: '/services/enseignes' },
     { name: 'Marquage Vitrine', path: '/services/marquage-vitrine' },
     { name: 'Impression grand format', path: '/services/impression-grand-format' },
-    { name: 'Marquage véhicules', path: '/services/marquage-vehicules' },
+    { name: 'Marquage véhicules', path: '/services/marquage-vehicule' },
     { name: 'Textile et E.P.I.', path: '/services/textile-epi' },
     { name: 'Signalétique', path: '/services/signaletique' },
     { name: 'Création Graphique', path: '/services/creation-graphique' }
@@ -315,7 +315,7 @@ function Layout({ children }) {
                 <li><Link to="/services/enseignes" className="text-gray-400 hover:text-yellow-500 transition-colors">Enseignes</Link></li>
                 <li><Link to="/services/marquage-vitrine" className="text-gray-400 hover:text-yellow-500 transition-colors">Marquage Vitrine</Link></li>
                 <li><Link to="/services/impression-grand-format" className="text-gray-400 hover:text-yellow-500 transition-colors">Impression grand format</Link></li>
-                <li><Link to="/services/marquage-vehicules" className="text-gray-400 hover:text-yellow-500 transition-colors">Marquage véhicules</Link></li>
+                <li><Link to="/services/marquage-vehicule" className="text-gray-400 hover:text-yellow-500 transition-colors">Marquage véhicules</Link></li>
                 <li><Link to="/services/textile-epi" className="text-gray-400 hover:text-yellow-500 transition-colors">Textile et E.P.I.</Link></li>
                 <li><Link to="/services/signaletique" className="text-gray-400 hover:text-yellow-500 transition-colors">Signalétique</Link></li>
                 <li><Link to="/services/creation-graphique" className="text-gray-400 hover:text-yellow-500 transition-colors">Création Graphique</Link></li>

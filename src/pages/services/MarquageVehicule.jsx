@@ -5,6 +5,7 @@ import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
 import marquageVehicule from '../../assets/Marquagevéhicule.jpg'
 import vehicule from '../../assets/Vhéicule.jpg'
+import marquageVehicule2 from '../../assets/MarquageVehicule2.jpg'
 import realisation1 from '../../assets/realisations/realisation_bollore.webp'
 import realisation2 from '../../assets/realisations/realisation_saturn_renov.webp'
 import realisation3 from '../../assets/realisations/realisation_dard.webp'
@@ -49,7 +50,7 @@ function MarquageVehicule() {
     "Véhicules de chantier"
   ]
 
-  const heroImages = [marquageVehicule, vehicule]
+  const heroImages = [marquageVehicule2, marquageVehicule, vehicule]
 
   return (
     <div className="min-h-screen bg-white">
