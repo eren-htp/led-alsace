@@ -26,6 +26,7 @@ import EnseigneDibond from './pages/services/EnseigneDibond'
 import TotemsLumineux from './pages/services/TotemsLumineux'
 import EnseigneDrapeau from './pages/services/EnseigneDrapeau'
 import CaissonAjoure from './pages/services/CaissonAjoure'
+import EcransLED from './pages/services/EcransLED'
 import './App.css'
 
 function ScrollToTop() {
@@ -63,6 +64,7 @@ function App() {
           <Route path="/services/totems-lumineux" element={<TotemsLumineux />} />
           <Route path="/services/enseigne-drapeau" element={<EnseigneDrapeau />} />
           <Route path="/services/caisson-ajoure" element={<CaissonAjoure />} />
+          <Route path="/services/ecrans-led" element={<EcransLED />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/nos-clients" element={<NosClients />} />
           <Route path="/a-propos" element={<APropos />} />

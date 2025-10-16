@@ -579,7 +579,7 @@ function Services() {
             {/* Écrans LED grand format */}
             <div 
               className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
-              onClick={() => navigate('/services/impression-grand-format')}
+              onClick={() => navigate('/services/ecrans-led')}
             >
               {/* Image Banner - 20% height */}
               <div className="h-32 overflow-hidden">
