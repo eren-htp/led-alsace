@@ -1,0 +1,47 @@
+# robots.txt pour LED Alsace
+# https://www.ledalsace.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.ledalsace.com/sitemap.xml
+
+# Crawl-delay pour éviter la surcharge
+Crawl-delay: 1
+
+# Bloquer les répertoires non publics
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Permettre l'accès aux ressources importantes
+Allow: /assets/
+Allow: /images/
+Allow: /catalogue-assets/
+
+# Bloquer les paramètres de session et de tracking
+Disallow: /*?session=
+Disallow: /*?sid=
+Disallow: /*?ref=
+
+# Googlebot spécifique
+User-agent: Googlebot
+Allow: /
+
+# Googlebot Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Bloquer les mauvais bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+

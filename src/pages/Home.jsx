@@ -4,6 +4,8 @@ import {
   Star, CheckCircle, Award, Clock, Users, ArrowRight, ChevronRight, MapPin, Zap
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import SEO from '../components/SEO.jsx'
+import { organizationSchema, websiteSchema } from '../utils/structuredData.js'
 import heroImage1 from '../assets/hero1.jpg'
 import heroImage2 from '../assets/hero2.jpg'
 import heroImage3 from '../assets/hero3.jpg'
@@ -106,8 +108,21 @@ function Home() {
     navigate('/contact')
   }
 
+  // Combiner les schémas pour la page d'accueil
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema, websiteSchema]
+  }
+
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Accueil"
+        description="LED Alsace, spécialiste des enseignes LED et de la signalétique en Alsace depuis 2014. Fabrication française à Ostwald près de Strasbourg. Devis gratuit en 24h."
+        keywords="enseigne LED Alsace, signalétique Strasbourg, enseigne lumineuse, marquage véhicule Alsace, impression grand format, LED Alsace, enseigne Ostwald"
+        canonicalUrl="https://www.ledalsace.com"
+        structuredData={combinedSchema}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-32" style={{ minHeight: '80vh' }}>
         {/* Background Image with Overlay */}
