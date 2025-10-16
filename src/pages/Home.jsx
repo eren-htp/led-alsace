@@ -250,6 +250,7 @@ function Home() {
                 <img 
                   src={enseigneLedImg} 
                   alt="Enseigne LED lumineuse sur mesure pour commerce - Fabrication LED Alsace" 
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -276,6 +277,7 @@ function Home() {
                 <img 
                   src={signaletiqueImg} 
                   alt="Signalétique professionnelle intérieure et extérieure en Alsace" 
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -302,6 +304,7 @@ function Home() {
                 <img 
                   src={marquageTextileImg} 
                   alt="Marquage textile professionnel et flocage EPI - LED Alsace" 
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -328,6 +331,7 @@ function Home() {
                 <img 
                   src={marquageVitrineImg} 
                   alt="Marquage vitrine et vitrophanie pour commerce - LED Alsace Strasbourg" 
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -351,6 +355,7 @@ function Home() {
                 <img 
                   src={impressionGrandFormatImg} 
                   alt="Impression grand format bâche kakemono affiche en Alsace" 
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -374,6 +379,7 @@ function Home() {
                 <img 
                   src={marquageVehiculeImg} 
                   alt="Marquage véhicule publicitaire et covering flotte automobile Alsace" 
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -397,6 +403,7 @@ function Home() {
                 <img 
                   src={creationGraphiqueImg} 
                   alt="Création graphique logo identité visuelle pour entreprise Alsace" 
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>

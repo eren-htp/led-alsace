@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button.jsx'
 import { Star, ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import SEO from '../components/SEO.jsx'
+import { getReviewSchema } from '../utils/structuredData.js'
 import CounterAnimation from '../components/CounterAnimation'
 
 // Import des logos clients
@@ -116,8 +118,23 @@ function NosClients() {
     { name: "Elsass Viande", sector: "Boucherie", logo: logoElsassViande }
   ]
 
+  // Préparer les données des avis pour le schema
+  const reviewsData = testimonials.map(t => ({
+    name: t.name,
+    company: t.company,
+    text: t.text,
+    rating: t.rating
+  }))
+
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Nos Clients"
+        description="Ils nous font confiance : E. Leclerc, SNCF, Citroën, Renault, Métro, Sofitel... Découvrez les témoignages de nos clients satisfaits en Alsace et leurs avis sur nos enseignes LED."
+        keywords="clients LED Alsace, témoignages, avis clients, références, E. Leclerc, SNCF, satisfaction client"
+        canonicalUrl="https://www.ledalsace.com/nos-clients"
+        structuredData={getReviewSchema(reviewsData)}
+      />
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">

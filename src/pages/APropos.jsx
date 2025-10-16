@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button.jsx'
 import { Award, Users, Target, Heart, ArrowRight, CheckCircle } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import SEO from '../components/SEO.jsx'
+import { organizationSchema } from '../utils/structuredData.js'
 
 function APropos() {
   const navigate = useNavigate()
@@ -30,6 +32,13 @@ function APropos() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="À Propos"
+        description="LED Alsace, entreprise alsacienne spécialisée dans les enseignes LED depuis 2014. Atelier de fabrication à Ostwald près de Strasbourg. Savoir-faire français, qualité et réactivité."
+        keywords="LED Alsace, entreprise Alsace, fabrication française, atelier Ostwald, histoire LED Alsace, équipe Strasbourg"
+        canonicalUrl="https://www.ledalsace.com/a-propos"
+        structuredData={organizationSchema}
+      />
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">

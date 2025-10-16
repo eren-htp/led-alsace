@@ -3,6 +3,7 @@ import { PageFlip } from 'page-flip'
 import { ZoomIn, ZoomOut, Home as HomeIcon, Menu, X, BookOpen, Volume2, VolumeX } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO.jsx'
 
 import '../App.css'
 
@@ -190,6 +191,12 @@ function Catalogue() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col pt-24">
+      <SEO 
+        title="Catalogue"
+        description="Consultez notre catalogue interactif de modèles d'enseignes LED. Découvrez nos lettres boîtier lumineuses et trouvez l'inspiration pour votre projet d'enseigne en Alsace."
+        keywords="catalogue enseignes LED, modèles lettres boîtier, catalogue interactif, exemples enseignes lumineuses, inspiration enseigne LED"
+        canonicalUrl="https://www.ledalsace.com/catalogue"
+      />
       {/* Header du catalogue - Déplacé en bas au-dessus des contrôles */}
       <header className="bg-black/50 backdrop-blur-sm border-t border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 fixed bottom-16 left-0 right-0 z-40">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
