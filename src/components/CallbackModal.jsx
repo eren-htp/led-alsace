@@ -14,7 +14,7 @@ function CallbackModal({ isOpen, onClose }) {
 
     try {
       // Utiliser Formspree pour envoyer l'email directement
-      const response = await fetch('https://formspree.io/f/xgvevvjp', {
+      const response = await fetch('https://formspree.io/f/meorvnob', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

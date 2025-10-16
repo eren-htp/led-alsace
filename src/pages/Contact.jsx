@@ -22,7 +22,7 @@ function Contact() {
     setSubmitStatus(null)
 
     try {
-      const response = await fetch('https://formspree.io/f/xgvevvjp', {
+      const response = await fetch('https://formspree.io/f/meorvnob', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
