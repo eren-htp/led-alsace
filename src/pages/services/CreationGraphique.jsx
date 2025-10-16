@@ -2,6 +2,9 @@ import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Palette, FileText, Image, Layout } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
+import HeroSlider from '../../components/HeroSlider'
+import conceptionGraphique from '../../assets/ConceptionGraphique.jpg'
+import creationGraphiqueImg from '../../assets/creationgraphique.jpg'
 
 function CreationGraphique() {
   const navigate = useNavigate()
@@ -33,26 +36,16 @@ function CreationGraphique() {
     { icon: Layout, title: "Cohérence visuelle", description: "Harmonie sur tous vos supports" }
   ]
 
+  const heroImages = [conceptionGraphique, creationGraphiqueImg]
+
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
-      <div className="relative h-[500px] md:h-[600px] flex items-center">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-              <span className="text-yellow-400 font-semibold">Nos Solutions</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Création <span className="text-yellow-400">Graphique</span>
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              Notre équipe de designers crée votre identité visuelle complète : logo, charte graphique, cartes de visite, flyers, brochures. Du concept à la réalisation
-            </p>
-          </div>
-        </div>
-            </div>
-</section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Création Graphique Professionnelle"
+        subtitle="Notre équipe de designers crée votre identité visuelle complète : logo, charte graphique, cartes de visite, flyers, brochures. Du concept à la réalisation."
+      />
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
