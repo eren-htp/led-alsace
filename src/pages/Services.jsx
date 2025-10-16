@@ -287,67 +287,77 @@ function Services() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-              <div className="text-yellow-500 mb-4">
-                <Wifi className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Plaques NFC
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Plaques NFC pour fidéliser vos clients et les inviter à laisser un avis sur vos réseaux.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-              <div className="text-yellow-500 mb-4">
-                <Monitor className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Écran LED grand format
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Écrans LED haute définition pour affichage dynamique et communication visuelle impactante.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+            <button onClick={() => navigate('/services/enseigne-dibond')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
               <div className="text-yellow-500 mb-4">
                 <Layers className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Gravure laser
+                Enseigne en dibond
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Gravure laser de précision sur différents matériaux pour personnaliser vos objets et supports.
+                Enseignes légères et résistantes en composite aluminium. Idéales pour l'intérieur et l'extérieur.
               </p>
-            </div>
+            </button>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+            <button onClick={() => navigate('/services/totems-lumineux')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
               <div className="text-yellow-500 mb-4">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
+                <Lightbulb className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Site web
+                Totems lumineux
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Création de sites web professionnels et responsives pour renforcer votre présence en ligne.
+                Signalétique verticale lumineuse pour une visibilité maximale jour et nuit.
               </p>
-            </div>
+            </button>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+            <button onClick={() => navigate('/services/enseigne-drapeau')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
               <div className="text-yellow-500 mb-4">
-                <Users className="w-8 h-8" />
+                <Store className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Services pour les revendeurs
+                Enseigne drapeau double face
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Solutions dédiées aux professionnels : tarifs préférentiels, support technique et accompagnement.
+                Enseigne perpendiculaire visible des deux côtés de la rue. Impact visuel garanti.
               </p>
-            </div>
+            </button>
+
+            <button onClick={() => navigate('/services/caisson-ajoure')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
+              <div className="text-yellow-500 mb-4">
+                <Zap className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Caisson ajouré lumineux
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Design moderne avec découpes lumineuses. Effet de profondeur et contraste élégant.
+              </p>
+            </button>
+
+            <button onClick={() => navigate('/services/neon-led')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
+              <div className="text-yellow-500 mb-4">
+                <Zap className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Néon LED
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Éclairage LED flexible imitant le néon traditionnel. Design sur mesure et économique.
+              </p>
+            </button>
+
+            <button onClick={() => navigate('/services/impression-grand-format')} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 text-left cursor-pointer hover:border-yellow-400">
+              <div className="text-yellow-500 mb-4">
+                <Monitor className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Écrans LED grand format
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Affichage dynamique haute définition pour communication visuelle impactante.
+              </p>
+            </button>
 
             <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
               <div className="text-yellow-500 mb-4">

@@ -22,6 +22,10 @@ import ImpressionPapier from './pages/services/ImpressionPapier'
 import ObjetsPublicitaires from './pages/services/ObjetsPublicitaires'
 import Vitrophanie from './pages/services/Vitrophanie'
 import DecoupeLaser from './pages/services/DecoupeLaser'
+import EnseigneDibond from './pages/services/EnseigneDibond'
+import TotemsLumineux from './pages/services/TotemsLumineux'
+import EnseigneDrapeau from './pages/services/EnseigneDrapeau'
+import CaissonAjoure from './pages/services/CaissonAjoure'
 import './App.css'
 
 function ScrollToTop() {
@@ -55,6 +59,10 @@ function App() {
           <Route path="/services/objets-publicitaires" element={<ObjetsPublicitaires />} />
           <Route path="/services/vitrophanie" element={<Vitrophanie />} />
           <Route path="/services/decoupe-laser" element={<DecoupeLaser />} />
+          <Route path="/services/enseigne-dibond" element={<EnseigneDibond />} />
+          <Route path="/services/totems-lumineux" element={<TotemsLumineux />} />
+          <Route path="/services/enseigne-drapeau" element={<EnseigneDrapeau />} />
+          <Route path="/services/caisson-ajoure" element={<CaissonAjoure />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/nos-clients" element={<NosClients />} />
           <Route path="/a-propos" element={<APropos />} />
