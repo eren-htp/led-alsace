@@ -121,6 +121,9 @@ function Enseignes() {
         subtitle="Donnez de la visibilité à votre entreprise avec nos enseignes LED sur mesure. Fabrication française, installation professionnelle et garantie longue durée."
       />
 
+      {/* Slider Lettres Boîtier */}
+      <LettresBoitierSlider />
+
       {/* Autres Types d'Enseignes */}
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
