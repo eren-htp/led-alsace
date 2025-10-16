@@ -301,7 +301,8 @@ function Services() {
                 <img 
                   src={enseigneDibondImg} 
                   alt="Enseigne en dibond"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+                  style={{ objectPosition: 'center 35%' }}
                 />
               </div>
               
@@ -359,6 +360,7 @@ function Services() {
                   src={totemsLumineuxImg} 
                   alt="Totems lumineux"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  style={{ objectPosition: 'center 20%' }}
                 />
               </div>
               
@@ -473,6 +475,7 @@ function Services() {
                   src={caissonAjoureImg} 
                   alt="Caisson ajouré lumineux"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  style={{ objectPosition: 'center 25%' }}
                 />
               </div>
               
