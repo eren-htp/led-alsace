@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import SEO from '../components/SEO.jsx'
 import CounterAnimation from '../components/CounterAnimation'
 import realisation1 from '../assets/realisations/realisation_red_door.webp'
 import realisation2 from '../assets/realisations/realisation_saturn.webp'
@@ -44,6 +45,12 @@ function Realisations() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Nos Réalisations"
+        description="Découvrez nos réalisations d'enseignes LED, signalétique et marquage véhicule en Alsace. Portfolio de projets pour commerces, restaurants, entreprises et collectivités."
+        keywords="réalisations enseignes LED, portfolio signalétique, exemples marquage véhicule, projets Alsace, enseignes Strasbourg"
+        canonicalUrl="https://www.ledalsace.com/realisations"
+      />
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">

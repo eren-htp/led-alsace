@@ -136,7 +136,7 @@ function Home() {
             >
               <img 
                 src={img} 
-                alt={`Hero ${index + 1}`}
+                alt={index === 0 ? "Enseigne LED lumineuse pour commerce en Alsace - LED Alsace" : index === 1 ? "Réalisation signalétique professionnelle Strasbourg" : "Marquage véhicule publicitaire en Alsace"}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
@@ -249,7 +249,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={enseigneLedImg} 
-                  alt="Enseignes lumineuses LED" 
+                  alt="Enseigne LED lumineuse sur mesure pour commerce - Fabrication LED Alsace" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -275,7 +275,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={signaletiqueImg} 
-                  alt="Signalétique professionnelle" 
+                  alt="Signalétique professionnelle intérieure et extérieure en Alsace" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -301,7 +301,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageTextileImg} 
-                  alt="Marquage textile et flocage" 
+                  alt="Marquage textile professionnel et flocage EPI - LED Alsace" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -327,7 +327,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageVitrineImg} 
-                  alt="Marquage vitrine professionnel" 
+                  alt="Marquage vitrine et vitrophanie pour commerce - LED Alsace Strasbourg" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -350,7 +350,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={impressionGrandFormatImg} 
-                  alt="Impression grand format" 
+                  alt="Impression grand format bâche kakemono affiche en Alsace" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -373,7 +373,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageVehiculeImg} 
-                  alt="Marquage véhicules et covering" 
+                  alt="Marquage véhicule publicitaire et covering flotte automobile Alsace" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -396,7 +396,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={creationGraphiqueImg} 
-                  alt="Création graphique et design" 
+                  alt="Création graphique logo identité visuelle pour entreprise Alsace" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>

@@ -4,6 +4,8 @@ import {
   Shirt, Store, Stamp, Layers, Zap, Gift, FileText, ArrowRight, Users, Wifi
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import SEO from '../components/SEO.jsx'
+import { servicesSchema } from '../utils/structuredData.js'
 import enseigneLumineuse from '../assets/services/Enseigne-lumineuse.jpg'
 import signaletiqueImg from '../assets/services/signaletique.jpg'
 import textileImg from '../assets/services/textile.jpg'
@@ -197,6 +199,13 @@ function Services() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Nos Solutions"
+        description="Découvrez toutes nos solutions professionnelles : enseignes LED, signalétique, marquage véhicule, impression grand format, création graphique. Fabrication française en Alsace."
+        keywords="solutions signalétique, services enseignes LED, marquage véhicule, impression grand format, création graphique Alsace, signalétique Strasbourg"
+        canonicalUrl="https://www.ledalsace.com/services"
+        structuredData={servicesSchema}
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="container mx-auto px-4">

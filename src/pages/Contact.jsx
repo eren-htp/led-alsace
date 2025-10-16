@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button.jsx'
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react'
 import { useState } from 'react'
+import SEO from '../components/SEO.jsx'
+import { organizationSchema } from '../utils/structuredData.js'
 import CallbackModal from '../components/CallbackModal'
 
 function Contact() {
@@ -64,6 +66,13 @@ function Contact() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Contact"
+        description="Contactez LED Alsace pour votre projet d'enseigne LED ou de signalétique. Devis gratuit en 24h. Atelier à Ostwald près de Strasbourg. Tél: 03 88 04 45 34"
+        keywords="contact LED Alsace, devis enseigne LED, contact Strasbourg, demande devis signalétique, enseigne Ostwald"
+        canonicalUrl="https://www.ledalsace.com/contact"
+        structuredData={organizationSchema}
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="container mx-auto px-4">
