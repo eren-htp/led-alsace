@@ -2,7 +2,9 @@ import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, FileText, Printer, Star, Package } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
+import HeroSlider from '../../components/HeroSlider'
 import impressionPapier from '../../assets/Impressionpapier.jpg'
+import impressionPapierImg from '../../assets/services/impressionpapier.jpg'
 
 function ImpressionPapier() {
   const navigate = useNavigate()
@@ -25,34 +27,16 @@ function ImpressionPapier() {
     "Reliure et façonnage"
   ]
 
+  const heroImages = [impressionPapierImg, impressionPapier]
+
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
-      <div className="relative h-[500px] md:h-[600px] flex items-center">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-              <span className="text-sm font-semibold">Impression professionnelle</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Impression <span className="text-yellow-300">papier</span> haute qualité
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Flyers, cartes de visite, brochures... Tous vos supports imprimés avec finitions premium
-            </p>
-            <Button 
-              onClick={() => navigate('/contact')} 
-              size="lg" 
-              className="bg-white text-yellow-500 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
-            >
-              Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </div>
-        </div>
-            </div>
-</section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Impression Papier Haute Qualité"
+        subtitle="Flyers, cartes de visite, brochures... Tous vos supports imprimés avec finitions premium."
+      />
 
       {/* Produits */}
       <section className="py-20 bg-white">

@@ -2,7 +2,9 @@ import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Eye, Shield, Palette, Sun } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
+import HeroSlider from '../../components/HeroSlider'
 import vitrophanie from '../../assets/Vitrophanie6.JPG'
+import vitrophanieImg from '../../assets/services/vitrophanie.jpg'
 
 function Vitrophanie() {
   const navigate = useNavigate()
@@ -34,34 +36,16 @@ function Vitrophanie() {
     "Conformité RGPD pour espaces professionnels"
   ]
 
+  const heroImages = [vitrophanieImg, vitrophanie]
+
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
-      <div className="relative h-[500px] md:h-[600px] flex items-center">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-              <span className="text-sm font-semibold">Habillage de vitres</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-yellow-300">Vitrophanie</span> sur mesure
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Habillez vos vitrines et cloisons vitrées avec style et fonctionnalité
-            </p>
-            <Button 
-              onClick={() => navigate('/contact')} 
-              size="lg" 
-              className="bg-white text-yellow-500 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
-            >
-              Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </div>
-        </div>
-            </div>
-</section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Vitrophanie Sur Mesure"
+        subtitle="Habillez vos vitrines et cloisons vitrées avec style et fonctionnalité."
+      />
 
       {/* Types de vitrophanie */}
       <section className="py-20 bg-white">

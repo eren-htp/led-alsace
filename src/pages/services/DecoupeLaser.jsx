@@ -2,7 +2,9 @@ import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Zap, Layers, Scissors, Star } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
+import HeroSlider from '../../components/HeroSlider'
 import decoupeLaser from '../../assets/DécoupeLaser.jpg'
+import decoupeLaserImg from '../../assets/DecoupeLaser.jpg'
 
 function DecoupeLaser() {
   const navigate = useNavigate()
@@ -34,35 +36,16 @@ function DecoupeLaser() {
     "Fichiers numériques optimisés"
   ]
 
+  const heroImages = [decoupeLaserImg, decoupeLaser]
+
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
-        <div className="relative h-[500px] md:h-[600px] flex items-center">
-          <div className="absolute inset-0 bg-black/40"></div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-block bg-yellow-500/20 backdrop-blur-sm px-6 py-3 rounded-full border border-yellow-500/30 mb-6">
-                <span className="text-yellow-400 font-semibold">Découpe de précision</span>
-              </div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                <span className="text-yellow-400">Découpe laser</span> professionnelle
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-200 mb-8">
-                Précision extrême pour vos projets de découpe et gravure sur tous matériaux
-              </p>
-              <Button 
-                onClick={() => navigate('/contact')} 
-                size="lg" 
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
-              >
-                Demander un devis
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Découpe Laser Professionnelle"
+        subtitle="Précision extrême pour vos projets de découpe et gravure sur tous matériaux."
+      />
 
       {/* Matériaux */}
       <section className="py-20 bg-white">

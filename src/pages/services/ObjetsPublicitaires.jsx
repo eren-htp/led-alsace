@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, Check, Package, Shirt, Coffee, Briefcase, Gift, Pen, Users, Star } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'
+import HeroSlider from '../../components/HeroSlider'
 import objetsPublicitaires from '../../assets/ObjetsPublicitaire.png'
 
 function ObjetsPublicitaires() {
@@ -23,37 +24,16 @@ function ObjetsPublicitaires() {
     "Devis gratuit et conseils personnalisés"
   ]
 
+  const heroImages = [objetsPublicitaires]
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden overflow-hidden">
-      <div className="relative h-[500px] md:h-[600px] flex items-center">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmQ3MDAiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 mb-6 px-6 py-3 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-              <Star className="w-5 h-5 text-yellow-400" />
-              <span className="text-yellow-400 font-semibold text-lg">Goodies & Cadeaux d'entreprise</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Objets publicitaires personnalisés
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-8">
-              Marquez les esprits avec des goodies et cadeaux d'entreprise à votre image
-            </p>
-            <Button 
-              onClick={() => navigate('/contact')} 
-              size="lg" 
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
-            >
-              Demander un devis
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </div>
-        </div>
-            </div>
-</section>
+      {/* Hero Slider */}
+      <HeroSlider 
+        images={heroImages}
+        title="Objets Publicitaires Personnalisés"
+        subtitle="Marquez les esprits avec des goodies et cadeaux d'entreprise à votre image."
+      />
 
       {/* Catégories */}
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
