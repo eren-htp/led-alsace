@@ -42,25 +42,25 @@
 }
 
 :root {
-  --radius: 0.5rem;
+  --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.7 0.15 85);
-  --primary-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.145 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.45 0 0);
-  --accent: oklch(0.7 0.15 85);
-  --accent-foreground: oklch(0.145 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.9 0 0);
-  --ring: oklch(0.7 0.15 85);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -68,12 +68,12 @@
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.7 0.15 85);
-  --sidebar-primary-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.145 0 0);
-  --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: oklch(0.7 0.15 85);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
 .dark {
@@ -117,22 +117,222 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-@keyframes glow {
-  0%, 100% {
-    text-shadow: 0 0 10px rgba(240, 199, 36, 0.5),
-                 0 0 20px rgba(240, 199, 36, 0.3),
-                 0 0 30px rgba(240, 199, 36, 0.2);
+  
+  /* Optimisations de performance */
+  img {
+    content-visibility: auto;
   }
-  50% {
-    text-shadow: 0 0 20px rgba(240, 199, 36, 0.8),
-                 0 0 30px rgba(240, 199, 36, 0.6),
-                 0 0 40px rgba(240, 199, 36, 0.4),
-                 0 0 50px rgba(240, 199, 36, 0.2);
+  
+  .book-wrapper,
+  .book-container {
+    contain: layout style paint;
   }
 }
 
-.animate-glow {
-  animation: glow 2s ease-in-out infinite;
+/* Custom styles for flipbook */
+.book-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: auto;
+  max-height: calc(100vh - 200px);
 }
+
+.book-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5));
+  max-width: 100%;
+}
+
+/* Styles pour les pages */
+.page {
+  background: white;
+  display: block;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Verso de la page - fond blanc */
+.page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(248, 248, 248, 0.98) 50%,
+    rgba(255, 255, 255, 0.98) 100%
+  );
+  pointer-events: none;
+  backface-visibility: visible;
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+/* Styles pour le livre PageFlip */
+.stf__wrapper {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  max-width: 100%;
+}
+
+.stf__block {
+  position: absolute;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  margin: 0;
+  padding: 0;
+}
+
+.stf__item {
+  display: none;
+  position: absolute;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.stf__outerShadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.stf__innerShadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.stf__hardShadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.stf__hardInnerShadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Scrollbar styling */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(234, 179, 8, 0.5);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(234, 179, 8, 0.7);
+}
+
+/* Animation delay utilities */
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Smooth page transitions */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure images load smoothly */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Touch optimization for mobile */
+@media (max-width: 768px) {
+  .book-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    touch-action: pan-y pinch-zoom;
+    max-height: calc(100vh - 180px);
+  }
+
+  .book-container {
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .stf__wrapper {
+    width: 100% !important;
+    max-width: 100vw;
+  }
+
+  /* Améliorer la zone tactile */
+  .page {
+    touch-action: none;
+  }
+
+  /* Optimiser les performances sur mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .book-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .book-wrapper {
+    width: 100%;
+  }
+}
+
+/* Amélioration de la grille de miniatures mobile */
+@media (max-width: 768px) {
+  .grid {
+    gap: 0.75rem;
+  }
+  
+  button[class*="aspect-"] {
+    position: relative;
+  }
+}
+

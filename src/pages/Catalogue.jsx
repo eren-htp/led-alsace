@@ -1,193 +1,453 @@
+import { useState, useEffect, useRef } from 'react'
+import { PageFlip } from 'page-flip'
+import { Phone, Mail, ZoomIn, ZoomOut, Home as HomeIcon, Menu, X, BookOpen } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
-import { ArrowRight, Download, FileText } from 'lucide-react'
-import { useNavigate } from 'react-router-dom'
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog.jsx'
+import { Input } from '@/components/ui/input.jsx'
+import { Label } from '@/components/ui/label.jsx'
+import '../App.css'
+
+// Import des images optimisées en WebP
+import page01 from '../catalogue-assets/page-01.webp'
+import page02 from '../catalogue-assets/page-02.webp'
+import page03 from '../catalogue-assets/page-03.webp'
+import page04 from '../catalogue-assets/page-04.webp'
+import page05 from '../catalogue-assets/page-05.webp'
+import page06 from '../catalogue-assets/page-06.webp'
+import page07 from '../catalogue-assets/page-07.webp'
+import page08 from '../catalogue-assets/page-08.webp'
+import page09 from '../catalogue-assets/page-09.webp'
+import page10 from '../catalogue-assets/page-10.webp'
+import page11 from '../catalogue-assets/page-11.webp'
+import page12 from '../catalogue-assets/page-12.webp'
+import page13 from '../catalogue-assets/page-13.webp'
+import page14 from '../catalogue-assets/page-14.webp'
+import page15 from '../catalogue-assets/page-15.webp'
+
+const pages = [
+  page01, page02, page03, page04, page05,
+  page06, page07, page08, page09, page10,
+  page11, page12, page13, page14, page15
+]
 
 function Catalogue() {
-  const navigate = useNavigate()
+  const bookRef = useRef(null)
+  const pageFlipRef = useRef(null)
+  const [currentPage, setCurrentPage] = useState(0)
+  const [totalPages, setTotalPages] = useState(0)
+  const [isCallbackOpen, setIsCallbackOpen] = useState(false)
+  const [formData, setFormData] = useState({ nom: '', telephone: '' })
+  const [zoom, setZoom] = useState(1)
+  const [isFlipping, setIsFlipping] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const [showThumbnails, setShowThumbnails] = useState(false)
+  const [showFooter, setShowFooter] = useState(false) // Nouveau state pour le footer
 
-  const catalogues = [
-    {
-      title: "Catalogue Enseignes LED",
-      description: "Découvrez notre gamme complète d'enseignes lumineuses LED : lettres boîtier, néon LED, caissons lumineux...",
-      pages: "24 pages",
-      size: "5.2 MB",
-      icon: "💡"
-    },
-    {
-      title: "Catalogue Signalétique",
-      description: "Panneaux directionnels, totems, plaques de porte, signalétique intérieure et extérieure.",
-      pages: "18 pages",
-      size: "3.8 MB",
-      icon: "🚏"
-    },
-    {
-      title: "Catalogue Marquage Véhicule",
-      description: "Covering complet, adhésifs découpés, flocage, marquage flotte professionnelle.",
-      pages: "16 pages",
-      size: "4.1 MB",
-      icon: "🚗"
-    },
-    {
-      title: "Catalogue Vitrophanie",
-      description: "Marquage vitrine, adhésifs micro-perforés, lettres découpées, décoration vitrine.",
-      pages: "12 pages",
-      size: "2.9 MB",
-      icon: "🪟"
+  // Détecter si on est sur mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
     }
-  ]
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
-  const products = [
-    {
-      category: "Enseignes LED",
-      items: ["Lettres boîtier LED", "Néon LED flexible", "Caisson lumineux", "Enseigne drapeau", "Totem lumineux"]
-    },
-    {
-      category: "Signalétique",
-      items: ["Panneaux directionnels", "Plaques de porte", "Totems extérieurs", "Signalétique PMR", "Panneaux de chantier"]
-    },
-    {
-      category: "Marquage",
-      items: ["Covering véhicule", "Adhésifs découpés", "Flocage textile", "Marquage vitrine", "Stickers personnalisés"]
-    },
-    {
-      category: "Impression",
-      items: ["Bâches publicitaires", "Kakémonos", "Roll-up", "Panneaux dibond", "Impression grand format"]
+  useEffect(() => {
+    if (bookRef.current && !pageFlipRef.current) {
+      const bookContainer = bookRef.current
+      bookContainer.innerHTML = ''
+
+      pages.forEach((pageImg, index) => {
+        const pageDiv = document.createElement('div')
+        pageDiv.className = 'page'
+        pageDiv.setAttribute('data-density', 'hard')
+        
+        const pageContent = document.createElement('div')
+        pageContent.className = 'page-content'
+        
+        const img = document.createElement('img')
+        img.src = pageImg
+        img.alt = `Page ${index + 1}`
+        img.className = 'page-image'
+        img.loading = 'eager' // Charger les images rapidement pour éviter le flash de contenu
+        img.decoding = 'sync' // Rendu synchrone pour une meilleure cohérence
+        
+        pageContent.appendChild(img)
+        pageDiv.appendChild(pageContent)
+        bookContainer.appendChild(pageDiv)
+      })
+
+      const isMobileDevice = window.innerWidth < 768
+      
+      const pageFlip = new PageFlip(bookContainer, {
+        width: isMobileDevice ? window.innerWidth - 40 : 350,
+        height: isMobileDevice ? window.innerHeight - 250 : 466,
+        size: 'fixed',
+        minWidth: 200,
+        maxWidth: 1000,
+        minHeight: 300,
+        maxHeight: 1350,
+        maxShadowOpacity: isMobileDevice ? 0.5 : 0.7,
+        showCover: true,
+        mobileScrollSupport: true,
+        swipeDistance: isMobileDevice ? 20 : 30,
+        clickEventForward: true,
+        usePortrait: isMobileDevice, // Une page par page sur mobile, deux sur desktop
+        startPage: 0,
+        drawShadow: true,
+        flippingTime: isMobileDevice ? 600 : 1000,
+        useMouseEvents: !isMobileDevice,
+        autoSize: true,
+        showPageCorners: !isMobileDevice,
+        disableFlipByClick: false
+      })
+
+      pageFlip.loadFromHTML(bookContainer.querySelectorAll('.page'))
+
+      pageFlip.on('changeState', (e) => {
+        if (e.data === 'flipping') {
+          setIsFlipping(true)
+        } else if (e.data === 'read') {
+          setIsFlipping(false)
+        }
+        setTotalPages(pageFlip.getPageCount())
+      })
+
+      pageFlip.on('flip', (e) => {
+        setCurrentPage(e.data)
+      })
+
+      pageFlipRef.current = pageFlip
+      setTotalPages(pages.length)
     }
-  ]
+
+    return () => {
+      if (pageFlipRef.current) {
+        pageFlipRef.current.destroy()
+        pageFlipRef.current = null
+      }
+    }
+  }, [isMobile]) // Dépendance à isMobile pour re-initialiser PageFlip si la taille change
+
+  const nextPage = () => {
+    if (pageFlipRef.current && !isFlipping) {
+      pageFlipRef.current.flipNext()
+    }
+  }
+
+  const prevPage = () => {
+    if (pageFlipRef.current && !isFlipping) {
+      pageFlipRef.current.flipPrev()
+    }
+  }
+
+  const goToPage = (pageNum) => {
+    if (pageFlipRef.current && !isFlipping) {
+      pageFlipRef.current.flip(pageNum)
+      setShowThumbnails(false)
+      setShowFooter(false) // Cacher le footer après avoir cliqué sur une miniature
+    }
+  }
+
+  const zoomIn = () => {
+    setZoom(prev => Math.min(prev + 0.2, 2))
+  }
+
+  const zoomOut = () => {
+    setZoom(prev => Math.max(prev - 0.2, 0.5))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    
+    console.log('Demande de rappel:', formData)
+    
+    alert('Merci ! Nous vous rappellerons bientôt.')
+    setIsCallbackOpen(false)
+    setFormData({ nom: '', telephone: '' })
+  }
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight') {
+        nextPage()
+      } else if (e.key === 'ArrowLeft') {
+        prevPage()
+      } else if (e.key === 'Home') {
+        goToPage(0)
+      }
+    }
+    if (!isMobile) {
+      window.addEventListener('keydown', handleKeyDown)
+    }
+    return () => {
+      if (!isMobile) {
+        window.removeEventListener('keydown', handleKeyDown)
+      }
+    }
+  }, [isFlipping, isMobile, currentPage, nextPage, prevPage, goToPage])
 
   return (
-    <div className="min-h-screen bg-white">
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-              <span className="text-yellow-400 font-semibold">Catalogue</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Nos{' '}
-              <span className="text-yellow-400">catalogues</span>
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              Téléchargez nos catalogues pour découvrir l'ensemble de nos produits et solutions
-            </p>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col">
+      {/* Header - Version mobile optimisée */}
+      <header className="bg-black/50 backdrop-blur-sm border-b border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-2 md:gap-4">
+            <h1 className="text-lg md:text-2xl font-bold text-yellow-400">LED Alsace</h1>
+            <span className="text-gray-400 text-xs md:text-sm hidden sm:inline">Catalogue 2025</span>
           </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Téléchargez nos Catalogues
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Consultez nos catalogues PDF pour découvrir nos produits en détail
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {catalogues.map((catalogue, index) => (
-              <div 
-                key={index}
-                className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8 hover:border-yellow-500 hover:shadow-xl transition-all duration-300"
-              >
-                <div className="text-6xl mb-6">{catalogue.icon}</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  {catalogue.title}
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {catalogue.description}
-                </p>
-                <div className="flex items-center justify-between mb-6 text-sm text-gray-500">
-                  <span className="flex items-center">
-                    <FileText className="w-4 h-4 mr-1" />
-                    {catalogue.pages}
-                  </span>
-                  <span>{catalogue.size}</span>
-                </div>
-                <Button 
-                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold"
-                  size="lg"
-                >
-                  <Download className="mr-2 w-5 h-5" />
-                  Télécharger le catalogue
-                </Button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos Produits
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Un aperçu de notre gamme complète de produits et solutions
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {products.map((product, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all"
-              >
-                <h3 className="text-xl font-bold text-gray-900 mb-4 pb-3 border-b-2 border-yellow-500">
-                  {product.category}
-                </h3>
-                <ul className="space-y-2">
-                  {product.items.map((item, i) => (
-                    <li key={i} className="flex items-start">
-                      <span className="text-yellow-500 mr-2">✓</span>
-                      <span className="text-gray-700">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-200 rounded-2xl p-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Besoin d'un conseil personnalisé ?
-            </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              Notre équipe est à votre disposition pour vous aider à choisir les produits adaptés à vos besoins
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                onClick={() => navigate('/contact')}
-                size="lg"
-                className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8 py-6"
-              >
-                Demander un devis
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button 
-                size="lg"
+          <div className="flex items-center gap-2 md:gap-4">
+            <span className="text-gray-300 text-xs md:text-sm">
+              {currentPage + 1}/{totalPages}
+            </span>
+            {isMobile && (
+              <Button
                 variant="outline"
-                className="border-2 border-yellow-500 text-yellow-600 hover:bg-yellow-50 font-bold text-lg px-8 py-6"
-                onClick={() => window.location.href = 'tel:0388044534'}
+                size="sm"
+                onClick={() => setShowThumbnails(!showThumbnails)}
+                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 h-8 w-8 p-0"
               >
-                <svg className="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                03 88 044 534
+                {showThumbnails ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
+              </Button>
+            )}
+            {!isMobile && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => goToPage(0)}
+                disabled={isFlipping}
+                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50"
+              >
+                <HomeIcon className="w-4 h-4 mr-2" />
+                Début
+              </Button>
+            )}
+            {!isMobile && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowFooter(!showFooter)} // Bouton pour afficher/cacher le footer
+                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
+              >
+                <BookOpen className="w-4 h-4 mr-2" />
+                Miniatures
+              </Button>
+            )}
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-1 flex items-center justify-center p-2 md:p-4 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-48 md:w-96 h-48 md:h-96 bg-yellow-500/5 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-1/4 right-1/4 w-48 md:w-96 h-48 md:h-96 bg-yellow-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
+        </div>
+
+        {/* Book Container */}
+        <div 
+          className="relative book-wrapper" 
+          style={{ 
+            transform: isMobile ? 'scale(1)' : `scale(${zoom})`, 
+            transition: 'transform 0.3s ease',
+            pointerEvents: isFlipping ? 'none' : 'auto',
+            willChange: 'transform'
+          }}
+        >
+          <div 
+            ref={bookRef} 
+            id="book"
+            className="book-container"
+          />
+        </div>
+
+        {/* Controls - Version mobile optimisée */}
+        <div className={`absolute ${isMobile ? 'bottom-4 left-1/2 -translate-x-1/2' : 'bottom-8 left-1/2 -translate-x-1/2'} flex gap-2 md:gap-4 bg-black/70 backdrop-blur-sm px-3 md:px-6 py-2 md:py-3 rounded-full border border-yellow-500/30`}>
+          <Button
+            onClick={prevPage}
+            disabled={isFlipping || currentPage === 0}
+            className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold disabled:opacity-50 disabled:cursor-not-allowed text-xs md:text-sm h-8 md:h-9 px-3 md:px-4"
+            size="sm"
+          >
+            ←
+            <span className="hidden sm:inline ml-1">Préc.</span>
+          </Button>
+          
+          {!isMobile && (
+            <div className="flex gap-2">
+              <Button
+                onClick={zoomOut}
+                variant="outline"
+                size="sm"
+                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
+              >
+                <ZoomOut className="w-4 h-4" />
+              </Button>
+              <Button
+                onClick={zoomIn}
+                variant="outline"
+                size="sm"
+                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
+              >
+                <ZoomIn className="w-4 h-4" />
+              </Button>
+            </div>
+          )}
+
+          <span className="text-gray-300 text-xs md:text-sm flex items-center">
+            Page {currentPage + 1}/{totalPages}
+          </span>
+
+          <Button
+            onClick={nextPage}
+            disabled={isFlipping || currentPage === totalPages - 1}
+            className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold disabled:opacity-50 disabled:cursor-not-allowed text-xs md:text-sm h-8 md:h-9 px-3 md:px-4"
+            size="sm"
+          >
+            <span className="hidden sm:inline mr-1">Suiv.</span>
+            →
+          </Button>
+        </div>
+
+        {/* Thumbnails Overlay */}
+        {showThumbnails && isMobile && (
+          <div className="absolute inset-0 bg-black/90 z-40 flex flex-col items-center justify-center p-4">
+            <h2 className="text-white text-2xl font-bold mb-4">Miniatures</h2>
+            <div className="grid grid-cols-3 gap-4 overflow-y-auto max-h-[80vh]">
+              {pages.map((pageImg, index) => (
+                <div key={index} className="cursor-pointer" onClick={() => goToPage(index)}>
+                  <img 
+                    src={pageImg} 
+                    alt={`Page ${index + 1}`} 
+                    className={`w-full h-auto border-2 ${currentPage === index ? 'border-yellow-500' : 'border-gray-700'} rounded-lg`}
+                  />
+                  <p className="text-white text-center text-sm mt-1">Page {index + 1}</p>
+                </div>
+              ))}
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setShowThumbnails(false)}
+              className="mt-6 border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
+            >
+              <X className="w-4 h-4 mr-2" />
+              Fermer
+            </Button>
+          </div>
+        )}
+      </main>
+
+      {/* Footer - Version desktop */}
+      {showFooter && !isMobile && (
+        <footer className="bg-black/50 backdrop-blur-sm border-t border-yellow-500/20 px-6 py-4 sticky bottom-0 z-50">
+          <div className="max-w-7xl mx-auto flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => goToPage(0)}
+                disabled={isFlipping}
+                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50"
+              >
+                <HomeIcon className="w-4 h-4 mr-2" />
+                Début
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowFooter(false)}
+                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
+              >
+                <X className="w-4 h-4 mr-2" />
+                Fermer Miniatures
+              </Button>
+            </div>
+            <div className="flex gap-4">
+              {pages.map((pageImg, index) => (
+                <div key={index} className="cursor-pointer" onClick={() => goToPage(index)}>
+                  <img 
+                    src={pageImg} 
+                    alt={`Page ${index + 1}`} 
+                    className={`w-16 h-auto border-2 ${currentPage === index ? 'border-yellow-500' : 'border-gray-700'} rounded-md`}
+                  />
+                  <p className="text-white text-center text-xs mt-1">{index + 1}</p>
+                </div>
+              ))}
+            </div>
+            <div className="flex items-center gap-4">
+              <Button
+                onClick={zoomOut}
+                variant="outline"
+                size="sm"
+                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
+              >
+                <ZoomOut className="w-4 h-4" />
+              </Button>
+              <Button
+                onClick={zoomIn}
+                variant="outline"
+                size="sm"
+                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
+              >
+                <ZoomIn className="w-4 h-4" />
               </Button>
             </div>
           </div>
-        </div>
-      </section>
+        </footer>
+      )}
+
+      {/* Callback Dialog */}
+      <Dialog open={isCallbackOpen} onOpenChange={setIsCallbackOpen}>
+        <DialogTrigger asChild>
+          <Button className="fixed bottom-4 right-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full shadow-lg flex items-center gap-2 z-50">
+            <Phone className="w-5 h-5" />
+            Être rappelé
+          </Button>
+        </DialogTrigger>
+        <DialogContent className="sm:max-w-[425px] bg-gray-800 text-white border-yellow-500/30">
+          <DialogHeader>
+            <DialogTitle className="text-yellow-400">Demande de rappel</DialogTitle>
+            <DialogDescription className="text-gray-300">
+              Laissez-nous vos coordonnées, nous vous rappellerons dans les plus brefs délais.
+            </DialogDescription>
+          </DialogHeader>
+          <form onSubmit={handleSubmit} className="grid gap-4 py-4">
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="nom" className="text-right text-gray-300">
+                Nom
+              </Label>
+              <Input
+                id="nom"
+                value={formData.nom}
+                onChange={(e) => setFormData({ ...formData, nom: e.target.value })}
+                className="col-span-3 bg-gray-700 border-gray-600 text-white focus:ring-yellow-500 focus:border-yellow-500"
+                required
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="telephone" className="text-right text-gray-300">
+                Téléphone
+              </Label>
+              <Input
+                id="telephone"
+                value={formData.telephone}
+                onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
+                className="col-span-3 bg-gray-700 border-gray-600 text-white focus:ring-yellow-500 focus:border-yellow-500"
+                type="tel"
+                required
+              />
+            </div>
+            <Button type="submit" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
+              Envoyer
+            </Button>
+          </form>
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }
 
 export default Catalogue
-
