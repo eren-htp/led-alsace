@@ -1,4 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
+import SEO from '../../components/SEO.jsx'
+import Breadcrumb from '../../components/Breadcrumb.jsx'
+import { getBreadcrumbSchema, getFAQSchema } from '../../utils/structuredData.js'
 import { ArrowRight, Check, Eye, Sparkles, Sun, Droplets } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import HeroSlider from '../../components/HeroSlider'

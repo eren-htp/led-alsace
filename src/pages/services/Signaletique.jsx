@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import SEO from '../../components/SEO.jsx'
+import Breadcrumb from '../../components/Breadcrumb.jsx'
+import { getBreadcrumbSchema, getFAQSchema } from '../../utils/structuredData.js'
 import { Button } from '@/components/ui/button.jsx'
 import { ArrowRight, ChevronLeft, ChevronRight, Check, Star, Package, Building2, Car, SignpostBig, AlertTriangle, Image as ImageIcon } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'

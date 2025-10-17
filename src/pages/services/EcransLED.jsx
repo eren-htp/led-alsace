@@ -1,4 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
+import SEO from '../../components/SEO.jsx'
+import Breadcrumb from '../../components/Breadcrumb.jsx'
+import { getBreadcrumbSchema, getFAQSchema } from '../../utils/structuredData.js'
 import { useNavigate } from 'react-router-dom'
 import { Monitor, Zap, Settings, Eye, TrendingUp, Clock, ArrowRight, Phone } from 'lucide-react'
 import { useState } from 'react'

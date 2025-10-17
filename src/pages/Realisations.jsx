@@ -24,20 +24,20 @@ function Realisations() {
   const [selectedCategory, setSelectedCategory] = useState('Tous')
 
   const realisations = [
-    { title: "The Little Red Door", category: "Enseignes LED", image: realisation1, description: "Enseigne lumineuse restaurant" },
-    { title: "Saturn Event", category: "Enseignes LED", image: realisation2, description: "Logo lumineux en relief" },
-    { title: "Saveurs & Saisons", category: "Enseignes LED", image: realisation3, description: "Enseigne restaurant traditionnel" },
-    { title: "Pro-Inter", category: "Enseignes LED", image: realisation4, description: "Enseigne lumineuse commerce" },
-    { title: "Casa Julia", category: "Signalétique", image: realisation5, description: "Signalétique extérieure" },
-    { title: "One Kebab", category: "Enseignes LED", image: realisation6, description: "Enseigne restauration rapide" },
-    { title: "MJR Pièces Auto", category: "Enseignes LED", image: realisation7, description: "Enseigne garage automobile" },
-    { title: "Madagascar", category: "Signalétique", image: realisation8, description: "Totem lumineux extérieur" },
-    { title: "E. Leclerc", category: "Marquage Vitrine", image: realisation9, description: "Aménagement vitrine" },
-    { title: "Pharmacie", category: "Enseignes LED", image: realisation10, description: "Croix de pharmacie LED" },
-    { title: "Love", category: "Enseignes LED", image: realisation11, description: "Enseigne boutique" },
-    { title: "Perkko", category: "Enseignes LED", image: realisation12, description: "Enseigne commerce" },
-    { title: "Mobalpa", category: "Marquage Vitrine", image: realisation13, description: "Vitrophanie cuisine" },
-    { title: "Les Anges Micro-Crèche", category: "Marquage Vitrine", image: realisation14, description: "Marquage vitrine crèche" }
+    { title: "The Little Red Door", category: "Enseignes LED", image: realisation1, description: "Enseigne lumineuse restaurant", alt: "Enseigne LED The Little Red Door restaurant Strasbourg - Réalisation LED Alsace" },
+    { title: "Saturn Event", category: "Enseignes LED", image: realisation2, description: "Logo lumineux en relief", alt: "Logo lumineux Saturn Event en relief - Enseigne LED sur mesure Alsace" },
+    { title: "Saveurs & Saisons", category: "Enseignes LED", image: realisation3, description: "Enseigne restaurant traditionnel", alt: "Enseigne LED Saveurs & Saisons restaurant Alsace - Fabrication LED Alsace" },
+    { title: "Pro-Inter", category: "Enseignes LED", image: realisation4, description: "Enseigne lumineuse commerce", alt: "Enseigne lumineuse Pro-Inter commerce Strasbourg - Réalisation LED Alsace" },
+    { title: "Casa Julia", category: "Signalétique", image: realisation5, description: "Signalétique extérieure", alt: "Signalétique extérieure Casa Julia - Totem et panneaux LED Alsace" },
+    { title: "One Kebab", category: "Enseignes LED", image: realisation6, description: "Enseigne restauration rapide", alt: "Enseigne LED One Kebab restauration rapide - Lettres boîtier lumineuses Alsace" },
+    { title: "MJR Pièces Auto", category: "Enseignes LED", image: realisation7, description: "Enseigne garage automobile", alt: "Enseigne LED MJR Pièces Auto garage Strasbourg - Réalisation LED Alsace" },
+    { title: "Madagascar", category: "Signalétique", image: realisation8, description: "Totem lumineux extérieur", alt: "Totem lumineux Madagascar Alsace - Signalétique extérieure LED Alsace" },
+    { title: "E. Leclerc", category: "Marquage Vitrine", image: realisation9, description: "Aménagement vitrine", alt: "Marquage vitrine E. Leclerc Alsace - Vitrophanie et adhésifs LED Alsace" },
+    { title: "Pharmacie", category: "Enseignes LED", image: realisation10, description: "Croix de pharmacie LED", alt: "Croix de pharmacie LED verte Alsace - Enseigne lumineuse pharmacie LED Alsace" },
+    { title: "Love", category: "Enseignes LED", image: realisation11, description: "Enseigne boutique", alt: "Enseigne LED Love boutique Strasbourg - Lettres lumineuses LED Alsace" },
+    { title: "Perkko", category: "Enseignes LED", image: realisation12, description: "Enseigne commerce", alt: "Enseigne LED Perkko commerce Alsace - Réalisation enseigne lumineuse LED Alsace" },
+    { title: "Mobalpa", category: "Marquage Vitrine", image: realisation13, description: "Vitrophanie cuisine", alt: "Vitrophanie Mobalpa cuisine Alsace - Marquage vitrine professionnel LED Alsace" },
+    { title: "Les Anges Micro-Crèche", category: "Marquage Vitrine", image: realisation14, description: "Marquage vitrine crèche", alt: "Marquage vitrine Les Anges Micro-Crèche Alsace - Adhésifs décoratifs LED Alsace" }
   ]
 
   const categories = ['Tous', 'Enseignes LED', 'Marquage Vitrine', 'Signalétique']
@@ -103,7 +103,7 @@ function Realisations() {
             {filteredRealisations.map((realisation, index) => (
               <div key={index} className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300">
                 <div className="relative overflow-hidden aspect-[4/3]">
-                  <img src={realisation.image} alt={realisation.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={realisation.image} alt={realisation.alt} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
                   <div className="inline-block px-3 py-1 bg-yellow-500/20 rounded-full text-yellow-600 text-sm font-semibold mb-3">{realisation.category}</div>

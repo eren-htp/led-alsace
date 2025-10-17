@@ -1,4 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
+import SEO from '../../components/SEO.jsx'
+import Breadcrumb from '../../components/Breadcrumb.jsx'
+import { getBreadcrumbSchema, getFAQSchema } from '../../utils/structuredData.js'
 import { ArrowRight, Check, Palette, FileText, Image, Layout } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import FAQ from '../../components/FAQ'

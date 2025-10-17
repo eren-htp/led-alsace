@@ -89,33 +89,33 @@ function NosClients() {
   ]
 
   const clients = [
-    { name: "HB Toiture", sector: "Couverture et zinguerie", logo: logoHBToiture },
-    { name: "Kool", sector: "Commerce", logo: logoKool },
-    { name: "Le Foch", sector: "Restaurant", logo: logoLeFoch },
-    { name: "SNCF", sector: "Transport ferroviaire", logo: logoSNCF },
-    { name: "Select Habitat", sector: "Immobilier", logo: logoSelectHabitat },
-    { name: "ProControle", sector: "Contrôle technique", logo: logoProControle },
-    { name: "Divino", sector: "Restaurant", logo: logoDivino },
-    { name: "Premium Cars", sector: "Garage automobile", logo: logoPremiumCars },
-    { name: "Aubade", sector: "Salle de bains", logo: logoAubade },
-    { name: "Planet Lunch", sector: "Restauration", logo: logoPlanetLunch },
-    { name: "Peugeot Saverne", sector: "Concessionnaire", logo: logoPeugeotSaverne },
-    { name: "Muc Habitat", sector: "Construction", logo: logoMucHabitat },
-    { name: "MGEN", sector: "Mutuelle", logo: logoMGEN },
-    { name: "Le Pin Parasol", sector: "Restaurant", logo: logoPinParasol },
-    { name: "Le Confidentiel", sector: "Restaurant", logo: logoConfidentiel },
-    { name: "Label Dent", sector: "Dentiste", logo: logoLabelDent },
-    { name: "Le Sofitel", sector: "Hôtel", logo: logoSofitel },
-    { name: "Honey Room", sector: "Commerce", logo: logoHoneyRoom },
-    { name: "H-Line Automobiles", sector: "Garage", logo: logoHLine },
-    { name: "Goia", sector: "Restaurant", logo: logoGoia },
-    { name: "Gaziantep", sector: "Restaurant", logo: logoGaziantep },
-    { name: "Garage Maylaender", sector: "Carrosserie", logo: logoGarageMaylaender },
-    { name: "Garage Link", sector: "Automobiles", logo: logoGarageLink },
-    { name: "Francesca", sector: "Restaurant italien", logo: logoFrancesca },
-    { name: "Finay", sector: "Commerce", logo: logoFinay },
-    { name: "Etandex", sector: "Bâtiment", logo: logoEtandex },
-    { name: "Elsass Viande", sector: "Boucherie", logo: logoElsassViande }
+    { name: "HB Toiture", sector: "Couverture et zinguerie", logo: logoHBToiture, alt: "Logo HB Toiture - Client enseigne LED couverture zinguerie Alsace" },
+    { name: "Kool", sector: "Commerce", logo: logoKool, alt: "Logo Kool - Client enseigne LED commerce Alsace" },
+    { name: "Le Foch", sector: "Restaurant", logo: logoLeFoch, alt: "Logo Le Foch Restaurant - Client enseigne LED restaurant Strasbourg" },
+    { name: "SNCF", sector: "Transport ferroviaire", logo: logoSNCF, alt: "Logo SNCF - Client signalétique transport ferroviaire Alsace" },
+    { name: "Select Habitat", sector: "Immobilier", logo: logoSelectHabitat, alt: "Logo Select Habitat - Client enseigne LED immobilier Alsace" },
+    { name: "ProControle", sector: "Contrôle technique", logo: logoProControle, alt: "Logo ProControle - Client enseigne LED contrôle technique Alsace" },
+    { name: "Divino", sector: "Restaurant", logo: logoDivino, alt: "Logo Divino - Client enseigne LED restaurant Alsace" },
+    { name: "Premium Cars", sector: "Garage automobile", logo: logoPremiumCars, alt: "Logo Premium Cars - Client enseigne LED garage automobile Alsace" },
+    { name: "Aubade", sector: "Salle de bains", logo: logoAubade, alt: "Logo Aubade - Client signalétique salle de bains Alsace" },
+    { name: "Planet Lunch", sector: "Restauration", logo: logoPlanetLunch, alt: "Logo Planet Lunch - Client enseigne LED restauration Alsace" },
+    { name: "Peugeot Saverne", sector: "Concessionnaire", logo: logoPeugeotSaverne, alt: "Logo Peugeot Saverne - Client enseigne LED concessionnaire Alsace" },
+    { name: "Muc Habitat", sector: "Construction", logo: logoMucHabitat, alt: "Logo Muc Habitat - Client signalétique construction Alsace" },
+    { name: "MGEN", sector: "Mutuelle", logo: logoMGEN, alt: "Logo MGEN - Client signalétique mutuelle Alsace" },
+    { name: "Le Pin Parasol", sector: "Restaurant", logo: logoPinParasol, alt: "Logo Le Pin Parasol - Client enseigne LED restaurant Alsace" },
+    { name: "Le Confidentiel", sector: "Restaurant", logo: logoConfidentiel, alt: "Logo Le Confidentiel - Client enseigne LED restaurant Strasbourg" },
+    { name: "Label Dent", sector: "Dentiste", logo: logoLabelDent, alt: "Logo Label Dent - Client enseigne LED dentiste Alsace" },
+    { name: "Le Sofitel", sector: "Hôtel", logo: logoSofitel, alt: "Logo Sofitel - Client enseigne LED hôtel Strasbourg" },
+    { name: "Honey Room", sector: "Commerce", logo: logoHoneyRoom, alt: "Logo Honey Room - Client enseigne LED commerce Alsace" },
+    { name: "H-Line Automobiles", sector: "Garage", logo: logoHLine, alt: "Logo H-Line Automobiles - Client enseigne LED garage Alsace" },
+    { name: "Goia", sector: "Restaurant", logo: logoGoia, alt: "Logo Goia - Client enseigne LED restaurant Alsace" },
+    { name: "Gaziantep", sector: "Restaurant", logo: logoGaziantep, alt: "Logo Gaziantep - Client enseigne LED restaurant Alsace" },
+    { name: "Garage Maylaender", sector: "Carrosserie", logo: logoGarageMaylaender, alt: "Logo Garage Maylaender - Client enseigne LED carrosserie Alsace" },
+    { name: "Garage Link", sector: "Automobiles", logo: logoGarageLink, alt: "Logo Garage Link - Client enseigne LED automobiles Alsace" },
+    { name: "Francesca", sector: "Restaurant italien", logo: logoFrancesca, alt: "Logo Francesca - Client enseigne LED restaurant italien Alsace" },
+    { name: "Finay", sector: "Commerce", logo: logoFinay, alt: "Logo Finay - Client signalétique commerce Alsace" },
+    { name: "Etandex", sector: "Bâtiment", logo: logoEtandex, alt: "Logo Etandex - Client signalétique bâtiment Alsace" },
+    { name: "Elsass Viande", sector: "Boucherie", logo: logoElsassViande, alt: "Logo Elsass Viande - Client enseigne LED boucherie Alsace" }
   ]
 
   // Préparer les données des avis pour le schema
@@ -238,7 +238,8 @@ function NosClients() {
                 <div className="h-20 flex items-center justify-center mb-4">
                   <img 
                     src={client.logo} 
-                    alt={client.name} 
+                    alt={client.alt}
+                    loading="lazy" 
                     className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-300" 
                   />
                 </div>
