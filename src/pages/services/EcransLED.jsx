@@ -21,28 +21,7 @@ function EcransLED() {
     setOpenFaq(openFaq === index ? null : index)
   }
 
-  const faqs = [
-    {
-      question: "Quelle est la différence entre un écran LED intérieur et extérieur ?",
-      answer: "Les écrans LED extérieurs ont un indice de protection IP65 ou supérieur pour résister aux intempéries, une luminosité beaucoup plus élevée (5000+ nits vs 800-1500 nits en intérieur) pour rester visible en plein soleil, et des LED plus espacées (pitch plus large). Les écrans intérieurs offrent une résolution plus fine pour une meilleure qualité d'image à courte distance."
-    },
-    {
-      question: "Qu'est-ce que le pitch d'un écran LED ?",
-      answer: "Le pitch (ou pas de pixel) est la distance en millimètres entre le centre de deux LED adjacentes. Plus le pitch est petit (P2, P3), plus la résolution est élevée et l'image détaillée. Un pitch de P10 convient pour une vision à distance (>10m), tandis qu'un P2.5 est idéal pour une vision rapprochée (<3m). Le choix du pitch dépend de la distance de visionnage."
-    },
-    {
-      question: "Comment gérer le contenu d'un écran LED ?",
-      answer: "Les écrans LED sont pilotés par un système de gestion de contenu (CMS) accessible via ordinateur, tablette ou smartphone. Vous pouvez programmer vos contenus (images, vidéos, textes) à l'avance, définir des plages horaires de diffusion, et mettre à jour le contenu à distance en temps réel. Nous proposons des formations pour une prise en main facile."
-    },
-    {
-      question: "Quelle est la consommation électrique d'un écran LED ?",
-      answer: "La consommation varie selon la taille, le pitch et la luminosité. En moyenne, un écran LED consomme 200-400W par m² en fonctionnement normal. Les écrans modernes intègrent des capteurs de luminosité ambiante qui ajustent automatiquement la luminosité, réduisant la consommation jusqu'à 50% par rapport aux écrans de génération précédente."
-    },
-    {
-      question: "Quelle est la durée de vie d'un écran LED ?",
-      answer: "Les LED ont une durée de vie de 100 000 heures en moyenne, soit plus de 11 ans en fonctionnement continu 24/7. Après cette période, les LED ne s'éteignent pas mais perdent progressivement en luminosité (environ 50% de la luminosité initiale). Les modules LED sont remplaçables individuellement, prolongeant la durée de vie totale de l'écran à 15-20 ans."
-    }
-  ]
+  // FAQs sont déjà définies via seoData.faqs (ligne 15)
 
   return (
     <div className="min-h-screen bg-white">
