@@ -9,7 +9,13 @@ import HeroSlider from '../../components/HeroSlider'
 import decoupeLaser from '../../assets/DecoupeLaser.webp'
 import decoupeLaserImg from '../../assets/DecoupeLaser.webp'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function DecoupeLaser() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.decoupeLaser
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
 
   const materiaux = [
@@ -43,6 +49,18 @@ function DecoupeLaser() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}

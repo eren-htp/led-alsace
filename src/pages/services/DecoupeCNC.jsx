@@ -9,7 +9,13 @@ import HeroSlider from '../../components/HeroSlider'
 import decoupeCNC from '../../assets/DecoupeCNC.webp'
 import decoupeCNCImg from '../../assets/DecoupeCNC.webp'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function DecoupeCNC() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.decoupeCNC
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
 
   const services = [
@@ -118,6 +124,18 @@ function DecoupeCNC() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}

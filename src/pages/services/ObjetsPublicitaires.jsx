@@ -8,7 +8,13 @@ import FAQ from '../../components/FAQ'
 import HeroSlider from '../../components/HeroSlider'
 import objetsPublicitaires from '../../assets/ObjetsPublicitaire.webp'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function ObjetsPublicitaires() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.objetsPublicitaires
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
 
   const categories = [
@@ -31,6 +37,18 @@ function ObjetsPublicitaires() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}

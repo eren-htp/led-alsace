@@ -7,9 +7,27 @@ import { Link } from 'react-router-dom'
 import FAQ from '@/components/FAQ.jsx'
 import enseigneLumineuseImg from '@/assets/Enseignelumineuse.JPG'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function CaissonAjoure() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.caissonAjoure
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

@@ -26,7 +26,13 @@ import enseigneNonLumineuse1 from '../../assets/Enseignenonlumineuse.webp'
 import enseigneNonLumineuse2 from '../../assets/Eseignenonlumineuse2.webp'
 import enseigneNonLumineuse3 from '../../assets/Enseignenonlumineuse3.JPG'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function Enseignes() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.enseignes
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
 
   const realisations = [
@@ -117,6 +123,18 @@ function Enseignes() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}

@@ -9,7 +9,13 @@ import HeroSlider from '../../components/HeroSlider'
 import vitrophanie from '../../assets/Vitrophanie6.JPG'
 import vitrophanieImg from '../../assets/services/vitrophanie.webp'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function Vitrophanie() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.vitrophanie
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
 
   const types = [
@@ -43,6 +49,18 @@ function Vitrophanie() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}

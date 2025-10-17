@@ -9,7 +9,13 @@ import HeroSlider from '../../components/HeroSlider'
 import conceptionGraphique from '../../assets/ConceptionGraphique.webp'
 import creationGraphiqueImg from '../../assets/creationgraphique.webp'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function CreationGraphique() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.creationGraphique
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
 
   const services = [
@@ -43,6 +49,18 @@ function CreationGraphique() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}

@@ -12,7 +12,13 @@ import realisation2 from '../../assets/signaletique/IMG_1726-900x1200.webp'
 import realisation3 from '../../assets/signaletique/Club-alpin-site-internet_Plan-de-travail-1-1024x1024.webp'
 import realisation4 from '../../assets/signaletique/enseigne-toile-tendue-lumineuse-salon-1200x1200.webp'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function Signaletique() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.signaletique
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
   const [currentSlide, setCurrentSlide] = useState(0)
 
@@ -90,6 +96,18 @@ function Signaletique() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Section avec Slider */}
       <section className="relative pt-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmQ3MDAiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>

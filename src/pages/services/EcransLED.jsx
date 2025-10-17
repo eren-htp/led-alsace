@@ -7,7 +7,13 @@ import { Monitor, Zap, Settings, Eye, TrendingUp, Clock, ArrowRight, Phone } fro
 import { useState } from 'react'
 import heroImage from '../../assets/Enseignelumineuse2.webp'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function EcransLED() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.ecransLED
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
   const [openFaq, setOpenFaq] = useState(null)
 
@@ -40,6 +46,18 @@ function EcransLED() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-black/50 z-10"></div>

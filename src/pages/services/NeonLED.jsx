@@ -11,7 +11,13 @@ import neonLED2 from '../../assets/NeonLED2.JPG'
 import neonLED3 from '../../assets/NeonLED3.JPG'
 import neonLED4 from '../../assets/NeonLED4.JPG'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function NeonLED() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.neonLED
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
 
   const avantages = [
@@ -34,6 +40,18 @@ function NeonLED() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}

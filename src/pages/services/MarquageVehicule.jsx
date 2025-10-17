@@ -15,7 +15,13 @@ import realisation3 from '../../assets/realisations/realisation_dard.webp'
 import realisation4 from '../../assets/realisations/realisation_fubat.webp'
 import realisation5 from '../../assets/realisations/realisation_mjr.webp'
 
+import servicesSEOConfig from '../../data/servicesSEO.js'
 function MarquageVehicule() {
+  // Configuration SEO
+  const seoData = servicesSEOConfig.marquageVehicule
+  const breadcrumbItems = seoData.breadcrumb
+  const faqs = seoData.faqs
+
   const navigate = useNavigate()
 
   const realisations = [
@@ -57,6 +63,18 @@ function MarquageVehicule() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+        structuredData={[
+          getBreadcrumbSchema(breadcrumbItems),
+          getFAQSchema(faqs)
+        ]}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}
