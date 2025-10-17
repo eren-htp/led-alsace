@@ -10,7 +10,7 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const baseUrl = 'https://www.ledalsace.com'
+const baseUrl = 'https://led-alsace.vercel.app'
 const currentDate = new Date().toISOString().split('T')[0]
 
 // Liste des URLs du site avec leurs propriétés
