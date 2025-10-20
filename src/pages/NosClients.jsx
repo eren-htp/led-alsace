@@ -245,8 +245,10 @@ function NosClients() {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 cursor-pointer ${
                     selectedCategory === category
-                      ? 'bg-yellow-500 text-[#1A2534] shadow-lg scale-105'
-                      : 'bg-gray-100 text-gray-700 hover:bg-yellow-100 hover:text-[#1A2534]'
+                      ? category === 'Tous'
+                        ? 'bg-[#F0C724] text-[#1A2534] shadow-lg scale-105'
+                        : 'bg-yellow-100 text-[#1A2534] shadow-md scale-105'
+                      : 'bg-gray-100 text-gray-700 hover:bg-yellow-50 hover:text-[#1A2534]'
                   }`}
                 >
                   {category}
