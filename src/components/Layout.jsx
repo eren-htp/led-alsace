@@ -36,7 +36,7 @@ function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Top Info Bar */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-[#F0C724] py-1.5">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-[#F0C724] py-1">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center md:justify-between flex-wrap gap-4 text-sm">
             <div className="flex items-center gap-3">
@@ -58,7 +58,7 @@ function Layout({ children }) {
       </div>
       
       {/* Header */}
-      <nav className="fixed top-[34px] left-0 right-0 z-40 transition-all duration-300 bg-white/95 backdrop-blur-sm py-4">
+      <nav className="fixed top-[30px] left-0 right-0 z-40 transition-all duration-300 bg-white/95 backdrop-blur-sm py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
