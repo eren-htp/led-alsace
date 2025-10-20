@@ -1,9 +1,9 @@
 import SEO from '../components/SEO.jsx'
-import { Shield, Lock, FileText, Server, User, Link as LinkIcon } from 'lucide-react'
+import { Shield, Lock, FileText, Server, User, Link as LinkIcon, Code } from 'lucide-react'
 
 function MentionsLegales() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       <SEO 
         title="Mentions Légales - LED Alsace"
         description="Mentions légales, politique de confidentialité et RGPD du site LED Alsace. Informations sur l'éditeur, l'hébergement et la protection des données personnelles."
@@ -12,7 +12,7 @@ function MentionsLegales() {
       />
 
       {/* Header */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <FileText className="w-16 h-16 mx-auto mb-6" />
@@ -29,41 +29,49 @@ function MentionsLegales() {
       {/* Contenu */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto prose prose-lg">
+          <div className="max-w-4xl mx-auto">
             
             {/* Éditeur */}
-            <div className="mb-12">
-              <div className="flex items-center mb-4">
-                <User className="w-8 h-8 text-blue-600 mr-3" />
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+              <div className="flex items-center mb-6">
+                <User className="w-8 h-8 text-yellow-500 mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Éditeur</h2>
               </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <p className="font-semibold text-xl mb-2">LED ALSACE</p>
-                <p className="mb-1"><strong>RCS Ostwald :</strong> 80297827000014</p>
-                <p className="mb-1"><strong>Siège social :</strong> Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</p>
-                <p className="mb-1"><strong>Téléphone :</strong> <a href="tel:+33388044534" className="text-blue-600 hover:underline">03 88 04 45 34</a></p>
-                <p className="mt-4"><strong>Directeur de la publication :</strong> DURMUS KOPAR</p>
+              <div className="space-y-3 text-gray-800">
+                <p className="text-xl font-semibold text-blue-900">LED ALSACE</p>
+                <p><span className="font-semibold">RCS Ostwald :</span> 80297827000014</p>
+                <p><span className="font-semibold">Siège social :</span> Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</p>
+                <p><span className="font-semibold">Téléphone :</span> <a href="tel:+33388044534" className="text-blue-600 hover:text-blue-800 font-semibold">03 88 04 45 34</a></p>
+                <p className="mt-4"><span className="font-semibold">Directeur de la publication :</span> DURMUS KOPAR</p>
               </div>
             </div>
 
             {/* Hébergement */}
-            <div className="mb-12">
-              <div className="flex items-center mb-4">
-                <Server className="w-8 h-8 text-blue-600 mr-3" />
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+              <div className="flex items-center mb-6">
+                <Server className="w-8 h-8 text-yellow-500 mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Hébergement</h2>
               </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <p className="font-semibold text-xl">IONOS.fr</p>
+              <p className="text-xl font-semibold text-blue-900">IONOS.fr</p>
+            </div>
+
+            {/* Conception du site */}
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+              <div className="flex items-center mb-6">
+                <Code className="w-8 h-8 text-yellow-500 mr-3" />
+                <h2 className="text-3xl font-bold text-gray-900 m-0">Conception et Développement</h2>
               </div>
+              <p className="text-xl font-semibold text-blue-900">Netz Informatique</p>
+              <p className="text-gray-700 mt-2">Conception, développement et optimisation du site web</p>
             </div>
 
             {/* Confidentialité */}
-            <div className="mb-12">
-              <div className="flex items-center mb-4">
-                <Lock className="w-8 h-8 text-blue-600 mr-3" />
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+              <div className="flex items-center mb-6">
+                <Lock className="w-8 h-8 text-yellow-500 mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Confidentialité</h2>
               </div>
-              <div className="text-gray-700 space-y-4">
+              <div className="text-gray-800 space-y-4 leading-relaxed">
                 <p>
                   LED ALSACE n'enregistre pas d'informations personnelles permettant l'identification, à l'exception des formulaires que l'utilisateur est libre de remplir. Ces informations ne seront pas utilisées sans votre accord, nous les utiliserons seulement pour vous adresser des courriers, des brochures, des devis ou vous contacter.
                 </p>
@@ -77,16 +85,16 @@ function MentionsLegales() {
             </div>
 
             {/* RGPD */}
-            <div className="mb-12">
-              <div className="flex items-center mb-4">
-                <Shield className="w-8 h-8 text-blue-600 mr-3" />
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+              <div className="flex items-center mb-6">
+                <Shield className="w-8 h-8 text-yellow-500 mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Règlement Général sur la Protection des Données (RGPD)</h2>
               </div>
-              <div className="text-gray-700 space-y-4">
+              <div className="text-gray-800 space-y-4 leading-relaxed">
                 <p>
                   LED ALSACE s'engage à ce que la collecte et le traitement de vos données, effectués à partir du site ledalsace.com, soient conformes au règlement général sur la protection des données (RGPD). Chaque formulaire ou téléservice limite la collecte des données personnelles au strict nécessaire (minimisation des données) et indique notamment :
                 </p>
-                <ul className="list-disc pl-6 space-y-2">
+                <ul className="list-disc pl-6 space-y-2 text-gray-800">
                   <li>quels sont les objectifs du recueil de ces données,</li>
                   <li>si ces données sont obligatoires ou facultatives pour la gestion de votre demande,</li>
                   <li>qui pourra en prendre connaissance (uniquement LED ALSACE en principe, sauf précision dans le formulaire lorsqu'une transmission à un tiers est nécessaire à la gestion de votre demande).</li>
@@ -104,12 +112,12 @@ function MentionsLegales() {
             </div>
 
             {/* Cookies */}
-            <div className="mb-12">
-              <div className="flex items-center mb-4">
-                <FileText className="w-8 h-8 text-blue-600 mr-3" />
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+              <div className="flex items-center mb-6">
+                <FileText className="w-8 h-8 text-yellow-500 mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Utilisation de Cookies</h2>
               </div>
-              <div className="text-gray-700 space-y-4">
+              <div className="text-gray-800 space-y-4 leading-relaxed">
                 <p>
                   Les cookies permettent d'enregistrer les informations (non personnelles) relatives à la navigation des utilisateurs sur internet. Les cookies déposés par Linkeo ont pour objectif l'amélioration de l'expérience de navigation des visiteurs ainsi que l'optimisation des statistiques. Dès lors que vous les acceptez, ceux-ci ne seront utilisés uniquement dans le cadre de votre navigation sur le site ledalsace.com, et ce pour une durée de 12 mois maximum.
                 </p>
@@ -117,12 +125,12 @@ function MentionsLegales() {
             </div>
 
             {/* Liens hypertexte */}
-            <div className="mb-12">
-              <div className="flex items-center mb-4">
-                <LinkIcon className="w-8 h-8 text-blue-600 mr-3" />
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+              <div className="flex items-center mb-6">
+                <LinkIcon className="w-8 h-8 text-yellow-500 mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Liens Hypertexte</h2>
               </div>
-              <div className="text-gray-700 space-y-4">
+              <div className="text-gray-800 space-y-4 leading-relaxed">
                 <p>
                   LED ALSACE ne contrôle pas les sites en connexion avec le sien, et ne saurait donc être responsable de leur contenu. Les risques liés à l'utilisation de ces sites incombent pleinement à l'utilisateur. Il se conformera à leurs conditions d'utilisation.
                 </p>
@@ -130,14 +138,14 @@ function MentionsLegales() {
             </div>
 
             {/* Contact */}
-            <div className="bg-blue-50 p-6 rounded-lg mt-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Nous Contacter</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-lg shadow-lg p-8">
+              <h3 className="text-2xl font-bold mb-4">Nous Contacter</h3>
+              <p className="mb-4 text-blue-100">
                 Pour toute question concernant ces mentions légales ou l'utilisation de vos données personnelles, vous pouvez nous contacter :
               </p>
               <div className="space-y-2">
-                <p><strong>Par téléphone :</strong> <a href="tel:+33388044534" className="text-blue-600 hover:underline">03 88 04 45 34</a></p>
-                <p><strong>Par courrier :</strong> LED ALSACE, Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</p>
+                <p><span className="font-semibold">Par téléphone :</span> <a href="tel:+33388044534" className="text-yellow-400 hover:text-yellow-300 font-semibold">03 88 04 45 34</a></p>
+                <p><span className="font-semibold">Par courrier :</span> LED ALSACE, Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</p>
               </div>
             </div>
 
