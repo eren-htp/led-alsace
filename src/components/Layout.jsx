@@ -4,9 +4,9 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
 import { Menu, X, Phone, Mail, MapPin, ChevronDown, Instagram, Linkedin } from 'lucide-react'
 import CallbackButton from './CallbackButton.jsx'
+import SnapchatIcon from './SnapchatIcon.jsx'
 import logoLedAlsace from '@/assets/logo-led-alsace.webp'
 import logoIcon from '@/assets/logo-led-alsace-icon.webp'
-import snapchatIcon from '@/assets/snapchat-icon.png'
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -340,7 +340,7 @@ function Layout({ children }) {
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a href="https://www.snapchat.com/add/led_alsace" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                  <img src={snapchatIcon} alt="Snapchat" className="w-6 h-6 filter brightness-75 hover:brightness-100 hover:invert hover:sepia hover:saturate-[10] hover:hue-rotate-[10deg]" />
+                  <SnapchatIcon className="w-6 h-6" />
                 </a>
               </div>
             </div>
