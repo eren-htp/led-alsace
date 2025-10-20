@@ -132,7 +132,7 @@ function Contact() {
           {/* Contact Form & Info */}
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-gray-50 p-8 rounded-xl">
+            <div className="bg-gray-50 p-8 rounded-xl border-2 border-[#1A2534]">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Demandez votre devis gratuit
               </h2>
