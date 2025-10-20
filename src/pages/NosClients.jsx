@@ -1,6 +1,7 @@
-import { Button } from '@/components/ui/button.jsx'
+import { useState } from 'react'
 import { Star, ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import { Button } from '@/components/ui/button.jsx'
 import SEO from '../components/SEO.jsx'
 import { getReviewSchema } from '../utils/structuredData.js'
 import CounterAnimation from '../components/CounterAnimation'
@@ -36,6 +37,9 @@ import logoElsassViande from '../assets/logos-clients/elsass-viande.webp'
 
 function NosClients() {
   const navigate = useNavigate()
+  const [selectedCategory, setSelectedCategory] = useState('Tous')
+
+  const categories = ['Tous', 'Restauration', 'Commerce', 'Transport', 'Immobilier', 'Construction', 'Garage']
 
   const testimonials = [
     {
@@ -89,34 +93,39 @@ function NosClients() {
   ]
 
   const clients = [
-    { name: "HB Toiture", sector: "Couverture et zinguerie", logo: logoHBToiture, alt: "Logo HB Toiture - Client enseigne LED couverture zinguerie Alsace" },
-    { name: "Kool", sector: "Commerce", logo: logoKool, alt: "Logo Kool - Client enseigne LED commerce Alsace" },
-    { name: "Le Foch", sector: "Restaurant", logo: logoLeFoch, alt: "Logo Le Foch Restaurant - Client enseigne LED restaurant Strasbourg" },
-    { name: "SNCF", sector: "Transport ferroviaire", logo: logoSNCF, alt: "Logo SNCF - Client signalétique transport ferroviaire Alsace" },
-    { name: "Select Habitat", sector: "Immobilier", logo: logoSelectHabitat, alt: "Logo Select Habitat - Client enseigne LED immobilier Alsace" },
-    { name: "ProControle", sector: "Contrôle technique", logo: logoProControle, alt: "Logo ProControle - Client enseigne LED contrôle technique Alsace" },
-    { name: "Divino", sector: "Restaurant", logo: logoDivino, alt: "Logo Divino - Client enseigne LED restaurant Alsace" },
-    { name: "Premium Cars", sector: "Garage automobile", logo: logoPremiumCars, alt: "Logo Premium Cars - Client enseigne LED garage automobile Alsace" },
-    { name: "Aubade", sector: "Salle de bains", logo: logoAubade, alt: "Logo Aubade - Client signalétique salle de bains Alsace" },
-    { name: "Planet Lunch", sector: "Restauration", logo: logoPlanetLunch, alt: "Logo Planet Lunch - Client enseigne LED restauration Alsace" },
-    { name: "Peugeot Saverne", sector: "Concessionnaire", logo: logoPeugeotSaverne, alt: "Logo Peugeot Saverne - Client enseigne LED concessionnaire Alsace" },
-    { name: "Muc Habitat", sector: "Construction", logo: logoMucHabitat, alt: "Logo Muc Habitat - Client signalétique construction Alsace" },
-    { name: "MGEN", sector: "Mutuelle", logo: logoMGEN, alt: "Logo MGEN - Client signalétique mutuelle Alsace" },
-    { name: "Le Pin Parasol", sector: "Restaurant", logo: logoPinParasol, alt: "Logo Le Pin Parasol - Client enseigne LED restaurant Alsace" },
-    { name: "Le Confidentiel", sector: "Restaurant", logo: logoConfidentiel, alt: "Logo Le Confidentiel - Client enseigne LED restaurant Strasbourg" },
-    { name: "Label Dent", sector: "Dentiste", logo: logoLabelDent, alt: "Logo Label Dent - Client enseigne LED dentiste Alsace" },
-    { name: "Le Sofitel", sector: "Hôtel", logo: logoSofitel, alt: "Logo Sofitel - Client enseigne LED hôtel Strasbourg" },
-    { name: "Honey Room", sector: "Commerce", logo: logoHoneyRoom, alt: "Logo Honey Room - Client enseigne LED commerce Alsace" },
-    { name: "H-Line Automobiles", sector: "Garage", logo: logoHLine, alt: "Logo H-Line Automobiles - Client enseigne LED garage Alsace" },
-    { name: "Goia", sector: "Restaurant", logo: logoGoia, alt: "Logo Goia - Client enseigne LED restaurant Alsace" },
-    { name: "Gaziantep", sector: "Restaurant", logo: logoGaziantep, alt: "Logo Gaziantep - Client enseigne LED restaurant Alsace" },
-    { name: "Garage Maylaender", sector: "Carrosserie", logo: logoGarageMaylaender, alt: "Logo Garage Maylaender - Client enseigne LED carrosserie Alsace" },
-    { name: "Garage Link", sector: "Automobiles", logo: logoGarageLink, alt: "Logo Garage Link - Client enseigne LED automobiles Alsace" },
-    { name: "Francesca", sector: "Restaurant italien", logo: logoFrancesca, alt: "Logo Francesca - Client enseigne LED restaurant italien Alsace" },
-    { name: "Finay", sector: "Commerce", logo: logoFinay, alt: "Logo Finay - Client signalétique commerce Alsace" },
-    { name: "Etandex", sector: "Bâtiment", logo: logoEtandex, alt: "Logo Etandex - Client signalétique bâtiment Alsace" },
-    { name: "Elsass Viande", sector: "Boucherie", logo: logoElsassViande, alt: "Logo Elsass Viande - Client enseigne LED boucherie Alsace" }
+    { name: "HB Toiture", sector: "Couverture et zinguerie", category: "Construction", logo: logoHBToiture, alt: "Logo HB Toiture - Client enseigne LED couverture zinguerie Alsace" },
+    { name: "Kool", sector: "Commerce", category: "Commerce", logo: logoKool, alt: "Logo Kool - Client enseigne LED commerce Alsace" },
+    { name: "Le Foch", sector: "Restaurant", category: "Restauration", logo: logoLeFoch, alt: "Logo Le Foch Restaurant - Client enseigne LED restaurant Strasbourg" },
+    { name: "SNCF", sector: "Transport ferroviaire", category: "Transport", logo: logoSNCF, alt: "Logo SNCF - Client signalétique transport ferroviaire Alsace" },
+    { name: "Select Habitat", sector: "Immobilier", category: "Immobilier", logo: logoSelectHabitat, alt: "Logo Select Habitat - Client enseigne LED immobilier Alsace" },
+    { name: "ProControle", sector: "Contrôle technique", category: "Garage", logo: logoProControle, alt: "Logo ProControle - Client enseigne LED contrôle technique Alsace" },
+    { name: "Divino", sector: "Restaurant", category: "Restauration", logo: logoDivino, alt: "Logo Divino - Client enseigne LED restaurant Alsace" },
+    { name: "Premium Cars", sector: "Garage automobile", category: "Garage", logo: logoPremiumCars, alt: "Logo Premium Cars - Client enseigne LED garage automobile Alsace" },
+    { name: "Aubade", sector: "Salle de bains", category: "Commerce", logo: logoAubade, alt: "Logo Aubade - Client signalétique salle de bains Alsace" },
+    { name: "Planet Lunch", sector: "Restauration", category: "Restauration", logo: logoPlanetLunch, alt: "Logo Planet Lunch - Client enseigne LED restauration Alsace" },
+    { name: "Peugeot Saverne", sector: "Concessionnaire", category: "Garage", logo: logoPeugeotSaverne, alt: "Logo Peugeot Saverne - Client enseigne LED concessionnaire Alsace" },
+    { name: "Muc Habitat", sector: "Construction", category: "Construction", logo: logoMucHabitat, alt: "Logo Muc Habitat - Client signalétique construction Alsace" },
+    { name: "MGEN", sector: "Mutuelle", category: "Immobilier", logo: logoMGEN, alt: "Logo MGEN - Client signalétique mutuelle Alsace" },
+    { name: "Le Pin Parasol", sector: "Restaurant", category: "Restauration", logo: logoPinParasol, alt: "Logo Le Pin Parasol - Client enseigne LED restaurant Alsace" },
+    { name: "Le Confidentiel", sector: "Restaurant", category: "Restauration", logo: logoConfidentiel, alt: "Logo Le Confidentiel - Client enseigne LED restaurant Strasbourg" },
+    { name: "Label Dent", sector: "Dentiste", category: "Commerce", logo: logoLabelDent, alt: "Logo Label Dent - Client enseigne LED dentiste Alsace" },
+    { name: "Le Sofitel", sector: "Hôtel", category: "Commerce", logo: logoSofitel, alt: "Logo Sofitel - Client enseigne LED hôtel Strasbourg" },
+    { name: "Honey Room", sector: "Commerce", category: "Commerce", logo: logoHoneyRoom, alt: "Logo Honey Room - Client enseigne LED commerce Alsace" },
+    { name: "H-Line Automobiles", sector: "Garage", category: "Garage", logo: logoHLine, alt: "Logo H-Line Automobiles - Client enseigne LED garage Alsace" },
+    { name: "Goia", sector: "Restaurant", category: "Restauration", logo: logoGoia, alt: "Logo Goia - Client enseigne LED restaurant Alsace" },
+    { name: "Gaziantep", sector: "Restaurant", category: "Restauration", logo: logoGaziantep, alt: "Logo Gaziantep - Client enseigne LED restaurant Alsace" },
+    { name: "Garage Maylaender", sector: "Carrosserie", category: "Garage", logo: logoGarageMaylaender, alt: "Logo Garage Maylaender - Client enseigne LED carrosserie Alsace" },
+    { name: "Garage Link", sector: "Automobiles", category: "Garage", logo: logoGarageLink, alt: "Logo Garage Link - Client enseigne LED automobiles Alsace" },
+    { name: "Francesca", sector: "Restaurant italien", category: "Restauration", logo: logoFrancesca, alt: "Logo Francesca - Client enseigne LED restaurant italien Alsace" },
+    { name: "Finay", sector: "Commerce", category: "Commerce", logo: logoFinay, alt: "Logo Finay - Client signalétique commerce Alsace" },
+    { name: "Etandex", sector: "Bâtiment", category: "Construction", logo: logoEtandex, alt: "Logo Etandex - Client signalétique bâtiment Alsace" },
+    { name: "Elsass Viande", sector: "Boucherie", category: "Restauration", logo: logoElsassViande, alt: "Logo Elsass Viande - Client enseigne LED boucherie Alsace" }
   ]
+
+  // Filtrer les clients selon la catégorie sélectionnée
+  const filteredClients = selectedCategory === 'Tous' 
+    ? clients 
+    : clients.filter(client => client.category === selectedCategory)
 
   // Préparer les données des avis pour le schema
   const reviewsData = testimonials.map(t => ({
@@ -224,13 +233,30 @@ function NosClients() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Nos Références
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
               Ils ont choisi LED Alsace pour améliorer leur visibilité
             </p>
+            
+            {/* Filtres par catégorie */}
+            <div className="flex flex-wrap justify-center gap-3 mb-12">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setSelectedCategory(category)}
+                  className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 cursor-pointer ${
+                    selectedCategory === category
+                      ? 'bg-yellow-500 text-[#1A2534] shadow-lg scale-105'
+                      : 'bg-gray-100 text-gray-700 hover:bg-yellow-100 hover:text-[#1A2534]'
+                  }`}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {clients.map((client, index) => (
+            {filteredClients.map((client, index) => (
               <div 
                 key={index}
                 className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 hover:border-yellow-500 hover:shadow-lg transition-all duration-300 text-center group"
