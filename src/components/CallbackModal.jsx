@@ -52,7 +52,7 @@ function CallbackModal({ isOpen, onClose }) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-led-dark/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-in fade-in zoom-in duration-300">
         {/* Bouton fermer */}
         <button
@@ -66,7 +66,7 @@ function CallbackModal({ isOpen, onClose }) {
         {/* En-tête */}
         <div className="text-center mb-6">
           <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Phone className="w-8 h-8 text-black" />
+            <Phone className="w-8 h-8 text-led-dark" />
           </div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Être rappelé</h2>
           <p className="text-gray-600">Laissez-nous vos coordonnées, nous vous rappelons rapidement</p>
@@ -113,7 +113,7 @@ function CallbackModal({ isOpen, onClose }) {
           )}
 
           {submitStatus === 'error' && (
-            <div className="bg-gray-100 border-2 border-black text-gray-900 px-4 py-3 rounded-lg">
+            <div className="bg-gray-100 border-2 border-led-dark text-gray-900 px-4 py-3 rounded-lg">
               ✗ Erreur lors de l'envoi. Veuillez réessayer.
             </div>
           )}
@@ -131,7 +131,7 @@ function CallbackModal({ isOpen, onClose }) {
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-black font-bold"
+              className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-led-dark font-bold"
             >
               {isSubmitting ? 'Envoi...' : 'Envoyer'}
             </Button>

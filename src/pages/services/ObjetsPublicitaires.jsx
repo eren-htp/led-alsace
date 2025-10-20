@@ -226,7 +226,7 @@ function ObjetsPublicitaires() {
           <Button 
             onClick={() => navigate('/contact')} 
             size="lg" 
-            className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+            className="bg-yellow-400 hover:bg-yellow-500 text-led-dark font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
           >
             Demander un devis
             <ArrowRight className="ml-2 w-5 h-5" />

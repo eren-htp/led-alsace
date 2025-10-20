@@ -152,7 +152,7 @@ function APropos() {
 
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-led-dark mb-6">
             Prêt à travailler avec nous ?
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
@@ -161,7 +161,7 @@ function APropos() {
           <Button 
             onClick={() => navigate('/contact')}
             size="lg"
-            className="bg-black hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
+            className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
           >
             Nous contacter
             <ArrowRight className="ml-2 w-5 h-5" />

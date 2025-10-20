@@ -39,7 +39,7 @@ function EcransLED() {
 
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center">
-        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="absolute inset-0 bg-led-dark/50 z-10"></div>
         <img 
           src={heroImage} 
           alt="Écrans LED grand format" 
@@ -53,7 +53,7 @@ function EcransLED() {
           <Button 
             onClick={() => navigate('/contact')} 
             size="lg" 
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold"
+            className="bg-yellow-500 hover:bg-yellow-600 text-led-dark font-semibold"
           >
             Demander un devis gratuit
           </Button>
@@ -358,7 +358,7 @@ function EcransLED() {
             <Button 
               onClick={() => navigate('/contact')}
               size="lg"
-              className="bg-black hover:bg-gray-800 text-white"
+              className="bg-led-dark hover:bg-gray-800 text-white"
             >
               Demander un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />

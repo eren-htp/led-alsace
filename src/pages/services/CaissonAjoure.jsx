@@ -36,7 +36,7 @@ function CaissonAjoure() {
             alt="Caisson Ajouré Lumineux"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-led-dark/40"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
@@ -47,7 +47,7 @@ function CaissonAjoure() {
             Élégance et modernité pour votre enseigne lumineuse
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
+            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-led-dark font-bold">
               Demander un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -183,9 +183,9 @@ function CaissonAjoure() {
               <table className="w-full">
                 <thead className="bg-yellow-500">
                   <tr>
-                    <th className="p-4 text-left text-black font-bold">Critère</th>
-                    <th className="p-4 text-left text-black font-bold">Caisson Ajouré</th>
-                    <th className="p-4 text-left text-black font-bold">Caisson Classique</th>
+                    <th className="p-4 text-left text-led-dark font-bold">Critère</th>
+                    <th className="p-4 text-left text-led-dark font-bold">Caisson Ajouré</th>
+                    <th className="p-4 text-left text-led-dark font-bold">Caisson Classique</th>
                   </tr>
                 </thead>
                 <tbody className="text-gray-700">
@@ -253,7 +253,7 @@ function CaissonAjoure() {
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-br from-yellow-400 to-yellow-500">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-led-dark mb-6">
             Projet de caisson ajouré lumineux ?
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
@@ -261,13 +261,13 @@ function CaissonAjoure() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold">
+              <Button size="lg" className="bg-led-dark hover:bg-gray-800 text-white font-bold">
                 <Phone className="mr-2 w-5 h-5" />
                 03 88 044 534
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="bg-white hover:bg-gray-100 text-black border-2 border-black font-bold">
+              <Button size="lg" variant="outline" className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold">
                 Demander un devis
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

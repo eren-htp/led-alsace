@@ -341,7 +341,7 @@ function LettresBoitierSlider() {
 
                 {/* Model Counter */}
                 <div className={`absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full text-sm font-semibold ${
-                  isNight ? 'bg-gray-800/90 text-white' : 'bg-black/70 text-white'
+                  isNight ? 'bg-gray-800/90 text-white' : 'bg-led-dark/70 text-white'
                 }`}>
                   {currentIndex + 1} / {models.length}
                 </div>

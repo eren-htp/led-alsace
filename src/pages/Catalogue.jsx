@@ -198,7 +198,7 @@ function Catalogue() {
         canonicalUrl="https://www.ledalsace.com/catalogue"
       />
       {/* Header du catalogue - Déplacé en bas au-dessus des contrôles */}
-      <header className="bg-black/50 backdrop-blur-sm border-t border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 fixed bottom-16 left-0 right-0 z-40">
+      <header className="bg-led-dark/50 backdrop-blur-sm border-t border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 fixed bottom-16 left-0 right-0 z-40">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 md:gap-4">
             <Link to="/" className="text-lg md:text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition-colors cursor-pointer">
@@ -282,11 +282,11 @@ function Catalogue() {
         </div>
 
         {/* Controls - Version mobile optimisée - Fixés tout en bas */}
-        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:gap-4 bg-black/70 backdrop-blur-sm px-3 md:px-6 py-2 md:py-3 rounded-full border border-yellow-500/30 z-50">
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:gap-4 bg-led-dark/70 backdrop-blur-sm px-3 md:px-6 py-2 md:py-3 rounded-full border border-yellow-500/30 z-50">
           <Button
             onClick={prevPage}
             disabled={isFlipping || currentPage === 0}
-            className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold disabled:opacity-50 disabled:cursor-not-allowed text-xs md:text-sm h-8 md:h-9 px-3 md:px-4"
+            className="bg-yellow-500 hover:bg-yellow-400 text-led-dark font-semibold disabled:opacity-50 disabled:cursor-not-allowed text-xs md:text-sm h-8 md:h-9 px-3 md:px-4"
             size="sm"
           >
             ←
@@ -321,7 +321,7 @@ function Catalogue() {
           <Button
             onClick={nextPage}
             disabled={isFlipping || currentPage === totalPages - 1}
-            className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold disabled:opacity-50 disabled:cursor-not-allowed text-xs md:text-sm h-8 md:h-9 px-3 md:px-4"
+            className="bg-yellow-500 hover:bg-yellow-400 text-led-dark font-semibold disabled:opacity-50 disabled:cursor-not-allowed text-xs md:text-sm h-8 md:h-9 px-3 md:px-4"
             size="sm"
           >
             <span className="hidden sm:inline mr-1">Suiv.</span>
@@ -331,7 +331,7 @@ function Catalogue() {
 
         {/* Thumbnails Overlay */}
         {showThumbnails && isMobile && (
-          <div className="absolute inset-0 bg-black/90 z-40 flex flex-col items-center justify-center p-4">
+          <div className="absolute inset-0 bg-led-dark/90 z-40 flex flex-col items-center justify-center p-4">
             <h2 className="text-white text-2xl font-bold mb-4">Miniatures</h2>
             <div className="grid grid-cols-3 gap-4 overflow-y-auto max-h-[80vh]">
               {pages.map((pageImg, index) => (
@@ -360,7 +360,7 @@ function Catalogue() {
 
       {/* Footer - Version desktop */}
       {showFooter && !isMobile && (
-        <footer className="bg-black/50 backdrop-blur-sm border-t border-yellow-500/20 px-6 py-4 sticky bottom-0 z-50">
+        <footer className="bg-led-dark/50 backdrop-blur-sm border-t border-yellow-500/20 px-6 py-4 sticky bottom-0 z-50">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Button

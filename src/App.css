@@ -336,3 +336,18 @@ img {
   }
 }
 
+
+/* Cursor pointer pour tous les éléments cliquables */
+button,
+a,
+[role="button"],
+[onclick],
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* Hover effects pour les liens */
+a:hover {
+  cursor: pointer;
+}
+

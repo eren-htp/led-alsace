@@ -92,7 +92,7 @@ function ModelItem({ model }) {
         </div>
 
         {/* Badge modèle */}
-        <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg font-bold text-lg">
+        <div className="absolute top-4 left-4 bg-led-dark/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg font-bold text-lg">
           {model.id}
         </div>
       </div>

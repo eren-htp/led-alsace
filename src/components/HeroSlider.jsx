@@ -36,7 +36,7 @@ function HeroSlider({ images, title, subtitle, autoPlayInterval = 5000 }) {
             className="w-full h-full object-cover"
           />
           {/* Overlay sombre pour la lisibilité */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-led-dark/50"></div>
         </div>
       ))}
 

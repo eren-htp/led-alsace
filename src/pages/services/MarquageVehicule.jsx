@@ -158,9 +158,9 @@ function MarquageVehicule() {
 
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">Transformez vos véhicules en supports publicitaires</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-led-dark mb-6">Transformez vos véhicules en supports publicitaires</h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">Contactez-nous pour un devis gratuit et personnalisé</p>
-          <Button onClick={() => navigate('/contact')} size="lg" className="bg-black hover:bg-gray-900 text-white font-bold text-lg px-8 py-6">
+          <Button onClick={() => navigate('/contact')} size="lg" className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6">
             Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>

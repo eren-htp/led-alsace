@@ -671,7 +671,7 @@ function Services() {
               </div>
 
               <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-                <div className="text-4xl font-bold text-black mb-4">02</div>
+                <div className="text-4xl font-bold text-led-dark mb-4">02</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Conception</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Notre équipe de designers crée des maquettes et vous présente plusieurs options.
@@ -687,7 +687,7 @@ function Services() {
               </div>
 
               <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-                <div className="text-4xl font-bold text-black mb-4">04</div>
+                <div className="text-4xl font-bold text-led-dark mb-4">04</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Installation</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Pose professionnelle par nos équipes qualifiées et service après-vente garanti.
@@ -701,7 +701,7 @@ function Services() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-led-dark mb-6">
             Un projet en tête ?
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
@@ -711,7 +711,7 @@ function Services() {
             <Button 
               onClick={() => navigate('/contact')}
               size="lg"
-              className="bg-black hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
+              className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
             >
               Demander un devis
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -719,7 +719,7 @@ function Services() {
             <Button 
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-100 text-black border-2 border-black font-bold text-lg px-8 py-6"
+              className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold text-lg px-8 py-6"
               onClick={() => window.location.href = 'tel:0388044534'}
             >
               <svg className="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

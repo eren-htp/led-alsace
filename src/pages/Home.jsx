@@ -160,7 +160,7 @@ function Home() {
               <Button 
                 onClick={scrollToContact}
                 size="lg"
-                className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8 py-6"
+                className="bg-yellow-500 hover:bg-yellow-600 text-led-dark font-bold text-lg px-8 py-6"
               >
                 Demander un devis gratuit
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -246,7 +246,7 @@ function Home() {
           {/* Toutes les solutions en grandes cartes */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {/* Enseignes lumineuses */}
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div onClick={() => navigate('/services/enseignes')} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={enseigneLedImg} 
@@ -257,7 +257,7 @@ function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-black">
+                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-led-dark">
                   SOLUTION PHARE
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Enseignes Lumineuses</h3>
@@ -273,7 +273,7 @@ function Home() {
             </div>
 
             {/* Signalétique */}
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div onClick={() => navigate('/services/signaletique')} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={signaletiqueImg} 
@@ -284,7 +284,7 @@ function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-black">
+                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-led-dark">
                   SOLUTION PHARE
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Signalétique</h3>
@@ -300,7 +300,7 @@ function Home() {
             </div>
 
             {/* Marquage Textile */}
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div onClick={() => navigate('/services/textile-epi')} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageTextileImg} 
@@ -311,7 +311,7 @@ function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-black">
+                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-led-dark">
                   SOLUTION PHARE
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Marquage Textile</h3>
@@ -327,7 +327,7 @@ function Home() {
             </div>
 
             {/* Marquage Vitrine */}
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div onClick={() => navigate('/services/marquage-vitrine')} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageVitrineImg} 
@@ -351,7 +351,7 @@ function Home() {
             </div>
 
             {/* Impression Grand Format */}
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div onClick={() => navigate('/services/impression-grand-format')} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={impressionGrandFormatImg} 
@@ -375,7 +375,7 @@ function Home() {
             </div>
 
             {/* Marquage Véhicules */}
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div onClick={() => navigate('/services/marquage-vehicule')} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageVehiculeImg} 
@@ -516,7 +516,7 @@ function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-led-dark mb-6">
             Demandez Votre Devis Gratuit pour une Enseigne LED
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
@@ -526,7 +526,7 @@ function Home() {
             <Button 
               onClick={scrollToContact}
               size="lg"
-              className="bg-black hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
+              className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
             >
               Demander un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -534,7 +534,7 @@ function Home() {
             <Button 
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-100 text-black border-2 border-black font-bold text-lg px-8 py-6"
+              className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold text-lg px-8 py-6"
               onClick={() => window.location.href = 'tel:0388044534'}
             >
               <svg className="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

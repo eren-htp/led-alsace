@@ -64,28 +64,28 @@ function Realisations() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-led-dark mb-2">
                 <CounterAnimation end={1120} prefix="+" />
               </div>
-              <div className="text-black/80 font-semibold">Enseignes</div>
+              <div className="text-led-dark/80 font-semibold">Enseignes</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-led-dark mb-2">
                 <CounterAnimation end={490} prefix="+" />
               </div>
-              <div className="text-black/80 font-semibold">Marquages Véhicules</div>
+              <div className="text-led-dark/80 font-semibold">Marquages Véhicules</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-led-dark mb-2">
                 <CounterAnimation end={1540} prefix="+" />
               </div>
-              <div className="text-black/80 font-semibold">Chantiers</div>
+              <div className="text-led-dark/80 font-semibold">Chantiers</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-led-dark mb-2">
                 <CounterAnimation end={2115} prefix="+" />
               </div>
-              <div className="text-black/80 font-semibold">Clients Satisfaits</div>
+              <div className="text-led-dark/80 font-semibold">Clients Satisfaits</div>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ function Realisations() {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (
-              <button key={category} onClick={() => setSelectedCategory(category)} className={`px-6 py-3 rounded-full font-semibold transition-all ${selectedCategory === category ? 'bg-yellow-500 text-black shadow-lg' : 'bg-white text-gray-700 hover:bg-gray-100'}`}>{category}</button>
+              <button key={category} onClick={() => setSelectedCategory(category)} className={`px-6 py-3 rounded-full font-semibold transition-all ${selectedCategory === category ? 'bg-yellow-500 text-led-dark shadow-lg' : 'bg-white text-gray-700 hover:bg-gray-100'}`}>{category}</button>
             ))}
           </div>
 
@@ -118,8 +118,8 @@ function Realisations() {
 
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">Prêt à réaliser votre projet ?</h2>
-          <Button onClick={() => navigate('/contact')} size="lg" className="bg-black hover:bg-gray-900 text-white font-bold text-lg px-8 py-6">Demander un devis<ArrowRight className="ml-2 w-5 h-5" /></Button>
+          <h2 className="text-3xl md:text-5xl font-bold text-led-dark mb-6">Prêt à réaliser votre projet ?</h2>
+          <Button onClick={() => navigate('/contact')} size="lg" className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6">Demander un devis<ArrowRight className="ml-2 w-5 h-5" /></Button>
         </div>
       </section>
     </div>
