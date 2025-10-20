@@ -91,8 +91,8 @@ function Catalogue() {
       const isMobileDevice = window.innerWidth < 768
       
       const pageFlip = new PageFlip(bookContainer, {
-        width: isMobileDevice ? window.innerWidth - 40 : 350,
-        height: isMobileDevice ? window.innerHeight - 250 : 466,
+        width: isMobileDevice ? Math.min(window.innerWidth - 40, 400) : 350,
+        height: isMobileDevice ? Math.min(window.innerHeight - 200, 600) : 466,
         size: 'fixed',
         minWidth: 200,
         maxWidth: 1000,
