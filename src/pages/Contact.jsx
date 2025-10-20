@@ -136,7 +136,7 @@ function Contact() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Demandez votre devis gratuit
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">

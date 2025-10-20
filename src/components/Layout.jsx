@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
 import { Menu, X, Phone, Mail, MapPin, ChevronDown, Instagram } from 'lucide-react'
 import CallbackButton from './CallbackButton.jsx'
@@ -12,6 +12,7 @@ function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const location = useLocation()
+  const navigate = useNavigate()
   const [headerHeight, setHeaderHeight] = useState(0);
 
   const services = [
@@ -406,6 +407,23 @@ function Layout({ children }) {
         </div>
       </footer>
       )}
+
+      {/* Floating Contact Button (Mobile Only) */}
+      <button
+        onClick={() => {
+          navigate('/contact');
+          setTimeout(() => {
+            const formElement = document.getElementById('contact-form');
+            if (formElement) {
+              formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 100);
+        }}
+        className="lg:hidden fixed bottom-6 right-6 z-40 bg-[#F0C724] hover:bg-yellow-600 text-[#1A2534] p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 cursor-pointer"
+        aria-label="Ouvrir le formulaire de contact"
+      >
+        <Mail className="w-6 h-6" />
+      </button>
 
       {/* Callback Button */}
       <CallbackButton />
