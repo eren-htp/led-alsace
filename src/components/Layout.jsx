@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
-import { Menu, X, Phone, Mail, MapPin, ChevronDown, Instagram } from 'lucide-react'
+import { Menu, X, Phone, Mail, MapPin, ChevronDown, Instagram, Linkedin } from 'lucide-react'
 import CallbackButton from './CallbackButton.jsx'
 import logoLedAlsace from '@/assets/logo-led-alsace.webp'
 import logoIcon from '@/assets/logo-led-alsace-icon.webp'
@@ -335,6 +335,9 @@ function Layout({ children }) {
               <div className="flex space-x-4">
                 <a href="https://www.instagram.com/led_alsace/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
                   <Instagram className="w-6 h-6" />
+                </a>
+                <a href="https://www.linkedin.com/company/led-alsace/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                  <Linkedin className="w-6 h-6" />
                 </a>
                 <a href="https://www.snapchat.com/add/led_alsace" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
                   <img src={snapchatIcon} alt="Snapchat" className="w-6 h-6" />
