@@ -94,7 +94,7 @@ function NosClients() {
 
   const clients = [
     { name: "HB Toiture", sector: "Couverture et zinguerie", category: "Construction", logo: logoHBToiture, alt: "Logo HB Toiture - Client enseigne LED couverture zinguerie Alsace" },
-    { name: "Kool", sector: "Commerce", category: "Commerce", logo: logoKool, alt: "Logo Kool - Client enseigne LED commerce Alsace" },
+    { name: "Kool", sector: "Commerce", category: "Restauration", logo: logoKool, alt: "Logo Kool - Client enseigne LED commerce Alsace" },
     { name: "Le Foch", sector: "Restaurant", category: "Restauration", logo: logoLeFoch, alt: "Logo Le Foch Restaurant - Client enseigne LED restaurant Strasbourg" },
     { name: "SNCF", sector: "Transport ferroviaire", category: "Transport", logo: logoSNCF, alt: "Logo SNCF - Client signalétique transport ferroviaire Alsace" },
     { name: "Select Habitat", sector: "Immobilier", category: "Immobilier", logo: logoSelectHabitat, alt: "Logo Select Habitat - Client enseigne LED immobilier Alsace" },
