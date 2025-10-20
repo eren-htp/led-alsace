@@ -34,6 +34,29 @@ function Layout({ children }) {
 
   const isCataloguePage = location.pathname === '/catalogue'
 
+  // Fermer le menu mobile lors du changement de page
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setIsServicesOpen(false);
+  }, [location.pathname]);
+
+  // Fermer le menu mobile au clic en dehors
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMenuOpen && !event.target.closest('nav') && !event.target.closest('button[aria-label="Toggle menu"]')) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   useEffect(() => {
     const updateHeaderHeight = () => {
       const headerElement = document.getElementById('main-header-fixed-container');
@@ -207,6 +230,7 @@ function Layout({ children }) {
               <button 
                 className="lg:hidden p-2"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Toggle menu"
               >
                 {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
