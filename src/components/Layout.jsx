@@ -49,10 +49,15 @@ function Layout({ children }) {
                 <span className="font-semibold">contact@ledalsace.fr</span>
               </a>
             </div>
-            <div className="hidden md:flex items-center gap-1.5 text-[#1A2534] text-xs">
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=Z.I+La+Vigie,+12+rue+Th%C3%A9odore+Monod,+67540+Ostwald" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-1.5 text-[#1A2534] hover:text-gray-900 transition-colors text-xs cursor-pointer"
+            >
               <MapPin className="w-3 h-3" />
               <span>Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
