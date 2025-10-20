@@ -12,14 +12,14 @@ function MentionsLegales() {
       />
 
       {/* Header */}
-      <section className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-20">
+      <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <FileText className="w-16 h-16 mx-auto mb-6" />
+            <FileText className="w-16 h-16 mx-auto mb-6 text-[#F0C724]" />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Mentions Légales
             </h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-gray-300">
               Informations légales et politique de confidentialité
             </p>
           </div>
@@ -32,43 +32,43 @@ function MentionsLegales() {
           <div className="max-w-4xl mx-auto">
             
             {/* Éditeur */}
-            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8 border-l-4 border-[#F0C724]">
               <div className="flex items-center mb-6">
-                <User className="w-8 h-8 text-yellow-500 mr-3" />
+                <User className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Éditeur</h2>
               </div>
               <div className="space-y-3 text-gray-800">
-                <p className="text-xl font-semibold text-blue-900">LED ALSACE</p>
+                <p className="text-xl font-semibold text-black">LED ALSACE</p>
                 <p><span className="font-semibold">RCS Ostwald :</span> 80297827000014</p>
                 <p><span className="font-semibold">Siège social :</span> Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</p>
-                <p><span className="font-semibold">Téléphone :</span> <a href="tel:+33388044534" className="text-blue-600 hover:text-blue-800 font-semibold">03 88 04 45 34</a></p>
+                <p><span className="font-semibold">Téléphone :</span> <a href="tel:+33388044534" className="text-[#F0C724] hover:text-yellow-600 font-semibold">03 88 04 45 34</a></p>
                 <p className="mt-4"><span className="font-semibold">Directeur de la publication :</span> DURMUS KOPAR</p>
               </div>
             </div>
 
             {/* Hébergement */}
-            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8 border-l-4 border-[#F0C724]">
               <div className="flex items-center mb-6">
-                <Server className="w-8 h-8 text-yellow-500 mr-3" />
+                <Server className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Hébergement</h2>
               </div>
-              <p className="text-xl font-semibold text-blue-900">IONOS.fr</p>
+              <p className="text-xl font-semibold text-black">IONOS.fr</p>
             </div>
 
             {/* Conception du site */}
-            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8 border-l-4 border-[#F0C724]">
               <div className="flex items-center mb-6">
-                <Code className="w-8 h-8 text-yellow-500 mr-3" />
+                <Code className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Conception et Développement</h2>
               </div>
-              <p className="text-xl font-semibold text-blue-900">Netz Informatique</p>
+              <p className="text-xl font-semibold text-black">Netz Informatique</p>
               <p className="text-gray-700 mt-2">Conception, développement et optimisation du site web</p>
             </div>
 
             {/* Confidentialité */}
-            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8 border-l-4 border-[#F0C724]">
               <div className="flex items-center mb-6">
-                <Lock className="w-8 h-8 text-yellow-500 mr-3" />
+                <Lock className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Confidentialité</h2>
               </div>
               <div className="text-gray-800 space-y-4 leading-relaxed">
@@ -85,9 +85,9 @@ function MentionsLegales() {
             </div>
 
             {/* RGPD */}
-            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8 border-l-4 border-[#F0C724]">
               <div className="flex items-center mb-6">
-                <Shield className="w-8 h-8 text-yellow-500 mr-3" />
+                <Shield className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Règlement Général sur la Protection des Données (RGPD)</h2>
               </div>
               <div className="text-gray-800 space-y-4 leading-relaxed">
@@ -112,9 +112,9 @@ function MentionsLegales() {
             </div>
 
             {/* Cookies */}
-            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8 border-l-4 border-[#F0C724]">
               <div className="flex items-center mb-6">
-                <FileText className="w-8 h-8 text-yellow-500 mr-3" />
+                <FileText className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Utilisation de Cookies</h2>
               </div>
               <div className="text-gray-800 space-y-4 leading-relaxed">
@@ -125,9 +125,9 @@ function MentionsLegales() {
             </div>
 
             {/* Liens hypertexte */}
-            <div className="mb-12 bg-white rounded-lg shadow-md p-8">
+            <div className="mb-12 bg-white rounded-lg shadow-md p-8 border-l-4 border-[#F0C724]">
               <div className="flex items-center mb-6">
-                <LinkIcon className="w-8 h-8 text-yellow-500 mr-3" />
+                <LinkIcon className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Liens Hypertexte</h2>
               </div>
               <div className="text-gray-800 space-y-4 leading-relaxed">
@@ -138,13 +138,13 @@ function MentionsLegales() {
             </div>
 
             {/* Contact */}
-            <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-lg shadow-lg p-8">
+            <div className="bg-black text-white rounded-lg shadow-lg p-8">
               <h3 className="text-2xl font-bold mb-4">Nous Contacter</h3>
-              <p className="mb-4 text-blue-100">
+              <p className="mb-4 text-gray-300">
                 Pour toute question concernant ces mentions légales ou l'utilisation de vos données personnelles, vous pouvez nous contacter :
               </p>
               <div className="space-y-2">
-                <p><span className="font-semibold">Par téléphone :</span> <a href="tel:+33388044534" className="text-yellow-400 hover:text-yellow-300 font-semibold">03 88 04 45 34</a></p>
+                <p><span className="font-semibold">Par téléphone :</span> <a href="tel:+33388044534" className="text-[#F0C724] hover:text-yellow-300 font-semibold">03 88 04 45 34</a></p>
                 <p><span className="font-semibold">Par courrier :</span> LED ALSACE, Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</p>
               </div>
             </div>

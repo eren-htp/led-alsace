@@ -670,24 +670,24 @@ function Services() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-xl p-8">
-                <div className="text-4xl font-bold text-blue-500 mb-4">02</div>
+              <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
+                <div className="text-4xl font-bold text-black mb-4">02</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Conception</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Notre équipe de designers crée des maquettes et vous présente plusieurs options.
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 rounded-xl p-8">
-                <div className="text-4xl font-bold text-green-500 mb-4">03</div>
+              <div className="bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-200 rounded-xl p-8">
+                <div className="text-4xl font-bold text-yellow-500 mb-4">03</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Production</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Fabrication avec des matériaux de qualité et un contrôle rigoureux à chaque étape.
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-xl p-8">
-                <div className="text-4xl font-bold text-purple-500 mb-4">04</div>
+              <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
+                <div className="text-4xl font-bold text-black mb-4">04</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Installation</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Pose professionnelle par nos équipes qualifiées et service après-vente garanti.

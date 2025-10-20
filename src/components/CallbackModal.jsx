@@ -107,13 +107,13 @@ function CallbackModal({ isOpen, onClose }) {
 
           {/* Messages de statut */}
           {submitStatus === 'success' && (
-            <div className="bg-green-50 border-2 border-green-500 text-green-700 px-4 py-3 rounded-lg">
+            <div className="bg-yellow-50 border-2 border-[#F0C724] text-gray-900 px-4 py-3 rounded-lg">
               ✓ Demande envoyée ! Nous vous rappelons très vite.
             </div>
           )}
 
           {submitStatus === 'error' && (
-            <div className="bg-red-50 border-2 border-red-500 text-red-700 px-4 py-3 rounded-lg">
+            <div className="bg-gray-100 border-2 border-black text-gray-900 px-4 py-3 rounded-lg">
               ✗ Erreur lors de l'envoi. Veuillez réessayer.
             </div>
           )}

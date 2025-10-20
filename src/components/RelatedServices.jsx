@@ -24,13 +24,13 @@ const RelatedServices = ({ links }) => {
             <Link
               key={index}
               to={link.url}
-              className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 hover:border-blue-500"
+              className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 hover:border-[#F0C724]"
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#F0C724] transition-colors">
                   {link.text}
                 </h3>
-                <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform flex-shrink-0 ml-2" />
+                <ArrowRight className="w-5 h-5 text-[#F0C724] group-hover:translate-x-1 transition-transform flex-shrink-0 ml-2" />
               </div>
               <p className="text-gray-600 text-sm">
                 {link.description}

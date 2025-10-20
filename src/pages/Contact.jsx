@@ -103,16 +103,16 @@ function Contact() {
 
             <a 
               href="mailto:contact@ledalsace.fr"
-              className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl hover:from-blue-100 hover:to-blue-50 border-2 border-blue-200 hover:border-blue-400 transition-all duration-300 text-center group transform hover:-translate-y-2 hover:shadow-xl"
+              className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl hover:from-gray-100 hover:to-gray-50 border-2 border-gray-200 hover:border-[#F0C724] transition-all duration-300 text-center group transform hover:-translate-y-2 hover:shadow-xl"
             >
-              <Mail className="w-16 h-16 text-blue-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <Mail className="w-16 h-16 text-black mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
               <p className="text-gray-600 mb-3">Écrivez-nous à tout moment</p>
-              <p className="text-lg font-semibold text-blue-600 break-all">contact@ledalsace.fr</p>
+              <p className="text-lg font-semibold text-[#F0C724] break-all">contact@ledalsace.fr</p>
             </a>
 
-            <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl border-2 border-green-200 text-center transform hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-              <MapPin className="w-16 h-16 text-green-500 mx-auto mb-4" />
+            <div className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-xl border-2 border-yellow-200 text-center transform hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+              <MapPin className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Adresse</h3>
               <p className="text-gray-600 mb-3">Visitez notre showroom</p>
               <p className="text-gray-700 font-medium">
@@ -224,13 +224,13 @@ function Contact() {
                 </div>
 
                 {submitStatus === 'success' && (
-                  <div className="bg-green-50 border-2 border-green-500 text-green-700 px-4 py-3 rounded-lg text-center">
+                  <div className="bg-yellow-50 border-2 border-[#F0C724] text-gray-900 px-4 py-3 rounded-lg text-center">
                     ✓ Demande envoyée avec succès ! Nous vous répondons sous 24h.
                   </div>
                 )}
 
                 {submitStatus === 'error' && (
-                  <div className="bg-red-50 border-2 border-red-500 text-red-700 px-4 py-3 rounded-lg text-center">
+                  <div className="bg-gray-100 border-2 border-black text-gray-900 px-4 py-3 rounded-lg text-center">
                     ✗ Erreur lors de l'envoi. Veuillez réessayer.
                   </div>
                 )}
@@ -270,11 +270,11 @@ function Contact() {
                   </div>
                   <div className="flex justify-between py-2 border-b border-gray-100">
                     <span className="font-semibold text-gray-700">Samedi</span>
-                    <span className="text-red-600 font-semibold">Fermé</span>
+                    <span className="text-gray-600 font-semibold">Fermé</span>
                   </div>
                   <div className="flex justify-between py-2">
                     <span className="font-semibold text-gray-700">Dimanche</span>
-                    <span className="text-red-600 font-semibold">Fermé</span>
+                    <span className="text-gray-600 font-semibold">Fermé</span>
                   </div>
                 </div>
               </div>
