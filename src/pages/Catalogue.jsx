@@ -64,7 +64,7 @@ function Catalogue() {
   }, [])
 
   useEffect(() => {
-    if (!isMobile && bookRef.current && !pageFlipRef.current) {
+    if (bookRef.current && !pageFlipRef.current) {
       const bookContainer = bookRef.current
       bookContainer.innerHTML = '' // Clear existing content to avoid duplicates
 
@@ -88,26 +88,28 @@ function Catalogue() {
         bookContainer.appendChild(pageDiv)
       })
 
+      const isMobileDevice = window.innerWidth < 768
+
       const pageFlip = new PageFlip(bookContainer, {
-        width: 350,
-        height: 466,
+        width: isMobileDevice ? Math.min(window.innerWidth * 0.9, 400) : 350, // Utilise 90% de la largeur, max 400px
+        height: isMobileDevice ? Math.min(window.innerHeight * 0.7, 600) : 466, // Utilise 70% de la hauteur, max 600px
         size: 'fixed',
         minWidth: 200,
         maxWidth: 1000,
         minHeight: 300,
         maxHeight: 1350,
-        maxShadowOpacity: 0.7,
+        maxShadowOpacity: isMobileDevice ? 0.5 : 0.7,
         showCover: true,
-        mobileScrollSupport: false, // Désactivé pour desktop
-        swipeDistance: 30,
+        mobileScrollSupport: false, // Désactiver le défilement mobile par PageFlip pour éviter les conflits
+        swipeDistance: isMobileDevice ? 20 : 30,
         clickEventForward: true,
-        usePortrait: false, // Deux pages sur desktop
+        usePortrait: true, // Toujours une page par page sur mobile
         startPage: 0,
         drawShadow: true,
-        flippingTime: 1000,
-        useMouseEvents: true,
+        flippingTime: isMobileDevice ? 600 : 1000,
+        useMouseEvents: false, // Désactiver les événements souris sur mobile
         autoSize: true,
-        showPageCorners: true,
+        showPageCorners: !isMobileDevice,
         disableFlipByClick: false
       })
 
@@ -262,60 +264,45 @@ function Catalogue() {
           <div className="absolute bottom-1/4 right-1/4 w-48 md:w-96 h-48 md:h-96 bg-yellow-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
 
-        {isMobile ? (
-          <div className="flex flex-col items-center overflow-y-auto w-full h-full pb-20">
-            {pages.map((pageImg, index) => (
-              <img
-                key={index}
-                src={pageImg}
-                alt={`Page ${index + 1}`}
-                className="w-full max-w-sm my-2 border border-gray-700 shadow-lg"
-                loading="lazy"
-              />
-            ))}
-          </div>
-        ) : (
+        <div 
+          className="relative book-wrapper" 
+          style={{ 
+            transform: isMobile ? 'scale(1)' : `scale(${zoom})`, 
+            transition: 'transform 0.3s ease',
+            pointerEvents: isFlipping ? 'none' : 'auto',
+            willChange: 'transform'
+          }}
+        >
           <div 
-            className="relative book-wrapper" 
-            style={{ 
-              transform: `scale(${zoom})`, 
-              transition: 'transform 0.3s ease',
-              pointerEvents: isFlipping ? 'none' : 'auto',
-              willChange: 'transform'
-            }}
-          >
-            <div 
-              ref={bookRef} 
-              id="book"
-              className="book-container"
-            />
-          </div>
-        )}
+            ref={bookRef} 
+            id="book"
+            className="book-container"
+          />
+        </div>
 
         {/* Controls - Version mobile optimisée - Fixés tout en bas */}
-        {!isMobile && (
-          <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:gap-4 bg-led-dark/70 backdrop-blur-sm px-3 md:px-6 py-2 md:py-3 rounded-full border border-yellow-500/30 z-50">
-            <Button
-              onClick={prevPage}
-              disabled={isFlipping || currentPage === 0}
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50"
-            >
-              ←Préc.
-            </Button>
-            <span className="text-gray-300 flex items-center">
-              Page {currentPage + 1}/{totalPages}
-            </span>
-            <Button
-              onClick={nextPage}
-              disabled={isFlipping || currentPage === totalPages - 1}
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50"
-            >
-              Suiv.→
-            </Button>
-          </div>
-        )}
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:gap-4 bg-led-dark/70 backdrop-blur-sm px-3 md:px-6 py-2 md:py-3 rounded-full border border-yellow-500/30 z-50">
+          <Button
+            onClick={prevPage}
+            disabled={isFlipping || currentPage === 0}
+            className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50"
+          >
+            ←Préc.
+          </Button>
+          <span className="text-gray-300 flex items-center">
+            Page {currentPage + 1}/{totalPages}
+          </span>
+          <Button
+            onClick={nextPage}
+            disabled={isFlipping || currentPage === totalPages - 1}
+            className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50"
+          >
+            Suiv.→
+          </Button>
+        </div>
 
         {/* Zoom Controls */}
+        {/* Zoom Controls (Desktop Only) */}
         {!isMobile && (
           <div className="fixed top-1/2 right-4 -translate-y-1/2 flex flex-col gap-2 bg-led-dark/70 backdrop-blur-sm p-2 rounded-full border border-yellow-500/30 z-50">
             <Button
