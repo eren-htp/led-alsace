@@ -12,7 +12,7 @@ function MentionsLegales() {
       />
 
       {/* Header */}
-      <section className="bg-led-dark text-white pt-32 pb-20">
+      <section className="bg-[#1A2534] text-white pt-32 pb-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -37,7 +37,7 @@ function MentionsLegales() {
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Éditeur</h2>
               </div>
               <div className="space-y-3 text-gray-800">
-                <p className="text-xl font-semibold text-led-dark">LED ALSACE</p>
+                <p className="text-xl font-semibold text-[#1A2534]">LED ALSACE</p>
                 <p><span className="font-semibold">RCS Ostwald :</span> 80297827000014</p>
                 <p><span className="font-semibold">Siège social :</span> Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</p>
                 <p><span className="font-semibold">Téléphone :</span> <a href="tel:+33388044534" className="text-[#F0C724] hover:text-yellow-600 font-semibold">03 88 04 45 34</a></p>
@@ -51,7 +51,7 @@ function MentionsLegales() {
                 <Server className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Hébergement</h2>
               </div>
-              <p className="text-xl font-semibold text-led-dark">IONOS.fr</p>
+              <p className="text-xl font-semibold text-[#1A2534]">IONOS.fr</p>
             </div>
 
             {/* Conception du site */}
@@ -60,7 +60,7 @@ function MentionsLegales() {
                 <Code className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Conception et Développement</h2>
               </div>
-              <p className="text-xl font-semibold text-led-dark">Netz Informatique</p>
+              <p className="text-xl font-semibold text-[#1A2534]">Netz Informatique</p>
               <p className="text-gray-700 mt-2">Conception, développement et optimisation du site web</p>
             </div>
 
@@ -137,7 +137,7 @@ function MentionsLegales() {
             </div>
 
             {/* Contact */}
-            <div className="bg-led-dark text-white rounded-lg shadow-lg p-8">
+            <div className="bg-[#1A2534] text-white rounded-lg shadow-lg p-8">
               <h3 className="text-2xl font-bold mb-4">Nous Contacter</h3>
               <p className="mb-4 text-gray-300">
                 Pour toute question concernant ces mentions légales ou l'utilisation de vos données personnelles, vous pouvez nous contacter :
