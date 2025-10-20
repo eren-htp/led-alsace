@@ -63,7 +63,7 @@ function Layout({ children }) {
       </div>
       
       {/* Header */}
-      <nav className="fixed top-[30px] left-0 right-0 z-40 transition-all duration-300 bg-white/95 backdrop-blur-sm py-4">
+      <nav className="fixed top-[28px] left-0 right-0 z-40 transition-all duration-300 bg-white/95 backdrop-blur-sm py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
