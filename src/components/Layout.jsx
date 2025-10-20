@@ -1,8 +1,8 @@
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
-import { Menu, X, Phone, Mail, MapPin, Lightbulb, ChevronDown, Instagram } from 'lucide-react'
+import { Menu, X, Phone, Mail, MapPin, ChevronDown, Instagram } from 'lucide-react'
 import CallbackButton from './CallbackButton.jsx'
 import logoLedAlsace from '@/assets/logo-led-alsace.webp'
 import logoIcon from '@/assets/logo-led-alsace-icon.webp'
@@ -12,6 +12,7 @@ function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const location = useLocation()
+  const [headerHeight, setHeaderHeight] = useState(0);
 
   const services = [
     { name: 'Enseignes', path: '/services/enseignes' },
@@ -31,13 +32,26 @@ function Layout({ children }) {
     setIsServicesOpen(false)
   }
 
-  // Ne plus masquer la navbar sur la page catalogue
   const isCataloguePage = location.pathname === '/catalogue'
+
+  useEffect(() => {
+    const updateHeaderHeight = () => {
+      const headerElement = document.getElementById('main-header-fixed-container');
+      if (headerElement) {
+        setHeaderHeight(headerElement.offsetHeight);
+      }
+    };
+
+    updateHeaderHeight();
+    window.addEventListener('resize', updateHeaderHeight);
+
+    return () => window.removeEventListener('resize', updateHeaderHeight);
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
       {/* Fixed Header Container */}
-      <div className="fixed top-0 left-0 right-0 z-50">
+      <div id="main-header-fixed-container" className="fixed top-0 left-0 right-0 z-50">
         {/* Top Info Bar */}
         <div className="bg-[#F0C724] py-1">
           <div className="container mx-auto px-4">
@@ -183,7 +197,7 @@ function Layout({ children }) {
                 </Link>
                 <Button 
                   onClick={() => window.location.href = '/contact'}
-                  className="bg-yellow-500 hover:bg-yellow-600 text-led-dark font-semibold"
+                  className="bg-yellow-500 hover:bg-yellow-600 text-[#1A2534] font-semibold"
                 >
                   Contact
                 </Button>
@@ -264,7 +278,7 @@ function Layout({ children }) {
                 </Link>
                 <Button 
                   onClick={() => window.location.href = '/contact'}
-                  className="bg-yellow-500 hover:bg-yellow-600 text-led-dark font-semibold"
+                  className="bg-yellow-500 hover:bg-yellow-600 text-[#1A2534] font-semibold"
                 >
                   Contact
                 </Button>
@@ -275,7 +289,7 @@ function Layout({ children }) {
       </div>
 
       {/* Main Content */}
-      <main className="flex-grow pt-[82px]"> {/* Adjusted padding-top to account for fixed header + info bar */}
+      <main className="flex-grow" style={{ paddingTop: headerHeight ? `${headerHeight}px` : '0' }}>
         {children}
       </main>
 
