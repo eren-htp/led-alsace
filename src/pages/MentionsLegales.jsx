@@ -39,7 +39,7 @@ function MentionsLegales() {
               <div className="space-y-3 text-gray-800">
                 <p className="text-xl font-semibold text-[#1A2534]">LED ALSACE</p>
                 <p><span className="font-semibold">RCS Ostwald :</span> 80297827000014</p>
-                <p><span className="font-semibold">Siège social :</span> Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</p>
+                <p><span className="font-semibold">Siège social :</span> <a href="https://www.google.com/maps/search/?api=1&query=Z.I+La+Vigie,+12+rue+Th%C3%A9odore+Monod,+67540+Ostwald" target="_blank" rel="noopener noreferrer" className="text-[#F0C724] hover:text-yellow-600 cursor-pointer">Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</a></p>
                 <p><span className="font-semibold">Téléphone :</span> <a href="tel:+33388044534" className="text-[#F0C724] hover:text-yellow-600 font-semibold">03 88 04 45 34</a></p>
                 <p className="mt-4"><span className="font-semibold">Directeur de la publication :</span> DURMUS KOPAR</p>
               </div>
@@ -75,7 +75,7 @@ function MentionsLegales() {
                   LED ALSACE n'enregistre pas d'informations personnelles permettant l'identification, à l'exception des formulaires que l'utilisateur est libre de remplir. Ces informations ne seront pas utilisées sans votre accord, nous les utiliserons seulement pour vous adresser des courriers, des brochures, des devis ou vous contacter.
                 </p>
                 <p>
-                  Les informations recueillies sur les sites bénéficient de la protection de la loi « Informatique et Libertés » n° 78-17 du 06 janvier 1978. Elles bénéficient d'un droit d'accès, de rectification, d'opposition à communication et de suppression sur simple demande à LED ALSACE, Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald.
+                  Les informations recueillies sur les sites bénéficient de la protection de la loi « Informatique et Libertés » n° 78-17 du 06 janvier 1978. Elles bénéficient d'un droit d'accès, de rectification, d'opposition à communication et de suppression sur simple demande à LED ALSACE, <a href="https://www.google.com/maps/search/?api=1&query=Z.I+La+Vigie,+12+rue+Th%C3%A9odore+Monod,+67540+Ostwald" target="_blank" rel="noopener noreferrer" className="text-[#F0C724] hover:text-yellow-600 cursor-pointer">Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</a>.
                 </p>
                 <p>
                   LED ALSACE pourra procéder à des analyses statistiques sans que celles-ci soient nominatives et pourra en informer des tiers (organismes d'évaluation de fréquentation) sous une forme résumée et non nominative.
@@ -144,7 +144,7 @@ function MentionsLegales() {
               </p>
               <div className="space-y-2">
                 <p><span className="font-semibold">Par téléphone :</span> <a href="tel:+33388044534" className="text-[#F0C724] hover:text-yellow-300 font-semibold">03 88 04 45 34</a></p>
-                <p><span className="font-semibold">Par courrier :</span> LED ALSACE, Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</p>
+                <p><span className="font-semibold">Par courrier :</span> LED ALSACE, <a href="https://www.google.com/maps/search/?api=1&query=Z.I+La+Vigie,+12+rue+Th%C3%A9odore+Monod,+67540+Ostwald" target="_blank" rel="noopener noreferrer" className="text-[#F0C724] hover:text-yellow-300 cursor-pointer">Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</a></p>
               </div>
             </div>
 

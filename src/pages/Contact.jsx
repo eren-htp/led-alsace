@@ -111,7 +111,12 @@ function Contact() {
               <p className="text-lg font-semibold text-[#F0C724] break-all">contact@ledalsace.fr</p>
             </a>
 
-            <div className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-xl border-2 border-yellow-200 text-center transform hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=12+Rue+Th%C3%A9odore+Monod,+67540+Ostwald" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-xl border-2 border-yellow-200 text-center transform hover:-translate-y-2 hover:shadow-xl transition-all duration-300 cursor-pointer block"
+            >
               <MapPin className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Adresse</h3>
               <p className="text-gray-600 mb-3">Visitez notre showroom</p>
@@ -121,7 +126,7 @@ function Contact() {
                 67540 Ostwald<br />
                 France
               </p>
-            </div>
+            </a>
           </div>
 
           {/* Contact Form & Info */}

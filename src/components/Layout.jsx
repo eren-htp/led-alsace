@@ -357,10 +357,15 @@ function Layout({ children }) {
                 </li>
                 <li className="flex items-start space-x-2">
                   <MapPin className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-400">
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=12+Rue+Th%C3%A9odore+Monod,+67540+Ostwald" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-yellow-500 transition-colors cursor-pointer"
+                  >
                     12 Rue Théodore Monod<br />
                     67540 Ostwald
-                  </span>
+                  </a>
                 </li>
               </ul>
             </div>
