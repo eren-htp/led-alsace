@@ -326,7 +326,7 @@ function Layout({ children }) {
             {/* Logo & Description */}
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center space-x-3 mb-4">
-                <img src={logoLedAlsace} alt="LED ALSACE" className="h-12" />
+                <img src={logoIcon} alt="LED ALSACE" className="h-16 w-16" />
               </div>
               <p className="text-gray-400 text-sm mb-4">
                 Votre partenaire de confiance pour tous vos projets d'enseignes LED, signalétique 
