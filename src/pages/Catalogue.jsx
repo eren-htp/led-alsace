@@ -190,7 +190,7 @@ function Catalogue() {
   }, [isFlipping, isMobile, currentPage, nextPage, prevPage, goToPage])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col pt-24">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col pt-32 md:pt-24">
       <SEO 
         title="Catalogue"
         description="Consultez notre catalogue interactif de modèles d'enseignes LED. Découvrez nos lettres boîtier lumineuses et trouvez l'inspiration pour votre projet d'enseigne en Alsace."
