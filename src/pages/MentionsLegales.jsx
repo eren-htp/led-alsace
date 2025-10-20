@@ -1,5 +1,5 @@
 import SEO from '../components/SEO.jsx'
-import { Shield, Lock, FileText, Server, User, Link as LinkIcon, Code } from 'lucide-react'
+import { Shield, Lock, Server, User, Link as LinkIcon, Code } from 'lucide-react'
 
 function MentionsLegales() {
   return (
@@ -15,7 +15,6 @@ function MentionsLegales() {
       <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <FileText className="w-16 h-16 mx-auto mb-6 text-[#F0C724]" />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Mentions Légales
             </h1>
@@ -114,7 +113,7 @@ function MentionsLegales() {
             {/* Cookies */}
             <div className="mb-12 bg-white rounded-lg shadow-md p-8 border-l-4 border-[#F0C724]">
               <div className="flex items-center mb-6">
-                <FileText className="w-8 h-8 text-[#F0C724] mr-3" />
+                <Lock className="w-8 h-8 text-[#F0C724] mr-3" />
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Utilisation de Cookies</h2>
               </div>
               <div className="text-gray-800 space-y-4 leading-relaxed">
