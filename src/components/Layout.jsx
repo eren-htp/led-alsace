@@ -343,6 +343,11 @@ function Layout({ children }) {
             <p className="text-gray-400">
               © 2025 LED ALSACE | Enseigne & Signalétique | Tous droits réservés
             </p>
+            <p className="text-gray-500 mt-2">
+              <Link to="/mentions-legales" className="hover:text-white transition-colors">
+                Mentions Légales
+              </Link>
+            </p>
           </div>
         </div>
       </footer>

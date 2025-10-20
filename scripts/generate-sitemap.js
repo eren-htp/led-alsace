@@ -23,6 +23,7 @@ const urls = [
   { loc: '/a-propos', priority: '0.7', changefreq: 'monthly', lastmod: currentDate },
   { loc: '/catalogue', priority: '0.8', changefreq: 'monthly', lastmod: currentDate },
   { loc: '/contact', priority: '0.9', changefreq: 'monthly', lastmod: currentDate },
+  { loc: '/mentions-legales', priority: '0.5', changefreq: 'yearly', lastmod: currentDate },
   
   // Pages de services détaillées
   { loc: '/services/enseignes', priority: '0.9', changefreq: 'monthly', lastmod: currentDate },
