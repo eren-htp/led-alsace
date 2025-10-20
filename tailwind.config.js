@@ -19,7 +19,7 @@ export default {
           800: '#9C7915',
           900: '#805F10',
         },
-        'led-dark': '#1A202C', // Couleur sombre principale LED Alsace
+        'led-dark': '#1A2534', // Couleur sombre principale LED Alsace
       },
     },
   },
