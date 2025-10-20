@@ -195,8 +195,8 @@ function Catalogue() {
         keywords="catalogue enseignes LED, modèles lettres boîtier, catalogue interactif, exemples enseignes lumineuses, inspiration enseigne LED"
         canonicalUrl="https://www.ledalsace.com/catalogue"
       />
-      {/* Header du catalogue - Déplacé en bas au-dessus des contrôles */}
-      <header className="bg-led-dark/50 backdrop-blur-sm border-t border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 fixed bottom-16 left-0 right-0 z-40">
+      {/* Header du catalogue - Déplacé en bas au-dessus des contrôles - Masqué sur mobile */}
+      <header className="hidden md:block bg-led-dark/50 backdrop-blur-sm border-t border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 fixed bottom-16 left-0 right-0 z-40">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 md:gap-4">
             <Link to="/" className="text-lg md:text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition-colors cursor-pointer">
