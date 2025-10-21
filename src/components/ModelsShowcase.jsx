@@ -15,32 +15,32 @@ const models = [
   {
     id: 'G01',
     name: 'Modèle G01',
-    description: 'Lettres boîtier LED avec halo lumineux',
-    features: ['Design élégant', 'Effet halo', 'Haute visibilité'],
+    description: 'Lettres individuelles lumineuses avec retour',
+    features: ['Fabriquées en acier inoxydable', 'Eclairage de face', 'Laquage possible sur les chants'],
     imageDay: G01Gunduz,
     imageNight: G01Gece
   },
   {
     id: 'G05',
     name: 'Modèle G05',
-    description: 'Lettres LED avec contour lumineux',
-    features: ['Contour coloré', 'Effet 3D', 'Personnalisable'],
+    description: 'Lettres individuelles lumineuses sans retour',
+    features: ['Fabriquées en acier inoxydable', 'Eclairage de face', 'Laquage possible sur les chants'],
     imageDay: G05Gunduz,
     imageNight: G05Gece
   },
   {
     id: 'G08',
     name: 'Modèle G08',
-    description: 'Lettres relief avec éclairage frontal',
-    features: ['Relief prononcé', 'Éclairage puissant', 'Finition premium'],
+    description: 'Lettres individuelles rétroéclairées',
+    features: ['Face avant opaque en Dibond 3mm', 'Eclairage rubans leds sur les chants'],
     imageDay: G08Gunduz,
     imageNight: G08Gece
   },
   {
     id: 'G14',
     name: 'Modèle G14',
-    description: 'Panneau LED rétro-éclairé complet',
-    features: ['Panneau complet', 'Éclairage uniforme', 'Idéal enseignes'],
+    description: 'Caisson ajouré lumineux',
+    features: ['Matériel: PVC, Dibond, Plexiglass', 'Lettrage découpé au laser', 'Eclairage de face'],
     imageDay: G14Gunduz,
     imageNight: G14Gece
   }
