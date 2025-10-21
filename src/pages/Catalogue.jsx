@@ -7,7 +7,7 @@ import SEO from '../components/SEO.jsx'
 
 import '../App.css'
 
-// Import des images optimisées en WebP
+// Import des images optimisées en WebP - Catalogue Octobre 2025 (40 pages)
 import page01 from '../catalogue-assets/page-01.webp'
 import page02 from '../catalogue-assets/page-02.webp'
 import page03 from '../catalogue-assets/page-03.webp'
@@ -23,12 +23,42 @@ import page12 from '../catalogue-assets/page-12.webp'
 import page13 from '../catalogue-assets/page-13.webp'
 import page14 from '../catalogue-assets/page-14.webp'
 import page15 from '../catalogue-assets/page-15.webp'
+import page16 from '../catalogue-assets/page-16.webp'
+import page17 from '../catalogue-assets/page-17.webp'
+import page18 from '../catalogue-assets/page-18.webp'
+import page19 from '../catalogue-assets/page-19.webp'
+import page20 from '../catalogue-assets/page-20.webp'
+import page21 from '../catalogue-assets/page-21.webp'
+import page22 from '../catalogue-assets/page-22.webp'
+import page23 from '../catalogue-assets/page-23.webp'
+import page24 from '../catalogue-assets/page-24.webp'
+import page25 from '../catalogue-assets/page-25.webp'
+import page26 from '../catalogue-assets/page-26.webp'
+import page27 from '../catalogue-assets/page-27.webp'
+import page28 from '../catalogue-assets/page-28.webp'
+import page29 from '../catalogue-assets/page-29.webp'
+import page30 from '../catalogue-assets/page-30.webp'
+import page31 from '../catalogue-assets/page-31.webp'
+import page32 from '../catalogue-assets/page-32.webp'
+import page33 from '../catalogue-assets/page-33.webp'
+import page34 from '../catalogue-assets/page-34.webp'
+import page35 from '../catalogue-assets/page-35.webp'
+import page36 from '../catalogue-assets/page-36.webp'
+import page37 from '../catalogue-assets/page-37.webp'
+import page38 from '../catalogue-assets/page-38.webp'
+import page39 from '../catalogue-assets/page-39.webp'
+import page40 from '../catalogue-assets/page-40.webp'
 import pageFlipSound from '../catalogue-assets/page-flip.wav'
 
 const pages = [
   page01, page02, page03, page04, page05,
   page06, page07, page08, page09, page10,
-  page11, page12, page13, page14, page15
+  page11, page12, page13, page14, page15,
+  page16, page17, page18, page19, page20,
+  page21, page22, page23, page24, page25,
+  page26, page27, page28, page29, page30,
+  page31, page32, page33, page34, page35,
+  page36, page37, page38, page39, page40
 ]
 
 function Catalogue() {
@@ -190,8 +220,8 @@ function Catalogue() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col pt-32 md:pt-24">
       <SEO 
-        title="Catalogue"
-        description="Consultez notre catalogue interactif de modèles d'enseignes LED. Découvrez nos lettres boîtier lumineuses et trouvez l'inspiration pour votre projet d'enseigne en Alsace."
+        title="Catalogue Octobre 2025"
+        description="Consultez notre catalogue interactif de modèles d'enseignes LED - Édition Octobre 2025. Découvrez nos lettres boîtier lumineuses et trouvez l'inspiration pour votre projet d'enseigne en Alsace."
         keywords="catalogue enseignes LED, modèles lettres boîtier, catalogue interactif, exemples enseignes lumineuses, inspiration enseigne LED"
         canonicalUrl="https://www.ledalsace.com/catalogue"
       />
@@ -202,7 +232,7 @@ function Catalogue() {
             <Link to="/" className="text-lg md:text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition-colors cursor-pointer">
               LED Alsace
             </Link>
-            <span className="text-gray-400 text-xs md:text-sm hidden sm:inline">Catalogue 2025</span>
+            <span className="text-gray-400 text-xs md:text-sm hidden sm:inline">Catalogue Octobre 2025</span>
           </div>
           <div className="flex items-center gap-2 md:gap-4">
             <span className="text-gray-300 text-xs md:text-sm">
@@ -298,67 +328,114 @@ function Catalogue() {
             <Button
               onClick={prevPage}
               disabled={isFlipping || currentPage === 0}
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50"
+              variant="outline"
+              size="sm"
+              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50 h-8 w-8 md:h-10 md:w-10 p-0"
             >
-              ←Préc.
-            </Button>
-            <span className="text-gray-300 flex items-center">
-              Page {currentPage + 1}/{totalPages}
-            </span>
-            <Button
-              onClick={nextPage}
-              disabled={isFlipping || currentPage === totalPages - 1}
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50"
-            >
-              Suiv.→
-            </Button>
-          </div>
-        )}
-
-        {/* Zoom Controls */}
-        {!isMobile && (
-          <div className="fixed top-1/2 right-4 -translate-y-1/2 flex flex-col gap-2 bg-led-dark/70 backdrop-blur-sm p-2 rounded-full border border-yellow-500/30 z-50">
-            <Button
-              onClick={zoomIn}
-              disabled={zoom >= 2}
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 h-8 w-8 p-0"
-            >
-              <ZoomIn className="w-4 h-4" />
+              ←
             </Button>
             <Button
               onClick={zoomOut}
               disabled={zoom <= 0.5}
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 h-8 w-8 p-0"
+              variant="outline"
+              size="sm"
+              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50 h-8 w-8 md:h-10 md:w-10 p-0"
             >
               <ZoomOut className="w-4 h-4" />
             </Button>
-          </div>
-        )}
-
-        {/* Thumbnails Overlay (Mobile Only) */}
-        {isMobile && showThumbnails && (
-          <div className="fixed inset-0 bg-led-dark/90 backdrop-blur-sm z-50 flex flex-col items-center justify-center p-4 overflow-y-auto">
             <Button
+              onClick={zoomIn}
+              disabled={zoom >= 2}
               variant="outline"
               size="sm"
-              onClick={() => setShowThumbnails(false)}
-              className="absolute top-4 right-4 border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
+              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50 h-8 w-8 md:h-10 md:w-10 p-0"
             >
-              <X className="w-4 h-4 mr-2" />
-              Fermer
+              <ZoomIn className="w-4 h-4" />
             </Button>
-            <h2 className="text-2xl font-bold text-yellow-400 mb-4">Miniatures</h2>
-            <div className="grid grid-cols-2 gap-4">
-              {pages.map((pageImg, index) => (
-                <div key={index} className="cursor-pointer" onClick={() => goToPage(index)}>
-                  <img src={pageImg} alt={`Page ${index + 1}`} className="w-full border border-yellow-500/50 rounded shadow-lg" />
-                  <p className="text-center text-gray-300 text-sm mt-1">Page {index + 1}</p>
-                </div>
-              ))}
-            </div>
+            <Button
+              onClick={nextPage}
+              disabled={isFlipping || currentPage >= totalPages - 1}
+              variant="outline"
+              size="sm"
+              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50 h-8 w-8 md:h-10 md:w-10 p-0"
+            >
+              →
+            </Button>
           </div>
         )}
       </main>
+
+      {/* Footer avec miniatures - Affiché seulement si showFooter est true */}
+      {showFooter && !isMobile && (
+        <footer className="bg-led-dark/90 backdrop-blur-sm border-t border-yellow-500/20 px-6 py-4 fixed bottom-0 left-0 right-0 z-30 max-h-40 overflow-y-auto">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-10 gap-2">
+              {pages.map((pageImg, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToPage(index)}
+                  className={`relative group overflow-hidden rounded border-2 transition-all ${
+                    currentPage === index
+                      ? 'border-yellow-400 ring-2 ring-yellow-400/50'
+                      : 'border-gray-600 hover:border-yellow-500'
+                  }`}
+                >
+                  <img
+                    src={pageImg}
+                    alt={`Page ${index + 1}`}
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">{index + 1}</span>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        </footer>
+      )}
+
+      {/* Miniatures mobiles */}
+      {showThumbnails && isMobile && (
+        <div className="fixed inset-0 bg-black/90 z-50 overflow-y-auto p-4">
+          <div className="flex justify-between items-center mb-4">
+            <h2 className="text-yellow-400 text-lg font-bold">Pages</h2>
+            <Button
+              onClick={() => setShowThumbnails(false)}
+              variant="outline"
+              size="sm"
+              className="border-yellow-500/50 text-yellow-400"
+            >
+              <X className="w-4 h-4" />
+            </Button>
+          </div>
+          <div className="grid grid-cols-3 gap-2">
+            {pages.map((pageImg, index) => (
+              <button
+                key={index}
+                onClick={() => {
+                  setCurrentPage(index)
+                  setShowThumbnails(false)
+                }}
+                className={`relative group overflow-hidden rounded border-2 ${
+                  currentPage === index
+                    ? 'border-yellow-400'
+                    : 'border-gray-600'
+                }`}
+              >
+                <img
+                  src={pageImg}
+                  alt={`Page ${index + 1}`}
+                  className="w-full h-auto"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs py-1 text-center">
+                  {index + 1}
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }
