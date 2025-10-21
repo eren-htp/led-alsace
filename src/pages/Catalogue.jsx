@@ -112,6 +112,9 @@ function Catalogue() {
         img.className = 'page-image'
         img.loading = 'eager' // Charger les images rapidement pour éviter le flash de contenu
         img.decoding = 'sync' // Rendu synchrone pour une meilleure cohérence
+        img.style.display = 'block' // Force l'affichage
+        img.style.visibility = 'visible' // Force la visibilité
+        img.style.opacity = '1' // Force l'opacité
         
         pageContent.appendChild(img)
         pageDiv.appendChild(pageContent)
@@ -155,6 +158,12 @@ function Catalogue() {
       pageFlip.on('flip', (e) => {
         setCurrentPage(e.data)
         playPageFlipSound() // Jouer le son à chaque tournage de page
+        // Force le rendu des pages pour Safari/Mac
+        setTimeout(() => {
+          if (pageFlipRef.current) {
+            pageFlipRef.current.update()
+          }
+        }, 100)
       })
 
       pageFlipRef.current = pageFlip
