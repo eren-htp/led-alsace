@@ -324,7 +324,7 @@ function Catalogue() {
 
         {/* Controls - Version mobile optimisée - Fixés tout en bas */}
         {!isMobile && (
-          <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:gap-4 bg-led-dark/70 backdrop-blur-sm px-3 md:px-6 py-2 md:py-3 rounded-full border border-yellow-500/30 z-50">
+          <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:gap-4 bg-gray-900/95 backdrop-blur-md px-3 md:px-6 py-2 md:py-3 rounded-full border-2 border-yellow-500/60 shadow-2xl shadow-yellow-500/20 z-50">
             <Button
               onClick={prevPage}
               disabled={isFlipping || currentPage === 0}
