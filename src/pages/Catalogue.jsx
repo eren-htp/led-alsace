@@ -73,12 +73,15 @@ function Catalogue() {
   const [showThumbnails, setShowThumbnails] = useState(false)
   const [showFooter, setShowFooter] = useState(false) // Nouveau state pour le footer
   const [soundEnabled, setSoundEnabled] = useState(true) // État pour activer/désactiver le son
+  const audioRef = useRef(new Audio(pageFlipSound)) // Utiliser useRef pour une seule instance Audio
 
   // Fonction pour jouer le son de tournage de page
   const playPageFlipSound = () => {
     if (!soundEnabled) return
     
-    const audio = new Audio(pageFlipSound)
+    const audio = audioRef.current
+    audio.pause() // Arrêter le son précédent s\'il est en cours
+    audio.currentTime = 0 // Remettre à zéro le temps de lecture
     audio.volume = 0.5 // Volume à 50%
     audio.play().catch(err => console.log('Erreur lecture audio:', err))
   }
@@ -313,16 +316,14 @@ function Catalogue() {
                 >
                   <BookOpen className="w-5 h-5" />
                 </Button>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="text-gray-300 text-sm font-mono">
-                  {currentPage + 1} / {totalPages}
+                <span className="text-gray-300 text-xs md:text-sm">
+                  {currentPage + 1}/{totalPages}
                 </span>
                 <Button
-                  variant="outline"
-                  size="sm"
                   onClick={() => goToPage(0)}
                   disabled={isFlipping}
+                  variant="outline"
+                  size="sm"
                   className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
                   title="Aller à la première page"
                 >
@@ -338,6 +339,7 @@ function Catalogue() {
                   {soundEnabled ? <Volume2 className="w-5 h-5" /> : <VolumeX className="w-5 h-5" />}
                 </Button>
               </div>
+
             </div>
           </div>
         )}
