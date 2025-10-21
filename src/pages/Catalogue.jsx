@@ -234,64 +234,7 @@ function Catalogue() {
         keywords="catalogue enseignes LED, modèles lettres boîtier, catalogue interactif, exemples enseignes lumineuses, inspiration enseigne LED"
         canonicalUrl="https://www.ledalsace.com/catalogue"
       />
-      {/* Header du catalogue - Déplacé en bas au-dessus des contrôles - Masqué sur mobile */}
-      <header className="hidden md:block bg-led-dark/50 backdrop-blur-sm border-t border-yellow-500/20 px-3 md:px-6 py-3 md:py-4 fixed bottom-16 left-0 right-0 z-40">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2 md:gap-4">
-            <Link to="/" className="text-lg md:text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition-colors cursor-pointer">
-              LED Alsace
-            </Link>
-            <span className="text-gray-400 text-xs md:text-sm hidden sm:inline">Catalogue Octobre 2025</span>
-          </div>
-          <div className="flex items-center gap-2 md:gap-4">
-            <span className="text-gray-300 text-xs md:text-sm">
-              {currentPage + 1}/{totalPages}
-            </span>
-            {isMobile && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setShowThumbnails(!showThumbnails)}
-                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 h-8 w-8 p-0"
-              >
-                {showThumbnails ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
-              </Button>
-            )}
-            {!isMobile && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => goToPage(0)}
-                disabled={isFlipping}
-                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50"
-              >
-                <HomeIcon className="w-4 h-4 mr-2" />
-                Début
-              </Button>
-            )}
-            {!isMobile && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setShowFooter(!showFooter)} // Bouton pour afficher/cacher le footer
-                className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
-              >
-                <BookOpen className="w-4 h-4 mr-2" />
-                Miniatures
-              </Button>
-            )}
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => setSoundEnabled(!soundEnabled)}
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 h-8 w-8 p-0"
-              title={soundEnabled ? 'Désactiver le son' : 'Activer le son'}
-            >
-              {soundEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
-            </Button>
-          </div>
-        </div>
-      </header>
+      <header className="hidden"></header>
 
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center p-2 md:p-4 relative overflow-hidden">
@@ -314,71 +257,88 @@ function Catalogue() {
             ))}
           </div>
         ) : (
-          <div 
-            className="relative book-wrapper" 
-            style={{ 
-              transform: `scale(${zoom})`, 
-              transition: 'transform 0.3s ease',
-              pointerEvents: isFlipping ? 'none' : 'auto',
-              willChange: 'transform'
-            }}
-          >
-            <div 
-              ref={bookRef} 
-              id="book"
-              className="book-container"
-            />
-          </div>
+          <div ref={bookRef} className="page-flip-container" style={{ transform: `scale(${zoom})`, transition: 'transform 0.3s' }}></div>
         )}
 
-        {/* Controls - Version mobile optimisée - Fixés tout en bas */}
+        {/* Barre de navigation inférieure unifiée */}
         {!isMobile && (
-          <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-3 md:gap-4 bg-black/90 backdrop-blur-md px-4 md:px-6 py-3 md:py-4 rounded-full border-3 border-yellow-400 shadow-2xl shadow-yellow-400/40 z-50">
-            <Button
-              onClick={prevPage}
-              disabled={isFlipping || currentPage === 0}
-              variant="outline"
-              size="sm"
-              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-            >
-              ←
-            </Button>
-            <Button
-              onClick={zoomOut}
-              disabled={zoom <= 0.5}
-              variant="outline"
-              size="sm"
-              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-            >
-              <ZoomOut className="w-4 h-4" />
-            </Button>
-            <Button
-              onClick={zoomIn}
-              disabled={zoom >= 2}
-              variant="outline"
-              size="sm"
-              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-            >
-              <ZoomIn className="w-4 h-4" />
-            </Button>
-            <Button
-              onClick={nextPage}
-              disabled={isFlipping || currentPage >= totalPages - 1}
-              variant="outline"
-              size="sm"
-              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-            >
-              →
-            </Button>
-            <Button
-              onClick={() => setShowFooter(!showFooter)}
-              variant="outline"
-              size="sm"
-              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-              title={showFooter ? 'Masquer miniatures' : 'Afficher miniatures'}
-            >
-              <BookOpen className="w-5 h-5" />
-            </Button>
+          <div className="fixed bottom-0 left-0 right-0 bg-black/90 border-t-2 border-yellow-400/70 shadow-2xl shadow-yellow-400/40 backdrop-blur-md p-2 z-50">
+            <div className="max-w-7xl mx-auto flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Link to="/" className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition-colors cursor-pointer">
+                  LED Alsace
+                </Link>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <Button
+                  onClick={prevPage}
+                  disabled={isFlipping || currentPage === 0}
+                  variant="outline"
+                  size="sm"
+                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
+                >
+                  ←
+                </Button>
+                <Button
+                  onClick={zoomOut}
+                  variant="outline"
+                  size="sm"
+                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
+                >
+                  <ZoomOut className="w-4 h-4" />
+                </Button>
+                <Button
+                  onClick={zoomIn}
+                  variant="outline"
+                  size="sm"
+                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
+                >
+                  <ZoomIn className="w-4 h-4" />
+                </Button>
+                <Button
+                  onClick={nextPage}
+                  disabled={isFlipping || currentPage >= totalPages - 1}
+                  variant="outline"
+                  size="sm"
+                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
+                >
+                  →
+                </Button>
+                <Button
+                  onClick={() => setShowFooter(!showFooter)}
+                  variant="outline"
+                  size="sm"
+                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
+                  title={showFooter ? 'Masquer miniatures' : 'Afficher miniatures'}
+                >
+                  <BookOpen className="w-5 h-5" />
+                </Button>
+              </div>
+              <div className="flex items-center gap-4">
+                <span className="text-gray-300 text-sm font-mono">
+                  {currentPage + 1} / {totalPages}
+                </span>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => goToPage(0)}
+                  disabled={isFlipping}
+                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
+                  title="Aller à la première page"
+                >
+                  <HomeIcon className="w-5 h-5" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setSoundEnabled(!soundEnabled)}
+                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
+                  title={soundEnabled ? 'Désactiver le son' : 'Activer le son'}
+                >
+                  {soundEnabled ? <Volume2 className="w-5 h-5" /> : <VolumeX className="w-5 h-5" />}
+                </Button>
+              </div>
+            </div>
           </div>
         )}
       </main>
@@ -411,48 +371,6 @@ function Catalogue() {
             </div>
           </div>
         </footer>
-      )}
-
-      {/* Miniatures mobiles */}
-      {showThumbnails && isMobile && (
-        <div className="fixed inset-0 bg-black/90 z-50 overflow-y-auto p-4">
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-yellow-400 text-lg font-bold">Pages</h2>
-            <Button
-              onClick={() => setShowThumbnails(false)}
-              variant="outline"
-              size="sm"
-              className="border-yellow-500/50 text-yellow-400"
-            >
-              <X className="w-4 h-4" />
-            </Button>
-          </div>
-          <div className="grid grid-cols-3 gap-2">
-            {pages.map((pageImg, index) => (
-              <button
-                key={index}
-                onClick={() => {
-                  setCurrentPage(index)
-                  setShowThumbnails(false)
-                }}
-                className={`relative group overflow-hidden rounded border-2 ${
-                  currentPage === index
-                    ? 'border-yellow-400'
-                    : 'border-gray-600'
-                }`}
-              >
-                <img
-                  src={pageImg}
-                  alt={`Page ${index + 1}`}
-                  className="w-full h-auto"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs py-1 text-center">
-                  {index + 1}
-                </div>
-              </button>
-            ))}
-          </div>
-        </div>
       )}
     </div>
   )
