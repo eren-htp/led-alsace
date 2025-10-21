@@ -42,15 +42,15 @@ function LettresBoitierSlider() {
       title: 'Modèle G01',
       imageJour: G01Jour,
       imageNuit: G01Nuit,
-      description: 'Lettre boîtier en acier ou en acier laqué ou brut. La fixation se fait directement sur mur, sur base de fixation ou panneau de fond.',
-      materiaux: 'Acier, Acier laqué',
-      lumiere: 'LED haute luminosité',
-      montage: 'Fixation murale directe',
+      description: 'Lettres individuelles lumineuses avec retour',
+      materiaux: 'Fabriquées en acier inoxydable',
+      lumiere: 'Eclairage de face',
+      montage: 'Laquage possible sur les chants',
       caracteristiques: [
-        'Structure en acier robuste',
-        'Éclairage LED uniforme',
-        'Résistant aux intempéries',
-        'Personnalisable en couleur'
+        'Lettres individuelles lumineuses avec retour',
+        'Fabriquées en acier inoxydable',
+        'Eclairage de face',
+        'Laquage possible sur les chants'
       ]
     },
     {
@@ -106,15 +106,15 @@ function LettresBoitierSlider() {
       title: 'Modèle G05',
       imageJour: G05Jour,
       imageNuit: G05Nuit,
-      description: 'Lettre boîtier avec finition premium. Design élégant pour une visibilité optimale jour et nuit.',
-      materiaux: 'Acier inoxydable',
-      lumiere: 'LED rétro-éclairage',
-      montage: 'Fixation sur panneau',
+      description: 'Lettres individuelles lumineuses sans retour',
+      materiaux: 'Fabriquées en acier inoxydable',
+      lumiere: 'Eclairage de face',
+      montage: 'Laquage possible sur les chants',
       caracteristiques: [
-        'Finition haut de gamme',
-        'Éclairage LED performant',
-        'Installation facilitée',
-        'Durabilité exceptionnelle'
+        'Lettres individuelles lumineuses sans retour',
+        'Fabriquées en acier inoxydable',
+        'Eclairage de face',
+        'Laquage possible sur les chants'
       ]
     },
     {
@@ -154,15 +154,15 @@ function LettresBoitierSlider() {
       title: 'Modèle G08',
       imageJour: G08Jour,
       imageNuit: G08Nuit,
-      description: 'Lettre boîtier moderne avec éclairage LED optimisé. Idéal pour les enseignes commerciales.',
-      materiaux: 'Aluminium composite',
-      lumiere: 'LED haute performance',
-      montage: 'Fixation polyvalente',
+      description: 'Lettres individuelles rétroéclairées',
+      materiaux: 'Face avant opaque en Dibond 3mm',
+      lumiere: 'Eclairage rubans leds sur les chants',
+      montage: 'Fixation murale',
       caracteristiques: [
-        'Design contemporain',
-        'Éclairage puissant',
-        'Légèreté et solidité',
-        'Maintenance simplifiée'
+        'Lettres individuelles rétroéclairées',
+        'Face avant opaque en Dibond 3mm',
+        'Eclairage rubans leds sur les chants',
+        'Effet lumineux moderne'
       ]
     },
     {
@@ -218,15 +218,15 @@ function LettresBoitierSlider() {
       title: 'Modèle G14',
       imageJour: G14Jour,
       imageNuit: G14Nuit,
-      description: 'Lettre boîtier premium avec système d\'éclairage avancé. Excellence en visibilité et design.',
-      materiaux: 'Acier inoxydable premium',
-      lumiere: 'LED dernière génération',
-      montage: 'Système de fixation avancé',
+      description: 'Caisson ajouré lumineux',
+      materiaux: 'Matériel: PVC, Dibond, Plexiglass',
+      lumiere: 'Eclairage de face',
+      montage: 'Lettrage découpé au laser',
       caracteristiques: [
-        'Qualité supérieure',
-        'Éclairage intelligent',
-        'Résistance maximale',
-        'Garantie longue durée'
+        'Caisson ajouré lumineux',
+        'Matériel: PVC, Dibond, Plexiglass',
+        'Lettrage découpé au laser',
+        'Eclairage de face'
       ]
     },
     {
