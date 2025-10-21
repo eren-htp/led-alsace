@@ -324,13 +324,13 @@ function Catalogue() {
 
         {/* Controls - Version mobile optimisée - Fixés tout en bas */}
         {!isMobile && (
-          <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:gap-4 bg-gray-900/95 backdrop-blur-md px-3 md:px-6 py-2 md:py-3 rounded-full border-2 border-yellow-500/60 shadow-2xl shadow-yellow-500/20 z-50">
+          <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-3 md:gap-4 bg-black/90 backdrop-blur-md px-4 md:px-6 py-3 md:py-4 rounded-full border-3 border-yellow-400 shadow-2xl shadow-yellow-400/40 z-50">
             <Button
               onClick={prevPage}
               disabled={isFlipping || currentPage === 0}
               variant="outline"
               size="sm"
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50 h-8 w-8 md:h-10 md:w-10 p-0"
+              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
             >
               ←
             </Button>
@@ -339,7 +339,7 @@ function Catalogue() {
               disabled={zoom <= 0.5}
               variant="outline"
               size="sm"
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50 h-8 w-8 md:h-10 md:w-10 p-0"
+              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
             >
               <ZoomOut className="w-4 h-4" />
             </Button>
@@ -348,7 +348,7 @@ function Catalogue() {
               disabled={zoom >= 2}
               variant="outline"
               size="sm"
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50 h-8 w-8 md:h-10 md:w-10 p-0"
+              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
             >
               <ZoomIn className="w-4 h-4" />
             </Button>
@@ -357,7 +357,7 @@ function Catalogue() {
               disabled={isFlipping || currentPage >= totalPages - 1}
               variant="outline"
               size="sm"
-              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50 h-8 w-8 md:h-10 md:w-10 p-0"
+              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
             >
               →
             </Button>
