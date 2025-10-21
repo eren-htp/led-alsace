@@ -119,13 +119,13 @@ function Catalogue() {
       })
 
       const pageFlip = new PageFlip(bookContainer, {
-        width: 350,
-        height: 466,
+        width: 420,
+        height: 560,
         size: 'fixed',
         minWidth: 200,
-        maxWidth: 1000,
+        maxWidth: 1200,
         minHeight: 300,
-        maxHeight: 1350,
+        maxHeight: 1600,
         maxShadowOpacity: 0.7,
         showCover: true,
         mobileScrollSupport: false, // Désactivé pour desktop
