@@ -361,6 +361,15 @@ function Catalogue() {
             >
               →
             </Button>
+            <Button
+              onClick={() => setShowFooter(!showFooter)}
+              variant="outline"
+              size="sm"
+              className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
+              title={showFooter ? 'Masquer miniatures' : 'Afficher miniatures'}
+            >
+              <BookOpen className="w-5 h-5" />
+            </Button>
           </div>
         )}
       </main>
