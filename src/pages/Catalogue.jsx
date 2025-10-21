@@ -160,7 +160,7 @@ function Catalogue() {
 
       pageFlip.on('flip', (e) => {
         setCurrentPage(e.data)
-        playPageFlipSound() // Jouer le son à chaque tournage de page
+        // playPageFlipSound() // Son désactivé sur demande de l'utilisateur
         // Force le rendu des pages pour Safari/Mac
         setTimeout(() => {
           if (pageFlipRef.current) {
@@ -329,15 +329,7 @@ function Catalogue() {
                 >
                   <HomeIcon className="w-5 h-5" />
                 </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setSoundEnabled(!soundEnabled)}
-                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-                  title={soundEnabled ? 'Désactiver le son' : 'Activer le son'}
-                >
-                  {soundEnabled ? <Volume2 className="w-5 h-5" /> : <VolumeX className="w-5 h-5" />}
-                </Button>
+
               </div>
 
             </div>
