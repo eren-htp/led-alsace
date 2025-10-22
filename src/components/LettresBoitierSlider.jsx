@@ -42,15 +42,15 @@ function LettresBoitierSlider() {
       title: 'Modèle G01',
       imageJour: G01Jour,
       imageNuit: G01Nuit,
-      description: 'Lettre individuelle avec retour éclairée par l\'avant',
-      materiaux: 'Acier inoxidable, Aluminium, Laiton, Cuivre, Acier',
-      lumiere: 'Éclairage par l\'avant',
-      montage: 'Direct sur mur, Sur lisse de fixation, Panneau de fond',
+      description: 'Lettres individuelles lumineuses avec retour',
+      materiaux: 'Fabriquées en acier inoxydable',
+      lumiere: 'Eclairage de face',
+      montage: 'Laquage possible sur les chants',
       caracteristiques: [
-        'Lettre individuelle avec retour éclairée par l\'avant',
-        'Matériaux: Acier inoxidable, Aluminium, Laiton, Cuivre, Acier',
-        'Éclairage par l\'avant',
-        'Montage: Direct sur mur, Sur lisse de fixation, Panneau de fond'
+        'Lettres individuelles lumineuses avec retour',
+        'Fabriquées en acier inoxydable',
+        'Eclairage de face',
+        'Laquage possible sur les chants'
       ]
     },
     {
@@ -106,15 +106,15 @@ function LettresBoitierSlider() {
       title: 'Modèle G05',
       imageJour: G05Jour,
       imageNuit: G05Nuit,
-      description: 'Lettre individuelle éclairée par l\'avant',
-      materiaux: 'Acier inoxidable, Aluminium, Laiton, Cuivre, Acier',
-      lumiere: 'Éclairage par l\'avant',
-      montage: 'Direct sur mur, Sur lisse de fixation, Panneau de fond',
+      description: 'Lettres individuelles lumineuses sans retour',
+      materiaux: 'Fabriquées en acier inoxydable',
+      lumiere: 'Eclairage de face',
+      montage: 'Laquage possible sur les chants',
       caracteristiques: [
-        'Lettre individuelle éclairée par l\'avant',
-        'Matériaux: Acier inoxidable, Aluminium, Laiton, Cuivre, Acier',
-        'Face avant en plexiglas diffusant de 3 ou 5 mm',
-        'Éclairage par l\'avant'
+        'Lettres individuelles lumineuses sans retour',
+        'Fabriquées en acier inoxydable',
+        'Eclairage de face',
+        'Laquage possible sur les chants'
       ]
     },
     {
@@ -154,15 +154,15 @@ function LettresBoitierSlider() {
       title: 'Modèle G08',
       imageJour: G08Jour,
       imageNuit: G08Nuit,
-      description: 'Lettres boîtiers à éclairage latéral',
-      materiaux: 'Plexiglas 20 mm, Dibond 3 mm',
-      lumiere: 'Éclairage par les chants et par l\'arrière',
-      montage: 'Face avant opaque en Dibond',
+      description: 'Lettres individuelles rétroéclairées',
+      materiaux: 'Face avant opaque en Dibond 3mm',
+      lumiere: 'Eclairage rubans leds sur les chants',
+      montage: 'Fixation murale',
       caracteristiques: [
-        'Lettres boîtiers à éclairage latéral',
-        'Matériaux: Plexiglas 20 mm, Dibond 3 mm',
-        'Face avant opaque en Dibond',
-        'Chants et arrière rétroéclairés par rubans nano LED'
+        'Lettres individuelles rétroéclairées',
+        'Face avant opaque en Dibond 3mm',
+        'Eclairage rubans leds sur les chants',
+        'Effet lumineux moderne'
       ]
     },
     {
@@ -218,175 +218,263 @@ function LettresBoitierSlider() {
       title: 'Modèle G14',
       imageJour: G14Jour,
       imageNuit: G14Nuit,
-      description: 'Caisson lumineux ajouré simple face',
-      materiaux: 'Plexiglas 3 mm, Dibond 3 mm, PVC 19 mm',
-      lumiere: 'Éclairage par l\'avant par le lettrage',
-      montage: 'Fixation directe sur mur',
+      description: 'Caisson ajouré lumineux',
+      materiaux: 'Matériel: PVC, Dibond, Plexiglass',
+      lumiere: 'Eclairage de face',
+      montage: 'Lettrage découpé au laser',
       caracteristiques: [
-        'Caisson lumineux ajouré simple face',
-        'Matériaux: Plexiglas 3 mm, Dibond 3 mm, PVC 19 mm',
-        'Éclairage par l\'avant par le lettrage',
-        '100% personnalisable - Intérieur ou extérieur'
+        'Caisson ajouré lumineux',
+        'Matériel: PVC, Dibond, Plexiglass',
+        'Lettrage découpé au laser',
+        'Eclairage de face'
+      ]
+    },
+    {
+      code: 'G15',
+      title: 'Modèle G15',
+      imageJour: G15Jour,
+      imageNuit: G15Nuit,
+      description: 'Lettre boîtier avec éclairage RGB. Personnalisation des couleurs pour un effet unique.',
+      materiaux: 'Acier laqué premium',
+      lumiere: 'LED RGB programmable',
+      montage: 'Fixation avec contrôleur',
+      caracteristiques: [
+        'Éclairage RGB',
+        'Couleurs personnalisables',
+        'Effets lumineux dynamiques',
+        'Contrôle à distance'
+      ]
+    },
+    {
+      code: 'G16',
+      title: 'Modèle G16',
+      imageJour: G16Jour,
+      imageNuit: G16Nuit,
+      description: 'Lettre boîtier grand format. Impact visuel maximal pour grandes enseignes.',
+      materiaux: 'Acier renforcé grand format',
+      lumiere: 'LED haute intensité',
+      montage: 'Fixation industrielle',
+      caracteristiques: [
+        'Grand format',
+        'Impact visuel maximal',
+        'Structure ultra-robuste',
+        'Éclairage haute intensité'
       ]
     }
   ]
 
-  const nextModel = () => {
-    setCurrentIndex((prev) => (prev + 1) % models.length)
-  }
-
-  const prevModel = () => {
-    setCurrentIndex((prev) => (prev - 1 + models.length) % models.length)
-  }
-
   const currentModel = models[currentIndex]
+  const currentImage = isNight ? currentModel.imageNuit : currentModel.imageJour
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % models.length)
+  }
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + models.length) % models.length)
+  }
+
+  const toggleDayNight = (night) => {
+    setIsNight(night)
+  }
+
+  const goToModel = (index) => {
+    setCurrentIndex(index)
+  }
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className={`py-20 transition-colors duration-700 ${isNight ? 'bg-gray-900' : 'bg-gray-50'}`}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Lettres Boîtier LED</h2>
-          <p className="text-xl text-gray-600">
-            Découvrez nos modèles de lettres boîtier personnalisables pour une visibilité optimale jour et nuit
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-          {/* Image Section */}
-          <div className="relative">
-            <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-500">
-              <img
-                src={isNight ? currentModel.imageNuit : currentModel.imageJour}
-                alt={currentModel.title}
-                className="w-full h-full object-contain"
-              />
-            </div>
-
-            {/* Navigation Arrows */}
-            <button
-              onClick={prevModel}
-              aria-label="Modèle précédent"
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 p-3 rounded-full shadow-lg transition-all"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button
-              onClick={nextModel}
-              aria-label="Modèle suivant"
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 p-3 rounded-full shadow-lg transition-all"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
+        <div className="max-w-6xl mx-auto">
+          {/* Titre de section */}
+          <div className="text-center mb-12">
+            <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${isNight ? 'text-white' : 'text-gray-900'}`}>
+              Lettres Boîtier LED
+            </h2>
+            <p className={`text-lg ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>
+              Découvrez nos modèles de lettres boîtier personnalisables pour une visibilité optimale jour et nuit
+            </p>
           </div>
 
-          {/* Info Section */}
-          <div className="space-y-6">
-            {/* Day/Night Toggle */}
-            <div className="flex gap-2 bg-gray-100 p-1 rounded-lg w-fit">
-              <button
-                onClick={() => setIsNight(false)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all ${
-                  !isNight ? 'bg-yellow-400 text-gray-900 shadow-md' : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                <Sun className="w-4 h-4" />
-                <span className="font-medium">JOUR</span>
-              </button>
-              <button
-                onClick={() => setIsNight(true)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all ${
-                  isNight ? 'bg-gray-800 text-white shadow-md' : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                <Moon className="w-4 h-4" />
-                <span className="font-medium">NUIT</span>
-              </button>
-            </div>
-
-            {/* Model Badge */}
-            <div className="inline-block bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-bold shadow-md">
-              {currentModel.code}
-            </div>
-
-            {/* Model Title */}
-            <h3 className="text-3xl font-bold text-gray-900">{currentModel.title}</h3>
-
-            {/* Description */}
-            <p className="text-lg text-gray-700">{currentModel.description}</p>
-
-            {/* Details */}
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="bg-yellow-400 text-gray-900 w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                  M
+          {/* Main Slider */}
+          <div className={`relative rounded-2xl shadow-2xl overflow-hidden transition-all duration-700 ${
+            isNight ? 'bg-gray-800 border border-gray-700' : 'bg-white'
+          }`}>
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              {/* Image Section */}
+              <div className={`relative h-96 lg:h-auto transition-all duration-700 ${
+                isNight ? 'bg-gray-950' : 'bg-gray-100'
+              }`}>
+                <div className="w-full h-full flex items-center justify-center p-8">
+                  <img 
+                    src={currentImage} 
+                    alt={currentModel.title}
+                    className="max-w-full max-h-full object-contain transition-opacity duration-300"
+                    loading="lazy"
+                    key={`${currentIndex}-${isNight}`}
+                  />
                 </div>
-                <div>
-                  <h4 className="font-bold text-gray-900">Matériaux</h4>
-                  <p className="text-gray-700">{currentModel.materiaux}</p>
-                </div>
-              </div>
+                
+                {/* Navigation Arrows */}
+                <button
+                  onClick={prevSlide}
+                  aria-label="Modèle précédent"
+                  className={`absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg transition-all hover:scale-110 ${
+                    isNight 
+                      ? 'bg-gray-800/90 hover:bg-gray-800 text-white' 
+                      : 'bg-white/90 hover:bg-white text-gray-900'
+                  }`}
+                >
+                  <ChevronLeft className="w-6 h-6" />
+                </button>
+                <button
+                  onClick={nextSlide}
+                  aria-label="Modèle suivant"
+                  className={`absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg transition-all hover:scale-110 ${
+                    isNight 
+                      ? 'bg-gray-800/90 hover:bg-gray-800 text-white' 
+                      : 'bg-white/90 hover:bg-white text-gray-900'
+                  }`}
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </button>
 
-              <div className="flex items-start gap-3">
-                <div className="bg-yellow-400 text-gray-900 w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                  L
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900">Lumière</h4>
-                  <p className="text-gray-700">{currentModel.lumiere}</p>
+                {/* Model Counter */}
+                <div className={`absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full text-sm font-semibold ${
+                  isNight ? 'bg-gray-800/90 text-white' : 'bg-led-dark/70 text-white'
+                }`}>
+                  {currentIndex + 1} / {models.length}
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <div className="bg-yellow-400 text-gray-900 w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                  F
+              {/* Info Section */}
+              <div className="p-8 lg:p-12" key={currentIndex}>
+                {/* Day/Night Toggle */}
+                <div className="flex justify-start mb-6">
+                  <div className={`inline-flex items-center gap-2 rounded-full p-1 shadow-md ${
+                    isNight ? 'bg-gray-700' : 'bg-gray-100'
+                  }`} role="group" aria-label="Mode d'affichage">
+                    <button
+                      onClick={() => toggleDayNight(false)}
+                      aria-label="Mode jour"
+                      aria-pressed={!isNight}
+                      className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
+                        !isNight 
+                          ? 'bg-yellow-400 text-gray-900 shadow-md' 
+                          : isNight ? 'text-gray-300 hover:bg-gray-600' : 'text-gray-600 hover:bg-gray-200'
+                      }`}
+                    >
+                      <Sun className="w-4 h-4" />
+                      <span className="font-semibold text-sm">JOUR</span>
+                    </button>
+                    <button
+                      onClick={() => toggleDayNight(true)}
+                      aria-label="Mode nuit"
+                      aria-pressed={isNight}
+                      className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
+                        isNight 
+                          ? 'bg-gray-900 text-white shadow-md' 
+                          : 'text-gray-600 hover:bg-gray-200'
+                      }`}
+                    >
+                      <Moon className="w-4 h-4" />
+                      <span className="font-semibold text-sm">NUIT</span>
+                    </button>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-bold text-gray-900">Montage</h4>
-                  <p className="text-gray-700">{currentModel.montage}</p>
+
+                <div className="mb-6">
+                  <span className="inline-block px-4 py-2 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg mb-4">
+                    {currentModel.code}
+                  </span>
+                  <h2 className={`text-3xl font-bold mb-4 ${isNight ? 'text-white' : 'text-gray-900'}`}>
+                    {currentModel.title}
+                  </h2>
+                  <p className={`leading-relaxed ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>
+                    {currentModel.description}
+                  </p>
                 </div>
+
+                {/* Specifications */}
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-gray-900 font-bold">M</span>
+                    </div>
+                    <div>
+                      <h3 className={`font-semibold ${isNight ? 'text-white' : 'text-gray-900'}`}>Matériaux</h3>
+                      <p className={`text-sm ${isNight ? 'text-gray-400' : 'text-gray-600'}`}>{currentModel.materiaux}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-gray-900 font-bold">L</span>
+                    </div>
+                    <div>
+                      <h3 className={`font-semibold ${isNight ? 'text-white' : 'text-gray-900'}`}>Lumière</h3>
+                      <p className={`text-sm ${isNight ? 'text-gray-400' : 'text-gray-600'}`}>{currentModel.lumiere}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-gray-900 font-bold">F</span>
+                    </div>
+                    <div>
+                      <h3 className={`font-semibold ${isNight ? 'text-white' : 'text-gray-900'}`}>Montage</h3>
+                      <p className={`text-sm ${isNight ? 'text-gray-400' : 'text-gray-600'}`}>{currentModel.montage}</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Characteristics */}
+                <div className="mb-8">
+                  <h3 className={`font-bold mb-3 ${isNight ? 'text-white' : 'text-gray-900'}`}>Caractéristiques</h3>
+                  <ul className="space-y-2">
+                    {currentModel.caracteristiques.map((carac, index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full"></div>
+                        <span className={`text-sm ${isNight ? 'text-gray-300' : 'text-gray-700'}`}>{carac}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* CTA Button */}
+                <Button 
+                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold"
+                  size="lg"
+                >
+                  Demander un devis
+                </Button>
               </div>
             </div>
-
-            {/* Characteristics */}
-            <div>
-              <h4 className="font-bold text-gray-900 mb-3">Caractéristiques</h4>
-              <ul className="space-y-2">
-                {currentModel.caracteristiques.map((item, index) => (
-                  <li key={index} className="flex items-start gap-2 text-gray-700">
-                    <span className="text-yellow-400 mt-1">●</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* CTA Button */}
-            <Button className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-6 text-lg shadow-lg">
-              Demander un devis
-            </Button>
           </div>
-        </div>
 
-        {/* Thumbnail Navigation */}
-        <div className="mt-12 overflow-x-auto">
-          <div className="flex gap-4 justify-center min-w-max px-4">
-            {models.map((model, index) => (
-              <button
-                key={model.code}
-                onClick={() => setCurrentIndex(index)}
-                className={`relative w-24 h-24 rounded-lg overflow-hidden transition-all ${
-                  index === currentIndex
-                    ? 'ring-4 ring-yellow-400 scale-110'
-                    : 'opacity-60 hover:opacity-100'
-                }`}
-              >
-                <img
-                  src={model.imageJour}
-                  alt={model.code}
-                  className="w-full h-full object-cover"
-                />
-              </button>
-            ))}
+          {/* Model Thumbnails */}
+          <div className="mt-8 overflow-x-auto">
+            <div className="flex gap-3 pb-4 min-w-max">
+              {models.map((model, index) => (
+                <button
+                  key={model.code}
+                  onClick={() => goToModel(index)}
+                  className={`flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden border-2 transition-all ${
+                    currentIndex === index
+                      ? 'border-yellow-400 shadow-lg scale-105'
+                      : isNight 
+                        ? 'border-gray-700 hover:border-gray-500' 
+                        : 'border-gray-200 hover:border-gray-400'
+                  }`}
+                >
+                  <img
+                    src={isNight ? model.imageNuit : model.imageJour}
+                    alt={model.code}
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
