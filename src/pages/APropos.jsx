@@ -67,13 +67,13 @@ function APropos() {
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p className="leading-relaxed">
-                LED Alsace est née de la volonté de proposer des solutions de signalétique modernes, durables et locales. Depuis nos débuts, nous avons accompagné des dizaines de commerçants, artisans, PME et collectivités dans la mise en valeur de leur identité visuelle.
+                Depuis sa création à Strasbourg en juin 2014 par M. KOPAR Durmus, la société LED Alsace s'est rapidement imposée comme l'expert incontournable de la communication visuelle dans le Grand Est. Notre évolution, d'une entreprise d'installations générales à un spécialiste de la visibilité commerciale, témoigne de notre engagement à propulser l'image de marque de nos clients. Ancrée dans la région Alsace, notre spécialisation couvre désormais une maîtrise complète de tous les supports de publicité, intérieurs comme extérieurs.
               </p>
               <p className="leading-relaxed">
-                De l'enseigne lumineuse à l'adhésif grand format, chaque projet est conçu, fabriqué et posé avec le souci du détail et une exigence de qualité constante. Basés en Alsace, nous maîtrisons l'ensemble de la chaîne de production pour offrir à nos clients un service rapide, fiable et personnalisé.
+                LED Alsace est fier d'offrir un service clé en main unique : de la conception graphique innovante au soutien dans le remplissage des documents administratifs nécessaires, jusqu'à la pose finale de vos installations. Notre force réside dans la fabrication intégrée de supports publicitaires de très haute qualité. Nous sommes les experts de l'enseigne lumineuse : lettres boîtier lumineuses, caissons lumineux, totems publicitaires percutants, et panneaux sur mesure. Grâce à nos équipements de pointe, notamment la découpe à la forme par CNC (Commande Numérique), nous travaillons et transformons des matériaux durables tels que le PVC, le Plexiglas, le Dibond et l'aluminium pour garantir un résultat robuste et esthétique. Notre expertise s'étend bien au-delà de la façade, incluant le marquage de véhicules (flocage, covering), l'impression grand format (bâches, adhésifs), l'habillage de façade sur mesure et toute la signalétique d'orientation nécessaire. Que votre commerce se situe à Strasbourg, Colmar, Mulhouse, ou dans le Bas-Rhin (67) et le Haut-Rhin (68), nous garantissons une réponse technique, créative et locale à vos besoins.
               </p>
               <p className="leading-relaxed">
-                Aujourd'hui, LED Alsace continue d'évoluer, avec une même mission : donner de la visibilité à ceux qui font bouger notre territoire.
+                Forts de plus de dix ans d'expérience dans la fabrication et l'installation d'enseignes en Alsace, LED Alsace est le partenaire essentiel pour une croissance durable. Nous nous engageons à vous fournir des solutions de communication visuelle modernes, durables et rigoureusement conformes aux réglementations locales. Contactez notre équipe pour tous vos projets d'enseignes lumineuses : nous vous assurons une visibilité optimale capable d'attirer et de fidéliser une nouvelle clientèle à travers l'Alsace et le Grand Est.
               </p>
             </div>
           </div>
