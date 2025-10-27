@@ -48,7 +48,6 @@ import page37 from '../catalogue-assets/page-37.webp'
 import page38 from '../catalogue-assets/page-38.webp'
 import page39 from '../catalogue-assets/page-39.webp'
 import page40 from '../catalogue-assets/page-40.webp'
-import pageFlipSound from '../catalogue-assets/page-flip.wav'
 
 const pages = [
   page01, page02, page03, page04, page05,
@@ -71,30 +70,18 @@ function Catalogue() {
   const [isFlipping, setIsFlipping] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const [showThumbnails, setShowThumbnails] = useState(false)
-  const [showFooter, setShowFooter] = useState(false) // Nouveau state pour le footer
-  const [soundEnabled, setSoundEnabled] = useState(true) // État pour activer/désactiver le son
-  const audioRef = useRef(new Audio(pageFlipSound)) // Utiliser useRef pour une seule instance Audio
 
-  // Fonction pour jouer le son de tournage de page
-  const playPageFlipSound = () => {
-    if (!soundEnabled) return
-    
-    const audio = audioRef.current
-    audio.pause() // Arrêter le son précédent s\'il est en cours
-    audio.currentTime = 0 // Remettre à zéro le temps de lecture
-    audio.volume = 0.5 // Volume à 50%
-    audio.play().catch(err => console.log('Erreur lecture audio:', err))
-  }
-
-  // Détecter si on est sur mobile
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768)
-    }
-    checkMobile()
-    window.addEventListener('resize', checkMobile)
-    return () => window.removeEventListener('resize', checkMobile)
-  }, [])
+	  // Détecter si on est sur mobile (et ajuster la taille pour PageFlip)
+	  useEffect(() => {
+	    const checkMobile = () => {
+	      // Utiliser une valeur plus petite pour la détection mobile pour être sûr que PageFlip fonctionne sur les tablettes
+	      // PageFlip est désactivé pour les écrans < 768px car il ne fonctionne pas correctement sur mobile.
+	      setIsMobile(window.innerWidth < 768) 
+	    }
+	    checkMobile()
+	    window.addEventListener('resize', checkMobile)
+	    return () => window.removeEventListener('resize', checkMobile)
+	  }, [])
 
   useEffect(() => {
     if (!isMobile && bookRef.current && !pageFlipRef.current) {
@@ -160,14 +147,22 @@ function Catalogue() {
 
       pageFlip.on('flip', (e) => {
         setCurrentPage(e.data)
-        // playPageFlipSound() // Son désactivé sur demande de l'utilisateur
-        // Force le rendu des pages pour Safari/Mac
+        // Fix for Safari/Mac page rendering issues: Force a redraw
         setTimeout(() => {
+          // 1. Force redraw of the book container
+          if (bookRef.current) {
+            bookRef.current.style.transform = 'translateZ(0)'
+            bookRef.current.offsetHeight
+            bookRef.current.style.transform = ''
+          }
+          // 2. Force PageFlip to update its view
           if (pageFlipRef.current) {
             pageFlipRef.current.update()
           }
         }, 100)
       })
+
+
 
       pageFlipRef.current = pageFlip
       setTotalPages(pages.length)
@@ -197,7 +192,6 @@ function Catalogue() {
     if (pageFlipRef.current && !isFlipping) {
       pageFlipRef.current.flip(pageNum)
       setShowThumbnails(false)
-      setShowFooter(false) // Cacher le footer après avoir cliqué sur une miniature
     }
   }
 
@@ -247,125 +241,87 @@ function Catalogue() {
           <div className="absolute bottom-1/4 right-1/4 w-48 md:w-96 h-48 md:h-96 bg-yellow-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
 
-        {isMobile ? (
-          <div className="flex flex-col items-center overflow-y-auto w-full h-full pb-20">
-            {pages.map((pageImg, index) => (
-              <img
-                key={index}
-                src={pageImg}
-                alt={`Page ${index + 1}`}
-                className="w-full max-w-sm my-2 border border-gray-700 shadow-lg"
-                loading="lazy"
-              />
-            ))}
+	        {isMobile ? (
+	          <div className="flex flex-col items-center overflow-y-auto w-full h-full pb-20 px-2">
+	            {/* Fallback mobile: Affichage simple des pages en défilement vertical */}
+	            <h2 className="text-xl font-bold text-yellow-500 mb-4 mt-2">Catalogue en défilement (Mobile)</h2>
+	            <div className="grid grid-cols-1 gap-4 w-full max-w-lg">
+	              {pages.map((pageImg, index) => (
+	                <div key={index} className="relative w-full border-2 border-gray-700 shadow-xl">
+	                  <img
+	                    src={pageImg}
+	                    alt={`Page ${index + 1}`}
+	                    className="w-full h-auto object-contain"
+	                    loading="lazy"
+	                  />
+	                  <div className="absolute bottom-0 right-0 bg-black/70 text-yellow-500 text-xs font-mono px-2 py-1">
+	                    Page {index + 1} / {pages.length}
+	                  </div>
+	                </div>
+	              ))}
+	            </div>
+	          </div>
+	        ) : (
+          <div className="flip-book-container" style={{ transform: `scale(${zoom})` }}>
+            <div ref={bookRef} className="flip-book"></div>
           </div>
-        ) : (
-          <div ref={bookRef} className="page-flip-container" style={{ transform: `scale(${zoom})`, transition: 'transform 0.3s' }}></div>
         )}
 
-        {/* Barre de navigation inférieure unifiée */}
+        {/* Thumbnails */}
+        {showThumbnails && !isMobile && (
+          <div className="absolute bottom-20 left-0 right-0 z-40 bg-black/50 backdrop-blur-sm p-4 overflow-x-auto">
+            <div className="flex space-x-4">
+              {pages.map((pageImg, index) => (
+                <img
+                  key={index}
+                  src={pageImg}
+                  alt={`Miniature ${index + 1}`}
+                  className={`w-24 h-32 object-cover cursor-pointer border-2 ${currentPage === index ? 'border-yellow-500' : 'border-gray-600'} hover:border-yellow-400`}
+                  onClick={() => goToPage(index)}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Footer avec contrôles */}
         {!isMobile && (
-          <div className="fixed bottom-0 left-0 right-0 bg-black/90 border-t-2 border-yellow-400/70 shadow-2xl shadow-yellow-400/40 backdrop-blur-md p-2 z-50">
-            <div className="max-w-7xl mx-auto flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Link to="/" className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition-colors cursor-pointer">
-                  Lumineuse Alsace
-                </Link>
-              </div>
-              <div className="flex items-center justify-center gap-2">
-                <Button
-                  onClick={prevPage}
-                  disabled={isFlipping || currentPage === 0}
-                  variant="outline"
-                  size="sm"
-                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-                >
-                  ←
+          <div className="fixed bottom-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-t-2 border-yellow-500/50 shadow-2xl shadow-yellow-500/20">
+            <div className="container mx-auto flex items-center justify-between p-2">
+              {/* Contrôles de navigation */}
+              <div className="flex items-center space-x-2">
+                <Button variant="outline" size="icon" onClick={prevPage} disabled={isFlipping || currentPage === 0} className="bg-white/95 text-gray-900 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-gray-900 w-10 h-10 md:w-12 md:h-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
                 </Button>
-                <Button
-                  onClick={zoomOut}
-                  variant="outline"
-                  size="sm"
-                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-                >
-                  <ZoomOut className="w-4 h-4" />
+                <Button variant="outline" size="icon" onClick={zoomOut} className="bg-white/95 text-gray-900 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-gray-900 w-10 h-10 md:w-12 md:h-12">
+                  <ZoomOut />
                 </Button>
-                <Button
-                  onClick={zoomIn}
-                  variant="outline"
-                  size="sm"
-                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-                >
-                  <ZoomIn className="w-4 h-4" />
+                <Button variant="outline" size="icon" onClick={zoomIn} className="bg-white/95 text-gray-900 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-gray-900 w-10 h-10 md:w-12 md:h-12">
+                  <ZoomIn />
                 </Button>
-                <Button
-                  onClick={nextPage}
-                  disabled={isFlipping || currentPage >= totalPages - 1}
-                  variant="outline"
-                  size="sm"
-                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-                >
-                  →
+                <Button variant="outline" size="icon" onClick={nextPage} disabled={isFlipping || currentPage >= totalPages - 1} className="bg-white/95 text-gray-900 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-gray-900 w-10 h-10 md:w-12 md:h-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </Button>
-                <Button
-                  onClick={() => setShowFooter(!showFooter)}
-                  variant="outline"
-                  size="sm"
-                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-                  title={showFooter ? 'Masquer miniatures' : 'Afficher miniatures'}
-                >
-                  <BookOpen className="w-5 h-5" />
-                </Button>
-                <span className="text-gray-300 text-xs md:text-sm">
-                  {currentPage + 1}/{totalPages}
-                </span>
-                <Button
-                  onClick={() => goToPage(0)}
-                  disabled={isFlipping}
-                  variant="outline"
-                  size="sm"
-                  className="bg-white/95 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-400 hover:text-black disabled:opacity-30 disabled:bg-gray-300 h-10 w-10 md:h-12 md:w-12 p-0 font-bold text-lg transition-all duration-200"
-                  title="Aller à la première page"
-                >
-                  <HomeIcon className="w-5 h-5" />
-                </Button>
-
               </div>
 
+              {/* Numéro de page */}
+              <div className="text-white text-lg font-semibold">
+                {currentPage + 1} / {totalPages}
+              </div>
+
+              {/* Autres contrôles */}
+              <div className="flex items-center space-x-2">
+                <Button variant="outline" size="icon" onClick={() => setShowThumbnails(!showThumbnails)} title={showThumbnails ? "Masquer miniatures" : "Afficher miniatures"} className="bg-white/95 text-gray-900 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-gray-900 w-10 h-10 md:w-12 md:h-12">
+                  <BookOpen />
+                </Button>
+                <Button variant="outline" size="icon" onClick={() => goToPage(0)} title="Aller à la première page" className="bg-white/95 text-gray-900 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-gray-900 w-10 h-10 md:w-12 md:h-12">
+                  <HomeIcon />
+                </Button>
+              </div>
             </div>
           </div>
         )}
       </main>
-
-      {/* Footer avec miniatures - Affiché seulement si showFooter est true */}
-      {showFooter && !isMobile && (
-        <footer className="bg-lumineuse-dark/90 backdrop-blur-sm border-t border-yellow-500/20 px-6 py-4 fixed bottom-0 left-0 right-0 z-30 max-h-40 overflow-y-auto">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-10 gap-2">
-              {pages.map((pageImg, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToPage(index)}
-                  className={`relative group overflow-hidden rounded border-2 transition-all ${
-                    currentPage === index
-                      ? 'border-yellow-400 ring-2 ring-yellow-400/50'
-                      : 'border-gray-600 hover:border-yellow-500'
-                  }`}
-                >
-                  <img
-                    src={pageImg}
-                    alt={`Page ${index + 1}`}
-                    className="w-full h-auto object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">{index + 1}</span>
-                  </div>
-                </button>
-              ))}
-            </div>
-          </div>
-        </footer>
-      )}
     </div>
   )
 }
