@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Realisations from './pages/Realisations'
+import RealisationDetail from './pages/RealisationDetail'
 import NosClients from './pages/NosClients'
 import APropos from './pages/APropos'
 import MentionsLegales from './pages/MentionsLegales'
@@ -67,6 +68,7 @@ function App() {
           <Route path="/services/caisson-ajoure" element={<CaissonAjoure />} />
           <Route path="/services/ecrans-lumineuse" element={<EcransLED />} />
           <Route path="/realisations" element={<Realisations />} />
+          <Route path="/realisations/:slug" element={<RealisationDetail />} />
           <Route path="/nos-clients" element={<NosClients />} />
           <Route path="/a-propos" element={<APropos />} />
 
