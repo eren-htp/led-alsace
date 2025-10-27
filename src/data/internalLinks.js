@@ -6,8 +6,8 @@
 export const serviceLinks = {
   enseignes: {
     related: [
-      { url: '/services/neon-led', text: 'Néon LED personnalisé', description: 'Découvrez nos néons LED modernes' },
-      { url: '/services/caisson-ajoure', text: 'Caissons ajourés et lettres boîtier', description: 'Enseignes LED en relief' },
+      { url: '/services/neon-lumineuse', text: 'Néon Lumineuse personnalisé', description: 'Découvrez nos néons Lumineuse modernes' },
+      { url: '/services/caisson-ajoure', text: 'Caissons ajourés et lettres boîtier', description: 'Enseignes Lumineuse en relief' },
       { url: '/services/totems-lumineux', text: 'Totems lumineux', description: 'Signalétique extérieure haute visibilité' },
       { url: '/services/enseigne-drapeau', text: 'Enseignes drapeau', description: 'Enseignes perpendiculaires pour façades' }
     ]
@@ -55,7 +55,7 @@ export const serviceLinks = {
   
   creationGraphique: {
     related: [
-      { url: '/services/enseignes', text: 'Enseignes LED', description: 'Réalisation de votre enseigne' },
+      { url: '/services/enseignes', text: 'Enseignes Lumineuse', description: 'Réalisation de votre enseigne' },
       { url: '/services/impression-papier', text: 'Impression papier', description: 'Cartes de visite et supports' },
       { url: '/services/textile-epi', text: 'Textile personnalisé', description: 'Vêtements de travail' }
     ]
@@ -63,7 +63,7 @@ export const serviceLinks = {
   
   neonLED: {
     related: [
-      { url: '/services/enseignes', text: 'Enseignes LED', description: 'Autres types d\'enseignes lumineuses' },
+      { url: '/services/enseignes', text: 'Enseignes Lumineuse', description: 'Autres types d\'enseignes lumineuses' },
       { url: '/services/caisson-ajoure', text: 'Caissons ajourés', description: 'Lettres boîtier 3D' },
       { url: '/services/creation-graphique', text: 'Création graphique', description: 'Design de votre néon' }
     ]
@@ -111,7 +111,7 @@ export const serviceLinks = {
   
   enseigneDibond: {
     related: [
-      { url: '/services/enseignes', text: 'Enseignes LED', description: 'Enseignes lumineuses' },
+      { url: '/services/enseignes', text: 'Enseignes Lumineuse', description: 'Enseignes lumineuses' },
       { url: '/services/decoupe-cnc', text: 'Découpe CNC', description: 'Découpe sur mesure' },
       { url: '/services/signaletique', text: 'Signalétique', description: 'Panneaux directionnels' }
     ]
@@ -119,7 +119,7 @@ export const serviceLinks = {
   
   totemsLumineux: {
     related: [
-      { url: '/services/enseignes', text: 'Enseignes LED', description: 'Enseignes lumineuses' },
+      { url: '/services/enseignes', text: 'Enseignes Lumineuse', description: 'Enseignes lumineuses' },
       { url: '/services/signaletique', text: 'Signalétique', description: 'Panneaux directionnels' },
       { url: '/services/enseigne-dibond', text: 'Enseignes dibond', description: 'Panneaux aluminium' }
     ]
@@ -127,7 +127,7 @@ export const serviceLinks = {
   
   enseigneDrapeau: {
     related: [
-      { url: '/services/enseignes', text: 'Enseignes LED', description: 'Autres types d\'enseignes' },
+      { url: '/services/enseignes', text: 'Enseignes Lumineuse', description: 'Autres types d\'enseignes' },
       { url: '/services/enseigne-dibond', text: 'Enseignes dibond', description: 'Panneaux aluminium' },
       { url: '/services/signaletique', text: 'Signalétique', description: 'Panneaux directionnels' }
     ]
@@ -135,15 +135,15 @@ export const serviceLinks = {
   
   caissonAjoure: {
     related: [
-      { url: '/services/enseignes', text: 'Enseignes LED', description: 'Autres types d\'enseignes lumineuses' },
-      { url: '/services/neon-led', text: 'Néon LED', description: 'Lettres lumineuses' },
+      { url: '/services/enseignes', text: 'Enseignes Lumineuse', description: 'Autres types d\'enseignes lumineuses' },
+      { url: '/services/neon-lumineuse', text: 'Néon Lumineuse', description: 'Lettres lumineuses' },
       { url: '/services/decoupe-cnc', text: 'Découpe CNC', description: 'Découpe de précision' }
     ]
   },
   
   ecransLED: {
     related: [
-      { url: '/services/enseignes', text: 'Enseignes LED', description: 'Enseignes lumineuses classiques' },
+      { url: '/services/enseignes', text: 'Enseignes Lumineuse', description: 'Enseignes lumineuses classiques' },
       { url: '/services/totems-lumineux', text: 'Totems lumineux', description: 'Signalétique extérieure' },
       { url: '/services/creation-graphique', text: 'Création graphique', description: 'Contenu pour vos écrans' }
     ]

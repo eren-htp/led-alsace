@@ -68,8 +68,8 @@ function Contact() {
     <div className="min-h-screen bg-white">
       <SEO 
         title="Contact"
-        description="Contactez LED Alsace pour votre projet d'enseigne LED ou de signalétique. Devis gratuit en 24h. Atelier à Ostwald près de Strasbourg. Tél: 03 88 04 45 34"
-        keywords="contact LED Alsace, devis enseigne LED, contact Strasbourg, demande devis signalétique, enseigne Ostwald"
+        description="Contactez Lumineuse Alsace pour votre projet d'enseigne Lumineuse ou de signalétique. Devis gratuit en 24h. Atelier à Ostwald près de Strasbourg. Tél: 03 88 04 45 34"
+        keywords="contact Lumineuse Alsace, devis enseigne Lumineuse, contact Strasbourg, demande devis signalétique, enseigne Ostwald"
         canonicalUrl="https://www.ledalsace.com/contact"
         structuredData={organizationSchema}
       />
@@ -105,7 +105,7 @@ function Contact() {
               href="mailto:contact@ledalsace.fr"
               className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl hover:from-gray-100 hover:to-gray-50 border-2 border-gray-200 hover:border-[#F0C724] transition-all duration-300 text-center group transform hover:-translate-y-2 hover:shadow-xl"
             >
-              <Mail className="w-16 h-16 text-led-dark mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <Mail className="w-16 h-16 text-lumineuse-dark mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
               <p className="text-gray-600 mb-3">Écrivez-nous à tout moment</p>
               <p className="text-lg font-semibold text-[#F0C724] break-all">contact@ledalsace.fr</p>
@@ -204,7 +204,7 @@ function Contact() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
                   >
                     <option>Sélectionnez une solution</option>
-                    <option>Enseignes LED</option>
+                    <option>Enseignes Lumineuse</option>
                     <option>Marquage véhicule</option>
                     <option>Signalétique</option>
                     <option>Création graphique</option>
@@ -235,7 +235,7 @@ function Contact() {
                 )}
 
                 {submitStatus === 'error' && (
-                  <div className="bg-gray-100 border-2 border-led-dark text-gray-900 px-4 py-3 rounded-lg text-center">
+                  <div className="bg-gray-100 border-2 border-lumineuse-dark text-gray-900 px-4 py-3 rounded-lg text-center">
                     ✗ Erreur lors de l'envoi. Veuillez réessayer.
                   </div>
                 )}
@@ -244,7 +244,7 @@ function Contact() {
                   type="submit"
                   disabled={isSubmitting}
                   size="lg"
-                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-led-dark font-bold text-lg py-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-lumineuse-dark font-bold text-lg py-6 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send className="mr-2 w-5 h-5" />
                   {isSubmitting ? 'Envoi en cours...' : 'Envoyer ma demande'}
@@ -338,7 +338,7 @@ function Contact() {
                 <Button 
                   onClick={() => setShowCallbackModal(true)}
                   size="lg"
-                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-led-dark font-bold"
+                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-lumineuse-dark font-bold"
                 >
                   <Phone className="mr-2 w-5 h-5" />
                   Être rappelé
@@ -371,7 +371,7 @@ function Contact() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localisation LED Alsace"
+                title="Localisation Lumineuse Alsace"
               />
             </div>
 

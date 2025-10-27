@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { ChevronLeft, ChevronRight, Sun, Moon } from 'lucide-react'
@@ -60,12 +61,12 @@ function LettresBoitierSlider() {
       imageNuit: G02Nuit,
       description: 'Lettre individuelle éclairée par les chants',
       materiaux: 'Acier inoxidable, Aluminium, Laiton, Cuivre, Acier',
-      lumiere: 'Éclairage par les chants et par l\'arrière',
+      lumiere: 'Éclairage par les chants et par l\\\'arrière',
       montage: 'Entretoises, Direct sur mur, Sur lisse de fixation, Panneau de fond',
       caracteristiques: [
         'Lettre individuelle éclairée par les chants',
         'Matériaux: Acier inoxidable, Aluminium, Laiton, Cuivre, Acier',
-        'Éclairage par les chants et par l\'arrière',
+        'Éclairage par les chants et par l\\\'arrière',
         'Plexiglas de 20 mm'
       ]
     },
@@ -74,15 +75,15 @@ function LettresBoitierSlider() {
       title: 'Modèle G03',
       imageJour: G03Jour,
       imageNuit: G03Nuit,
-      description: 'Lettre individuelle éclairée par l\'arrière',
+      description: 'Lettre individuelle éclairée par l\\\'arrière',
       materiaux: 'Acier inoxidable, Aluminium, Laiton, Cuivre, Acier',
-      lumiere: 'Éclairage par les chants et par l\'arrière',
+      lumiere: 'Éclairage par les chants et par l\\\'arrière',
       montage: 'Entretoises, Direct sur mur, Sur lisse de fixation, Panneau de fond',
       caracteristiques: [
-        'Lettre individuelle éclairée par l\'arrière',
+        'Lettre individuelle éclairée par l\\\'arrière',
         'Matériaux: Acier inoxidable, Aluminium, Laiton, Cuivre, Acier',
         'Plexiglas 10+5 mm diffusant avec contour extérieur',
-        'Éclairage par les chants et par l\'arrière'
+        'Éclairage par les chants et par l\\\'arrière'
       ]
     },
     {
@@ -90,14 +91,14 @@ function LettresBoitierSlider() {
       title: 'Modèle G04',
       imageJour: G04Jour,
       imageNuit: G04Nuit,
-      description: 'Lettre individuelle éclairée par l\'arrière',
+      description: 'Lettre individuelle éclairée par l\\\'arrière',
       materiaux: 'Acier inoxidable, Cuivre, Laiton',
-      lumiere: 'Éclairage par l\'arrière',
+      lumiere: 'Éclairage par l\\\'arrière',
       montage: 'Direct sur mur, Entretoises',
       caracteristiques: [
-        'Lettre individuelle éclairée par l\'arrière',
+        'Lettre individuelle éclairée par l\\\'arrière',
         'Matériaux: Acier inoxidable, Cuivre, Laiton',
-        'Éclairage par l\'arrière',
+        'Éclairage par l\\\'arrière',
         'Montage: Direct sur mur, Entretoises'
       ]
     },
@@ -124,7 +125,7 @@ function LettresBoitierSlider() {
       imageNuit: G06Nuit,
       description: 'Lettre individuelle complètement lumineuse',
       materiaux: 'Plexiglass',
-      lumiere: 'Éclairage par l\'avant et les chants',
+      lumiere: 'Éclairage par l\\\'avant et les chants',
       montage: 'Direct sur mur, Sur lisse de fixation, Panneau de fond',
       caracteristiques: [
         'Lettre individuelle complètement lumineuse',
@@ -202,12 +203,12 @@ function LettresBoitierSlider() {
       title: 'Modèle G11',
       imageJour: G11Jour,
       imageNuit: G11Nuit,
-      description: 'Lettre individuelle éclairée par l\'avant avec plexiglas 5 + 10 mm',
+      description: 'Lettre individuelle éclairée par l\\\'avant avec plexiglas 5 + 10 mm',
       materiaux: 'Acier inoxidable, Aluminium, Laiton, Cuivre',
-      lumiere: 'Éclairage par l\'avant',
+      lumiere: 'Éclairage par l\\\'avant',
       montage: 'Relief supplémentaire lumineux',
       caracteristiques: [
-        'Lettre individuelle éclairée par l\'avant',
+        'Lettre individuelle éclairée par l\\\'avant',
         'Matériaux: Acier inoxidable, Aluminium, Laiton, Cuivre',
         'Face avant en plexiglas 5+10mm',
         'Relief supplémentaire lumineux'
@@ -236,7 +237,7 @@ function LettresBoitierSlider() {
       imageNuit: G15Nuit,
       description: 'Lettre boîtier avec éclairage RGB. Personnalisation des couleurs pour un effet unique.',
       materiaux: 'Acier laqué premium',
-      lumiere: 'LED RGB programmable',
+      lumiere: 'Lumineuse RGB programmable',
       montage: 'Fixation avec contrôleur',
       caracteristiques: [
         'Éclairage RGB',
@@ -252,7 +253,7 @@ function LettresBoitierSlider() {
       imageNuit: G16Nuit,
       description: 'Lettre boîtier grand format. Impact visuel maximal pour grandes enseignes.',
       materiaux: 'Acier renforcé grand format',
-      lumiere: 'LED haute intensité',
+      lumiere: 'Lumineuse haute intensité',
       montage: 'Fixation industrielle',
       caracteristiques: [
         'Grand format',
@@ -283,202 +284,92 @@ function LettresBoitierSlider() {
   }
 
   return (
-    <section className={`py-20 transition-colors duration-700 ${isNight ? 'bg-gray-900' : 'bg-gray-50'}`}>
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          {/* Titre de section */}
-          <div className="text-center mb-12">
-            <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${isNight ? 'text-white' : 'text-gray-900'}`}>
-              Lettres Boîtier LED
-            </h2>
-            <p className={`text-lg ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>
-              Découvrez nos modèles de lettres boîtier personnalisables pour une visibilité optimale jour et nuit
-            </p>
+    <div className={`py-12 ${isNight ? 'bg-gray-900' : 'bg-gray-100'}`}>
+      <div className="max-w-6xl mx-auto">
+        {/* Titre de section */}
+        <div className="text-center mb-12">
+          <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${isNight ? 'text-white' : 'text-gray-900'}`}>
+            Lettres Boîtier Lumineuses
+          </h2>
+          <p className={`text-lg ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>
+            Découvrez nos modèles de lettres boîtier personnalisables pour une visibilité optimale jour et nuit
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* Image du modèle */}
+          <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-2xl">
+            <img src={currentImage} alt={currentModel.title} className="w-full h-full object-cover" />
+            <div className="absolute top-4 left-4 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-bold shadow-lg">
+              {currentModel.code}
+            </div>
+            <div className="absolute top-4 right-4 flex space-x-2">
+              <Button onClick={() => toggleDayNight(false)} size="sm" className={`${!isNight ? 'bg-yellow-500 text-white' : 'bg-white/30 text-white'}`}>
+                <Sun className="w-4 h-4 mr-2" /> Jour
+              </Button>
+              <Button onClick={() => toggleDayNight(true)} size="sm" className={`${isNight ? 'bg-blue-500 text-white' : 'bg-white/30 text-white'}`}>
+                <Moon className="w-4 h-4 mr-2" /> Nuit
+              </Button>
+            </div>
+            <Button onClick={prevSlide} size="icon" className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white/80 text-gray-900 rounded-full">
+              <ChevronLeft />
+            </Button>
+            <Button onClick={nextSlide} size="icon" className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white/80 text-gray-900 rounded-full">
+              <ChevronRight />
+            </Button>
           </div>
 
-          {/* Main Slider */}
-          <div className={`relative rounded-2xl shadow-2xl overflow-hidden transition-all duration-700 ${
-            isNight ? 'bg-gray-800 border border-gray-700' : 'bg-white'
-          }`}>
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              {/* Image Section */}
-              <div className={`relative h-96 lg:h-auto transition-all duration-700 ${
-                isNight ? 'bg-gray-950' : 'bg-gray-100'
-              }`}>
-                <div className="w-full h-full flex items-center justify-center p-8">
-                  <img 
-                    src={currentImage} 
-                    alt={currentModel.title}
-                    className="max-w-full max-h-full object-contain transition-opacity duration-300"
-                    loading="lazy"
-                    key={`${currentIndex}-${isNight}`}
-                  />
-                </div>
-                
-                {/* Navigation Arrows */}
-                <button
-                  onClick={prevSlide}
-                  aria-label="Modèle précédent"
-                  className={`absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg transition-all hover:scale-110 ${
-                    isNight 
-                      ? 'bg-gray-800/90 hover:bg-gray-800 text-white' 
-                      : 'bg-white/90 hover:bg-white text-gray-900'
-                  }`}
-                >
-                  <ChevronLeft className="w-6 h-6" />
-                </button>
-                <button
-                  onClick={nextSlide}
-                  aria-label="Modèle suivant"
-                  className={`absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg transition-all hover:scale-110 ${
-                    isNight 
-                      ? 'bg-gray-800/90 hover:bg-gray-800 text-white' 
-                      : 'bg-white/90 hover:bg-white text-gray-900'
-                  }`}
-                >
-                  <ChevronRight className="w-6 h-6" />
-                </button>
-
-                {/* Model Counter */}
-                <div className={`absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full text-sm font-semibold ${
-                  isNight ? 'bg-gray-800/90 text-white' : 'bg-led-dark/70 text-white'
-                }`}>
-                  {currentIndex + 1} / {models.length}
-                </div>
+          {/* Détails du modèle */}
+          <div className={`p-8 rounded-lg ${isNight ? 'bg-gray-800' : 'bg-white'}`}>
+            <h3 className={`text-2xl font-bold mb-4 ${isNight ? 'text-white' : 'text-gray-900'}`}>{currentModel.title}</h3>
+            <p className={`mb-6 ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>{currentModel.description}</p>
+            
+            <div className="space-y-4 mb-6">
+              <div className="flex items-center">
+                <span className={`font-bold w-24 ${isNight ? 'text-yellow-400' : 'text-gray-800'}`}>Matériaux:</span>
+                <span className={`${isNight ? 'text-gray-300' : 'text-gray-700'}`}>{currentModel.materiaux}</span>
               </div>
-
-              {/* Info Section */}
-              <div className="p-8 lg:p-12" key={currentIndex}>
-                {/* Day/Night Toggle */}
-                <div className="flex justify-start mb-6">
-                  <div className={`inline-flex items-center gap-2 rounded-full p-1 shadow-md ${
-                    isNight ? 'bg-gray-700' : 'bg-gray-100'
-                  }`} role="group" aria-label="Mode d'affichage">
-                    <button
-                      onClick={() => toggleDayNight(false)}
-                      aria-label="Mode jour"
-                      aria-pressed={!isNight}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
-                        !isNight 
-                          ? 'bg-yellow-400 text-gray-900 shadow-md' 
-                          : isNight ? 'text-gray-300 hover:bg-gray-600' : 'text-gray-600 hover:bg-gray-200'
-                      }`}
-                    >
-                      <Sun className="w-4 h-4" />
-                      <span className="font-semibold text-sm">JOUR</span>
-                    </button>
-                    <button
-                      onClick={() => toggleDayNight(true)}
-                      aria-label="Mode nuit"
-                      aria-pressed={isNight}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
-                        isNight 
-                          ? 'bg-gray-900 text-white shadow-md' 
-                          : 'text-gray-600 hover:bg-gray-200'
-                      }`}
-                    >
-                      <Moon className="w-4 h-4" />
-                      <span className="font-semibold text-sm">NUIT</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div className="mb-6">
-                  <span className="inline-block px-4 py-2 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg mb-4">
-                    {currentModel.code}
-                  </span>
-                  <h2 className={`text-3xl font-bold mb-4 ${isNight ? 'text-white' : 'text-gray-900'}`}>
-                    {currentModel.title}
-                  </h2>
-                  <p className={`leading-relaxed ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>
-                    {currentModel.description}
-                  </p>
-                </div>
-
-                {/* Specifications */}
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-gray-900 font-bold">M</span>
-                    </div>
-                    <div>
-                      <h3 className={`font-semibold ${isNight ? 'text-white' : 'text-gray-900'}`}>Matériaux</h3>
-                      <p className={`text-sm ${isNight ? 'text-gray-400' : 'text-gray-600'}`}>{currentModel.materiaux}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-gray-900 font-bold">L</span>
-                    </div>
-                    <div>
-                      <h3 className={`font-semibold ${isNight ? 'text-white' : 'text-gray-900'}`}>Lumière</h3>
-                      <p className={`text-sm ${isNight ? 'text-gray-400' : 'text-gray-600'}`}>{currentModel.lumiere}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-gray-900 font-bold">F</span>
-                    </div>
-                    <div>
-                      <h3 className={`font-semibold ${isNight ? 'text-white' : 'text-gray-900'}`}>Montage</h3>
-                      <p className={`text-sm ${isNight ? 'text-gray-400' : 'text-gray-600'}`}>{currentModel.montage}</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Characteristics */}
-                <div className="mb-8">
-                  <h3 className={`font-bold mb-3 ${isNight ? 'text-white' : 'text-gray-900'}`}>Caractéristiques</h3>
-                  <ul className="space-y-2">
-                    {currentModel.caracteristiques.map((carac, index) => (
-                      <li key={index} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full"></div>
-                        <span className={`text-sm ${isNight ? 'text-gray-300' : 'text-gray-700'}`}>{carac}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* CTA Button */}
-                <Button 
-                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold"
-                  size="lg"
-                >
-                  Demander un devis
-                </Button>
+              <div className="flex items-center">
+                <span className={`font-bold w-24 ${isNight ? 'text-yellow-400' : 'text-gray-800'}`}>Lumière:</span>
+                <span className={`${isNight ? 'text-gray-300' : 'text-gray-700'}`}>{currentModel.lumiere}</span>
+              </div>
+              <div className="flex items-center">
+                <span className={`font-bold w-24 ${isNight ? 'text-yellow-400' : 'text-gray-800'}`}>Montage:</span>
+                <span className={`${isNight ? 'text-gray-300' : 'text-gray-700'}`}>{currentModel.montage}</span>
               </div>
             </div>
-          </div>
 
-          {/* Model Thumbnails */}
-          <div className="mt-8 overflow-x-auto">
-            <div className="flex gap-3 pb-4 min-w-max">
-              {models.map((model, index) => (
-                <button
-                  key={model.code}
-                  onClick={() => goToModel(index)}
-                  className={`flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden border-2 transition-all ${
-                    currentIndex === index
-                      ? 'border-yellow-400 shadow-lg scale-105'
-                      : isNight 
-                        ? 'border-gray-700 hover:border-gray-500' 
-                        : 'border-gray-200 hover:border-gray-400'
-                  }`}
-                >
-                  <img
-                    src={isNight ? model.imageNuit : model.imageJour}
-                    alt={model.code}
-                    className="w-full h-full object-cover"
-                  />
-                </button>
+            <h4 className={`text-lg font-bold mb-3 ${isNight ? 'text-white' : 'text-gray-900'}`}>Caractéristiques</h4>
+            <ul className="space-y-2">
+              {currentModel.caracteristiques.map((car, index) => (
+                <li key={index} className={`flex items-center ${isNight ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <ChevronRight className="w-4 h-4 mr-2 text-yellow-500" /> {car}
+                </li>
               ))}
-            </div>
+            </ul>
+
+            <Button size="lg" className="mt-8 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold">
+              Demander un devis
+            </Button>
+          </div>
+        </div>
+
+        {/* Miniatures */}
+        <div className="mt-8">
+          <div className="flex space-x-2 overflow-x-auto pb-4">
+            {models.map((model, index) => (
+              <div 
+                key={index} 
+                onClick={() => goToModel(index)} 
+                className={`cursor-pointer border-4 rounded-lg overflow-hidden flex-shrink-0 ${currentIndex === index ? 'border-yellow-500' : 'border-transparent'}`}
+              >
+                <img src={model.imageJour} alt={model.title} className="w-24 h-24 object-cover" />
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -21,7 +21,7 @@ function APropos() {
     {
       icon: <Target className="w-12 h-12" />,
       title: "Innovation",
-      description: "À la pointe des technologies LED et des nouvelles techniques."
+      description: "À la pointe des technologies Lumineuse et des nouvelles techniques."
     },
     {
       icon: <Heart className="w-12 h-12" />,
@@ -34,8 +34,8 @@ function APropos() {
     <div className="min-h-screen bg-white">
       <SEO 
         title="À Propos"
-        description="LED Alsace, entreprise alsacienne spécialisée dans les enseignes LED depuis 2014. Atelier de fabrication à Ostwald près de Strasbourg. Savoir-faire français, qualité et réactivité."
-        keywords="LED Alsace, entreprise Alsace, fabrication française, atelier Ostwald, histoire LED Alsace, équipe Strasbourg"
+        description="Lumineuse Alsace, entreprise alsacienne spécialisée dans les enseignes Lumineuse depuis 2014. Atelier de fabrication à Ostwald près de Strasbourg. Savoir-faire français, qualité et réactivité."
+        keywords="Lumineuse Alsace, entreprise Alsace, fabrication française, atelier Ostwald, histoire Lumineuse Alsace, équipe Strasbourg"
         canonicalUrl="https://www.ledalsace.com/a-propos"
         structuredData={organizationSchema}
       />
@@ -50,7 +50,7 @@ function APropos() {
               <span className="text-yellow-400">2014</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              LED Alsace est une entreprise alsacienne spécialisée dans la conception, la fabrication et l'installation d'enseignes LED
+              Lumineuse Alsace est une entreprise alsacienne spécialisée dans la conception, la fabrication et l'installation d'enseignes Lumineuse
             </p>
           </div>
         </div>
@@ -67,13 +67,13 @@ function APropos() {
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p className="leading-relaxed">
-                Depuis sa création à Strasbourg en juin 2014 par M. KOPAR Durmus, la société LED Alsace s'est rapidement imposée comme l'expert incontournable de la communication visuelle dans le Grand Est. Notre évolution, d'une entreprise d'installations générales à un spécialiste de la visibilité commerciale, témoigne de notre engagement à propulser l'image de marque de nos clients. Ancrée dans la région Alsace, notre spécialisation couvre désormais une maîtrise complète de tous les supports de publicité, intérieurs comme extérieurs.
+                Depuis sa création à Strasbourg en juin 2014 par M. KOPAR Durmus, la société Lumineuse Alsace s'est rapidement imposée comme l'expert incontournable de la communication visuelle dans le Grand Est. Notre évolution, d'une entreprise d'installations générales à un spécialiste de la visibilité commerciale, témoigne de notre engagement à propulser l'image de marque de nos clients. Ancrée dans la région Alsace, notre spécialisation couvre désormais une maîtrise complète de tous les supports de publicité, intérieurs comme extérieurs.
               </p>
               <p className="leading-relaxed">
-                LED Alsace est fier d'offrir un service clé en main unique : de la conception graphique innovante au soutien dans le remplissage des documents administratifs nécessaires, jusqu'à la pose finale de vos installations. Notre force réside dans la fabrication intégrée de supports publicitaires de très haute qualité. Nous sommes les experts de l'enseigne lumineuse : lettres boîtier lumineuses, caissons lumineux, totems publicitaires percutants, et panneaux sur mesure. Grâce à nos équipements de pointe, notamment la découpe à la forme par CNC (Commande Numérique), nous travaillons et transformons des matériaux durables tels que le PVC, le Plexiglas, le Dibond et l'aluminium pour garantir un résultat robuste et esthétique. Notre expertise s'étend bien au-delà de la façade, incluant le marquage de véhicules (flocage, covering), l'impression grand format (bâches, adhésifs), l'habillage de façade sur mesure et toute la signalétique d'orientation nécessaire. Que votre commerce se situe à Strasbourg, Colmar, Mulhouse, ou dans le Bas-Rhin (67) et le Haut-Rhin (68), nous garantissons une réponse technique, créative et locale à vos besoins.
+                Lumineuse Alsace est fier d'offrir un service clé en main unique : de la conception graphique innovante au soutien dans le remplissage des documents administratifs nécessaires, jusqu'à la pose finale de vos installations. Notre force réside dans la fabrication intégrée de supports publicitaires de très haute qualité. Nous sommes les experts de l'enseigne lumineuse : lettres boîtier lumineuses, caissons lumineux, totems publicitaires percutants, et panneaux sur mesure. Grâce à nos équipements de pointe, notamment la découpe à la forme par CNC (Commande Numérique), nous travaillons et transformons des matériaux durables tels que le PVC, le Plexiglas, le Dibond et l'aluminium pour garantir un résultat robuste et esthétique. Notre expertise s'étend bien au-delà de la façade, incluant le marquage de véhicules (flocage, covering), l'impression grand format (bâches, adhésifs), l'habillage de façade sur mesure et toute la signalétique d'orientation nécessaire. Que votre commerce se situe à Strasbourg, Colmar, Mulhouse, ou dans le Bas-Rhin (67) et le Haut-Rhin (68), nous garantissons une réponse technique, créative et locale à vos besoins.
               </p>
               <p className="leading-relaxed">
-                Forts de plus de dix ans d'expérience dans la fabrication et l'installation d'enseignes en Alsace, LED Alsace est le partenaire essentiel pour une croissance durable. Nous nous engageons à vous fournir des solutions de communication visuelle modernes, durables et rigoureusement conformes aux réglementations locales. Contactez notre équipe pour tous vos projets d'enseignes lumineuses : nous vous assurons une visibilité optimale capable d'attirer et de fidéliser une nouvelle clientèle à travers l'Alsace et le Grand Est.
+                Forts de plus de dix ans d'expérience dans la fabrication et l'installation d'enseignes en Alsace, Lumineuse Alsace est le partenaire essentiel pour une croissance durable. Nous nous engageons à vous fournir des solutions de communication visuelle modernes, durables et rigoureusement conformes aux réglementations locales. Contactez notre équipe pour tous vos projets d'enseignes lumineuses : nous vous assurons une visibilité optimale capable d'attirer et de fidéliser une nouvelle clientèle à travers l'Alsace et le Grand Est.
               </p>
             </div>
           </div>
@@ -152,7 +152,7 @@ function APropos() {
 
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-led-dark mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-lumineuse-dark mb-6">
             Prêt à travailler avec nous ?
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
@@ -161,7 +161,7 @@ function APropos() {
           <Button 
             onClick={() => navigate('/contact')}
             size="lg"
-            className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
+            className="bg-lumineuse-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
           >
             Nous contacter
             <ArrowRight className="ml-2 w-5 h-5" />

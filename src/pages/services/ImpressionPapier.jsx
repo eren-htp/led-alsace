@@ -117,7 +117,7 @@ function ImpressionPapier() {
       {/* Avantages */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Pourquoi choisir LED Alsace ?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Pourquoi choisir Lumineuse Alsace ?</h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             {[
               { icon: Printer, title: "Petites et grandes séries", description: "À partir de 10 exemplaires" },
@@ -144,8 +144,8 @@ function ImpressionPapier() {
         title="Questions fréquentes sur l'impression papier"
         faqs={[
           {
-            question: "Quels types de supports papier propose LED ALSACE pour les professionnels ?",
-            answer: "LED ALSACE propose une large gamme de supports papier adaptés à tous les besoins de communication : Flyers, dépliants, brochures, Cartes de visite, Affiches (A4 à A0), Têtes de lettre et papeterie commerciale, Menus et fiches techniques, Chemises à rabats, blocs-notes, carnets. Tous nos produits sont imprimés en haute définition avec des papiers rigides ou souples, classiques ou premium (mat, brillant, recyclé, texturé...)."
+            question: "Quels types de supports papier propose Lumineuse ALSACE pour les professionnels ?",
+            answer: "Lumineuse ALSACE propose une large gamme de supports papier adaptés à tous les besoins de communication : Flyers, dépliants, brochures, Cartes de visite, Affiches (A4 à A0), Têtes de lettre et papeterie commerciale, Menus et fiches techniques, Chemises à rabats, blocs-notes, carnets. Tous nos produits sont imprimés en haute définition avec des papiers rigides ou souples, classiques ou premium (mat, brillant, recyclé, texturé...)."
           },
           {
             question: "Quelle est la différence entre un flyer, une brochure et un dépliant ?",

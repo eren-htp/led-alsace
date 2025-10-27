@@ -102,7 +102,7 @@ function ModelsShowcase() {
             Nos Modèles <span className="text-yellow-500">Phares</span>
           </h2>
           <p className={`text-lg max-w-3xl mx-auto mb-6 transition-colors duration-500 ${globalNightMode ? 'text-gray-300' : 'text-gray-600'}`}>
-            Découvrez nos enseignes LED les plus populaires. Basculez en mode nuit pour voir l'effet lumineux en action.
+            Découvrez nos enseignes Lumineuse les plus populaires. Basculez en mode nuit pour voir l'effet lumineux en action.
           </p>
           
           {/* Bouton global jour/nuit */}

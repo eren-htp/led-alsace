@@ -1,5 +1,5 @@
 /**
- * Données structurées Schema.org pour LED Alsace
+ * Données structurées Schema.org pour Lumineuse Alsace
  * Format JSON-LD pour améliorer le référencement et l'affichage dans les résultats de recherche
  */
 
@@ -8,19 +8,19 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://www.ledalsace.com/#organization",
-  "name": "LED Alsace",
-  "legalName": "LED Alsace",
+  "name": "Lumineuse Alsace",
+  "legalName": "Lumineuse Alsace",
   "url": "https://www.ledalsace.com",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://www.ledalsace.com/logo-led-alsace.jpg",
+    "url": "https://www.ledalsace.com/logo-lumineuse-alsace.jpg",
     "width": 250,
     "height": 250
   },
   "image": [
-    "https://www.ledalsace.com/logo-led-alsace.jpg"
+    "https://www.ledalsace.com/logo-lumineuse-alsace.jpg"
   ],
-  "description": "LED Alsace est votre partenaire de confiance pour tous vos projets d'enseignes LED, signalétique et marquage en Alsace depuis 2014. Fabrication française, atelier à Ostwald près de Strasbourg.",
+  "description": "Lumineuse Alsace est votre partenaire de confiance pour tous vos projets d'enseignes Lumineuse, signalétique et marquage en Alsace depuis 2014. Fabrication française, atelier à Ostwald près de Strasbourg.",
   "foundingDate": "2014",
   "address": {
     "@type": "PostalAddress",
@@ -73,7 +73,7 @@ export const servicesSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Enseignes LED",
+    "serviceType": "Enseignes Lumineuse",
     "provider": {
       "@id": "https://www.ledalsace.com/#organization"
     },
@@ -81,7 +81,7 @@ export const servicesSchema = [
       "@type": "Country",
       "name": "France"
     },
-    "description": "Conception, fabrication et installation d'enseignes LED lumineuses sur mesure pour commerces et entreprises en Alsace."
+    "description": "Conception, fabrication et installation d'enseignes Lumineuse lumineuses sur mesure pour commerces et entreprises en Alsace."
   },
   {
     "@context": "https://schema.org",
@@ -200,8 +200,8 @@ export const websiteSchema = {
   "@type": "WebSite",
   "@id": "https://www.ledalsace.com/#website",
   "url": "https://www.ledalsace.com",
-  "name": "LED Alsace",
-  "description": "Spécialiste des enseignes LED et de la signalétique en Alsace",
+  "name": "Lumineuse Alsace",
+  "description": "Spécialiste des enseignes Lumineuse et de la signalétique en Alsace",
   "publisher": {
     "@id": "https://www.ledalsace.com/#organization"
   },

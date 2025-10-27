@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button.jsx'
 import { Menu, X, Phone, Mail, MapPin, ChevronDown, Instagram, Linkedin } from 'lucide-react'
 import CallbackButton from './CallbackButton.jsx'
 import SnapchatIcon from './SnapchatIcon.jsx'
-import logoLedAlsace from '@/assets/logo-led-alsace.webp'
-import logoIcon from '@/assets/logo-led-alsace-icon.webp'
+import logoLedAlsace from '@/assets/logo-lumineuse-alsace.webp'
+import logoIcon from '@/assets/logo-lumineuse-alsace-icon.webp'
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -109,8 +109,8 @@ function Layout({ children }) {
             <div className="flex items-center justify-between">
               {/* Logo */}
               <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-                <img src={logoIcon} alt="LED ALSACE" className="h-16 w-16" />
-                <span className="text-2xl font-bold text-gray-900">LED ALSACE</span>
+                <img src={logoIcon} alt="Lumineuse ALSACE" className="h-16 w-16" />
+                <span className="text-2xl font-bold text-gray-900">Lumineuse ALSACE</span>
               </Link>
 
               {/* Desktop Navigation */}
@@ -326,17 +326,17 @@ function Layout({ children }) {
             {/* Logo & Description */}
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center space-x-3 mb-4">
-                <img src={logoIcon} alt="LED ALSACE" className="h-16 w-16" />
+                <img src={logoIcon} alt="Lumineuse ALSACE" className="h-16 w-16" />
               </div>
               <p className="text-gray-400 text-sm mb-4">
-                Votre partenaire de confiance pour tous vos projets d'enseignes LED, signalétique 
+                Votre partenaire de confiance pour tous vos projets d'enseignes Lumineuse, signalétique 
                 et marquage en Alsace depuis 2014.
               </p>
               <div className="flex space-x-4">
                 <a href="https://www.instagram.com/led_alsace/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a href="https://www.linkedin.com/company/led-alsace/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <a href="https://www.linkedin.com/company/lumineuse-alsace/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a href="https://www.snapchat.com/add/led_alsace" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
@@ -412,7 +412,7 @@ function Layout({ children }) {
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400">&copy; 2025 LED ALSACE | Enseigne & Signalétique | Tous droits réservés</p>
+            <p className="text-gray-400">&copy; 2025 Lumineuse ALSACE | Enseigne & Signalétique | Tous droits réservés</p>
             <Link to="/mentions-legales" className="text-gray-400 hover:text-yellow-500 transition-colors text-sm mt-2 block">Mentions Légales</Link>
           </div>
         </div>

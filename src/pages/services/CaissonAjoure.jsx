@@ -36,7 +36,7 @@ function CaissonAjoure() {
             alt="Caisson Ajouré Lumineux"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-led-dark/40"></div>
+          <div className="absolute inset-0 bg-lumineuse-dark/40"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
@@ -47,7 +47,7 @@ function CaissonAjoure() {
             Élégance et modernité pour votre enseigne lumineuse
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-led-dark font-bold">
+            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-lumineuse-dark font-bold">
               Demander un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -69,7 +69,7 @@ function CaissonAjoure() {
               </p>
               <p className="mb-6">
                 Cette technique permet de mettre en valeur votre logo ou vos lettres en les détachant du fond, créant un effet de profondeur et de relief. 
-                L'éclairage LED intégré illumine les éléments découpés tout en laissant le fond dans l'ombre, pour un rendu visuel moderne et percutant.
+                L'éclairage Lumineuse intégré illumine les éléments découpés tout en laissant le fond dans l'ombre, pour un rendu visuel moderne et percutant.
               </p>
             </div>
           </div>
@@ -93,8 +93,8 @@ function CaissonAjoure() {
                 description: "Plaque en aluminium ou Dibond découpée au laser selon votre design. Précision au millimètre pour un rendu parfait."
               },
               {
-                title: "Éclairage LED",
-                description: "Modules LED haute luminosité, basse consommation. Température de couleur au choix : blanc chaud, neutre ou froid."
+                title: "Éclairage Lumineuse",
+                description: "Modules Lumineuse haute luminosité, basse consommation. Température de couleur au choix : blanc chaud, neutre ou froid."
               },
               {
                 title: "Fond opaque",
@@ -152,7 +152,7 @@ function CaissonAjoure() {
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
-                  <span><strong>Économie d'énergie</strong> - LED basse consommation, éclairage ciblé</span>
+                  <span><strong>Économie d'énergie</strong> - Lumineuse basse consommation, éclairage ciblé</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
@@ -183,9 +183,9 @@ function CaissonAjoure() {
               <table className="w-full">
                 <thead className="bg-yellow-500">
                   <tr>
-                    <th className="p-4 text-left text-led-dark font-bold">Critère</th>
-                    <th className="p-4 text-left text-led-dark font-bold">Caisson Ajouré</th>
-                    <th className="p-4 text-left text-led-dark font-bold">Caisson Classique</th>
+                    <th className="p-4 text-left text-lumineuse-dark font-bold">Critère</th>
+                    <th className="p-4 text-left text-lumineuse-dark font-bold">Caisson Ajouré</th>
+                    <th className="p-4 text-left text-lumineuse-dark font-bold">Caisson Classique</th>
                   </tr>
                 </thead>
                 <tbody className="text-gray-700">
@@ -206,7 +206,7 @@ function CaissonAjoure() {
                   </tr>
                   <tr className="border-b border-gray-200 bg-gray-50">
                     <td className="p-4 font-semibold">Consommation</td>
-                    <td className="p-4">Faible (LED ciblées)</td>
+                    <td className="p-4">Faible (Lumineuse ciblées)</td>
                     <td className="p-4">Moyenne (éclairage complet)</td>
                   </tr>
                   <tr className="border-b border-gray-200">
@@ -242,18 +242,18 @@ function CaissonAjoure() {
         },
         {
           question: "Le caisson ajouré résiste-t-il aux intempéries ?",
-          answer: "Oui, le caisson est conçu pour une utilisation en extérieur. L'aluminium résiste à la corrosion, les LED sont étanches (IP65), et l'ensemble est traité pour résister aux UV, à la pluie et aux variations de température."
+          answer: "Oui, le caisson est conçu pour une utilisation en extérieur. L'aluminium résiste à la corrosion, les Lumineuse sont étanches (IP65), et l'ensemble est traité pour résister aux UV, à la pluie et aux variations de température."
         },
         {
-          question: "Quelle est la durée de vie d'un caisson ajouré LED ?",
-          answer: "Les LED ont une durée de vie de 50 000 heures minimum, soit plus de 10 ans en fonctionnement continu. La structure aluminium dure 15 à 20 ans. Seule la face ajourée peut nécessiter un remplacement après 10-15 ans si elle est exposée à des conditions extrêmes."
+          question: "Quelle est la durée de vie d'un caisson ajouré Lumineuse ?",
+          answer: "Les Lumineuse ont une durée de vie de 50 000 heures minimum, soit plus de 10 ans en fonctionnement continu. La structure aluminium dure 15 à 20 ans. Seule la face ajourée peut nécessiter un remplacement après 10-15 ans si elle est exposée à des conditions extrêmes."
         }
       ]} />
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-br from-yellow-400 to-yellow-500">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-led-dark mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-lumineuse-dark mb-6">
             Projet de caisson ajouré lumineux ?
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
@@ -261,13 +261,13 @@ function CaissonAjoure() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-led-dark hover:bg-gray-800 text-white font-bold">
+              <Button size="lg" className="bg-lumineuse-dark hover:bg-gray-800 text-white font-bold">
                 <Phone className="mr-2 w-5 h-5" />
                 03 88 044 534
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold">
+              <Button size="lg" variant="outline" className="bg-white hover:bg-gray-100 text-lumineuse-dark border-2 border-lumineuse-dark font-bold">
                 Demander un devis
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

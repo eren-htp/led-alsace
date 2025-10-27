@@ -69,7 +69,7 @@ function Signaletique() {
       icon: SignpostBig,
       title: "Totem extérieur",
       description: "Structure verticale imposante pour une visibilité maximale. Idéal pour centres commerciaux, zones d'activités et entrées d'entreprise.",
-      features: ["Haute visibilité", "Structure robuste", "Éclairage LED", "Design sur mesure"]
+      features: ["Haute visibilité", "Structure robuste", "Éclairage Lumineuse", "Design sur mesure"]
     },
     {
       icon: AlertTriangle,
@@ -166,7 +166,7 @@ function Signaletique() {
                 <Button 
                   onClick={() => navigate('/contact')}
                   size="lg"
-                  className="bg-yellow-400 hover:bg-yellow-500 text-led-dark font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-lumineuse-dark font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
                 >
                   J'ai besoin de signalétique
                   <ArrowRight className="ml-2 w-6 h-6" />
@@ -257,7 +257,7 @@ function Signaletique() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                  Pourquoi choisir LED Alsace pour votre signalétique ?
+                  Pourquoi choisir Lumineuse Alsace pour votre signalétique ?
                 </h2>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                   Depuis plus de 10 ans, nous accompagnons les entreprises alsaciennes dans leurs projets de signalétique. 
@@ -305,8 +305,8 @@ function Signaletique() {
               <div className="relative">
                 <div className="aspect-square bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-3xl overflow-hidden shadow-2xl">
                   <img 
-                    src="https://via.placeholder.com/600x600/1a1a1a/FFD700?text=Signalétique+LED+Alsace" 
-                    alt="Signalétique LED Alsace"
+                    src="https://via.placeholder.com/600x600/1a1a1a/FFD700?text=Signalétique+Lumineuse+Alsace" 
+                    alt="Signalétique Lumineuse Alsace"
                     className="w-full h-full object-cover opacity-90"
                   />
                 </div>
@@ -322,7 +322,7 @@ function Signaletique() {
       <section className="py-20 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold text-led-dark mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-lumineuse-dark mb-6">
             Un projet de signalétique ?
           </h2>
           <p className="text-xl md:text-2xl text-gray-900 mb-10 max-w-3xl mx-auto font-medium">
@@ -332,7 +332,7 @@ function Signaletique() {
             <Button 
               onClick={() => navigate('/contact')} 
               size="lg" 
-              className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+              className="bg-lumineuse-dark hover:bg-gray-900 text-white font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
             >
               J'ai besoin de signalétique
               <ArrowRight className="ml-2 w-6 h-6" />
@@ -340,7 +340,7 @@ function Signaletique() {
             <Button 
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold text-lg px-10 py-7 rounded-full shadow-xl hover:scale-105 transition-all"
+              className="bg-white hover:bg-gray-100 text-lumineuse-dark border-2 border-lumineuse-dark font-bold text-lg px-10 py-7 rounded-full shadow-xl hover:scale-105 transition-all"
               onClick={() => window.location.href = 'tel:0388044534'}
             >
               <svg className="mr-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

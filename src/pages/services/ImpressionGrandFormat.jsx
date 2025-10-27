@@ -174,7 +174,7 @@ function ImpressionGrandFormat() {
                 <Button 
                   onClick={() => navigate('/contact')}
                   size="lg"
-                  className="bg-yellow-400 hover:bg-yellow-500 text-led-dark font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-lumineuse-dark font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
                 >
                   J'ai besoin d'impressions
                   <ArrowRight className="ml-2 w-6 h-6" />
@@ -302,7 +302,7 @@ function ImpressionGrandFormat() {
       <section className="py-20 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold text-led-dark mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-lumineuse-dark mb-6">
             Besoin d'impressions grand format ?
           </h2>
           <p className="text-xl md:text-2xl text-gray-900 mb-10 max-w-3xl mx-auto font-medium">
@@ -312,7 +312,7 @@ function ImpressionGrandFormat() {
             <Button 
               onClick={() => navigate('/contact')} 
               size="lg" 
-              className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+              className="bg-lumineuse-dark hover:bg-gray-900 text-white font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
             >
               J'ai besoin d'impressions
               <ArrowRight className="ml-2 w-6 h-6" />
@@ -320,7 +320,7 @@ function ImpressionGrandFormat() {
             <Button 
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold text-lg px-10 py-7 rounded-full shadow-xl hover:scale-105 transition-all"
+              className="bg-white hover:bg-gray-100 text-lumineuse-dark border-2 border-lumineuse-dark font-bold text-lg px-10 py-7 rounded-full shadow-xl hover:scale-105 transition-all"
               onClick={() => window.location.href = 'tel:0388044534'}
             >
               <svg className="mr-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -340,8 +340,8 @@ function ImpressionGrandFormat() {
             answer: "Un adhésif grand format est un support autocollant imprimé sur mesure, destiné à couvrir de grandes surfaces comme des vitrines, des murs, des panneaux ou des véhicules. C'est un outil de communication visuelle impactant, parfait pour attirer l'attention, diffuser un message commercial ou habiller un espace professionnel. Il peut être temporaire (opération promo) ou permanent (habillage de façade ou déco intérieure)."
           },
           {
-            question: "Quels types d'adhésifs grand format propose LED ALSACE ?",
-            answer: "LED ALSACE imprime sur une large gamme d'adhésifs professionnels : Vinyle monomère pour les surfaces planes et l'intérieur, Vinyle polymère pour l'extérieur longue durée, Vinyle coulé pour les formes complexes (véhicules, bosselages), Micro-perforé pour vitrine (visibilité extérieure), et Dépoli imprimé pour effet sablé décoratif. Nous proposons également des films avec pelliculage de protection (anti-UV, anti-graffiti, mat ou brillant)."
+            question: "Quels types d'adhésifs grand format propose Lumineuse ALSACE ?",
+            answer: "Lumineuse ALSACE imprime sur une large gamme d'adhésifs professionnels : Vinyle monomère pour les surfaces planes et l'intérieur, Vinyle polymère pour l'extérieur longue durée, Vinyle coulé pour les formes complexes (véhicules, bosselages), Micro-perforé pour vitrine (visibilité extérieure), et Dépoli imprimé pour effet sablé décoratif. Nous proposons également des films avec pelliculage de protection (anti-UV, anti-graffiti, mat ou brillant)."
           },
           {
             question: "Quelle est la différence entre un adhésif monomère et polymère ?",
@@ -356,7 +356,7 @@ function ImpressionGrandFormat() {
             answer: "Oui. Si l'adhésif est retiré dans les délais conseillés (selon la colle utilisée) et sur une surface propre, il ne laisse pas de traces. Nous utilisons des colles adaptées (permanentes ou enlevables), selon que le projet soit temporaire (soldes, événement, promo) ou permanent (habillage mural ou vitrine)."
           },
           {
-            question: "Est-ce que LED ALSACE peut poser les adhésifs sur site ?",
+            question: "Est-ce que Lumineuse ALSACE peut poser les adhésifs sur site ?",
             answer: "Oui. Nos équipes se déplacent dans toute l'Alsace et le Grand Est pour poser vos adhésifs grands formats dans les règles de l'art. La pose professionnelle garantit un résultat sans bulles, sans plis et une excellente tenue dans le temps, que ce soit sur vitrine, panneau, véhicule, ou cloison intérieure."
           },
           {
@@ -372,7 +372,7 @@ function ImpressionGrandFormat() {
             answer: "En général, la production prend entre 3 et 7 jours ouvrés, selon le type d'adhésif, le visuel et la finition demandée (pelliculage, découpe, etc.). Pour les projets urgents ou événementiels, nous proposons également un service express sous 48 h, sous réserve de faisabilité technique."
           },
           {
-            question: "LED ALSACE propose-t-elle la livraison ou l'installation hors Alsace ?",
+            question: "Lumineuse ALSACE propose-t-elle la livraison ou l'installation hors Alsace ?",
             answer: "Oui. Nous livrons dans toute la France métropolitaine et pouvons organiser une installation sur site dans le Grand Est (Strasbourg, Metz, Nancy, Mulhouse…) grâce à notre réseau de partenaires poseurs. Chaque projet est suivi de manière personnalisée, de la maquette à la pose finale."
           }
         ]}

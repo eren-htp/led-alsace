@@ -279,8 +279,8 @@ function DecoupeCNC() {
             answer: "La découpe CNC (Computer Numerical Control) est une méthode de découpe assistée par ordinateur, réalisée à l'aide d'une fraiseuse pilotée numériquement. Contrairement au laser, la découpe CNC retire de la matière mécaniquement, ce qui permet de travailler des matériaux plus épais et d'obtenir des formes en volume, des rainurages ou des assemblages précis. Elle est idéale pour des projets techniques, des pièces sur-mesure, du mobilier ou de la signalétique grand format."
           },
           {
-            question: "Quels matériaux peut-on découper avec une fraiseuse CNC chez LED ALSACE ?",
-            answer: "LED ALSACE propose la découpe CNC sur de nombreux matériaux rigides, dont : Bois massif, contreplaqué, MDF, PVC expansé, Forex, Plexiglas / PMMA, Aluminium composite type Dibond, Mousse dense, mousse PVC, mousse PE. Cette technique permet aussi bien de découper, de graver en surface, que de rainurer pour pliage ou d'usiner des formes complexes en volume."
+            question: "Quels matériaux peut-on découper avec une fraiseuse CNC chez Lumineuse ALSACE ?",
+            answer: "Lumineuse ALSACE propose la découpe CNC sur de nombreux matériaux rigides, dont : Bois massif, contreplaqué, MDF, PVC expansé, Forex, Plexiglas / PMMA, Aluminium composite type Dibond, Mousse dense, mousse PVC, mousse PE. Cette technique permet aussi bien de découper, de graver en surface, que de rainurer pour pliage ou d'usiner des formes complexes en volume."
           },
           {
             question: "Quelle est la différence entre la découpe CNC et la découpe laser ?",
@@ -291,7 +291,7 @@ function DecoupeCNC() {
             answer: "Oui. La CNC est particulièrement adaptée pour réaliser des lettres boîtiers, logos en relief ou éléments 3D en bois, PVC ou Dibond. Ces découpes peuvent être peintes, laquées, adhésivées ou montées sur entretoises, pour un effet haut de gamme et durable, en intérieur comme en extérieur."
           },
           {
-            question: "LED ALSACE peut-elle créer les fichiers techniques pour la découpe CNC ?",
+            question: "Lumineuse ALSACE peut-elle créer les fichiers techniques pour la découpe CNC ?",
             answer: "Oui. Si vous ne disposez pas de fichiers au format vectoriel (DXF, SVG, etc.), notre studio graphique peut modéliser vos formes, adapter vos visuels, ou créer les fichiers à partir d'un croquis ou d'un brief technique. Nous vous fournissons toujours un BAT numérique pour validation avant lancement."
           }
         ]}
@@ -301,7 +301,7 @@ function DecoupeCNC() {
       <section className="py-20 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold text-led-dark mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-lumineuse-dark mb-6">
             Un projet de découpe CNC ?
           </h2>
           <p className="text-xl md:text-2xl text-gray-900 mb-10 max-w-3xl mx-auto font-medium">
@@ -311,7 +311,7 @@ function DecoupeCNC() {
             <Button 
               onClick={() => navigate('/contact')} 
               size="lg" 
-              className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+              className="bg-lumineuse-dark hover:bg-gray-900 text-white font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
             >
               Demander un devis
               <ArrowRight className="ml-2 w-6 h-6" />
@@ -319,7 +319,7 @@ function DecoupeCNC() {
             <Button 
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold text-lg px-10 py-7 rounded-full shadow-xl hover:scale-105 transition-all"
+              className="bg-white hover:bg-gray-100 text-lumineuse-dark border-2 border-lumineuse-dark font-bold text-lg px-10 py-7 rounded-full shadow-xl hover:scale-105 transition-all"
               onClick={() => window.location.href = 'tel:0388044534'}
             >
               <svg className="mr-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

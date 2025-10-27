@@ -39,21 +39,21 @@ function EcransLED() {
 
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center">
-        <div className="absolute inset-0 bg-led-dark/50 z-10"></div>
+        <div className="absolute inset-0 bg-lumineuse-dark/50 z-10"></div>
         <img 
           src={heroImage} 
-          alt="Écrans LED grand format" 
+          alt="Écrans Lumineuse grand format" 
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-20 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Écrans LED Grand Format</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Écrans Lumineuse Grand Format</h1>
           <p className="text-xl md:text-2xl mb-8">
             Affichage dynamique haute définition pour une communication visuelle impactante
           </p>
           <Button 
             onClick={() => navigate('/contact')} 
             size="lg" 
-            className="bg-yellow-500 hover:bg-yellow-600 text-led-dark font-semibold"
+            className="bg-yellow-500 hover:bg-yellow-600 text-lumineuse-dark font-semibold"
           >
             Demander un devis gratuit
           </Button>
@@ -64,29 +64,29 @@ function EcransLED() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Qu'est-ce qu'un écran LED grand format ?
+            Qu'est-ce qu'un écran Lumineuse grand format ?
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            L'<strong>écran LED grand format</strong> est une solution d'affichage dynamique qui permet de diffuser des contenus multimédias (vidéos, images, textes, animations) en haute définition. Contrairement aux enseignes statiques, l'écran LED offre une flexibilité totale pour adapter votre communication en temps réel.
+            L'<strong>écran Lumineuse grand format</strong> est une solution d'affichage dynamique qui permet de diffuser des contenus multimédias (vidéos, images, textes, animations) en haute définition. Contrairement aux enseignes statiques, l'écran Lumineuse offre une flexibilité totale pour adapter votre communication en temps réel.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Grâce à la technologie LED, ces écrans offrent une luminosité exceptionnelle, une consommation énergétique réduite et une durée de vie prolongée. Ils sont visibles de jour comme de nuit, captent l'attention et permettent de communiquer efficacement sur vos produits, services, événements ou promotions.
+            Grâce à la technologie Lumineuse, ces écrans offrent une luminosité exceptionnelle, une consommation énergétique réduite et une durée de vie prolongée. Ils sont visibles de jour comme de nuit, captent l'attention et permettent de communiquer efficacement sur vos produits, services, événements ou promotions.
           </p>
         </div>
       </section>
 
-      {/* Types d'écrans LED Section */}
+      {/* Types d'écrans Lumineuse Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-            Types d'écrans LED
+            Types d'écrans Lumineuse
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
               <div className="text-yellow-500 mb-4">
                 <Monitor className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran LED extérieur</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran Lumineuse extérieur</h3>
               <p className="text-gray-600 leading-relaxed">
                 Haute luminosité (5000+ nits), résistant aux intempéries (IP65), visible en plein soleil. Idéal pour façades, toitures, zones commerciales.
               </p>
@@ -96,7 +96,7 @@ function EcransLED() {
               <div className="text-yellow-500 mb-4">
                 <Monitor className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran LED intérieur</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran Lumineuse intérieur</h3>
               <p className="text-gray-600 leading-relaxed">
                 Haute résolution (pitch fin P2-P4), couleurs éclatantes, vision rapprochée. Parfait pour halls d'accueil, showrooms, centres commerciaux.
               </p>
@@ -106,7 +106,7 @@ function EcransLED() {
               <div className="text-yellow-500 mb-4">
                 <Monitor className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran LED vitrine</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran Lumineuse vitrine</h3>
               <p className="text-gray-600 leading-relaxed">
                 Transparent ou semi-transparent, permet de voir à travers tout en affichant du contenu. Innovation pour vitrines de magasins.
               </p>
@@ -116,7 +116,7 @@ function EcransLED() {
               <div className="text-yellow-500 mb-4">
                 <Monitor className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran LED mobile</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran Lumineuse mobile</h3>
               <p className="text-gray-600 leading-relaxed">
                 Monté sur remorque ou camion, déplaçable pour événements, salons, tournées promotionnelles. Impact maximal partout.
               </p>
@@ -126,7 +126,7 @@ function EcransLED() {
               <div className="text-yellow-500 mb-4">
                 <Monitor className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran LED courbe</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran Lumineuse courbe</h3>
               <p className="text-gray-600 leading-relaxed">
                 Modules flexibles pour créer des formes courbes, cylindriques ou sphériques. Design spectaculaire et immersif.
               </p>
@@ -136,7 +136,7 @@ function EcransLED() {
               <div className="text-yellow-500 mb-4">
                 <Monitor className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran LED sur mesure</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Écran Lumineuse sur mesure</h3>
               <p className="text-gray-600 leading-relaxed">
                 Dimensions, forme et configuration personnalisées selon votre projet. De quelques m² à plusieurs centaines de m².
               </p>
@@ -149,7 +149,7 @@ function EcransLED() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-            Pourquoi choisir un écran LED grand format ?
+            Pourquoi choisir un écran Lumineuse grand format ?
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -184,7 +184,7 @@ function EcransLED() {
                   <span className="text-yellow-500 mr-3 text-xl">✓</span>
                   <div>
                     <strong className="text-gray-900">Économie d'énergie</strong>
-                    <p className="text-gray-600">Technologie LED basse consommation avec ajustement automatique de luminosité</p>
+                    <p className="text-gray-600">Technologie Lumineuse basse consommation avec ajustement automatique de luminosité</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -349,7 +349,7 @@ function EcransLED() {
       <section className="py-16 bg-gradient-to-r from-yellow-400 to-yellow-500">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Projet d'écran LED grand format ?
+            Projet d'écran Lumineuse grand format ?
           </h2>
           <p className="text-xl text-gray-800 mb-8 max-w-2xl mx-auto">
             Conseil, dimensionnement, installation et formation : nous gérons votre projet de A à Z
@@ -358,7 +358,7 @@ function EcransLED() {
             <Button 
               onClick={() => navigate('/contact')}
               size="lg"
-              className="bg-led-dark hover:bg-gray-800 text-white"
+              className="bg-lumineuse-dark hover:bg-gray-800 text-white"
             >
               Demander un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />

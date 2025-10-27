@@ -56,7 +56,7 @@ function App() {
           <Route path="/services/signaletique" element={<Signaletique />} />
           <Route path="/services/creation-graphique" element={<CreationGraphique />} />
           <Route path="/services/decoupe-cnc" element={<DecoupeCNC />} />
-          <Route path="/services/neon-led" element={<NeonLED />} />
+          <Route path="/services/neon-lumineuse" element={<NeonLED />} />
           <Route path="/services/impression-papier" element={<ImpressionPapier />} />
           <Route path="/services/objets-publicitaires" element={<ObjetsPublicitaires />} />
           <Route path="/services/vitrophanie" element={<Vitrophanie />} />
@@ -65,7 +65,7 @@ function App() {
           <Route path="/services/totems-lumineux" element={<TotemsLumineux />} />
           <Route path="/services/enseigne-drapeau" element={<EnseigneDrapeau />} />
           <Route path="/services/caisson-ajoure" element={<CaissonAjoure />} />
-          <Route path="/services/ecrans-led" element={<EcransLED />} />
+          <Route path="/services/ecrans-lumineuse" element={<EcransLED />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/nos-clients" element={<NosClients />} />
           <Route path="/a-propos" element={<APropos />} />

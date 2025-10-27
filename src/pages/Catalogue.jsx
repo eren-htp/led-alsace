@@ -233,8 +233,8 @@ function Catalogue() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col pt-32 md:pt-24">
       <SEO 
         title="Catalogue Octobre 2025"
-        description="Consultez notre catalogue interactif de modèles d'enseignes LED - Édition Octobre 2025. Découvrez nos lettres boîtier lumineuses et trouvez l'inspiration pour votre projet d'enseigne en Alsace."
-        keywords="catalogue enseignes LED, modèles lettres boîtier, catalogue interactif, exemples enseignes lumineuses, inspiration enseigne LED"
+        description="Consultez notre catalogue interactif de modèles d'enseignes Lumineuse - Édition Octobre 2025. Découvrez nos lettres boîtier lumineuses et trouvez l'inspiration pour votre projet d'enseigne en Alsace."
+        keywords="catalogue enseignes Lumineuse, modèles lettres boîtier, catalogue interactif, exemples enseignes lumineuses, inspiration enseigne Lumineuse"
         canonicalUrl="https://www.ledalsace.com/catalogue"
       />
       <header className="hidden"></header>
@@ -269,7 +269,7 @@ function Catalogue() {
             <div className="max-w-7xl mx-auto flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Link to="/" className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition-colors cursor-pointer">
-                  LED Alsace
+                  Lumineuse Alsace
                 </Link>
               </div>
               <div className="flex items-center justify-center gap-2">
@@ -339,7 +339,7 @@ function Catalogue() {
 
       {/* Footer avec miniatures - Affiché seulement si showFooter est true */}
       {showFooter && !isMobile && (
-        <footer className="bg-led-dark/90 backdrop-blur-sm border-t border-yellow-500/20 px-6 py-4 fixed bottom-0 left-0 right-0 z-30 max-h-40 overflow-y-auto">
+        <footer className="bg-lumineuse-dark/90 backdrop-blur-sm border-t border-yellow-500/20 px-6 py-4 fixed bottom-0 left-0 right-0 z-30 max-h-40 overflow-y-auto">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-10 gap-2">
               {pages.map((pageImg, index) => (

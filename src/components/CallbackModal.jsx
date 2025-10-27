@@ -23,7 +23,7 @@ function CallbackModal({ isOpen, onClose }) {
           nom: formData.nom,
           telephone: formData.telephone,
           _subject: `🔔 Demande de rappel - ${formData.nom}`,
-          message: `Nouvelle demande de rappel depuis le site LED Alsace\n\nNom: ${formData.nom}\nTéléphone: ${formData.telephone}\n\nDate: ${new Date().toLocaleString('fr-FR')}`
+          message: `Nouvelle demande de rappel depuis le site Lumineuse Alsace\n\nNom: ${formData.nom}\nTéléphone: ${formData.telephone}\n\nDate: ${new Date().toLocaleString('fr-FR')}`
         }),
       })
 
@@ -52,7 +52,7 @@ function CallbackModal({ isOpen, onClose }) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-led-dark/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-lumineuse-dark/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-in fade-in zoom-in duration-300">
         {/* Bouton fermer */}
         <button
@@ -66,7 +66,7 @@ function CallbackModal({ isOpen, onClose }) {
         {/* En-tête */}
         <div className="text-center mb-6">
           <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Phone className="w-8 h-8 text-led-dark" />
+            <Phone className="w-8 h-8 text-lumineuse-dark" />
           </div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Être rappelé</h2>
           <p className="text-gray-600">Laissez-nous vos coordonnées, nous vous rappelons rapidement</p>
@@ -113,7 +113,7 @@ function CallbackModal({ isOpen, onClose }) {
           )}
 
           {submitStatus === 'error' && (
-            <div className="bg-gray-100 border-2 border-led-dark text-gray-900 px-4 py-3 rounded-lg">
+            <div className="bg-gray-100 border-2 border-lumineuse-dark text-gray-900 px-4 py-3 rounded-lg">
               ✗ Erreur lors de l'envoi. Veuillez réessayer.
             </div>
           )}
@@ -131,7 +131,7 @@ function CallbackModal({ isOpen, onClose }) {
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-led-dark font-bold"
+              className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-lumineuse-dark font-bold"
             >
               {isSubmitting ? 'Envoi...' : 'Envoyer'}
             </Button>

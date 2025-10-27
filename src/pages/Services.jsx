@@ -10,7 +10,7 @@ import enseigneLumineuse from '../assets/services/Enseigne-lumineuse.webp'
 import signaletiqueImg from '../assets/services/signaletique.webp'
 import textileImg from '../assets/services/textile.webp'
 import vehiculeImg from '../assets/services/vehicule.webp'
-import neonLedImg from '../assets/services/led-neon.webp'
+import neonLedImg from '../assets/services/lumineuse-neon.webp'
 import vitrophanieImg from '../assets/services/vitrophanie.webp'
 import adhesifGrandFormatImg from '../assets/services/addessifgrandformat.webp'
 import impressionPapierImg from '../assets/services/impressionpapier.webp'
@@ -32,12 +32,12 @@ function Services() {
       title: "Enseignes lumineuses",
       slug: "enseignes",
       image: enseigneLumineuse,
-      description: "Enseignes lumineuses sur mesure : lettres individuelles LED, caissons lumineux, panneaux digitaux. Plusieurs matériaux et finitions disponibles pour une visibilité optimale jour et nuit.",
+      description: "Enseignes lumineuses sur mesure : lettres individuelles Lumineuse, caissons lumineux, panneaux digitaux. Plusieurs matériaux et finitions disponibles pour une visibilité optimale jour et nuit.",
       features: [
         "Lettres boîtier rétro-éclairées",
         "Caissons lumineux double face",
-        "Panneaux LED digitaux",
-        "Enseignes néon LED flexibles",
+        "Panneaux Lumineuse digitaux",
+        "Enseignes néon Lumineuse flexibles",
         "Installation et maintenance"
       ]
     },
@@ -85,12 +85,12 @@ function Services() {
     },
     {
       icon: <Zap className="w-12 h-12" />,
-      title: "Néon LED",
-      slug: "neon-led",
+      title: "Néon Lumineuse",
+      slug: "neon-lumineuse",
       image: neonLedImg,
-      description: "Néons LED flexibles et personnalisés pour une ambiance unique. Design moderne et économie d'énergie pour vos espaces commerciaux et événementiels.",
+      description: "Néons Lumineuse flexibles et personnalisés pour une ambiance unique. Design moderne et économie d'énergie pour vos espaces commerciaux et événementiels.",
       features: [
-        "Néon LED flexible",
+        "Néon Lumineuse flexible",
         "Formes personnalisées",
         "Couleurs au choix",
         "Faible consommation",
@@ -201,8 +201,8 @@ function Services() {
     <div className="min-h-screen bg-white">
       <SEO 
         title="Nos Solutions"
-        description="Découvrez toutes nos solutions professionnelles : enseignes LED, signalétique, marquage véhicule, impression grand format, création graphique. Fabrication française en Alsace."
-        keywords="solutions signalétique, services enseignes LED, marquage véhicule, impression grand format, création graphique Alsace, signalétique Strasbourg"
+        description="Découvrez toutes nos solutions professionnelles : enseignes Lumineuse, signalétique, marquage véhicule, impression grand format, création graphique. Fabrication française en Alsace."
+        keywords="solutions signalétique, services enseignes Lumineuse, marquage véhicule, impression grand format, création graphique Alsace, signalétique Strasbourg"
         canonicalUrl="https://www.ledalsace.com/services"
         structuredData={servicesSchema}
       />
@@ -218,7 +218,7 @@ function Services() {
               <span className="text-yellow-400 animate-glow">lumière</span> vos projets
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              De l'enseigne LED à la signalétique complète, nous proposons une gamme complète de solutions professionnelles pour donner vie à vos projets.
+              De l'enseigne Lumineuse à la signalétique complète, nous proposons une gamme complète de solutions professionnelles pour donner vie à vos projets.
             </p>
           </div>
         </div>
@@ -399,7 +399,7 @@ function Services() {
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
                     <span className="text-yellow-500 mr-2">✓</span>
-                    Éclairage LED économique
+                    Éclairage Lumineuse économique
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
                     <span className="text-yellow-500 mr-2">✓</span>
@@ -510,7 +510,7 @@ function Services() {
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
                     <span className="text-yellow-500 mr-2">✓</span>
-                    Éclairage LED ciblé
+                    Éclairage Lumineuse ciblé
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
                     <span className="text-yellow-500 mr-2">✓</span>
@@ -531,16 +531,16 @@ function Services() {
               </div>
             </div>
 
-            {/* Néon LED */}
+            {/* Néon Lumineuse */}
             <div 
               className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
-              onClick={() => navigate('/services/neon-led')}
+              onClick={() => navigate('/services/neon-lumineuse')}
             >
               {/* Image Banner - 20% height */}
               <div className="h-32 overflow-hidden">
                 <img 
                   src={neonLedImg} 
-                  alt="Néon LED"
+                  alt="Néon Lumineuse"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
@@ -551,15 +551,15 @@ function Services() {
                   <Zap className="w-12 h-12" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
-                  Néon LED
+                  Néon Lumineuse
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Éclairage LED flexible imitant le néon traditionnel. Design sur mesure et économique.
+                  Éclairage Lumineuse flexible imitant le néon traditionnel. Design sur mesure et économique.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start text-sm text-gray-600">
                     <span className="text-yellow-500 mr-2">✓</span>
-                    Néon LED flexible
+                    Néon Lumineuse flexible
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
                     <span className="text-yellow-500 mr-2">✓</span>
@@ -588,16 +588,16 @@ function Services() {
               </div>
             </div>
 
-            {/* Écrans LED grand format */}
+            {/* Écrans Lumineuse grand format */}
             <div 
               className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
-              onClick={() => navigate('/services/ecrans-led')}
+              onClick={() => navigate('/services/ecrans-lumineuse')}
             >
               {/* Image Banner - 20% height */}
               <div className="h-32 overflow-hidden">
                 <img 
                   src={adhesifGrandFormatImg} 
-                  alt="Écrans LED grand format"
+                  alt="Écrans Lumineuse grand format"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
@@ -608,7 +608,7 @@ function Services() {
                   <Monitor className="w-12 h-12" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
-                  Écrans LED grand format
+                  Écrans Lumineuse grand format
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   Affichage dynamique haute définition pour communication visuelle impactante.
@@ -671,7 +671,7 @@ function Services() {
               </div>
 
               <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-                <div className="text-4xl font-bold text-led-dark mb-4">02</div>
+                <div className="text-4xl font-bold text-lumineuse-dark mb-4">02</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Conception</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Notre équipe de designers crée des maquettes et vous présente plusieurs options.
@@ -687,7 +687,7 @@ function Services() {
               </div>
 
               <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-                <div className="text-4xl font-bold text-led-dark mb-4">04</div>
+                <div className="text-4xl font-bold text-lumineuse-dark mb-4">04</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Installation</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Pose professionnelle par nos équipes qualifiées et service après-vente garanti.
@@ -701,7 +701,7 @@ function Services() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-led-dark mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-lumineuse-dark mb-6">
             Un projet en tête ?
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
@@ -711,7 +711,7 @@ function Services() {
             <Button 
               onClick={() => navigate('/contact')}
               size="lg"
-              className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
+              className="bg-lumineuse-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
             >
               Demander un devis
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -719,7 +719,7 @@ function Services() {
             <Button 
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold text-lg px-8 py-6"
+              className="bg-white hover:bg-gray-100 text-lumineuse-dark border-2 border-lumineuse-dark font-bold text-lg px-8 py-6"
               onClick={() => window.location.href = 'tel:0388044534'}
             >
               <svg className="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

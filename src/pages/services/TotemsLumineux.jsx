@@ -36,7 +36,7 @@ function TotemsLumineux() {
             alt="Totem Lumineux"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-led-dark/40"></div>
+          <div className="absolute inset-0 bg-lumineuse-dark/40"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
@@ -47,7 +47,7 @@ function TotemsLumineux() {
             Signalétique verticale lumineuse pour une visibilité maximale
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-led-dark font-bold">
+            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-lumineuse-dark font-bold">
               Demander un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -69,7 +69,7 @@ function TotemsLumineux() {
               </p>
               <p className="mb-6">
                 Disponible en différentes hauteurs et largeurs, le totem peut être simple ou double face, et accueillir plusieurs visuels ou informations. 
-                Son éclairage LED intégré garantit une présence lumineuse permanente et économique.
+                Son éclairage Lumineuse intégré garantit une présence lumineuse permanente et économique.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ function TotemsLumineux() {
             {[
               {
                 title: "Totem simple face",
-                description: "Idéal pour les emplacements contre un mur ou une façade. Éclairage LED frontal pour une visibilité optimale."
+                description: "Idéal pour les emplacements contre un mur ou une façade. Éclairage Lumineuse frontal pour une visibilité optimale."
               },
               {
                 title: "Totem double face",
@@ -98,7 +98,7 @@ function TotemsLumineux() {
               },
               {
                 title: "Totem digital",
-                description: "Intégration d'écrans LED pour un contenu dynamique et interactif. Modernité et flexibilité maximales."
+                description: "Intégration d'écrans Lumineuse pour un contenu dynamique et interactif. Modernité et flexibilité maximales."
               },
               {
                 title: "Totem directionnel",
@@ -131,7 +131,7 @@ function TotemsLumineux() {
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
-                  <span><strong>Visibilité 24/7</strong> - Éclairage LED pour une présence permanente</span>
+                  <span><strong>Visibilité 24/7</strong> - Éclairage Lumineuse pour une présence permanente</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
@@ -139,7 +139,7 @@ function TotemsLumineux() {
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
-                  <span><strong>Économie d'énergie</strong> - Technologie LED basse consommation</span>
+                  <span><strong>Économie d'énergie</strong> - Technologie Lumineuse basse consommation</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
@@ -191,23 +191,23 @@ function TotemsLumineux() {
           answer: "Oui, l'installation d'un totem nécessite généralement une déclaration préalable ou un permis de construire selon sa hauteur et son emplacement. Nous vous accompagnons dans toutes les démarches administratives."
         },
         {
-          question: "Quelle est la consommation électrique d'un totem LED ?",
-          answer: "Grâce à la technologie LED, un totem lumineux consomme très peu d'énergie. Par exemple, un totem de 4m² éclairé consomme environ 150W, soit moins qu'une ampoule halogène classique, pour un éclairage bien plus puissant."
+          question: "Quelle est la consommation électrique d'un totem Lumineuse ?",
+          answer: "Grâce à la technologie Lumineuse, un totem lumineux consomme très peu d'énergie. Par exemple, un totem de 4m² éclairé consomme environ 150W, soit moins qu'une ampoule halogène classique, pour un éclairage bien plus puissant."
         },
         {
           question: "Comment entretenir un totem lumineux ?",
-          answer: "L'entretien est minimal : nettoyage régulier des faces avec de l'eau savonneuse et vérification annuelle de l'éclairage LED. Les LED ont une durée de vie de 50 000 heures en moyenne, soit plus de 10 ans d'utilisation continue."
+          answer: "L'entretien est minimal : nettoyage régulier des faces avec de l'eau savonneuse et vérification annuelle de l'éclairage Lumineuse. Les Lumineuse ont une durée de vie de 50 000 heures en moyenne, soit plus de 10 ans d'utilisation continue."
         },
         {
           question: "Peut-on modifier les visuels d'un totem ?",
-          answer: "Oui, les faces du totem peuvent être changées facilement. Nous proposons des systèmes d'ouverture pratiques pour remplacer les visuels imprimés. Pour une flexibilité maximale, optez pour un totem digital avec écran LED."
+          answer: "Oui, les faces du totem peuvent être changées facilement. Nous proposons des systèmes d'ouverture pratiques pour remplacer les visuels imprimés. Pour une flexibilité maximale, optez pour un totem digital avec écran Lumineuse."
         }
       ]} />
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-br from-yellow-400 to-yellow-500">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-led-dark mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-lumineuse-dark mb-6">
             Projet de totem lumineux ?
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
@@ -215,13 +215,13 @@ function TotemsLumineux() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-led-dark hover:bg-gray-800 text-white font-bold">
+              <Button size="lg" className="bg-lumineuse-dark hover:bg-gray-800 text-white font-bold">
                 <Phone className="mr-2 w-5 h-5" />
                 03 88 044 534
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold">
+              <Button size="lg" variant="outline" className="bg-white hover:bg-gray-100 text-lumineuse-dark border-2 border-lumineuse-dark font-bold">
                 Demander un devis
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

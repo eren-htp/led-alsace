@@ -24,31 +24,31 @@ function Realisations() {
   const [selectedCategory, setSelectedCategory] = useState('Tous')
 
   const realisations = [
-    { title: "The Little Red Door", category: "Enseignes LED", image: realisation1, description: "Enseigne lumineuse restaurant", alt: "Enseigne LED The Little Red Door restaurant Strasbourg - Réalisation LED Alsace" },
-    { title: "Saturn Event", category: "Enseignes LED", image: realisation2, description: "Logo lumineux en relief", alt: "Logo lumineux Saturn Event en relief - Enseigne LED sur mesure Alsace" },
-    { title: "Saveurs & Saisons", category: "Enseignes LED", image: realisation3, description: "Enseigne restaurant traditionnel", alt: "Enseigne LED Saveurs & Saisons restaurant Alsace - Fabrication LED Alsace" },
-    { title: "Pro-Inter", category: "Enseignes LED", image: realisation4, description: "Enseigne lumineuse commerce", alt: "Enseigne lumineuse Pro-Inter commerce Strasbourg - Réalisation LED Alsace" },
-    { title: "Casa Julia", category: "Signalétique", image: realisation5, description: "Signalétique extérieure", alt: "Signalétique extérieure Casa Julia - Totem et panneaux LED Alsace" },
-    { title: "One Kebab", category: "Enseignes LED", image: realisation6, description: "Enseigne restauration rapide", alt: "Enseigne LED One Kebab restauration rapide - Lettres boîtier lumineuses Alsace" },
-    { title: "MJR Pièces Auto", category: "Enseignes LED", image: realisation7, description: "Enseigne garage automobile", alt: "Enseigne LED MJR Pièces Auto garage Strasbourg - Réalisation LED Alsace" },
-    { title: "Madagascar", category: "Signalétique", image: realisation8, description: "Totem lumineux extérieur", alt: "Totem lumineux Madagascar Alsace - Signalétique extérieure LED Alsace" },
-    { title: "E. Leclerc", category: "Marquage Vitrine", image: realisation9, description: "Aménagement vitrine", alt: "Marquage vitrine E. Leclerc Alsace - Vitrophanie et adhésifs LED Alsace" },
-    { title: "Pharmacie", category: "Enseignes LED", image: realisation10, description: "Croix de pharmacie LED", alt: "Croix de pharmacie LED verte Alsace - Enseigne lumineuse pharmacie LED Alsace" },
-    { title: "Love", category: "Enseignes LED", image: realisation11, description: "Enseigne boutique", alt: "Enseigne LED Love boutique Strasbourg - Lettres lumineuses LED Alsace" },
-    { title: "Perkko", category: "Enseignes LED", image: realisation12, description: "Enseigne commerce", alt: "Enseigne LED Perkko commerce Alsace - Réalisation enseigne lumineuse LED Alsace" },
-    { title: "Mobalpa", category: "Marquage Vitrine", image: realisation13, description: "Vitrophanie cuisine", alt: "Vitrophanie Mobalpa cuisine Alsace - Marquage vitrine professionnel LED Alsace" },
-    { title: "Les Anges Micro-Crèche", category: "Marquage Vitrine", image: realisation14, description: "Marquage vitrine crèche", alt: "Marquage vitrine Les Anges Micro-Crèche Alsace - Adhésifs décoratifs LED Alsace" }
+    { title: "The Little Red Door", category: "Enseignes Lumineuse", image: realisation1, description: "Enseigne lumineuse restaurant", alt: "Enseigne Lumineuse The Little Red Door restaurant Strasbourg - Réalisation Lumineuse Alsace" },
+    { title: "Saturn Event", category: "Enseignes Lumineuse", image: realisation2, description: "Logo lumineux en relief", alt: "Logo lumineux Saturn Event en relief - Enseigne Lumineuse sur mesure Alsace" },
+    { title: "Saveurs & Saisons", category: "Enseignes Lumineuse", image: realisation3, description: "Enseigne restaurant traditionnel", alt: "Enseigne Lumineuse Saveurs & Saisons restaurant Alsace - Fabrication Lumineuse Alsace" },
+    { title: "Pro-Inter", category: "Enseignes Lumineuse", image: realisation4, description: "Enseigne lumineuse commerce", alt: "Enseigne lumineuse Pro-Inter commerce Strasbourg - Réalisation Lumineuse Alsace" },
+    { title: "Casa Julia", category: "Signalétique", image: realisation5, description: "Signalétique extérieure", alt: "Signalétique extérieure Casa Julia - Totem et panneaux Lumineuse Alsace" },
+    { title: "One Kebab", category: "Enseignes Lumineuse", image: realisation6, description: "Enseigne restauration rapide", alt: "Enseigne Lumineuse One Kebab restauration rapide - Lettres boîtier lumineuses Alsace" },
+    { title: "MJR Pièces Auto", category: "Enseignes Lumineuse", image: realisation7, description: "Enseigne garage automobile", alt: "Enseigne Lumineuse MJR Pièces Auto garage Strasbourg - Réalisation Lumineuse Alsace" },
+    { title: "Madagascar", category: "Signalétique", image: realisation8, description: "Totem lumineux extérieur", alt: "Totem lumineux Madagascar Alsace - Signalétique extérieure Lumineuse Alsace" },
+    { title: "E. Leclerc", category: "Marquage Vitrine", image: realisation9, description: "Aménagement vitrine", alt: "Marquage vitrine E. Leclerc Alsace - Vitrophanie et adhésifs Lumineuse Alsace" },
+    { title: "Pharmacie", category: "Enseignes Lumineuse", image: realisation10, description: "Croix de pharmacie Lumineuse", alt: "Croix de pharmacie Lumineuse verte Alsace - Enseigne lumineuse pharmacie Lumineuse Alsace" },
+    { title: "Love", category: "Enseignes Lumineuse", image: realisation11, description: "Enseigne boutique", alt: "Enseigne Lumineuse Love boutique Strasbourg - Lettres lumineuses Lumineuse Alsace" },
+    { title: "Perkko", category: "Enseignes Lumineuse", image: realisation12, description: "Enseigne commerce", alt: "Enseigne Lumineuse Perkko commerce Alsace - Réalisation enseigne lumineuse Lumineuse Alsace" },
+    { title: "Mobalpa", category: "Marquage Vitrine", image: realisation13, description: "Vitrophanie cuisine", alt: "Vitrophanie Mobalpa cuisine Alsace - Marquage vitrine professionnel Lumineuse Alsace" },
+    { title: "Les Anges Micro-Crèche", category: "Marquage Vitrine", image: realisation14, description: "Marquage vitrine crèche", alt: "Marquage vitrine Les Anges Micro-Crèche Alsace - Adhésifs décoratifs Lumineuse Alsace" }
   ]
 
-  const categories = ['Tous', 'Enseignes LED', 'Marquage Vitrine', 'Signalétique']
+  const categories = ['Tous', 'Enseignes Lumineuse', 'Marquage Vitrine', 'Signalétique']
   const filteredRealisations = selectedCategory === 'Tous' ? realisations : realisations.filter(r => r.category === selectedCategory)
 
   return (
     <div className="min-h-screen bg-white">
       <SEO 
         title="Nos Réalisations"
-        description="Découvrez nos réalisations d'enseignes LED, signalétique et marquage véhicule en Alsace. Portfolio de projets pour commerces, restaurants, entreprises et collectivités."
-        keywords="réalisations enseignes LED, portfolio signalétique, exemples marquage véhicule, projets Alsace, enseignes Strasbourg"
+        description="Découvrez nos réalisations d'enseignes Lumineuse, signalétique et marquage véhicule en Alsace. Portfolio de projets pour commerces, restaurants, entreprises et collectivités."
+        keywords="réalisations enseignes Lumineuse, portfolio signalétique, exemples marquage véhicule, projets Alsace, enseignes Strasbourg"
         canonicalUrl="https://www.ledalsace.com/realisations"
       />
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
@@ -64,28 +64,28 @@ function Realisations() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-led-dark mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-lumineuse-dark mb-2">
                 <CounterAnimation end={1120} prefix="+" />
               </div>
-              <div className="text-led-dark/80 font-semibold">Enseignes</div>
+              <div className="text-lumineuse-dark/80 font-semibold">Enseignes</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-led-dark mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-lumineuse-dark mb-2">
                 <CounterAnimation end={490} prefix="+" />
               </div>
-              <div className="text-led-dark/80 font-semibold">Marquages Véhicules</div>
+              <div className="text-lumineuse-dark/80 font-semibold">Marquages Véhicules</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-led-dark mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-lumineuse-dark mb-2">
                 <CounterAnimation end={1540} prefix="+" />
               </div>
-              <div className="text-led-dark/80 font-semibold">Chantiers</div>
+              <div className="text-lumineuse-dark/80 font-semibold">Chantiers</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-led-dark mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-lumineuse-dark mb-2">
                 <CounterAnimation end={2115} prefix="+" />
               </div>
-              <div className="text-led-dark/80 font-semibold">Clients Satisfaits</div>
+              <div className="text-lumineuse-dark/80 font-semibold">Clients Satisfaits</div>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ function Realisations() {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (
-              <button key={category} onClick={() => setSelectedCategory(category)} className={`px-6 py-3 rounded-full font-semibold transition-all ${selectedCategory === category ? 'bg-yellow-500 text-led-dark shadow-lg' : 'bg-white text-gray-700 hover:bg-gray-100'}`}>{category}</button>
+              <button key={category} onClick={() => setSelectedCategory(category)} className={`px-6 py-3 rounded-full font-semibold transition-all ${selectedCategory === category ? 'bg-yellow-500 text-lumineuse-dark shadow-lg' : 'bg-white text-gray-700 hover:bg-gray-100'}`}>{category}</button>
             ))}
           </div>
 
@@ -118,8 +118,8 @@ function Realisations() {
 
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-led-dark mb-6">Prêt à réaliser votre projet ?</h2>
-          <Button onClick={() => navigate('/contact')} size="lg" className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6">Demander un devis<ArrowRight className="ml-2 w-5 h-5" /></Button>
+          <h2 className="text-3xl md:text-5xl font-bold text-lumineuse-dark mb-6">Prêt à réaliser votre projet ?</h2>
+          <Button onClick={() => navigate('/contact')} size="lg" className="bg-lumineuse-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6">Demander un devis<ArrowRight className="ml-2 w-5 h-5" /></Button>
         </div>
       </section>
     </div>

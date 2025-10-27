@@ -11,7 +11,7 @@ import heroImage2 from '../assets/hero2.webp'
 import heroImage3 from '../assets/hero3.webp'
 import ClientsSlider from '../components/ClientsSlider.jsx'
 import ModelsShowcase from '../components/ModelsShowcase.jsx'
-import enseigneLedImg from '../assets/services/enseigne-led.webp'
+import enseigneLedImg from '../assets/services/enseigne-lumineuse.webp'
 import signaletiqueImg from '../assets/services/signaletique.webp'
 import marquageTextileImg from '../assets/services/marquage-textile.webp'
 import marquageVitrineImg from '../assets/services/marquagevitrine.webp'
@@ -40,7 +40,7 @@ function Home() {
     {
       icon: <MapPin className="w-12 h-12" />,
       title: "Fabrication Française",
-      description: "Toutes nos enseignes et solutions de signalétique sont fabriquées localement en Alsace, dans notre atelier situé à Ostwald, près de Strasbourg. En choisissant LED Alsace, vous soutenez un savoir-faire français et une production responsable, sans sous-traitance à l'étranger. Qualité, traçabilité et réactivité sont au cœur de notre engagement."
+      description: "Toutes nos enseignes et solutions de signalétique sont fabriquées localement en Alsace, dans notre atelier situé à Ostwald, près de Strasbourg. En choisissant Lumineuse Alsace, vous soutenez un savoir-faire français et une production responsable, sans sous-traitance à l'étranger. Qualité, traçabilité et réactivité sont au cœur de notre engagement."
     },
     {
       icon: <Users className="w-12 h-12" />,
@@ -81,25 +81,25 @@ function Home() {
     {
       name: "Responsable Achat",
       company: "E. Leclerc",
-      text: "Nous avons fait appel à LED Alsace pour le remplacement de nos enseignes lumineuses extérieures. Le résultat est impeccable : visibilité parfaite, finitions soignées, et une installation rapide malgré les contraintes techniques de notre site. Mention spéciale à l'équipe pour son professionnalisme et sa capacité à gérer un projet de cette ampleur dans les délais. Nos clients nous repèrent de loin désormais, même de nuit.",
+      text: "Nous avons fait appel à Lumineuse Alsace pour le remplacement de nos enseignes lumineuses extérieures. Le résultat est impeccable : visibilité parfaite, finitions soignées, et une installation rapide malgré les contraintes techniques de notre site. Mention spéciale à l'équipe pour son professionnalisme et sa capacité à gérer un projet de cette ampleur dans les délais. Nos clients nous repèrent de loin désormais, même de nuit.",
       rating: 5
     },
     {
       name: "Responsable RH",
       company: "KS Groupe",
-      text: "Nous cherchions un partenaire réactif et fiable pour floquer nos tenues professionnelles à l'image de notre groupe. LED Alsace a su répondre à nos attentes avec une qualité d'impression irréprochable et une tenue dans le temps qui résiste à nos conditions de travail exigeantes. Livraison rapide, conseils personnalisés et service client au top : nous recommandons vivement.",
+      text: "Nous cherchions un partenaire réactif et fiable pour floquer nos tenues professionnelles à l'image de notre groupe. Lumineuse Alsace a su répondre à nos attentes avec une qualité d'impression irréprochable et une tenue dans le temps qui résiste à nos conditions de travail exigeantes. Livraison rapide, conseils personnalisés et service client au top : nous recommandons vivement.",
       rating: 5
     },
     {
       name: "Chef d'entreprise",
       company: "Finay",
-      text: "Besoin urgent de panneaux pour plusieurs chantiers en cours, LED Alsace a répondu présent. Commande traitée en 48h, visuels conformes, impression nette et matériaux résistants. Le rapport qualité-prix est excellent. C'est rassurant de pouvoir compter sur un prestataire local aussi fiable pour nos besoins en signalétique.",
+      text: "Besoin urgent de panneaux pour plusieurs chantiers en cours, Lumineuse Alsace a répondu présent. Commande traitée en 48h, visuels conformes, impression nette et matériaux résistants. Le rapport qualité-prix est excellent. C'est rassurant de pouvoir compter sur un prestataire local aussi fiable pour nos besoins en signalétique.",
       rating: 5
     },
     {
       name: "Responsable Marketing",
       company: "France Solar",
-      text: "Notre flotte de véhicules avait besoin d'un marquage visible, moderne et cohérent avec notre identité. LED Alsace a su transformer nos utilitaires en véritables supports de communication. Le rendu est dynamique, professionnel et attire clairement l'attention. Installation rapide et finitions impeccables, même sur les surfaces complexes. Une très belle collaboration.",
+      text: "Notre flotte de véhicules avait besoin d'un marquage visible, moderne et cohérent avec notre identité. Lumineuse Alsace a su transformer nos utilitaires en véritables supports de communication. Le rendu est dynamique, professionnel et attire clairement l'attention. Installation rapide et finitions impeccables, même sur les surfaces complexes. Une très belle collaboration.",
       rating: 5
     }
   ]
@@ -118,8 +118,8 @@ function Home() {
     <div className="min-h-screen bg-white">
       <SEO 
         title="Accueil"
-        description="LED Alsace, spécialiste des enseignes LED et de la signalétique en Alsace depuis 2014. Fabrication française à Ostwald près de Strasbourg. Devis gratuit en 24h."
-        keywords="enseigne LED Alsace, signalétique Strasbourg, enseigne lumineuse, marquage véhicule Alsace, impression grand format, LED Alsace, enseigne Ostwald"
+        description="Lumineuse Alsace, spécialiste des enseEnseignes Lumineuses et Signalétique en Alsacece depuis 2014. Fabrication française à Ostwald près de Strasbourg. Devis gratuit en 24h."
+        keywords="enseigne Lumineuse Alsace, signalétique Strasbourg, enseigne lumineuse, marquage véhicule Alsace, impression grand format, Lumineuse Alsace, enseigne Ostwald"
         canonicalUrl="https://www.ledalsace.com"
         structuredData={combinedSchema}
       />
@@ -136,7 +136,7 @@ function Home() {
             >
               <img 
                 src={img} 
-                alt={index === 0 ? "Enseigne LED lumineuse pour commerce en Alsace - LED Alsace" : index === 1 ? "Réalisation signalétique professionnelle Strasbourg" : "Marquage véhicule publicitaire en Alsace"}
+                alt={index === 0 ? "Lumineuse pour commerce en Alsace - LED Alsace" : index === 1 ? "Réalisation signalétique professionnelle Strasbourg" : "Marquage véhicule publicitaire en Alsace"}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
@@ -150,17 +150,17 @@ function Home() {
               <span className="text-yellow-400 font-semibold">✨ Depuis 2014 en Alsace</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Enseignes LED et Signalétique sur Mesure en Alsace
+              Enseignes Lumineuses et Signalétique sur Mesure en Alsace
             </h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              Spécialiste de la conception, fabrication et installation d'enseignes LED lumineuses 
+              Spécialiste de la conception, fabrication et installation d'enseignes Lumineuses 
               à Strasbourg depuis 2014. Fabrication française à Ostwald. Devis gratuit en 24h.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 onClick={scrollToContact}
                 size="lg"
-                className="bg-yellow-500 hover:bg-yellow-600 text-led-dark font-bold text-lg px-8 py-6"
+                className="bg-yellow-500 hover:bg-yellow-600 text-lumineuse-dark font-bold text-lg px-8 py-6"
               >
                 Demander un devis gratuit
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -192,7 +192,7 @@ function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Pourquoi Choisir LED Alsace pour Vos Enseignes LED ?
+           Pourquoi Choisir Lumineuse Alsace pour Vos Enseignes Lumineuses?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Une expertise reconnue et une solution complète pour tous vos projets d'enseignes et de signalétique
@@ -231,10 +231,10 @@ function Home() {
               <span className="text-yellow-700 font-semibold">Nos Solutions</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos Solutions d'Enseignes LED et Signalétique en Alsace
+              Nos Solutions d'Enseignes Lumineuses et Signalétique en Alsace
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              De l'enseigne LED à la signalétique complète, découvrez notre gamme de solutions professionnelles
+              De l'enseigne Lumineuse à la signalétique complète, découvrez notre gamme de solutions professionnelles
             </p>
           </div>
 
@@ -245,18 +245,18 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={enseigneLedImg} 
-                  alt="Enseigne LED lumineuse sur mesure pour commerce - Fabrication LED Alsace" 
+                  alt="Enseignes Lumineuses sur mesure pour commerce - Fabrication Lumineuse Alsace" 
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-led-dark">
+                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-lumineuse-dark">
                   SOLUTION PHARE
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Enseignes Lumineuses</h3>
-                <p className="text-gray-200 mb-4">Enseignes LED sur mesure pour une visibilité maximale jour et nuit</p>
+                <p className="text-gray-200 mb-4">Enseigne Lumineuse sur mesure pour une visibilité maximale jour et nuit</p>
                 <Button 
                   variant="link" 
                   className="text-yellow-400 hover:text-yellow-300 p-0 font-semibold"
@@ -279,7 +279,7 @@ function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-led-dark">
+                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-lumineuse-dark">
                   SOLUTION PHARE
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Signalétique</h3>
@@ -299,14 +299,14 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageTextileImg} 
-                  alt="Marquage textile professionnel et flocage EPI - LED Alsace" 
+                  alt="Marquage textile professionnel et flocage EPI - Lumineuse Alsace" 
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-led-dark">
+                <div className="inline-block mb-2 px-3 py-1 bg-yellow-500 rounded-full text-xs font-bold text-lumineuse-dark">
                   SOLUTION PHARE
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Marquage Textile</h3>
@@ -326,7 +326,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageVitrineImg} 
-                  alt="Marquage vitrine et vitrophanie pour commerce - LED Alsace Strasbourg" 
+                  alt="Marquage vitrine et vitrophanie pour commerce - Lumineuse Alsace Strasbourg" 
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -437,7 +437,7 @@ function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Comment Nous Créons Votre Enseigne LED : 4 Étapes Simples
+              Comment Nous Créons Votre enseigne Lumineuse : 4 Étapes Simples
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Un processus simple et transparent en 4 étapes pour concrétiser votre projet
@@ -477,7 +477,7 @@ function Home() {
               <span className="text-yellow-700 font-semibold">Témoignages</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos Clients Satisfaits : Avis sur Nos Enseignes LED
+              Nos Clients Satisfaits : Avis sur Nos Enseignes Lumineuse
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Découvrez les retours de nos clients satisfaits
@@ -511,8 +511,8 @@ function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-led-dark mb-6">
-            Demandez Votre Devis Gratuit pour une Enseigne LED
+          <h2 className="text-3xl md:text-5xl font-bold text-lumineuse-dark mb-6">
+           Demandez Votre Devis Gratuit pour une Enseigne Lumineuse
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
             Demandez votre devis gratuit et sans engagement. Notre équipe vous répond rapidement.
@@ -521,7 +521,7 @@ function Home() {
             <Button 
               onClick={scrollToContact}
               size="lg"
-              className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
+              className="bg-lumineuse-dark hover:bg-gray-900 text-white font-bold text-lg px-8 py-6"
             >
               Demander un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -529,7 +529,7 @@ function Home() {
             <Button 
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold text-lg px-8 py-6"
+              className="bg-white hover:bg-gray-100 text-lumineuse-dark border-2 border-lumineuse-dark font-bold text-lg px-8 py-6"
               onClick={() => window.location.href = 'tel:0388044534'}
             >
               <svg className="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -41,7 +41,7 @@ function Enseignes() {
     { image: realisation3, title: "Saturn Event", description: "Logo lumineux en relief" },
     { image: realisation4, title: "Saveurs & Saisons", description: "Enseigne restaurant traditionnel" },
     { image: realisation5, title: "One Kebab", description: "Enseigne restauration rapide" },
-    { image: realisation6, title: "Pharmacie", description: "Croix de pharmacie LED" },
+    { image: realisation6, title: "Pharmacie", description: "Croix de pharmacie Lumineuse" },
     { image: realisation7, title: "Love", description: "Enseigne boutique élégante" },
     { image: realisation8, title: "Perkko", description: "Enseigne commerce moderne" }
   ]
@@ -64,27 +64,27 @@ function Enseignes() {
     },
     { 
       title: "Caisson ajouré lumineux", 
-      description: "Caisson avec découpe personnalisée et rétro-éclairage LED pour un effet unique",
+      description: "Caisson avec découpe personnalisée et rétro-éclairage Lumineuse pour un effet unique",
       image: enseigneDoubleface
     },
     { 
-      title: "Néon LED", 
-      description: "Effet néon moderne avec technologie LED économique et personnalisable",
+      title: "Néon Lumineuse", 
+      description: "Effet néon moderne avec technologie Lumineuse économique et personnalisable",
       image: neonLED,
-      link: "/services/neon-led"
+      link: "/services/neon-lumineuse"
     },
     { 
-      title: "Écrans LED grand format", 
+      title: "Écrans Lumineuse grand format", 
       description: "Affichage dynamique haute définition pour communication visuelle impactante",
-      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Ecran+LED",
-      link: "/services/ecrans-led"
+      image: "https://via.placeholder.com/400x300/FFD700/000000?text=Ecran+Lumineuse",
+      link: "/services/ecrans-lumineuse"
     }
   ]
 
   const avantages = [
     { 
       icon: Lightbulb, 
-      title: "Technologie LED", 
+      title: "Technologie Lumineuse", 
       description: "Économie d'énergie jusqu'à 80% par rapport aux enseignes traditionnelles" 
     },
     { 
@@ -105,7 +105,7 @@ function Enseignes() {
     { 
       icon: MapPin, 
       title: "Fabrication locale française", 
-      description: "Toutes nos enseignes et solutions de signalétique sont fabriquées localement en Alsace, dans notre atelier situé à Ostwald, près de Strasbourg. En choisissant LED Alsace, vous soutenez un savoir-faire français et une production responsable, sans sous-traitance à l'étranger. Qualité, traçabilité et réactivité sont au cœur de notre engagement." 
+      description: "Toutes nos enseignes et solutions de signalétique sont fabriquées localement en Alsace, dans notre atelier situé à Ostwald, près de Strasbourg. En choisissant Lumineuse Alsace, vous soutenez un savoir-faire français et une production responsable, sans sous-traitance à l'étranger. Qualité, traçabilité et réactivité sont au cœur de notre engagement." 
     }
   ]
 
@@ -138,8 +138,8 @@ function Enseignes() {
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}
-        title="Enseignes Lumineuses LED"
-        subtitle="Donnez de la visibilité à votre entreprise avec nos enseignes LED sur mesure. Fabrication française, installation professionnelle et garantie longue durée."
+        title="Enseignes Lumineuses Lumineuse"
+        subtitle="Donnez de la visibilité à votre entreprise avec nos enseignes Lumineuse sur mesure. Fabrication française, installation professionnelle et garantie longue durée."
       />
 
       {/* Slider Lettres Boîtier */}
@@ -195,7 +195,7 @@ function Enseignes() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Pourquoi choisir nos enseignes ?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Des solutions d'enseignes LED de qualité supérieure, conçues et fabriquées en France
+              Des solutions d'enseignes Lumineuse de qualité supérieure, conçues et fabriquées en France
             </p>
           </div>
 
@@ -257,7 +257,7 @@ function Enseignes() {
       <section className="py-20 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold text-led-dark mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-lumineuse-dark mb-6">
             Besoin d'une enseigne sur mesure ?
           </h2>
           <p className="text-xl md:text-2xl text-gray-900 mb-10 max-w-3xl mx-auto font-medium">
@@ -267,7 +267,7 @@ function Enseignes() {
             <Button 
               onClick={() => navigate('/contact')} 
               size="lg" 
-              className="bg-led-dark hover:bg-gray-900 text-white font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
+              className="bg-lumineuse-dark hover:bg-gray-900 text-white font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
             >
               Demander un devis
               <ArrowRight className="ml-2 w-6 h-6" />
@@ -275,7 +275,7 @@ function Enseignes() {
             <Button 
               size="lg"
               variant="outline"
-              className="bg-white hover:bg-gray-100 text-led-dark border-2 border-led-dark font-bold text-lg px-10 py-7 rounded-full shadow-xl hover:scale-105 transition-all"
+              className="bg-white hover:bg-gray-100 text-lumineuse-dark border-2 border-lumineuse-dark font-bold text-lg px-10 py-7 rounded-full shadow-xl hover:scale-105 transition-all"
               onClick={() => window.location.href = 'tel:0388044534'}
             >
               <svg className="mr-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -298,12 +298,12 @@ function Enseignes() {
             answer: "Une enseigne lumineuse améliore considérablement la visibilité de votre entreprise, de jour comme de nuit. Dans une région comme le Grand Est, où la luminosité peut varier fortement selon les saisons, elle garantit un repérage optimal en toutes circonstances. Elle attire l'œil des passants, renforce votre image de marque et augmente naturellement le trafic client. C'est un excellent levier de notoriété locale."
           },
           {
-            question: "Quelle est la différence entre une enseigne LED et une enseigne néon ?",
-            answer: "Une enseigne LED utilise des diodes électroluminescentes pour diffuser la lumière, offrant une consommation énergétique très faible, une longue durée de vie et une grande résistance. Le néon, plus traditionnel, propose une lumière plus chaleureuse mais consomme davantage d'énergie, nécessite plus d'entretien et est plus fragile. Pour un usage professionnel, les LEDs sont aujourd'hui privilégiées."
+            question: "Quelle est la différence entre une enseigne Lumineuse et une enseigne néon ?",
+            answer: "Une enseigne Lumineuse utilise des diodes électroluminescentes pour diffuser la lumière, offrant une consommation énergétique très faible, une longue durée de vie et une grande résistance. Le néon, plus traditionnel, propose une lumière plus chaleureuse mais consomme davantage d'énergie, nécessite plus d'entretien et est plus fragile. Pour un usage professionnel, les LEDs sont aujourd'hui privilégiées."
           },
           {
-            question: "Quelle est la durée de vie moyenne d'une enseigne lumineuse LED ?",
-            answer: "Une enseigne LED de qualité professionnelle peut durer entre 30 000 et 50 000 heures d'utilisation, soit environ 8 à 10 ans en usage quotidien. Sa longévité dépend de plusieurs facteurs : qualité des composants, environnement (intempéries, pollution), maintenance, et installation conforme aux normes électriques."
+            question: "Quelle est la durée de vie moyenne d'une enseigne lumineuse Lumineuse ?",
+            answer: "Une enseigne Lumineuse de qualité professionnelle peut durer entre 30 000 et 50 000 heures d'utilisation, soit environ 8 à 10 ans en usage quotidien. Sa longévité dépend de plusieurs facteurs : qualité des composants, environnement (intempéries, pollution), maintenance, et installation conforme aux normes électriques."
           },
           {
             question: "Quelles réglementations s'appliquent aux enseignes lumineuses en Alsace ?",
@@ -311,27 +311,27 @@ function Enseignes() {
           },
           {
             question: "Est-ce qu'une enseigne lumineuse consomme beaucoup d'électricité ?",
-            answer: "Non, pas si elle est équipée de modules LED récents. Une enseigne lumineuse bien conçue consomme en moyenne 80 % d'électricité en moins qu'un éclairage au néon. Elle est donc écologique et économique, notamment si vous optez pour une gestion intelligente de l'allumage (horloge, capteur crépusculaire, etc.)."
+            answer: "Non, pas si elle est équipée de modules Lumineuse récents. Une enseigne lumineuse bien conçue consomme en moyenne 80 % d'électricité en moins qu'un éclairage au néon. Elle est donc écologique et économique, notamment si vous optez pour une gestion intelligente de l'allumage (horloge, capteur crépusculaire, etc.)."
           },
           {
             question: "Combien coûte une enseigne lumineuse sur-mesure pour un commerce ?",
             answer: "Le tarif varie selon la taille, le type d'éclairage (face lumineuse, lettres boîtier, rétro-éclairage…), les matériaux (aluminium, Dibond, PMMA) et les options (détecteurs, variateurs). En général, il faut compter entre 900 € et 5 000 € HT pour une enseigne lumineuse professionnelle, pose comprise. Un devis personnalisé est indispensable."
           },
           {
-            question: "LED ALSACE peut-elle se charger des démarches administratives pour mon enseigne lumineuse ?",
-            answer: "Oui. Chez LED ALSACE, nous vous accompagnons dans la constitution du dossier administratif (CERFA, plan de masse, visuel en situation, etc.) et la demande d'autorisation auprès de la mairie. Nous connaissons bien les particularités des RLP du Grand Est et facilitons vos démarches."
+            question: "Lumineuse ALSACE peut-elle se charger des démarches administratives pour mon enseigne lumineuse ?",
+            answer: "Oui. Chez Lumineuse ALSACE, nous vous accompagnons dans la constitution du dossier administratif (CERFA, plan de masse, visuel en situation, etc.) et la demande d'autorisation auprès de la mairie. Nous connaissons bien les particularités des RLP du Grand Est et facilitons vos démarches."
           },
           {
             question: "Est-il possible d'installer une enseigne lumineuse sur un bâtiment classé ou dans un secteur sauvegardé ?",
-            answer: "Oui, mais cela nécessite une autorisation préalable de l'Architecte des Bâtiments de France (ABF). LED ALSACE conçoit des solutions sur-mesure qui respectent l'esthétique du bâti historique, tout en assurant une visibilité optimale. Un dossier spécifique est à prévoir, et nous vous assistons dans sa préparation."
+            answer: "Oui, mais cela nécessite une autorisation préalable de l'Architecte des Bâtiments de France (ABF). Lumineuse ALSACE conçoit des solutions sur-mesure qui respectent l'esthétique du bâti historique, tout en assurant une visibilité optimale. Un dossier spécifique est à prévoir, et nous vous assistons dans sa préparation."
           },
           {
             question: "Peut-on éteindre automatiquement une enseigne lumineuse la nuit ?",
             answer: "Oui, grâce à un interrupteur crépusculaire ou une horloge astronomique, votre enseigne peut s'allumer et s'éteindre automatiquement en fonction de la lumière naturelle ou d'horaires précis. Cela permet de respecter les réglementations locales tout en optimisant la consommation énergétique."
           },
           {
-            question: "Quelles sont les étapes de fabrication d'une enseigne lumineuse chez LED ALSACE ?",
-            answer: "Chez LED ALSACE, nous suivons un processus rigoureux : 1. Analyse de vos besoins et contraintes (PLU, RLP) 2. Création du visuel et modélisation 3D 3. Constitution du dossier mairie 4. Fabrication en atelier (châssis, modules LED, façades) 5. Installation par nos équipes agréées 6. Suivi et maintenance. Ce processus garantit un rendu professionnel, durable et conforme aux normes."
+            question: "Quelles sont les étapes de fabrication d'une enseigne lumineuse chez Lumineuse ALSACE ?",
+            answer: "Chez Lumineuse ALSACE, nous suivons un processus rigoureux : 1. Analyse de vos besoins et contraintes (PLU, RLP) 2. Création du visuel et modélisation 3D 3. Constitution du dossier mairie 4. Fabrication en atelier (châssis, modules Lumineuse, façades) 5. Installation par nos équipes agréées 6. Suivi et maintenance. Ce processus garantit un rendu professionnel, durable et conforme aux normes."
           }
         ]}
       />
