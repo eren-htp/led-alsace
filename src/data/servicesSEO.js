@@ -5,11 +5,11 @@
 
 const servicesSEOConfig = {
   enseignes: {
-    title: "Enseignes Lumineuse Lumineuses sur Mesure en Alsace",
+    title: "Enseignes Lumineuses sur Mesure en Alsace | LED Alsace",
     description: "Conception, fabrication et installation d'enseignes Lumineuse lumineuses sur mesure pour commerces et entreprises en Alsace. Devis gratuit sous 24h.",
     keywords: "enseigne Lumineuse, enseigne lumineuse Alsace, enseigne Lumineuse Strasbourg, fabrication enseigne, enseigne sur mesure",
     canonicalUrl: "https://www.ledalsace.com/services/enseignes",
-    h1: "Enseignes Lumineuse Lumineuses sur Mesure en Alsace",
+    h1: "Enseignes Lumineuses sur Mesure en Alsace",
     breadcrumb: [
       { name: "Services", url: "/services" },
       { name: "Enseignes Lumineuse", url: "/services/enseignes" }

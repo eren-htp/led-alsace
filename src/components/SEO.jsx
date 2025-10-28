@@ -13,11 +13,11 @@ function SEO({
   canonicalUrl,
   structuredData 
 }) {
-  const siteName = 'Lumineuse Alsace'
+  const siteName = 'LED Alsace'
   const defaultImage = 'https://www.ledalsace.com/logo-lumineuse-alsace.jpg'
   const baseUrl = 'https://www.ledalsace.com'
   
-  const fullTitle = title ? `${title} | ${siteName}` : `${siteName} - Spécialiste Enseigne Lumineuse & Signalétique en Alsace`
+  const fullTitle = title ? `${title} | ${siteName}` : `${siteName} - Enseigne & Signalétique en Alsace`
   const finalDescription = description || 'Lumineuse Alsace, votre partenaire pour enseignes Lumineuses, signalétique et marquage véhicule en Alsace. Plus de 10 ans d\'expérience. Devis gratuit en 24h.'
   const finalImage = ogImage || defaultImage
   const finalCanonical = canonicalUrl || baseUrl
