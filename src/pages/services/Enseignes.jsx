@@ -138,7 +138,7 @@ function Enseignes() {
       {/* Hero Slider */}
       <HeroSlider 
         images={heroImages}
-        title="Enseignes Lumineuses Lumineuse"
+        title="Enseignes Lumineuses"
         subtitle="Donnez de la visibilité à votre entreprise avec nos enseignes Lumineuse sur mesure. Fabrication française, installation professionnelle et garantie longue durée."
       />
 
