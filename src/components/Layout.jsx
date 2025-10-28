@@ -5,8 +5,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { Menu, X, Phone, Mail, MapPin, ChevronDown, Instagram, Linkedin } from 'lucide-react'
 import CallbackButton from './CallbackButton.jsx'
 import SnapchatIcon from './SnapchatIcon.jsx'
-import logoLedAlsace from '@/assets/logo-lumineuse-alsace.webp'
-import logoIcon from '@/assets/logo-lumineuse-alsace-icon.webp'
+import logoLedAlsace from '@/assets/logoledalsace1.png'
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -108,9 +107,8 @@ function Layout({ children }) {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
               {/* Logo */}
-              <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-                <img src={logoIcon} alt="Lumineuse ALSACE" className="h-16 w-16" />
-                <span className="text-2xl font-bold text-gray-900">Lumineuse ALSACE</span>
+              <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+                <img src={logoLedAlsace} alt="LED ALSACE - Enseigne & Signalétique" className="h-20" />
               </Link>
 
               {/* Desktop Navigation */}
@@ -325,8 +323,8 @@ function Layout({ children }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             {/* Logo & Description */}
             <div className="col-span-1 md:col-span-1">
-              <div className="flex items-center space-x-3 mb-4">
-                <img src={logoIcon} alt="Lumineuse ALSACE" className="h-16 w-16" />
+              <div className="flex items-center mb-4">
+                <img src={logoLedAlsace} alt="LED ALSACE - Enseigne & Signalétique" className="h-16" />
               </div>
               <p className="text-gray-400 text-sm mb-4">
                 Votre partenaire de confiance pour tous vos projets d'enseignes Lumineuse, signalétique 
