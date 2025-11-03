@@ -29,26 +29,6 @@ function Signaletique() {
       image: headerSignaletique,
       title: "Signalétique professionnelle",
       description: "Solutions complètes de signalétique intérieure et extérieure"
-    },
-    { 
-      image: realisation1,
-      title: "Procontrole",
-      description: "Totem signalétique pour centre de contrôle technique"
-    },
-    { 
-      image: realisation2,
-      title: "Le Saint Etienne",
-      description: "Stop trottoir avec menu restaurant"
-    },
-    { 
-      image: realisation3,
-      title: "Club Alpin de Strasbourg",
-      description: "Plaque signalétique en dibond"
-    },
-    { 
-      image: realisation4,
-      title: "Sachsen Küchen",
-      description: "Enseigne toile tendue lumineuse salon professionnel"
     }
   ]
 
