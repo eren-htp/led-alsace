@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { ChevronLeft, ChevronRight, Sun, Moon } from 'lucide-react'
+import cataloguePages, { CATALOGUE_PDF_URL } from '../data/cataloguePages.js'
 
 // Import des images jour/nuit pour chaque modèle
 import G01Jour from '../assets/lettres-boitier/G01gunduz.webp'
@@ -283,6 +284,18 @@ function LettresBoitierSlider() {
     setCurrentIndex(index)
   }
 
+  const openFicheTechnique = () => {
+    const modelCode = currentModel.code
+    const pageInfo = cataloguePages[modelCode]
+    if (pageInfo) {
+      // Ouvrir le PDF à la page correspondante
+      window.open(`${CATALOGUE_PDF_URL}#page=${pageInfo.page}`, '_blank')
+    } else {
+      // Si pas de page spécifique, ouvrir le catalogue complet
+      window.open(CATALOGUE_PDF_URL, '_blank')
+    }
+  }
+
   return (
     <div className={`py-12 ${isNight ? 'bg-gray-900' : 'bg-gray-100'}`}>
       <div className="max-w-6xl mx-auto">
@@ -352,7 +365,7 @@ function LettresBoitierSlider() {
               <Button size="lg" className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-bold">
                 Demander un devis
               </Button>
-              <Button size="lg" variant="outline" className={`flex-1 font-bold ${isNight ? 'border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900' : 'border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white'}`}>
+              <Button onClick={openFicheTechnique} size="lg" variant="outline" className={`flex-1 font-bold ${isNight ? 'border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900' : 'border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white'}`}>
                 Voir la fiche technique
               </Button>
             </div>
