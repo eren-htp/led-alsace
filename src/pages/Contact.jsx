@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button.jsx'
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from 'lucide-react'
 import { useState } from 'react'
 import SEO from '../components/SEO.jsx'
 import { organizationSchema } from '../utils/structuredData.js'
@@ -90,7 +90,7 @@ function Contact() {
       {/* Contact Cards Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-16">
             <a 
               href="tel:0388044534"
               className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-xl hover:from-yellow-100 hover:to-yellow-50 border-2 border-yellow-200 hover:border-yellow-400 transition-all duration-300 text-center group transform hover:-translate-y-2 hover:shadow-xl"
@@ -126,6 +126,18 @@ function Contact() {
                 67540 Ostwald<br />
                 France
               </p>
+            </a>
+
+            <a 
+              href="https://wa.me/33769308058" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl hover:from-green-100 hover:to-green-50 border-2 border-green-200 hover:border-green-400 transition-all duration-300 text-center group transform hover:-translate-y-2 hover:shadow-xl"
+            >
+              <MessageCircle className="w-16 h-16 text-green-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2">WhatsApp</h3>
+              <p className="text-gray-600 mb-3">Contactez-nous rapidement</p>
+              <p className="text-2xl font-bold text-green-600">+33 7 69 30 80 58</p>
             </a>
           </div>
 
@@ -209,6 +221,7 @@ function Contact() {
                     <option>Signalétique</option>
                     <option>Création graphique</option>
                     <option>Impression grand format</option>
+                    <option>Vêtement</option>
                     <option>Découpe CNC</option>
                     <option>Autre</option>
                   </select>
