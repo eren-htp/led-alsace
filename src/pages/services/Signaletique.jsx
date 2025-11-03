@@ -7,6 +7,7 @@ import { ArrowRight, ChevronLeft, ChevronRight, Check, Star, Package, Building2,
 import { useNavigate } from 'react-router-dom'
 import HeroSlider from '../../components/HeroSlider'
 import signaletiqueImg from '../../assets/services/signaletique.webp'
+import headerSignaletique from '../../assets/header-signaletique.jpg'
 import realisation1 from '../../assets/signaletique/ok-pro-control-900x1200.webp'
 import realisation2 from '../../assets/signaletique/IMG_1726-900x1200.webp'
 import realisation3 from '../../assets/signaletique/Club-alpin-site-internet_Plan-de-travail-1-1024x1024.webp'
@@ -24,6 +25,11 @@ function Signaletique() {
 
   // Réalisations pour le slider
   const realisations = [
+    { 
+      image: headerSignaletique,
+      title: "Signalétique professionnelle",
+      description: "Solutions complètes de signalétique intérieure et extérieure"
+    },
     { 
       image: realisation1,
       title: "Procontrole",
