@@ -40,7 +40,7 @@ function Home() {
     {
       icon: <MapPin className="w-12 h-12" />,
       title: "Fabrication Française",
-      description: "Toutes nos enseignes et solutions de signalétique sont fabriquées localement en Alsace, dans notre atelier situé à Ostwald, près de Strasbourg. En choisissant LED Alsace, vous soutenez un savoir-faire français et une production responsable, sans sous-traitance à l'étranger. Qualité, traçabilité et réactivité sont au cœur de notre engagement."
+      description: "LED Alsace dispose de deux sites de production : notre atelier principal en Alsace à Ostwald, près de Strasbourg, et notre unité de fabrication en Turquie. Cette double implantation nous permet de combiner savoir-faire européen et capacité de production élargie, tout en maintenant des standards de qualité élevés. Qualité, traçabilité et réactivité sont au cœur de notre engagement."
     },
     {
       icon: <Users className="w-12 h-12" />,
