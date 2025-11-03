@@ -143,12 +143,20 @@ function ModelsShowcase() {
             <p className={`mb-6 text-lg transition-colors duration-500 ${globalNightMode ? 'text-gray-300' : 'text-gray-600'}`}>
               Tous nos modèles sont personnalisables en taille, couleur et finition
             </p>
-            <a 
-              href="/contact" 
-              className="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold text-lg px-10 py-4 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
-            >
-              Je veux une enseigne
-            </a>
+            <div className="flex justify-center space-x-4">
+              <a 
+                href="/contact" 
+                className="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold text-lg px-10 py-4 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+              >
+                Je veux une enseigne
+              </a>
+              <a 
+                href="/services/enseignes" 
+                className={`inline-block border-2 border-yellow-500 text-lg px-10 py-4 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer ${globalNightMode ? 'text-white hover:bg-yellow-500 hover:text-gray-900' : 'text-gray-900 hover:bg-yellow-500'}`}
+              >
+                Voir tous les modèles
+              </a>
+            </div>
           </div>
         </div>
       </div>
