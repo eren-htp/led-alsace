@@ -3,15 +3,9 @@ import SEO from '../../components/SEO.jsx'
 import Breadcrumb from '../../components/Breadcrumb.jsx'
 import { getBreadcrumbSchema, getFAQSchema } from '../../utils/structuredData.js'
 import { Button } from '@/components/ui/button.jsx'
-import { ArrowRight, ChevronLeft, ChevronRight, Check, Star, Package, Building2, Car, SignpostBig, AlertTriangle, Image as ImageIcon } from 'lucide-react'
+import { ArrowRight, Check, Star, Package, Building2, Car, SignpostBig, AlertTriangle, Image as ImageIcon } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import HeroSlider from '../../components/HeroSlider'
-import signaletiqueImg from '../../assets/services/signaletique.webp'
 import headerSignaletique from '../../assets/header-signaletique.jpg'
-import realisation1 from '../../assets/signaletique/ok-pro-control-900x1200.webp'
-import realisation2 from '../../assets/signaletique/IMG_1726-900x1200.webp'
-import realisation3 from '../../assets/signaletique/Club-alpin-site-internet_Plan-de-travail-1-1024x1024.webp'
-import realisation4 from '../../assets/signaletique/enseigne-toile-tendue-lumineuse-salon-1200x1200.webp'
 
 import servicesSEOConfig from '../../data/servicesSEO.js'
 function Signaletique() {
@@ -21,36 +15,6 @@ function Signaletique() {
   const faqs = seoData.faqs
 
   const navigate = useNavigate()
-  const [currentSlide, setCurrentSlide] = useState(0)
-
-  // Réalisations pour le slider
-  const realisations = [
-    { 
-      image: headerSignaletique,
-      title: "Signalétique professionnelle",
-      description: "Solutions complètes de signalétique intérieure et extérieure"
-    },
-    { 
-      image: realisation1,
-      title: "Procontrole",
-      description: "Totem signalétique pour centre de contrôle technique"
-    },
-    { 
-      image: realisation2,
-      title: "Le Saint Etienne",
-      description: "Stop trottoir avec menu restaurant"
-    },
-    { 
-      image: realisation3,
-      title: "Club Alpin de Strasbourg",
-      description: "Plaque signalétique en dibond"
-    },
-    { 
-      image: realisation4,
-      title: "Sachsen Küchen",
-      description: "Enseigne toile tendue lumineuse salon professionnel"
-    }
-  ]
 
   const solutions = [
     {
@@ -92,14 +56,6 @@ function Signaletique() {
     }
   ]
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % realisations.length)
-  }
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + realisations.length) % realisations.length)
-  }
-
   return (
     <div className="min-h-screen bg-white">
       <SEO 
@@ -114,89 +70,14 @@ function Signaletique() {
       />
       <Breadcrumb items={breadcrumbItems} />
 
-      {/* Hero Section avec Slider */}
-      <section className="relative pt-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmQ3MDAiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnptMC0ydi0yIDJ6bTAtMnYtMiAyem0wLTJ2LTIgMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
-        
-        {/* Slider */}
+      {/* Hero Section avec Image Fixe */}
+      <section className="relative pt-20 bg-gray-100 overflow-hidden">
         <div className="relative h-[500px] md:h-[600px]">
-          {realisations.map((realisation, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-700 ${
-                index === currentSlide ? 'opacity-100' : 'opacity-0'
-              }`}
-            >
-              <img 
-                src={realisation.image} 
-                alt={realisation.title}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
-            </div>
-          ))}
-
-          {/* Navigation Arrows */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-8 md:left-16 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-50 cursor-pointer"
-            aria-label="Image précédente"
-            type="button"
-          >
-            <ChevronLeft className="w-6 h-6 text-white" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-4 rounded-full transition-all z-50 cursor-pointer"
-            aria-label="Image suivante"
-            type="button"
-          >
-            <ChevronRight className="w-6 h-6 text-white" />
-          </button>
-
-          {/* Content Overlay */}
-          <div className="absolute inset-0 flex items-end z-10">
-            <div className="container mx-auto px-4 pb-16">
-              <div className="max-w-4xl">
-                <div className="inline-flex items-center gap-2 mb-4 px-6 py-3 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
-                  <Star className="w-5 h-5 text-yellow-400" />
-                  <span className="text-yellow-400 font-semibold">Solutions de Signalétique</span>
-                </div>
-                <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                  Signalétique & PLV
-                </h1>
-                <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl">
-                  Nous vous proposons les meilleures options afin de vous donner une visibilité optimale. 
-                  Totem, panneau publicitaire, bâche, stop trottoir et autres réalisés sur mesure.
-                </p>
-                <Button 
-                  onClick={() => navigate('/contact')}
-                  size="lg"
-                  className="bg-yellow-400 hover:bg-yellow-500 text-lumineuse-dark font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:scale-105 transition-all"
-                >
-                  J'ai besoin de signalétique
-                  <ArrowRight className="ml-2 w-6 h-6" />
-                </Button>
-              </div>
-            </div>
-          </div>
-
-          {/* Slide Indicators */}
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-50">
-            {realisations.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                type="button"
-                className={`w-3 h-3 rounded-full transition-all cursor-pointer ${
-                  index === currentSlide 
-                    ? 'bg-yellow-400 w-8' 
-                    : 'bg-white/50 hover:bg-white/70'
-                }`}
-                aria-label={`Aller à l'image ${index + 1}`}
-              />
-            ))}
-          </div>
+          <img 
+            src={headerSignaletique} 
+            alt="Signalétique professionnelle - LED Alsace"
+            className="w-full h-full object-contain"
+          />
         </div>
       </section>
 
