@@ -150,7 +150,7 @@ function Home() {
               <span className="text-yellow-400 font-semibold">✨ Depuis 2014 en Alsace</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Enseignes Lumineuses et Signalétique sur Mesure en Alsace
+              Enseignes et Signalétique sur Mesure en Alsace
             </h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
               Spécialiste de la conception, fabrication et installation d'enseignes Lumineuses 
