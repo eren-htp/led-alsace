@@ -20,7 +20,7 @@ function RealisationDetail() {
       <SEO 
         title={`${realisation.title} - Réalisation`}
         description={realisation.detailedDescription || realisation.description}
-        keywords={`${realisation.title}, ${realisation.category}, réalisation Lumineuse Alsace, enseigne ${realisation.client.location}`}
+        keywords={`${realisation.title}, ${realisation.category}, réalisation LED Alsace, enseigne ${realisation.client.location}`}
         canonicalUrl={`https://www.ledalsace.com/realisations/${realisation.slug}`}
       />
 

@@ -68,8 +68,8 @@ function Contact() {
     <div className="min-h-screen bg-white">
       <SEO 
         title="Contact"
-        description="Contactez Lumineuse Alsace pour votre projet d'enseigne Lumineuse ou de signalétique. Devis gratuit en 24h. Atelier à Ostwald près de Strasbourg. Tél: 03 88 04 45 34"
-        keywords="contact Lumineuse Alsace, devis enseigne Lumineuse, contact Strasbourg, demande devis signalétique, enseigne Ostwald"
+        description="Contactez LED Alsace pour votre projet d'enseigne Lumineuse ou de signalétique. Devis gratuit en 24h. Atelier à Ostwald près de Strasbourg. Tél: 03 88 04 45 34"
+        keywords="contact LED Alsace, devis enseigne Lumineuse, contact Strasbourg, demande devis signalétique, enseigne Ostwald"
         canonicalUrl="https://www.ledalsace.com/contact"
         structuredData={organizationSchema}
       />
@@ -371,7 +371,7 @@ function Contact() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localisation Lumineuse Alsace"
+                title="Localisation LED Alsace"
               />
             </div>
 

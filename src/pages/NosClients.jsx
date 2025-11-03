@@ -45,25 +45,25 @@ function NosClients() {
     {
       name: "Responsable Achat",
       company: "E. Leclerc",
-      text: "Nous avons fait appel à Lumineuse Alsace pour le remplacement de nos enseignes lumineuses extérieures. Le résultat est impeccable : visibilité parfaite, finitions soignées, et une installation rapide malgré les contraintes techniques de notre site. Mention spéciale à l'équipe pour son professionnalisme et sa capacité à gérer un projet de cette ampleur dans les délais. Nos clients nous repèrent de loin désormais, même de nuit.",
+      text: "Nous avons fait appel à LED Alsace pour le remplacement de nos enseignes lumineuses extérieures. Le résultat est impeccable : visibilité parfaite, finitions soignées, et une installation rapide malgré les contraintes techniques de notre site. Mention spéciale à l'équipe pour son professionnalisme et sa capacité à gérer un projet de cette ampleur dans les délais. Nos clients nous repèrent de loin désormais, même de nuit.",
       rating: 5
     },
     {
       name: "Responsable RH",
       company: "KS Groupe",
-      text: "Nous cherchions un partenaire réactif et fiable pour floquer nos tenues professionnelles à l'image de notre groupe. Lumineuse Alsace a su répondre à nos attentes avec une qualité d'impression irréprochable et une tenue dans le temps qui résiste à nos conditions de travail exigeantes. Livraison rapide, conseils personnalisés et service client au top : nous recommandons vivement.",
+      text: "Nous cherchions un partenaire réactif et fiable pour floquer nos tenues professionnelles à l'image de notre groupe. LED Alsace a su répondre à nos attentes avec une qualité d'impression irréprochable et une tenue dans le temps qui résiste à nos conditions de travail exigeantes. Livraison rapide, conseils personnalisés et service client au top : nous recommandons vivement.",
       rating: 5
     },
     {
       name: "Chef d'entreprise",
       company: "Finay",
-      text: "Besoin urgent de panneaux pour plusieurs chantiers en cours, Lumineuse Alsace a répondu présent. Commande traitée en 48h, visuels conformes, impression nette et matériaux résistants. Le rapport qualité-prix est excellent. C'est rassurant de pouvoir compter sur un prestataire local aussi fiable pour nos besoins en signalétique.",
+      text: "Besoin urgent de panneaux pour plusieurs chantiers en cours, LED Alsace a répondu présent. Commande traitée en 48h, visuels conformes, impression nette et matériaux résistants. Le rapport qualité-prix est excellent. C'est rassurant de pouvoir compter sur un prestataire local aussi fiable pour nos besoins en signalétique.",
       rating: 5
     },
     {
       name: "Responsable Marketing",
       company: "France Solar",
-      text: "Notre flotte de véhicules avait besoin d'un marquage visible, moderne et cohérent avec notre identité. Lumineuse Alsace a su transformer nos utilitaires en véritables supports de communication. Le rendu est dynamique, professionnel et attire clairement l'attention. Installation rapide et finitions impeccables, même sur les surfaces complexes. Une très belle collaboration.",
+      text: "Notre flotte de véhicules avait besoin d'un marquage visible, moderne et cohérent avec notre identité. LED Alsace a su transformer nos utilitaires en véritables supports de communication. Le rendu est dynamique, professionnel et attire clairement l'attention. Installation rapide et finitions impeccables, même sur les surfaces complexes. Une très belle collaboration.",
       rating: 5
     },
     {
@@ -75,19 +75,19 @@ function NosClients() {
     {
       name: "Kevin Schutz",
       company: "Client",
-      text: "Société à l'écoute du client. Très professionnel et très qualitatif. Je ne regrette pas d'avoir choisis Lumineuse Alsace pour notre collaboration. N'hésitez pas à les contacter ils sont diversifiés. Stickers, enseignes, adhésifs personnalisé et bien d'autres choses.",
+      text: "Société à l'écoute du client. Très professionnel et très qualitatif. Je ne regrette pas d'avoir choisis LED Alsace pour notre collaboration. N'hésitez pas à les contacter ils sont diversifiés. Stickers, enseignes, adhésifs personnalisé et bien d'autres choses.",
       rating: 5
     },
     {
       name: "Centre Kalem",
       company: "Centre de formation",
-      text: "J'ai eu affaire plusieurs prestations j'ai toujours été ravi du résultat, une équipe formidable à l'écoute. Travail rapide, efficace surtout de qualité ! Je recommande Lumineuse Alsace. Fière de notre enseigne et des créations publicitaires réalisés par Lumineuse Alsace.",
+      text: "J'ai eu affaire plusieurs prestations j'ai toujours été ravi du résultat, une équipe formidable à l'écoute. Travail rapide, efficace surtout de qualité ! Je recommande LED Alsace. Fière de notre enseigne et des créations publicitaires réalisés par LED Alsace.",
       rating: 5
     },
     {
       name: "Mustafa Raman",
       company: "Client",
-      text: "Lumineuse Alsace, une équipe de professionnels à l'écoute des besoins et attentes de leurs clients. Jamais déçu au niveau de la réalisation et du travail. Et au niveau des devis aucune surprise. Vraiment je vous conseille, si vous voulez sortir du lot aussi bien par l'enseigne, l'habillage des vitrines, la tenue des salariés par le flocage des tee-shirts, blousons, blouses. C'est vraiment l'entreprise qu'il faut pour sa visibilité.",
+      text: "LED Alsace, une équipe de professionnels à l'écoute des besoins et attentes de leurs clients. Jamais déçu au niveau de la réalisation et du travail. Et au niveau des devis aucune surprise. Vraiment je vous conseille, si vous voulez sortir du lot aussi bien par l'enseigne, l'habillage des vitrines, la tenue des salariés par le flocage des tee-shirts, blousons, blouses. C'est vraiment l'entreprise qu'il faut pour sa visibilité.",
       rating: 5
     }
   ]
@@ -140,7 +140,7 @@ function NosClients() {
       <SEO 
         title="Nos Clients"
         description="Ils nous font confiance : E. Leclerc, SNCF, Citroën, Renault, Métro, Sofitel... Découvrez les témoignages de nos clients satisfaits en Alsace et leurs avis sur nos enseignes Lumineuse."
-        keywords="clients Lumineuse Alsace, témoignages, avis clients, références, E. Leclerc, SNCF, satisfaction client"
+        keywords="clients LED Alsace, témoignages, avis clients, références, E. Leclerc, SNCF, satisfaction client"
         canonicalUrl="https://www.ledalsace.com/nos-clients"
         structuredData={getReviewSchema(reviewsData)}
       />
@@ -234,7 +234,7 @@ function NosClients() {
               Nos Références
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-              Ils ont choisi Lumineuse Alsace pour améliorer leur visibilité
+              Ils ont choisi LED Alsace pour améliorer leur visibilité
             </p>
             
             {/* Filtres par catégorie */}
@@ -285,7 +285,7 @@ function NosClients() {
             Rejoignez nos clients satisfaits
           </h2>
           <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
-            Faites confiance à Lumineuse Alsace pour votre projet
+            Faites confiance à LED Alsace pour votre projet
           </p>
           <Button 
             onClick={() => navigate('/contact')}

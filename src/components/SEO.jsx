@@ -18,7 +18,7 @@ function SEO({
   const baseUrl = 'https://www.ledalsace.com'
   
   const fullTitle = title ? `${title} | ${siteName}` : `${siteName} - Enseigne & Signalétique en Alsace`
-  const finalDescription = description || 'Lumineuse Alsace, votre partenaire pour enseignes Lumineuses, signalétique et marquage véhicule en Alsace. Plus de 10 ans d\'expérience. Devis gratuit en 24h.'
+  const finalDescription = description || 'LED Alsace, votre partenaire pour enseignes Lumineuses, signalétique et marquage véhicule en Alsace. Plus de 10 ans d\'expérience. Devis gratuit en 24h.'
   const finalImage = ogImage || defaultImage
   const finalCanonical = canonicalUrl || baseUrl
 
@@ -45,7 +45,7 @@ function SEO({
     if (keywords) updateMetaTag('keywords', keywords)
     updateMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
     updateMetaTag('googlebot', 'index, follow')
-    updateMetaTag('author', 'Lumineuse Alsace')
+    updateMetaTag('author', 'LED Alsace')
     updateMetaTag('geo.region', 'FR-67')
     updateMetaTag('geo.placename', 'Ostwald, Strasbourg')
     updateMetaTag('geo.position', '48.5434;7.7521')

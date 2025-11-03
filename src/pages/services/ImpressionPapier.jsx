@@ -117,7 +117,7 @@ function ImpressionPapier() {
       {/* Avantages */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Pourquoi choisir Lumineuse Alsace ?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Pourquoi choisir LED Alsace ?</h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             {[
               { icon: Printer, title: "Petites et grandes séries", description: "À partir de 10 exemplaires" },

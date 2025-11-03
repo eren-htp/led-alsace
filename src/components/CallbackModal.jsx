@@ -23,7 +23,7 @@ function CallbackModal({ isOpen, onClose }) {
           nom: formData.nom,
           telephone: formData.telephone,
           _subject: `🔔 Demande de rappel - ${formData.nom}`,
-          message: `Nouvelle demande de rappel depuis le site Lumineuse Alsace\n\nNom: ${formData.nom}\nTéléphone: ${formData.telephone}\n\nDate: ${new Date().toLocaleString('fr-FR')}`
+          message: `Nouvelle demande de rappel depuis le site LED Alsace\n\nNom: ${formData.nom}\nTéléphone: ${formData.telephone}\n\nDate: ${new Date().toLocaleString('fr-FR')}`
         }),
       })
 

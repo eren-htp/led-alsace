@@ -140,7 +140,7 @@ const servicesSEOConfig = {
   neonLED: {
     title: "Néon Lumineuse Personnalisé en Alsace - Lettres Lumineuses",
     description: "Fabrication de néons Lumineuse personnalisés en Alsace : lettres lumineuses, logos Lumineuse, enseignes néon. Design moderne, consommation réduite.",
-    keywords: "néon Lumineuse Alsace, lettres lumineuses, enseigne néon Lumineuse, néon personnalisé, néon Lumineuse Strasbourg",
+    keywords: "néon LED Alsace, lettres lumineuses, enseigne néon Lumineuse, néon personnalisé, néon Lumineuse Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/neon-lumineuse",
     h1: "Néon Lumineuse Personnalisé et Lettres Lumineuses en Alsace",
     breadcrumb: [
@@ -330,7 +330,7 @@ const servicesSEOConfig = {
   ecransLED: {
     title: "Écrans Lumineuse Publicitaires en Alsace",
     description: "Installation d'écrans Lumineuse publicitaires en Alsace : affichage dynamique extérieur et intérieur. Écrans géants Lumineuse pour commerces et événements.",
-    keywords: "écran Lumineuse Alsace, affichage dynamique, écran publicitaire, écran géant Lumineuse, digital signage Strasbourg",
+    keywords: "écran LED Alsace, affichage dynamique, écran publicitaire, écran géant Lumineuse, digital signage Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/ecrans-lumineuse",
     h1: "Écrans Lumineuse Publicitaires et Affichage Dynamique en Alsace",
     breadcrumb: [

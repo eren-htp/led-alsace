@@ -22,7 +22,7 @@ export const realisationsData = [
     category: "Enseignes Lumineuse",
     image: realisation1,
     description: "Enseigne lumineuse restaurant",
-    alt: "Enseigne Lumineuse The Little Red Door restaurant Strasbourg - Réalisation Lumineuse Alsace",
+    alt: "Enseigne Lumineuse The Little Red Door restaurant Strasbourg - Réalisation LED Alsace",
     detailedDescription: "Réalisation d'une enseigne lumineuse sur mesure pour le restaurant The Little Red Door à Strasbourg. Lettres boîtier en acier inoxydable avec éclairage LED haute performance pour une visibilité optimale jour et nuit. Design moderne et élégant qui reflète l'identité du restaurant.",
     client: {
       name: "The Little Red Door",
@@ -70,7 +70,7 @@ export const realisationsData = [
     category: "Enseignes Lumineuse",
     image: realisation3,
     description: "Enseigne restaurant traditionnel",
-    alt: "Enseigne Lumineuse Saveurs & Saisons restaurant Alsace - Fabrication Lumineuse Alsace",
+    alt: "Enseigne Lumineuse Saveurs & Saisons restaurant Alsace - Fabrication LED Alsace",
     detailedDescription: "Enseigne lumineuse pour le restaurant Saveurs & Saisons. Design traditionnel avec lettres boîtier lumineuses et caisson lumineux. Fabrication 100% française dans notre atelier à Ostwald.",
     client: {
       name: "Saveurs & Saisons",
@@ -94,7 +94,7 @@ export const realisationsData = [
     category: "Enseignes Lumineuse",
     image: realisation4,
     description: "Enseigne lumineuse commerce",
-    alt: "Enseigne lumineuse Pro-Inter commerce Strasbourg - Réalisation Lumineuse Alsace",
+    alt: "Enseigne lumineuse Pro-Inter commerce Strasbourg - Réalisation LED Alsace",
     detailedDescription: "Enseigne lumineuse professionnelle pour Pro-Inter. Lettres boîtier avec éclairage frontal LED pour une visibilité maximale. Installation rapide et conforme aux normes en vigueur.",
     client: {
       name: "Pro-Inter",
@@ -118,7 +118,7 @@ export const realisationsData = [
     category: "Signalétique",
     image: realisation5,
     description: "Signalétique extérieure",
-    alt: "Signalétique extérieure Casa Julia - Totem et panneaux Lumineuse Alsace",
+    alt: "Signalétique extérieure Casa Julia - Totem et panneaux LED Alsace",
     detailedDescription: "Solution complète de signalétique extérieure pour Casa Julia. Totem lumineux et panneaux directionnels pour une identification claire et professionnelle. Matériaux résistants aux UV et aux intempéries.",
     client: {
       name: "Casa Julia",
@@ -166,7 +166,7 @@ export const realisationsData = [
     category: "Enseignes Lumineuse",
     image: realisation7,
     description: "Enseigne garage automobile",
-    alt: "Enseigne Lumineuse MJR Pièces Auto garage Strasbourg - Réalisation Lumineuse Alsace",
+    alt: "Enseigne Lumineuse MJR Pièces Auto garage Strasbourg - Réalisation LED Alsace",
     detailedDescription: "Enseigne lumineuse professionnelle pour le garage MJR Pièces Auto. Conception robuste adaptée au secteur automobile avec éclairage LED performant. Installation sur façade avec fixations renforcées.",
     client: {
       name: "MJR Pièces Auto",
@@ -190,7 +190,7 @@ export const realisationsData = [
     category: "Signalétique",
     image: realisation8,
     description: "Totem lumineux extérieur",
-    alt: "Totem lumineux Madagascar Alsace - Signalétique extérieure Lumineuse Alsace",
+    alt: "Totem lumineux Madagascar Alsace - Signalétique extérieure LED Alsace",
     detailedDescription: "Totem lumineux extérieur pour Madagascar. Structure autoportante avec éclairage LED intégré pour une visibilité 24h/24. Fabrication sur mesure avec finitions haut de gamme.",
     client: {
       name: "Madagascar",
@@ -214,7 +214,7 @@ export const realisationsData = [
     category: "Marquage Vitrine",
     image: realisation9,
     description: "Aménagement vitrine",
-    alt: "Marquage vitrine E. Leclerc Alsace - Vitrophanie et adhésifs Lumineuse Alsace",
+    alt: "Marquage vitrine E. Leclerc Alsace - Vitrophanie et adhésifs LED Alsace",
     detailedDescription: "Projet d'envergure pour E. Leclerc : marquage vitrine complet avec adhésifs haute qualité. Design attractif et professionnel pour mettre en valeur les produits et promotions. Installation soignée sur grandes surfaces vitrées.",
     client: {
       name: "E. Leclerc",
@@ -238,7 +238,7 @@ export const realisationsData = [
     category: "Enseignes Lumineuse",
     image: realisation10,
     description: "Croix de pharmacie Lumineuse",
-    alt: "Croix de pharmacie Lumineuse verte Alsace - Enseigne lumineuse pharmacie Lumineuse Alsace",
+    alt: "Croix de pharmacie Lumineuse verte Alsace - Enseigne lumineuse pharmacie LED Alsace",
     detailedDescription: "Croix de pharmacie LED verte conforme aux normes en vigueur. Éclairage LED basse consommation avec luminosité réglable. Structure robuste résistante aux intempéries avec garantie longue durée.",
     client: {
       name: "Pharmacie",
@@ -262,7 +262,7 @@ export const realisationsData = [
     category: "Enseignes Lumineuse",
     image: realisation11,
     description: "Enseigne boutique",
-    alt: "Enseigne Lumineuse Love boutique Strasbourg - Lettres lumineuses Lumineuse Alsace",
+    alt: "Enseigne Lumineuse Love boutique Strasbourg - Lettres lumineuses LED Alsace",
     detailedDescription: "Enseigne lumineuse élégante pour la boutique Love. Lettres lumineuses avec design moderne et éclairage LED doux. Création sur mesure qui reflète l'identité de la marque.",
     client: {
       name: "Love",
@@ -286,7 +286,7 @@ export const realisationsData = [
     category: "Enseignes Lumineuse",
     image: realisation12,
     description: "Enseigne commerce",
-    alt: "Enseigne Lumineuse Perkko commerce Alsace - Réalisation enseigne lumineuse Lumineuse Alsace",
+    alt: "Enseigne Lumineuse Perkko commerce Alsace - Réalisation enseigne lumineuse LED Alsace",
     detailedDescription: "Enseigne lumineuse professionnelle pour Perkko. Design contemporain avec lettres boîtier et éclairage LED performant. Installation extérieure avec fixations adaptées à la façade.",
     client: {
       name: "Perkko",
@@ -310,7 +310,7 @@ export const realisationsData = [
     category: "Marquage Vitrine",
     image: realisation13,
     description: "Vitrophanie cuisine",
-    alt: "Vitrophanie Mobalpa cuisine Alsace - Marquage vitrine professionnel Lumineuse Alsace",
+    alt: "Vitrophanie Mobalpa cuisine Alsace - Marquage vitrine professionnel LED Alsace",
     detailedDescription: "Marquage vitrine haut de gamme pour Mobalpa. Adhésifs micro-perforés permettant la visibilité de l'intérieur tout en créant un impact visuel fort de l'extérieur. Pose professionnelle sans bulles.",
     client: {
       name: "Mobalpa",
@@ -334,7 +334,7 @@ export const realisationsData = [
     category: "Marquage Vitrine",
     image: realisation14,
     description: "Marquage vitrine crèche",
-    alt: "Marquage vitrine Les Anges Micro-Crèche Alsace - Adhésifs décoratifs Lumineuse Alsace",
+    alt: "Marquage vitrine Les Anges Micro-Crèche Alsace - Adhésifs décoratifs LED Alsace",
     detailedDescription: "Marquage vitrine coloré et ludique pour Les Anges Micro-Crèche. Adhésifs décoratifs avec design adapté à l'univers de la petite enfance. Création graphique personnalisée et pose soignée.",
     client: {
       name: "Les Anges Micro-Crèche",

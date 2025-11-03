@@ -40,7 +40,7 @@ function Home() {
     {
       icon: <MapPin className="w-12 h-12" />,
       title: "Fabrication Française",
-      description: "Toutes nos enseignes et solutions de signalétique sont fabriquées localement en Alsace, dans notre atelier situé à Ostwald, près de Strasbourg. En choisissant Lumineuse Alsace, vous soutenez un savoir-faire français et une production responsable, sans sous-traitance à l'étranger. Qualité, traçabilité et réactivité sont au cœur de notre engagement."
+      description: "Toutes nos enseignes et solutions de signalétique sont fabriquées localement en Alsace, dans notre atelier situé à Ostwald, près de Strasbourg. En choisissant LED Alsace, vous soutenez un savoir-faire français et une production responsable, sans sous-traitance à l'étranger. Qualité, traçabilité et réactivité sont au cœur de notre engagement."
     },
     {
       icon: <Users className="w-12 h-12" />,
@@ -81,25 +81,25 @@ function Home() {
     {
       name: "Responsable Achat",
       company: "E. Leclerc",
-      text: "Nous avons fait appel à Lumineuse Alsace pour le remplacement de nos enseignes lumineuses extérieures. Le résultat est impeccable : visibilité parfaite, finitions soignées, et une installation rapide malgré les contraintes techniques de notre site. Mention spéciale à l'équipe pour son professionnalisme et sa capacité à gérer un projet de cette ampleur dans les délais. Nos clients nous repèrent de loin désormais, même de nuit.",
+      text: "Nous avons fait appel à LED Alsace pour le remplacement de nos enseignes lumineuses extérieures. Le résultat est impeccable : visibilité parfaite, finitions soignées, et une installation rapide malgré les contraintes techniques de notre site. Mention spéciale à l'équipe pour son professionnalisme et sa capacité à gérer un projet de cette ampleur dans les délais. Nos clients nous repèrent de loin désormais, même de nuit.",
       rating: 5
     },
     {
       name: "Responsable RH",
       company: "KS Groupe",
-      text: "Nous cherchions un partenaire réactif et fiable pour floquer nos tenues professionnelles à l'image de notre groupe. Lumineuse Alsace a su répondre à nos attentes avec une qualité d'impression irréprochable et une tenue dans le temps qui résiste à nos conditions de travail exigeantes. Livraison rapide, conseils personnalisés et service client au top : nous recommandons vivement.",
+      text: "Nous cherchions un partenaire réactif et fiable pour floquer nos tenues professionnelles à l'image de notre groupe. LED Alsace a su répondre à nos attentes avec une qualité d'impression irréprochable et une tenue dans le temps qui résiste à nos conditions de travail exigeantes. Livraison rapide, conseils personnalisés et service client au top : nous recommandons vivement.",
       rating: 5
     },
     {
       name: "Chef d'entreprise",
       company: "Finay",
-      text: "Besoin urgent de panneaux pour plusieurs chantiers en cours, Lumineuse Alsace a répondu présent. Commande traitée en 48h, visuels conformes, impression nette et matériaux résistants. Le rapport qualité-prix est excellent. C'est rassurant de pouvoir compter sur un prestataire local aussi fiable pour nos besoins en signalétique.",
+      text: "Besoin urgent de panneaux pour plusieurs chantiers en cours, LED Alsace a répondu présent. Commande traitée en 48h, visuels conformes, impression nette et matériaux résistants. Le rapport qualité-prix est excellent. C'est rassurant de pouvoir compter sur un prestataire local aussi fiable pour nos besoins en signalétique.",
       rating: 5
     },
     {
       name: "Responsable Marketing",
       company: "France Solar",
-      text: "Notre flotte de véhicules avait besoin d'un marquage visible, moderne et cohérent avec notre identité. Lumineuse Alsace a su transformer nos utilitaires en véritables supports de communication. Le rendu est dynamique, professionnel et attire clairement l'attention. Installation rapide et finitions impeccables, même sur les surfaces complexes. Une très belle collaboration.",
+      text: "Notre flotte de véhicules avait besoin d'un marquage visible, moderne et cohérent avec notre identité. LED Alsace a su transformer nos utilitaires en véritables supports de communication. Le rendu est dynamique, professionnel et attire clairement l'attention. Installation rapide et finitions impeccables, même sur les surfaces complexes. Une très belle collaboration.",
       rating: 5
     }
   ]
@@ -118,8 +118,8 @@ function Home() {
     <div className="min-h-screen bg-white">
       <SEO 
         title="Accueil"
-        description="Lumineuse Alsace, spécialiste des enseEnseignes Lumineuses et Signalétique en Alsacece depuis 2014. Fabrication française à Ostwald près de Strasbourg. Devis gratuit en 24h."
-        keywords="enseigne Lumineuse Alsace, signalétique Strasbourg, enseigne lumineuse, marquage véhicule Alsace, impression grand format, Lumineuse Alsace, enseigne Ostwald"
+        description="LED Alsace, spécialiste des enseEnseignes Lumineuses et Signalétique en Alsacece depuis 2014. Fabrication française à Ostwald près de Strasbourg. Devis gratuit en 24h."
+        keywords="enseigne LED Alsace, signalétique Strasbourg, enseigne lumineuse, marquage véhicule Alsace, impression grand format, LED Alsace, enseigne Ostwald"
         canonicalUrl="https://www.ledalsace.com"
         structuredData={combinedSchema}
       />
@@ -245,7 +245,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={enseigneLedImg} 
-                  alt="Enseignes Lumineuses sur mesure pour commerce - Fabrication Lumineuse Alsace" 
+                  alt="Enseignes Lumineuses sur mesure pour commerce - Fabrication LED Alsace" 
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -299,7 +299,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageTextileImg} 
-                  alt="Marquage textile professionnel et flocage EPI - Lumineuse Alsace" 
+                  alt="Marquage textile professionnel et flocage EPI - LED Alsace" 
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -326,7 +326,7 @@ function Home() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={marquageVitrineImg} 
-                  alt="Marquage vitrine et vitrophanie pour commerce - Lumineuse Alsace Strasbourg" 
+                  alt="Marquage vitrine et vitrophanie pour commerce - LED Alsace Strasbourg" 
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />

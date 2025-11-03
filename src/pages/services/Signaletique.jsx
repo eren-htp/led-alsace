@@ -257,7 +257,7 @@ function Signaletique() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                  Pourquoi choisir Lumineuse Alsace pour votre signalétique ?
+                  Pourquoi choisir LED Alsace pour votre signalétique ?
                 </h2>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                   Depuis plus de 10 ans, nous accompagnons les entreprises alsaciennes dans leurs projets de signalétique. 
@@ -306,7 +306,7 @@ function Signaletique() {
                 <div className="aspect-square bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-3xl overflow-hidden shadow-2xl">
                   <img 
                     src="https://via.placeholder.com/600x600/1a1a1a/FFD700?text=Signalétique+Lumineuse+Alsace" 
-                    alt="Signalétique Lumineuse Alsace"
+                    alt="Signalétique LED Alsace"
                     className="w-full h-full object-cover opacity-90"
                   />
                 </div>

@@ -1,5 +1,5 @@
 /**
- * Données structurées Schema.org pour Lumineuse Alsace
+ * Données structurées Schema.org pour LED Alsace
  * Format JSON-LD pour améliorer le référencement et l'affichage dans les résultats de recherche
  */
 
@@ -8,8 +8,8 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://www.ledalsace.com/#organization",
-  "name": "Lumineuse Alsace",
-  "legalName": "Lumineuse Alsace",
+  "name": "LED Alsace",
+  "legalName": "LED Alsace",
   "url": "https://www.ledalsace.com",
   "logo": {
     "@type": "ImageObject",
@@ -20,7 +20,7 @@ export const organizationSchema = {
   "image": [
     "https://www.ledalsace.com/logo-lumineuse-alsace.jpg"
   ],
-  "description": "Lumineuse Alsace est votre partenaire de confiance pour tous vos projets d'enseignes Lumineuse, signalétique et marquage en Alsace depuis 2014. Fabrication française, atelier à Ostwald près de Strasbourg.",
+  "description": "LED Alsace est votre partenaire de confiance pour tous vos projets d'enseignes Lumineuse, signalétique et marquage en Alsace depuis 2014. Fabrication française, atelier à Ostwald près de Strasbourg.",
   "foundingDate": "2014",
   "address": {
     "@type": "PostalAddress",
@@ -200,7 +200,7 @@ export const websiteSchema = {
   "@type": "WebSite",
   "@id": "https://www.ledalsace.com/#website",
   "url": "https://www.ledalsace.com",
-  "name": "Lumineuse Alsace",
+  "name": "LED Alsace",
   "description": "Spécialiste des enseignes Lumineuse et de la signalétique en Alsace",
   "publisher": {
     "@id": "https://www.ledalsace.com/#organization"

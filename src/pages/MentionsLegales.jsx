@@ -6,8 +6,8 @@ function MentionsLegales() {
     <div className="min-h-screen bg-gray-50">
       <SEO 
         title="Mentions Légales"
-        description="Mentions légales, politique de confidentialité et RGPD du site Lumineuse Alsace. Informations sur l'éditeur, l'hébergement et la protection des données personnelles."
-        keywords="mentions légales, confidentialité, RGPD, protection données, Lumineuse Alsace"
+        description="Mentions légales, politique de confidentialité et RGPD du site LED Alsace. Informations sur l'éditeur, l'hébergement et la protection des données personnelles."
+        keywords="mentions légales, confidentialité, RGPD, protection données, LED Alsace"
         canonicalUrl="https://www.ledalsace.com/mentions-legales"
       />
 
