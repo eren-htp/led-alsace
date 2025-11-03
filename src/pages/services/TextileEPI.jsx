@@ -142,8 +142,8 @@ function TextileEPI() {
             answer: "Le marquage textile consiste à personnaliser des vêtements (t-shirts, polos, vestes, etc.) avec un logo, un message ou une image. Pour une entreprise, c'est un levier puissant d'image de marque et de cohésion d'équipe. Il permet d'identifier facilement le personnel, de professionnaliser l'apparence de l'entreprise et de renforcer sa visibilité lors d'événements ou sur les lieux de vente."
           },
           {
-            question: "Quelles sont les différentes techniques de marquage textile proposées par Lumineuse ALSACE ?",
-            answer: "Lumineuse ALSACE propose plusieurs techniques adaptées aux usages professionnels : Flocage (transfert DTF ou flex) idéal pour les petites séries ou les designs complexes, Broderie pour un rendu haut de gamme et très durable, Sérigraphie économique pour les grandes quantités, et Sublimation adaptée aux textiles clairs en polyester. Chaque méthode est choisie selon le type de textile, la quantité et la complexité du visuel."
+            question: "Quelles sont les différentes techniques de marquage textile proposées par LED ALSACE ?",
+            answer: "LED ALSACE propose plusieurs techniques adaptées aux usages professionnels : Flocage (transfert DTF ou flex) idéal pour les petites séries ou les designs complexes, Broderie pour un rendu haut de gamme et très durable, Sérigraphie économique pour les grandes quantités, et Sublimation adaptée aux textiles clairs en polyester. Chaque méthode est choisie selon le type de textile, la quantité et la complexité du visuel."
           },
           {
             question: "Quelle est la différence entre flocage et broderie textile ?",
@@ -151,22 +151,22 @@ function TextileEPI() {
           },
           {
             question: "Est-ce que le marquage textile résiste bien aux lavages fréquents ?",
-            answer: "Oui, à condition de respecter les recommandations d'entretien. Un marquage textile de qualité (comme celui réalisé chez Lumineuse ALSACE) peut résister à des dizaines de lavages. Pour garantir la durabilité, il faut laver à l'envers, éviter les températures supérieures à 40°C, ne pas utiliser de javel ou adoucissant, et repasser à basse température sans contact direct avec le motif."
+            answer: "Oui, à condition de respecter les recommandations d'entretien. Un marquage textile de qualité (comme celui réalisé chez LED ALSACE) peut résister à des dizaines de lavages. Pour garantir la durabilité, il faut laver à l'envers, éviter les températures supérieures à 40°C, ne pas utiliser de javel ou adoucissant, et repasser à basse température sans contact direct avec le motif."
           },
           {
             question: "Quel est le minimum de pièces à commander pour un marquage textile personnalisé ?",
-            answer: "Lumineuse ALSACE peut réaliser du marquage textile à partir d'une seule pièce, notamment en flocage ou broderie. Pour les grandes séries (ex. : 100 t-shirts sérigraphiés), les tarifs sont dégressifs. Nous conseillons toujours la méthode la plus rentable selon la quantité, le textile et le type de marquage souhaité."
+            answer: "LED ALSACE peut réaliser du marquage textile à partir d'une seule pièce, notamment en flocage ou broderie. Pour les grandes séries (ex. : 100 t-shirts sérigraphiés), les tarifs sont dégressifs. Nous conseillons toujours la méthode la plus rentable selon la quantité, le textile et le type de marquage souhaité."
           },
           {
             question: "Puis-je fournir mes propres vêtements pour le marquage textile ?",
-            answer: "Oui, nous acceptons les textiles fournis par le client, à condition qu'ils soient compatibles avec les techniques de marquage choisies. Un contrôle qualité préalable est effectué. Lumineuse ALSACE peut aussi vous proposer une large gamme de textiles professionnels (t-shirts, polos, sweats, vêtements de travail, etc.) à des tarifs avantageux."
+            answer: "Oui, nous acceptons les textiles fournis par le client, à condition qu'ils soient compatibles avec les techniques de marquage choisies. Un contrôle qualité préalable est effectué. LED ALSACE peut aussi vous proposer une large gamme de textiles professionnels (t-shirts, polos, sweats, vêtements de travail, etc.) à des tarifs avantageux."
           },
           {
             question: "Est-ce possible de faire du marquage textile pour une entreprise multi-sites dans le Grand Est ?",
             answer: "Absolument. Nous avons l'habitude de gérer des commandes pour des réseaux de points de vente, des franchises ou des équipes réparties sur plusieurs sites. Nous pouvons organiser la production par lots, gérer la logistique multi-adresse et conserver les visuels pour des réassorts rapides."
           },
           {
-            question: "Est-ce que Lumineuse ALSACE peut concevoir le visuel pour le marquage textile ?",
+            question: "Est-ce que LED ALSACE peut concevoir le visuel pour le marquage textile ?",
             answer: "Oui. Notre studio graphique peut créer ou adapter votre logo, texte ou visuel pour garantir un rendu optimal sur textile. Nous fournissons un BAT (Bon à Tirer) pour validation avant production. Nous optimisons aussi la taille, les couleurs et les contrastes selon le support et la technique choisie."
           },
           {
@@ -174,7 +174,7 @@ function TextileEPI() {
             answer: "Les délais varient selon la quantité, la technique et la disponibilité des textiles. En moyenne : Petite série (1 à 20 pièces) : 5 à 8 jours ouvrés, Moyenne série (20 à 100 pièces) : 8 à 12 jours ouvrés, Grande série : à partir de 2 semaines. Nous proposons également un service express sur demande."
           },
           {
-            question: "Lumineuse ALSACE propose-t-elle la livraison dans toute la région Grand Est ?",
+            question: "LED ALSACE propose-t-elle la livraison dans toute la région Grand Est ?",
             answer: "Oui, nous livrons dans toute l'Alsace, la Lorraine et la Champagne-Ardenne. Pour les professionnels, nous proposons une livraison suivie ou un retrait direct à notre atelier. Nos partenaires de transport assurent des délais fiables même pour les commandes volumineuses."
           }
         ]}

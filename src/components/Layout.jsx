@@ -411,7 +411,7 @@ function Layout({ children }) {
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400">&copy; 2025 Lumineuse ALSACE | Enseigne & Signalétique | Tous droits réservés</p>
+            <p className="text-gray-400">&copy; 2025 LED ALSACE | Enseigne & Signalétique | Tous droits réservés</p>
             <Link to="/mentions-legales" className="text-gray-400 hover:text-yellow-500 transition-colors text-sm mt-2 block">Mentions Légales</Link>
           </div>
         </div>

@@ -340,8 +340,8 @@ function ImpressionGrandFormat() {
             answer: "Un adhésif grand format est un support autocollant imprimé sur mesure, destiné à couvrir de grandes surfaces comme des vitrines, des murs, des panneaux ou des véhicules. C'est un outil de communication visuelle impactant, parfait pour attirer l'attention, diffuser un message commercial ou habiller un espace professionnel. Il peut être temporaire (opération promo) ou permanent (habillage de façade ou déco intérieure)."
           },
           {
-            question: "Quels types d'adhésifs grand format propose Lumineuse ALSACE ?",
-            answer: "Lumineuse ALSACE imprime sur une large gamme d'adhésifs professionnels : Vinyle monomère pour les surfaces planes et l'intérieur, Vinyle polymère pour l'extérieur longue durée, Vinyle coulé pour les formes complexes (véhicules, bosselages), Micro-perforé pour vitrine (visibilité extérieure), et Dépoli imprimé pour effet sablé décoratif. Nous proposons également des films avec pelliculage de protection (anti-UV, anti-graffiti, mat ou brillant)."
+            question: "Quels types d'adhésifs grand format propose LED ALSACE ?",
+            answer: "LED ALSACE imprime sur une large gamme d'adhésifs professionnels : Vinyle monomère pour les surfaces planes et l'intérieur, Vinyle polymère pour l'extérieur longue durée, Vinyle coulé pour les formes complexes (véhicules, bosselages), Micro-perforé pour vitrine (visibilité extérieure), et Dépoli imprimé pour effet sablé décoratif. Nous proposons également des films avec pelliculage de protection (anti-UV, anti-graffiti, mat ou brillant)."
           },
           {
             question: "Quelle est la différence entre un adhésif monomère et polymère ?",
@@ -356,7 +356,7 @@ function ImpressionGrandFormat() {
             answer: "Oui. Si l'adhésif est retiré dans les délais conseillés (selon la colle utilisée) et sur une surface propre, il ne laisse pas de traces. Nous utilisons des colles adaptées (permanentes ou enlevables), selon que le projet soit temporaire (soldes, événement, promo) ou permanent (habillage mural ou vitrine)."
           },
           {
-            question: "Est-ce que Lumineuse ALSACE peut poser les adhésifs sur site ?",
+            question: "Est-ce que LED ALSACE peut poser les adhésifs sur site ?",
             answer: "Oui. Nos équipes se déplacent dans toute l'Alsace et le Grand Est pour poser vos adhésifs grands formats dans les règles de l'art. La pose professionnelle garantit un résultat sans bulles, sans plis et une excellente tenue dans le temps, que ce soit sur vitrine, panneau, véhicule, ou cloison intérieure."
           },
           {
@@ -372,7 +372,7 @@ function ImpressionGrandFormat() {
             answer: "En général, la production prend entre 3 et 7 jours ouvrés, selon le type d'adhésif, le visuel et la finition demandée (pelliculage, découpe, etc.). Pour les projets urgents ou événementiels, nous proposons également un service express sous 48 h, sous réserve de faisabilité technique."
           },
           {
-            question: "Lumineuse ALSACE propose-t-elle la livraison ou l'installation hors Alsace ?",
+            question: "LED ALSACE propose-t-elle la livraison ou l'installation hors Alsace ?",
             answer: "Oui. Nous livrons dans toute la France métropolitaine et pouvons organiser une installation sur site dans le Grand Est (Strasbourg, Metz, Nancy, Mulhouse…) grâce à notre réseau de partenaires poseurs. Chaque projet est suivi de manière personnalisée, de la maquette à la pose finale."
           }
         ]}

@@ -129,7 +129,7 @@ function NeonLED() {
           },
           {
             question: "Est-ce que le néon Lumineuse peut être utilisé en extérieur ?",
-            answer: "Oui. Lumineuse ALSACE propose des néons Lumineuse étanches (IP65 ou plus) adaptés à une utilisation en extérieur, résistants aux intempéries et aux variations de température. Que ce soit pour une façade de commerce ou une signalétique extérieure design, nous concevons des néons Lumineuse durables et sécurisés, avec une installation conforme aux normes."
+            answer: "Oui. LED ALSACE propose des néons Lumineuse étanches (IP65 ou plus) adaptés à une utilisation en extérieur, résistants aux intempéries et aux variations de température. Que ce soit pour une façade de commerce ou une signalétique extérieure design, nous concevons des néons Lumineuse durables et sécurisés, avec une installation conforme aux normes."
           },
           {
             question: "Le néon Lumineuse est-il personnalisable en forme, couleur et taille ?",
@@ -144,7 +144,7 @@ function NeonLED() {
             answer: "Oui. Le néon Lumineuse consomme en moyenne 5 à 10 fois moins d'électricité qu'un néon au gaz pour un rendu équivalent. Il ne nécessite pas de transformateur haute tension, n'émet pas de chaleur excessive, et réduit fortement les coûts de maintenance. C'est un investissement rentable sur le long terme."
           },
           {
-            question: "Quels sont les délais pour fabriquer un néon Lumineuse sur-mesure chez Lumineuse ALSACE ?",
+            question: "Quels sont les délais pour fabriquer un néon Lumineuse sur-mesure chez LED ALSACE ?",
             answer: "Les délais de production varient selon la complexité du design et la taille. En général, comptez 3 à 5 jours ouvrés pour un modèle simple, et 7 à 10 jours ouvrés pour une création sur-mesure (logo, forme spécifique). Chaque commande inclut une maquette validée avant fabrication et une livraison rapide dans le Grand Est."
           },
           {
@@ -156,7 +156,7 @@ function NeonLED() {
             answer: "Oui. Nos néons Lumineuse peuvent être fixés sur mur, vitrine, panneau ou support suspendu. Nous proposons des systèmes de fixation adaptés : entretoises, rails, colles spéciales ou ventouses pour les vitrines temporaires. Chaque projet inclut une étude de pose personnalisée."
           },
           {
-            question: "Lumineuse ALSACE propose-t-elle la création de néons Lumineuse pour les événements ou les salons ?",
+            question: "LED ALSACE propose-t-elle la création de néons Lumineuse pour les événements ou les salons ?",
             answer: "Oui. Nous réalisons des néons Lumineuse événementiels pour stand, exposition, shooting photo ou décoration temporaire. Faciles à transporter et à installer, ils donnent un cachet visuel immédiat à votre espace. Nous proposons aussi la location courte durée pour certains modèles standards."
           }
         ]}

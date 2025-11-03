@@ -37,7 +37,7 @@ function MentionsLegales() {
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Éditeur</h2>
               </div>
               <div className="space-y-3 text-gray-800">
-                <p className="text-xl font-semibold text-[#1A2534]">Lumineuse ALSACE</p>
+                <p className="text-xl font-semibold text-[#1A2534]">LED ALSACE</p>
                 <p><span className="font-semibold">RCS Ostwald :</span> 80297827000014</p>
                 <p><span className="font-semibold">Siège social :</span> <a href="https://www.google.com/maps/search/?api=1&query=Z.I+La+Vigie,+12+rue+Th%C3%A9odore+Monod,+67540+Ostwald" target="_blank" rel="noopener noreferrer" className="text-[#F0C724] hover:text-yellow-600 cursor-pointer">Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</a></p>
                 <p><span className="font-semibold">Téléphone :</span> <a href="tel:+33388044534" className="text-[#F0C724] hover:text-yellow-600 font-semibold">03 88 04 45 34</a></p>
@@ -72,13 +72,13 @@ function MentionsLegales() {
               </div>
               <div className="text-gray-800 space-y-4 leading-relaxed">
                 <p>
-                  Lumineuse ALSACE n'enregistre pas d'informations personnelles permettant l'identification, à l'exception des formulaires que l'utilisateur est libre de remplir. Ces informations ne seront pas utilisées sans votre accord, nous les utiliserons seulement pour vous adresser des courriers, des brochures, des devis ou vous contacter.
+                  LED ALSACE n'enregistre pas d'informations personnelles permettant l'identification, à l'exception des formulaires que l'utilisateur est libre de remplir. Ces informations ne seront pas utilisées sans votre accord, nous les utiliserons seulement pour vous adresser des courriers, des brochures, des devis ou vous contacter.
                 </p>
                 <p>
-                  Les informations recueillies sur les sites bénéficient de la protection de la loi « Informatique et Libertés » n° 78-17 du 06 janvier 1978. Elles bénéficient d'un droit d'accès, de rectification, d'opposition à communication et de suppression sur simple demande à Lumineuse ALSACE, <a href="https://www.google.com/maps/search/?api=1&query=Z.I+La+Vigie,+12+rue+Th%C3%A9odore+Monod,+67540+Ostwald" target="_blank" rel="noopener noreferrer" className="text-[#F0C724] hover:text-yellow-600 cursor-pointer">Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</a>.
+                  Les informations recueillies sur les sites bénéficient de la protection de la loi « Informatique et Libertés » n° 78-17 du 06 janvier 1978. Elles bénéficient d'un droit d'accès, de rectification, d'opposition à communication et de suppression sur simple demande à LED ALSACE, <a href="https://www.google.com/maps/search/?api=1&query=Z.I+La+Vigie,+12+rue+Th%C3%A9odore+Monod,+67540+Ostwald" target="_blank" rel="noopener noreferrer" className="text-[#F0C724] hover:text-yellow-600 cursor-pointer">Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</a>.
                 </p>
                 <p>
-                  Lumineuse ALSACE pourra procéder à des analyses statistiques sans que celles-ci soient nominatives et pourra en informer des tiers (organismes d'évaluation de fréquentation) sous une forme résumée et non nominative.
+                  LED ALSACE pourra procéder à des analyses statistiques sans que celles-ci soient nominatives et pourra en informer des tiers (organismes d'évaluation de fréquentation) sous une forme résumée et non nominative.
                 </p>
               </div>
             </div>
@@ -91,21 +91,21 @@ function MentionsLegales() {
               </div>
               <div className="text-gray-800 space-y-4 leading-relaxed">
                 <p>
-                  Lumineuse ALSACE s'engage à ce que la collecte et le traitement de vos données, effectués à partir du site ledalsace.com, soient conformes au règlement général sur la protection des données (RGPD). Chaque formulaire ou téléservice limite la collecte des données personnelles au strict nécessaire (minimisation des données) et indique notamment :
+                  LED ALSACE s'engage à ce que la collecte et le traitement de vos données, effectués à partir du site ledalsace.com, soient conformes au règlement général sur la protection des données (RGPD). Chaque formulaire ou téléservice limite la collecte des données personnelles au strict nécessaire (minimisation des données) et indique notamment :
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-gray-800">
                   <li>quels sont les objectifs du recueil de ces données,</li>
                   <li>si ces données sont obligatoires ou facultatives pour la gestion de votre demande,</li>
-                  <li>qui pourra en prendre connaissance (uniquement Lumineuse ALSACE en principe, sauf précision dans le formulaire lorsqu'une transmission à un tiers est nécessaire à la gestion de votre demande).</li>
+                  <li>qui pourra en prendre connaissance (uniquement LED ALSACE en principe, sauf précision dans le formulaire lorsqu'une transmission à un tiers est nécessaire à la gestion de votre demande).</li>
                 </ul>
                 <p>
-                  Dans une optique de démarche qualité, les appels effectués via le Call Tracking sont susceptibles d'être enregistrés. Ces enregistrements sont pour l'usage de Lumineuse ALSACE. Conformément à la réglementation en vigueur, l'utilisateur peut à tout moment demander la suppression de ces enregistrements en en faisant la requête par email à service@linkeo.com et en indiquant la société Lumineuse ALSACE.
+                  Dans une optique de démarche qualité, les appels effectués via le Call Tracking sont susceptibles d'être enregistrés. Ces enregistrements sont pour l'usage de LED ALSACE. Conformément à la réglementation en vigueur, l'utilisateur peut à tout moment demander la suppression de ces enregistrements en en faisant la requête par email à service@linkeo.com et en indiquant la société LED ALSACE.
                 </p>
                 <p>
-                  Les données personnelles recueillies dans le cadre des services proposés sur ledalsace.com sont traitées selon des protocoles sécurisés et permettent à Lumineuse ALSACE de gérer les demandes reçues dans ses applications informatiques.
+                  Les données personnelles recueillies dans le cadre des services proposés sur ledalsace.com sont traitées selon des protocoles sécurisés et permettent à LED ALSACE de gérer les demandes reçues dans ses applications informatiques.
                 </p>
                 <p>
-                  Pour toute information ou exercice de vos droits Informatique et Libertés sur les traitements de données personnelles gérés par Lumineuse ALSACE, vous pouvez contacter Lumineuse ALSACE et éventuellement son délégué à la protection des données (DPO), ou vous tourner vers la CNIL.
+                  Pour toute information ou exercice de vos droits Informatique et Libertés sur les traitements de données personnelles gérés par LED ALSACE, vous pouvez contacter LED ALSACE et éventuellement son délégué à la protection des données (DPO), ou vous tourner vers la CNIL.
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ function MentionsLegales() {
               </div>
               <div className="text-gray-800 space-y-4 leading-relaxed">
                 <p>
-                  Lumineuse ALSACE ne contrôle pas les sites en connexion avec le sien, et ne saurait donc être responsable de leur contenu. Les risques liés à l'utilisation de ces sites incombent pleinement à l'utilisateur. Il se conformera à leurs conditions d'utilisation.
+                  LED ALSACE ne contrôle pas les sites en connexion avec le sien, et ne saurait donc être responsable de leur contenu. Les risques liés à l'utilisation de ces sites incombent pleinement à l'utilisateur. Il se conformera à leurs conditions d'utilisation.
                 </p>
               </div>
             </div>
@@ -144,7 +144,7 @@ function MentionsLegales() {
               </p>
               <div className="space-y-2">
                 <p><span className="font-semibold">Par téléphone :</span> <a href="tel:+33388044534" className="text-[#F0C724] hover:text-yellow-300 font-semibold">03 88 04 45 34</a></p>
-                <p><span className="font-semibold">Par courrier :</span> Lumineuse ALSACE, <a href="https://www.google.com/maps/search/?api=1&query=Z.I+La+Vigie,+12+rue+Th%C3%A9odore+Monod,+67540+Ostwald" target="_blank" rel="noopener noreferrer" className="text-[#F0C724] hover:text-yellow-300 cursor-pointer">Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</a></p>
+                <p><span className="font-semibold">Par courrier :</span> LED ALSACE, <a href="https://www.google.com/maps/search/?api=1&query=Z.I+La+Vigie,+12+rue+Th%C3%A9odore+Monod,+67540+Ostwald" target="_blank" rel="noopener noreferrer" className="text-[#F0C724] hover:text-yellow-300 cursor-pointer">Z.I La Vigie, 12 rue Théodore Monod, 67540 Ostwald</a></p>
               </div>
             </div>
 

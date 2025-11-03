@@ -170,8 +170,8 @@ function Vitrophanie() {
             answer: "La vitrophanie est une technique d'habillage des vitrines ou surfaces vitrées à l'aide de films adhésifs imprimés ou découpés. Elle permet de communiquer visuellement, de valoriser l'image de marque, d'assurer une protection solaire ou visuelle, voire d'informer les passants (horaires, promotions, logo). C'est une solution idéale pour les commerces, agences, bureaux, centres médicaux ou showrooms."
           },
           {
-            question: "Quels sont les types de vitrophanie disponibles chez Lumineuse ALSACE ?",
-            answer: "Lumineuse ALSACE propose plusieurs types de vitrophanie selon les objectifs : Film micro-perforé (vision extérieure, opacité intérieure), Film sablé ou dépoli (effet verre gravé, pour intimité ou déco), Film plein imprimé (promotions, visuels marketing), Lettrage adhésif découpé (logo, horaires, coordonnées). Chaque projet est réalisé sur-mesure selon votre vitrine, votre identité visuelle et vos contraintes techniques."
+            question: "Quels sont les types de vitrophanie disponibles chez LED ALSACE ?",
+            answer: "LED ALSACE propose plusieurs types de vitrophanie selon les objectifs : Film micro-perforé (vision extérieure, opacité intérieure), Film sablé ou dépoli (effet verre gravé, pour intimité ou déco), Film plein imprimé (promotions, visuels marketing), Lettrage adhésif découpé (logo, horaires, coordonnées). Chaque projet est réalisé sur-mesure selon votre vitrine, votre identité visuelle et vos contraintes techniques."
           },
           {
             question: "La vitrophanie est-elle compatible avec toutes les vitrines ou surfaces en verre ?",

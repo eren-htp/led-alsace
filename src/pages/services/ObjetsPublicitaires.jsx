@@ -198,7 +198,7 @@ function ObjetsPublicitaires() {
             answer: "Un objet publicitaire est un support physique personnalisé (stylo, mug, sac, clé USB, textile...) portant le logo ou le message d'une entreprise. C'est un outil puissant pour fidéliser les clients, augmenter la notoriété et marquer les esprits durablement. Contrairement à une publicité éphémère, l'objet reste dans le quotidien de vos prospects, ce qui renforce la mémorisation de votre marque."
           },
           {
-            question: "Quels types d'objets publicitaires propose Lumineuse ALSACE ?",
+            question: "Quels types d'objets publicitaires propose LED ALSACE ?",
             answer: "Nous proposons un large catalogue d'objets personnalisables : Objets de bureau (stylos, blocs-notes, clés USB, calendriers), Goodies événementiels (tote-bags, badges, porte-clés), Objets pour la restauration (mugs, gourdes, sets de table), High-tech (batteries externes, supports téléphone, accessoires PC), Textile promotionnel (casquettes, t-shirts, tabliers). Tous nos produits sont personnalisables selon votre logo, couleurs, ou message."
           },
           {
@@ -206,11 +206,11 @@ function ObjetsPublicitaires() {
             answer: "Oui. Certains produits sont disponibles à partir de 50 ou 100 unités, ce qui convient parfaitement aux PME, associations ou événements à taille humaine. Pour les objets plus techniques ou personnalisations complexes, des minimums peuvent s'appliquer, mais nous vous guidons vers les solutions adaptées à votre budget."
           },
           {
-            question: "Lumineuse ALSACE peut-elle proposer des objets publicitaires écoresponsables ?",
+            question: "LED ALSACE peut-elle proposer des objets publicitaires écoresponsables ?",
             answer: "Oui. Nous proposons une gamme complète d'objets publicitaires écologiques : stylos en bambou, sacs en coton bio, carnets recyclés, gourdes inox, etc. Ces objets véhiculent des valeurs positives (durabilité, responsabilité) tout en conservant leur utilité marketing."
           },
           {
-            question: "Est-ce que Lumineuse ALSACE gère aussi le marquage et la personnalisation des objets ?",
+            question: "Est-ce que LED ALSACE gère aussi le marquage et la personnalisation des objets ?",
             answer: "Oui. Nous nous chargeons de l'impression, gravure ou broderie selon le support. Notre studio graphique vous accompagne dans l'adaptation de votre logo ou message à chaque objet, et vous fournit un BAT (Bon à Tirer) pour validation. Nous veillons à la lisibilité, au contraste, et au respect de votre charte graphique."
           }
         ]}

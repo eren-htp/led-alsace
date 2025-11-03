@@ -318,20 +318,20 @@ function Enseignes() {
             answer: "Le tarif varie selon la taille, le type d'éclairage (face lumineuse, lettres boîtier, rétro-éclairage…), les matériaux (aluminium, Dibond, PMMA) et les options (détecteurs, variateurs). En général, il faut compter entre 900 € et 5 000 € HT pour une enseigne lumineuse professionnelle, pose comprise. Un devis personnalisé est indispensable."
           },
           {
-            question: "Lumineuse ALSACE peut-elle se charger des démarches administratives pour mon enseigne lumineuse ?",
-            answer: "Oui. Chez Lumineuse ALSACE, nous vous accompagnons dans la constitution du dossier administratif (CERFA, plan de masse, visuel en situation, etc.) et la demande d'autorisation auprès de la mairie. Nous connaissons bien les particularités des RLP du Grand Est et facilitons vos démarches."
+            question: "LED ALSACE peut-elle se charger des démarches administratives pour mon enseigne lumineuse ?",
+            answer: "Oui. Chez LED ALSACE, nous vous accompagnons dans la constitution du dossier administratif (CERFA, plan de masse, visuel en situation, etc.) et la demande d'autorisation auprès de la mairie. Nous connaissons bien les particularités des RLP du Grand Est et facilitons vos démarches."
           },
           {
             question: "Est-il possible d'installer une enseigne lumineuse sur un bâtiment classé ou dans un secteur sauvegardé ?",
-            answer: "Oui, mais cela nécessite une autorisation préalable de l'Architecte des Bâtiments de France (ABF). Lumineuse ALSACE conçoit des solutions sur-mesure qui respectent l'esthétique du bâti historique, tout en assurant une visibilité optimale. Un dossier spécifique est à prévoir, et nous vous assistons dans sa préparation."
+            answer: "Oui, mais cela nécessite une autorisation préalable de l'Architecte des Bâtiments de France (ABF). LED ALSACE conçoit des solutions sur-mesure qui respectent l'esthétique du bâti historique, tout en assurant une visibilité optimale. Un dossier spécifique est à prévoir, et nous vous assistons dans sa préparation."
           },
           {
             question: "Peut-on éteindre automatiquement une enseigne lumineuse la nuit ?",
             answer: "Oui, grâce à un interrupteur crépusculaire ou une horloge astronomique, votre enseigne peut s'allumer et s'éteindre automatiquement en fonction de la lumière naturelle ou d'horaires précis. Cela permet de respecter les réglementations locales tout en optimisant la consommation énergétique."
           },
           {
-            question: "Quelles sont les étapes de fabrication d'une enseigne lumineuse chez Lumineuse ALSACE ?",
-            answer: "Chez Lumineuse ALSACE, nous suivons un processus rigoureux : 1. Analyse de vos besoins et contraintes (PLU, RLP) 2. Création du visuel et modélisation 3D 3. Constitution du dossier mairie 4. Fabrication en atelier (châssis, modules Lumineuse, façades) 5. Installation par nos équipes agréées 6. Suivi et maintenance. Ce processus garantit un rendu professionnel, durable et conforme aux normes."
+            question: "Quelles sont les étapes de fabrication d'une enseigne lumineuse chez LED ALSACE ?",
+            answer: "Chez LED ALSACE, nous suivons un processus rigoureux : 1. Analyse de vos besoins et contraintes (PLU, RLP) 2. Création du visuel et modélisation 3D 3. Constitution du dossier mairie 4. Fabrication en atelier (châssis, modules Lumineuse, façades) 5. Installation par nos équipes agréées 6. Suivi et maintenance. Ce processus garantit un rendu professionnel, durable et conforme aux normes."
           }
         ]}
       />
