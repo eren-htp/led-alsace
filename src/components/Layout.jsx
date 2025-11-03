@@ -6,6 +6,7 @@ import { Menu, X, Phone, Mail, MapPin, ChevronDown, Instagram, Linkedin } from '
 import CallbackButton from './CallbackButton.jsx'
 import SnapchatIcon from './SnapchatIcon.jsx'
 import logoLedAlsace from '@/assets/logoledalsace1.png'
+import logoFooterWhite from '@/assets/logo-footer-white.png'
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -324,7 +325,7 @@ function Layout({ children }) {
             {/* Logo & Description */}
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center mb-4">
-                <img src={logoLedAlsace} alt="LED ALSACE - Enseigne & Signalétique" className="h-16" />
+                <img src={logoFooterWhite} alt="LED ALSACE - Enseigne & Signalétique" className="h-16" />
               </div>
               <p className="text-gray-400 text-sm mb-4">
                 Votre partenaire de confiance pour tous vos projets d'enseignes Lumineuse, signalétique 
