@@ -313,7 +313,7 @@ const servicesSEOConfig = {
     description: "Fabrication de caissons ajourés et lettres boîtier lumineuses en Alsace. Enseignes Lumineuse relief pour commerces, effet 3D premium.",
     keywords: "caisson ajouré Alsace, lettres boîtier, enseigne relief, lettres lumineuses 3D, caisson Lumineuse Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/caisson-ajoure",
-    h1: "Caissons Ajourés et Lettres Boîtier Lumineuses en Alsace",
+    h1: "Caissons Ajourés et Enseigne Lettres Boîtier en Alsace",
     breadcrumb: [
       { name: "Services", url: "/services" },
       { name: "Caisson Ajouré", url: "/services/caisson-ajoure" }

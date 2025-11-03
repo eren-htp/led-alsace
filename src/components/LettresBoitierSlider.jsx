@@ -299,7 +299,7 @@ function LettresBoitierSlider() {
         {/* Titre de section */}
         <div className="text-center mb-12">
           <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${isNight ? 'text-white' : 'text-gray-900'}`}>
-            Lettres Boîtier Lumineuses
+            Enseigne Lettres Boîtier
           </h2>
           <p className={`text-lg ${isNight ? 'text-gray-300' : 'text-gray-600'}`}>
             Découvrez nos modèles de lettres boîtier personnalisables pour une visibilité optimale jour et nuit
