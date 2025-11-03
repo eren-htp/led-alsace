@@ -11,7 +11,7 @@ function Realisations() {
   const [selectedCategory, setSelectedCategory] = useState('Tous')
 
   const realisations = getAllRealisations()
-  const categories = ['Tous', 'Enseignes Lumineuse', 'Marquage Vitrine', 'Signalétique']
+  const categories = ['Tous', 'Enseignes Lumineuse', 'Marquage Vitrine', 'Signalétique', 'Pharmacie', 'Nos réalisations']
   const filteredRealisations = getRealisationsByCategory(selectedCategory)
 
   const handleRealisationClick = (slug) => {
