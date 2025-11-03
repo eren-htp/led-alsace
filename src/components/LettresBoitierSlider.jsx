@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { ChevronLeft, ChevronRight, Sun, Moon } from 'lucide-react'
-import cataloguePages, { CATALOGUE_PDF_URL } from '../data/cataloguePages.js'
+import cataloguePages from '../data/cataloguePages.js'
 
 // Import des images jour/nuit pour chaque modèle
 import G01Jour from '../assets/lettres-boitier/G01gunduz.webp'
@@ -286,13 +286,10 @@ function LettresBoitierSlider() {
 
   const openFicheTechnique = () => {
     const modelCode = currentModel.code
-    const pageInfo = cataloguePages[modelCode]
-    if (pageInfo) {
-      // Ouvrir le PDF à la page correspondante
-      window.open(`${CATALOGUE_PDF_URL}#page=${pageInfo.page}`, '_blank')
-    } else {
-      // Si pas de page spécifique, ouvrir le catalogue complet
-      window.open(CATALOGUE_PDF_URL, '_blank')
+    const ficheInfo = cataloguePages[modelCode]
+    if (ficheInfo && ficheInfo.url) {
+      // Ouvrir la fiche technique individuelle (fichier léger et rapide)
+      window.open(ficheInfo.url, '_blank')
     }
   }
 
