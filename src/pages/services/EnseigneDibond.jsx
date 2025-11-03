@@ -209,7 +209,7 @@ function EnseigneDibond() {
             <Link to="/contact">
               <Button size="lg" className="bg-lumineuse-dark hover:bg-gray-800 text-white font-bold">
                 <Phone className="mr-2 w-5 h-5" />
-                03 88 044 534
+                03 88 04 45 34
               </Button>
             </Link>
             <Link to="/contact">

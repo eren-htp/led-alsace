@@ -98,7 +98,7 @@ function Contact() {
               <Phone className="w-16 h-16 text-yellow-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Téléphone</h3>
               <p className="text-gray-600 mb-3">Appelez-nous du lundi au vendredi</p>
-              <p className="text-3xl font-bold text-yellow-600">03 88 044 534</p>
+              <p className="text-3xl font-bold text-yellow-600">03 88 04 45 34</p>
             </a>
 
             <a 

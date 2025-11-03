@@ -377,7 +377,7 @@ function Layout({ children }) {
                 <li className="flex items-center space-x-2">
                   <Phone className="w-5 h-5 text-yellow-500 flex-shrink-0" />
                   <a href="tel:+33388044534" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                    03 88 044 534
+                    03 88 04 45 34
                   </a>
                 </li>
                 <li className="flex items-center space-x-2">

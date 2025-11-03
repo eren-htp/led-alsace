@@ -370,7 +370,7 @@ function EcransLED() {
               className="bg-white hover:bg-gray-100 text-gray-900 border-2 border-gray-900"
             >
               <Phone className="mr-2 w-5 h-5" />
-              03 88 044 534
+              03 88 04 45 34
             </Button>
           </div>
         </div>
