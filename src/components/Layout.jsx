@@ -219,6 +219,12 @@ function Layout({ children }) {
                   Catalogue
                 </Link>
                 <Button 
+                  onClick={() => window.location.href = '/offre-carte-visite'}
+                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-[#1A2534] font-bold shadow-lg"
+                >
+                  🎁 Carte visite offerte
+                </Button>
+                <Button 
                   onClick={() => window.location.href = '/contact'}
                   className="bg-yellow-500 hover:bg-yellow-600 text-[#1A2534] font-semibold"
                 >
@@ -301,8 +307,14 @@ function Layout({ children }) {
                   Catalogue
                 </Link>
                 <Button 
+                  onClick={() => window.location.href = '/offre-carte-visite'}
+                  className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-[#1A2534] font-bold shadow-lg mb-2"
+                >
+                  🎁 Carte visite offerte
+                </Button>
+                <Button 
                   onClick={() => window.location.href = '/contact'}
-                  className="bg-yellow-500 hover:bg-yellow-600 text-[#1A2534] font-semibold"
+                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-[#1A2534] font-semibold"
                 >
                   Contact
                 </Button>
