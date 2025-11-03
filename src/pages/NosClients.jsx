@@ -39,7 +39,7 @@ function NosClients() {
   const navigate = useNavigate()
   const [selectedCategory, setSelectedCategory] = useState('Tous')
 
-  const categories = ['Tous', 'Restauration', 'Commerce', 'Transport', 'Immobilier', 'Construction', 'Garage']
+  const categories = ['Tous', 'Restauration', 'Commerce', 'Transport', 'Immobilier', 'Construction', 'Garage', 'Pharmacie', 'Nos réalisations']
 
   const testimonials = [
     {
