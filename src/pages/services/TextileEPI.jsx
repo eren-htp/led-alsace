@@ -24,7 +24,7 @@ function TextileEPI() {
   const navigate = useNavigate()
 
   const services = [
-    { title: "Flocage textile", description: "Personnalisation de vêtements par transfert thermique" },
+    { title: "DTF", description: "Personnalisation de vêtements par transfert thermique - full couleur, full qualité" },
     { title: "Broderie", description: "Marquage haut de gamme pour un rendu premium" },
     { title: "Sérigraphie", description: "Impression textile pour grandes séries" },
     { title: "Vêtements de travail", description: "Fourniture et personnalisation de tenues professionnelles" },
