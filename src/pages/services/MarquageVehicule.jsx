@@ -33,11 +33,9 @@ function MarquageVehicule() {
   ]
 
   const services = [
-    { title: "Marquage simple", description: "Logo et coordonnées de votre entreprise sur vos véhicules" },
+    { title: "Marquage adhésif professionnel", description: "Logo, coordonnées et lettrage en vinyle haute qualité pour tous types de véhicules" },
     { title: "Covering partiel", description: "Habillage d'une partie du véhicule avec votre identité visuelle" },
     { title: "Covering complet", description: "Transformation totale de votre véhicule en support publicitaire" },
-    { title: "Flocage véhicules", description: "Marquage adhésif résistant pour tous types de véhicules" },
-    { title: "Lettrage professionnel", description: "Textes et logos découpés en vinyle haute qualité" },
     { title: "Flotte automobile", description: "Marquage uniforme de l'ensemble de votre parc automobile" }
   ]
 
