@@ -307,7 +307,7 @@ function LettresBoitierSlider() {
               <Button onClick={() => toggleDayNight(false)} size="sm" className={`${!isNight ? 'bg-yellow-500 text-white' : 'bg-white/30 text-white'}`}>
                 <Sun className="w-4 h-4 mr-2" /> Jour
               </Button>
-              <Button onClick={() => toggleDayNight(true)} size="sm" className={`${isNight ? 'bg-blue-500 text-white' : 'bg-white/30 text-white'}`}>
+              <Button onClick={() => toggleDayNight(true)} size="sm" className={`${isNight ? 'bg-gray-800 text-white border-2 border-blue-400' : 'bg-gray-800/70 text-white hover:bg-gray-800'}`}>
                 <Moon className="w-4 h-4 mr-2" /> Nuit
               </Button>
             </div>
@@ -348,9 +348,14 @@ function LettresBoitierSlider() {
               ))}
             </ul>
 
-            <Button size="lg" className="mt-8 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold">
-              Demander un devis
-            </Button>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-bold">
+                Demander un devis
+              </Button>
+              <Button size="lg" variant="outline" className={`flex-1 font-bold ${isNight ? 'border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900' : 'border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white'}`}>
+                Voir la fiche technique
+              </Button>
+            </div>
           </div>
         </div>
 
