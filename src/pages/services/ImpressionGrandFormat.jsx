@@ -81,6 +81,12 @@ function ImpressionGrandFormat() {
       title: "Affiches grand format",
       description: "Posters et affiches jusqu'à plusieurs mètres pour campagnes publicitaires et événements.",
       features: ["Haute résolution", "Papier premium", "Finition brillante/mate", "Livraison rapide"]
+    },
+    {
+      icon: Package,
+      title: "Alvéolaire",
+      description: "Panneaux alvéolaires légers et rigides pour panneaux de chantier, agence immobilière, signalisation temporaire et événementiel.",
+      features: ["Ultra léger", "Rigide", "Extérieur/Intérieur", "Economique"]
     }
   ]
 
@@ -92,7 +98,8 @@ function ImpressionGrandFormat() {
     "Toile polyester",
     "Papier photo",
     "Film micro-perforé",
-    "Canvas textile"
+    "Canvas textile",
+    "Alvéolaire"
   ]
 
   const nextSlide = () => {
