@@ -21,7 +21,7 @@ function APropos() {
     {
       icon: <Target className="w-12 h-12" />,
       title: "Innovation",
-      description: "À la pointe des technologies Lumineuse et des nouvelles techniques."
+      description: "À la pointe des technologies LED et des nouvelles techniques."
     },
     {
       icon: <Heart className="w-12 h-12" />,
@@ -34,7 +34,7 @@ function APropos() {
     <div className="min-h-screen bg-white">
       <SEO 
         title="À Propos"
-        description="LED Alsace, entreprise alsacienne spécialisée dans les enseignes Lumineuse depuis 2014. Atelier de fabrication à Ostwald près de Strasbourg. Savoir-faire français, qualité et réactivité."
+        description="LED Alsace, entreprise alsacienne spécialisée dans les enseignes LED depuis 2014. Atelier de fabrication à Ostwald près de Strasbourg. Savoir-faire français, qualité et réactivité."
         keywords="LED Alsace, entreprise Alsace, fabrication française, atelier Ostwald, histoire LED Alsace, équipe Strasbourg"
         canonicalUrl="https://www.ledalsace.com/a-propos"
         structuredData={organizationSchema}
@@ -50,7 +50,7 @@ function APropos() {
               <span className="text-yellow-400">2014</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              LED Alsace est une entreprise alsacienne spécialisée dans la conception, la fabrication et l'installation d'enseignes Lumineuse
+              LED Alsace est une entreprise alsacienne spécialisée dans la conception, la fabrication et l'installation d'enseignes LED
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ function APropos() {
             </h2>
           </div>
 
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex items-start space-x-4 bg-gray-50 p-6 rounded-xl">
               <CheckCircle className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
@@ -125,13 +125,7 @@ function APropos() {
                 <p className="text-gray-600">Nous utilisons uniquement des matériaux de qualité professionnelle certifiés.</p>
               </div>
             </div>
-            <div className="flex items-start space-x-4 bg-gray-50 p-6 rounded-xl">
-              <CheckCircle className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Garantie 2 ans</h3>
-                <p className="text-gray-600">Toutes nos réalisations sont garanties 2 ans pièces et main d'œuvre.</p>
-              </div>
-            </div>
+
             <div className="flex items-start space-x-4 bg-gray-50 p-6 rounded-xl">
               <CheckCircle className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
