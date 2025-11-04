@@ -70,7 +70,7 @@ function OffreCarteVisite() {
                 Une offre exceptionnelle pour votre entreprise
               </h2>
               <p className="text-xl text-gray-600">
-                [TEXTE TEMPORAIRE - À MODIFIER] Découvrez les détails de notre offre exclusive réservée aux professionnels de la région Grand Est.
+                
               </p>
             </div>
 
@@ -80,12 +80,10 @@ function OffreCarteVisite() {
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">Conditions de l'offre</h2>
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                    [TEXTE TEMPORAIRE - À MODIFIER] Cette offre est valable pour toute première commande de cartes de visite. 
-                    Quantité minimum : 100 cartes. Format standard : 85x55mm. Impression recto-verso incluse.
+                    
                   </p>
                   <p className="text-gray-700 text-lg leading-relaxed">
-                    [TEXTE TEMPORAIRE - À MODIFIER] Offre limitée dans le temps. Valable jusqu'au [DATE À DÉFINIR]. 
-                    Non cumulable avec d'autres promotions. Réservé aux professionnels et entreprises.
+                    
                   </p>
                 </div>
               </div>
@@ -105,15 +103,15 @@ function OffreCarteVisite() {
               <ol className="space-y-4">
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">1</span>
-                  <p className="text-gray-700 text-lg pt-1">[TEXTE TEMPORAIRE] Contactez-nous via le formulaire ou par téléphone au 03 88 04 45 34</p>
+                  <p className="text-gray-700 text-lg pt-1"></p>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">2</span>
-                  <p className="text-gray-700 text-lg pt-1">[TEXTE TEMPORAIRE] Envoyez-nous votre logo et vos informations de contact</p>
+                  <p className="text-gray-700 text-lg pt-1"></p>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">3</span>
-                  <p className="text-gray-700 text-lg pt-1">[TEXTE TEMPORAIRE] Validez la maquette et recevez vos cartes gratuitement sous 5 jours</p>
+                  <p className="text-gray-700 text-lg pt-1"></p>
                 </li>
               </ol>
             </div>
@@ -128,7 +126,7 @@ function OffreCarteVisite() {
             Ne manquez pas cette opportunité !
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            [TEXTE TEMPORAIRE] Offre limitée. Contactez-nous dès maintenant pour profiter de vos cartes de visite gratuites.
+            
           </p>
           <Button 
             onClick={() => navigate('/contact')} 
