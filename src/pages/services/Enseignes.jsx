@@ -288,8 +288,7 @@ function Enseignes() {
         </div>
       </section>
 
-      {/* Slider Lettres Boîtier */}
-      <LettresBoitierSlider />
+
 
       <FAQ 
         title="Questions fréquentes sur les enseignes lumineuses"
