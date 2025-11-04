@@ -233,7 +233,8 @@ function Enseignes() {
             {realisations.map((realisation, index) => (
               <div 
                 key={index} 
-                className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                onClick={() => navigate('/realisations')}
+                className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer"
               >
                 <div className="relative overflow-hidden aspect-[4/3]">
                   <img 
