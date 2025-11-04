@@ -36,14 +36,13 @@ function Enseignes() {
   const navigate = useNavigate()
 
   const realisations = [
-    { image: realisation1, title: "ProControle", description: "Enseigne lumineuse contrôle technique" },
-    { image: realisation2, title: "The Little Red Door", description: "Enseigne restaurant moderne" },
-    { image: realisation3, title: "Saturn Event", description: "Logo lumineux en relief" },
-    { image: realisation4, title: "Saveurs & Saisons", description: "Enseigne restaurant traditionnel" },
-    { image: realisation5, title: "One Kebab", description: "Enseigne restauration rapide" },
-    { image: realisation6, title: "Pharmacie", description: "Croix de pharmacie Lumineuse" },
-    { image: realisation7, title: "Love", description: "Enseigne boutique élégante" },
-    { image: realisation8, title: "Perkko", description: "Enseigne commerce moderne" }
+    { image: realisation1, title: "ProControle", description: "Enseigne lumineuse contrôle technique", slug: "procontrole" },
+    { image: realisation2, title: "The Little Red Door", description: "Enseigne restaurant moderne", slug: "the-little-red-door" },
+    { image: realisation3, title: "Saturn Event", description: "Logo lumineux en relief", slug: "saturn-event" },
+    { image: realisation4, title: "Saveurs & Saisons", description: "Enseigne restaurant traditionnel", slug: "saveurs-saisons" },
+    { image: realisation5, title: "One Kebab", description: "Enseigne restauration rapide", slug: "one-kebab" },
+    { image: realisation6, title: "Pharmacie", description: "Croix de pharmacie lumineuse", slug: "pharmacie" },
+    { image: realisation7, title: "Love", description: "Enseigne boutique élégante", slug: "love" },    { image: realisation8, title: "Perkko", description: "Enseigne commerce moderne", slug: "perkko" },
   ]
 
   const autresTypes = [
@@ -233,7 +232,7 @@ function Enseignes() {
             {realisations.map((realisation, index) => (
               <div 
                 key={index} 
-                onClick={() => navigate('/realisations')}
+                onClick={() => navigate(`/realisations/${realisation.slug}`)}
                 className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer"
               >
                 <div className="relative overflow-hidden aspect-[4/3]">
