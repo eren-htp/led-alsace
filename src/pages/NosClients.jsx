@@ -172,7 +172,7 @@ function NosClients() {
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-lumineuse-dark mb-2">
-                <CounterAnimation end={98} suffix="%" />
+                <CounterAnimation end={10} suffix="+" />
               </div>
               <div className="text-lumineuse-dark/80 font-semibold">Taux de Satisfaction</div>
             </div>

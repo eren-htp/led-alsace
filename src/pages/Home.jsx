@@ -148,8 +148,7 @@ function Home() {
           <div className="max-w-3xl">
             <div className="inline-block mb-4 px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full border border-yellow-500/30">
               <span className="text-yellow-400 font-semibold">✨ Depuis 2014 en Alsace</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            </div>            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">leading-tight">
               Enseignes et Signalétique sur Mesure en Alsace
             </h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">

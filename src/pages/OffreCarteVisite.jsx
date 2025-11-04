@@ -45,10 +45,9 @@ function OffreCarteVisite() {
               <Gift className="w-6 h-6 text-white" />
               <span className="text-white font-bold text-lg">OFFRE EXCLUSIVE</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Carte de Visite Offerte
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-800 mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                Comment en profiter ?
+              </h2>        <p className="text-xl md:text-2xl text-gray-800 mb-8">
               Profitez de notre offre promotionnelle et recevez vos cartes de visite professionnelles gratuitement !
             </p>
             <Button 
@@ -79,7 +78,7 @@ function OffreCarteVisite() {
               <div className="flex items-start gap-4 mb-6">
                 <Star className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Conditions de l'offre</h3>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3">Conditions de l'offre</h2>
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
                     [TEXTE TEMPORAIRE - À MODIFIER] Cette offre est valable pour toute première commande de cartes de visite. 
                     Quantité minimum : 100 cartes. Format standard : 85x55mm. Impression recto-verso incluse.

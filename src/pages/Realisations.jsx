@@ -40,7 +40,7 @@ function Realisations() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl md:text-5xl font-bold text-lumineuse-dark mb-2">
-                <CounterAnimation end={1120} prefix="+" />
+                <CounterAnimation end={10} suffix="+" />
               </div>
               <div className="text-lumineuse-dark/80 font-semibold">Enseignes</div>
             </div>

@@ -269,7 +269,7 @@ function Contact() {
 
                 {/* Liens utiles */}
                 <div className="mt-6 pt-6 border-t-2 border-gray-200">
-                  <h3 className="text-sm font-bold text-gray-900 mb-3">Documents utiles pour votre projet d'enseigne</h3>
+                  <h4 className="text-sm font-bold text-gray-900 mb-3">Documents utiles pour votre projet d'enseigne</h4>
                   <div className="space-y-2">
                     <a 
                       href="https://www.formulaires.service-public.fr/gf/cerfa_14798.do"
@@ -304,7 +304,7 @@ function Contact() {
               <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
                 <div className="flex items-center mb-6">
                   <Clock className="w-8 h-8 text-yellow-500 mr-3" />
-                  <h3 className="text-2xl font-bold text-gray-900">Horaires d'ouverture</h3>
+                  <h2 className="text-2xl font-bold text-gray-900">Horaires d'ouverture</h2>
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between py-2 border-b border-gray-100">
@@ -328,7 +328,7 @@ function Contact() {
 
               {/* Zone d'intervention */}
               <div className="bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-200 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Zone d'intervention</h3>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Zone d'intervention</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Nous intervenons dans toute l'Alsace et les régions limitrophes :
                 </p>
@@ -354,7 +354,7 @@ function Contact() {
 
               {/* Pourquoi nous contacter */}
               <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi nous contacter ?</h3>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi nous contacter ?</h2>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
                     <span className="text-yellow-500 mr-2 mt-1">✓</span>
