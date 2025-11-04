@@ -12,6 +12,13 @@ function OffreCarteVisite() {
     { name: "Carte visite offerte", url: "/offre-carte-visite" }
   ]
 
+  const seoData = {
+    title: "Carte de Visite Offerte - LED Alsace",
+    description: "Profitez de notre offre exceptionnelle : 250 cartes de visite offertes pour toute commande d'enseigne ou de marquage véhicule. Offre limitée !",
+    keywords: "carte de visite offerte, cartes de visite gratuites, offre spéciale, enseigne, marquage véhicule, LED Alsace",
+    canonicalUrl: "https://www.ledalsace.com/offre-carte-visite"
+  }
+
   const avantages = [
     "Design professionnel personnalisé",
     "Impression haute qualité",
@@ -21,11 +28,12 @@ function OffreCarteVisite() {
 
   return (
     <div className="min-h-screen bg-white">
+
       <SEO 
-        title="Carte de Visite Offerte - LED Alsace"
-        description="Profitez de notre offre exclusive : recevez votre carte de visite professionnelle gratuitement. Offre limitée dans le temps."
-        keywords="carte de visite gratuite, carte visite offerte, impression gratuite Alsace"
-        canonicalUrl="https://led-alsace.vercel.app/offre-carte-visite"
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
       />
       <Breadcrumb items={breadcrumbItems} />
 

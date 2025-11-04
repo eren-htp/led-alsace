@@ -82,8 +82,8 @@ const servicesSEOConfig = {
 
   textileEPI: {
     title: "Marquage Textile et EPI Personnalisés en Alsace",
-    description: "Flocage et broderie sur textiles professionnels en Alsace : t-shirts, polos, vestes, EPI. Personnalisation de vêtements de travail et uniformes.",
-    keywords: "marquage textile Alsace, flocage t-shirt, broderie polo, EPI personnalisé, vêtements de travail Strasbourg",
+    description: "Marquage textile (DTF, flocage, broderie) et EPI personnalisés en Alsace : t-shirts, polos, vestes, vêtements de travail. Qualité professionnelle.",
+    keywords: "marquage textile Alsace, DTF, flocage t-shirt, broderie polo, EPI personnalisé, vêtements de travail Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/textile-epi",
     h1: "Marquage Textile et EPI Professionnels en Alsace",
     breadcrumb: [
@@ -196,8 +196,8 @@ const servicesSEOConfig = {
 
   vitrophanie: {
     title: "Vitrophanie et Adhésifs Vitrine en Alsace",
-    description: "Vitrophanie professionnelle en Alsace : adhésifs décoratifs, films occultants, stickers vitrine. Personnalisation de vitrines pour commerces.",
-    keywords: "vitrophanie Alsace, adhésif vitrine, film occultant, sticker vitrine, décoration vitrine Strasbourg",
+    description: "Vitrophanie et adhésifs vitrine professionnels en Alsace : films décoratifs, occultants, microperforés. Pose professionnelle sur vitrines de commerces.",
+    keywords: "vitrophanie Alsace, adhésif vitrine, film occultant, film microperforé, sticker vitrine, décoration vitrine Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/vitrophanie",
     h1: "Vitrophanie et Adhésifs Vitrine Professionnels en Alsace",
     breadcrumb: [
@@ -215,8 +215,8 @@ const servicesSEOConfig = {
 
   decoupeLaser: {
     title: "Découpe Laser Professionnelle en Alsace",
-    description: "Service de découpe laser de précision en Alsace : bois, acrylique, métal, carton. Découpe et gravure laser pour enseignes et objets personnalisés.",
-    keywords: "découpe laser Alsace, gravure laser, découpe bois, découpe acrylique, laser Strasbourg",
+    description: "Découpe et gravure laser de précision en Alsace : bois, acrylique, métal, carton. Création d'enseignes, lettres 3D et objets personnalisés.",
+    keywords: "découpe laser Alsace, gravure laser, découpe bois, découpe acrylique, lettres 3D, laser Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/decoupe-laser",
     h1: "Découpe Laser Professionnelle et Gravure en Alsace",
     breadcrumb: [
@@ -234,8 +234,8 @@ const servicesSEOConfig = {
 
   decoupeCNC: {
     title: "Découpe CNC et Fraisage Numérique en Alsace",
-    description: "Service de découpe CNC professionnelle en Alsace : fraisage numérique, découpe de précision sur bois, PVC, aluminium. Enseignes et pièces sur mesure.",
-    keywords: "découpe CNC Alsace, fraisage numérique, découpe bois CNC, usinage CNC, fraisage Strasbourg",
+    description: "Découpe CNC et fraisage numérique professionnel en Alsace : bois, PVC, aluminium, dibond. Pièces sur mesure, lettres 3D, enseignes.",
+    keywords: "découpe CNC Alsace, fraisage numérique, découpe bois CNC, lettres 3D, usinage CNC, fraisage Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/decoupe-cnc",
     h1: "Découpe CNC et Fraisage Numérique Professionnel en Alsace",
     breadcrumb: [
@@ -253,8 +253,8 @@ const servicesSEOConfig = {
 
   enseigneDibond: {
     title: "Enseigne Dibond Aluminium en Alsace",
-    description: "Fabrication d'enseignes en dibond (aluminium composite) en Alsace. Panneaux dibond légers, résistants, pour intérieur et extérieur.",
-    keywords: "enseigne dibond Alsace, panneau dibond, aluminium composite, enseigne aluminium, dibond Strasbourg",
+    description: "Enseignes et panneaux Dibond (aluminium composite) en Alsace. Impression directe, découpe sur mesure. Léger, rigide, résistant pour intérieur/extérieur.",
+    keywords: "enseigne dibond Alsace, panneau dibond, aluminium composite, impression dibond, enseigne aluminium, dibond Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/enseigne-dibond",
     h1: "Enseignes Dibond Aluminium Composite en Alsace",
     breadcrumb: [
@@ -291,8 +291,8 @@ const servicesSEOConfig = {
 
   enseigneDrapeau: {
     title: "Enseigne Drapeau et Perpendiculaire en Alsace",
-    description: "Fabrication d'enseignes drapeau (perpendiculaires) en Alsace. Enseignes double face pour façades, haute visibilité.",
-    keywords: "enseigne drapeau Alsace, enseigne perpendiculaire, enseigne double face, enseigne façade, drapeau Strasbourg",
+    description: "Enseignes drapeau (perpendiculaires) en Alsace. Enseignes double face lumineuses ou non, pour une visibilité maximale en centre-ville.",
+    keywords: "enseigne drapeau Alsace, enseigne perpendiculaire, enseigne double face, enseigne façade, enseigne lumineuse drapeau, drapeau Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/enseigne-drapeau",
     h1: "Enseignes Drapeau Perpendiculaires en Alsace",
     breadcrumb: [
@@ -310,8 +310,8 @@ const servicesSEOConfig = {
 
   caissonAjoure: {
     title: "Caisson Ajouré et Lettres Boîtier en Alsace",
-    description: "Fabrication de caissons ajourés et lettres boîtier lumineuses en Alsace. Enseignes Lumineuse relief pour commerces, effet 3D premium.",
-    keywords: "caisson ajouré Alsace, lettres boîtier, enseigne relief, lettres lumineuses 3D, caisson Lumineuse Strasbourg",
+    description: "Caissons ajourés et lettres boîtier lumineuses en Alsace. Enseignes Lumineuse relief, effet 3D premium. Fabrication sur mesure.",
+    keywords: "caisson ajouré Alsace, lettres boîtier, enseigne relief, lettres lumineuses 3D, enseigne 3D, caisson Lumineuse Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/caisson-ajoure",
     h1: "Caissons Ajourés et Enseigne Lettres Boîtier en Alsace",
     breadcrumb: [
@@ -329,8 +329,8 @@ const servicesSEOConfig = {
 
   ecransLED: {
     title: "Écrans Lumineuse Publicitaires en Alsace",
-    description: "Installation d'écrans Lumineuse publicitaires en Alsace : affichage dynamique extérieur et intérieur. Écrans géants Lumineuse pour commerces et événements.",
-    keywords: "écran LED Alsace, affichage dynamique, écran publicitaire, écran géant Lumineuse, digital signage Strasbourg",
+    description: "Écrans Lumineuse publicitaires et affichage dynamique en Alsace. Installation d'écrans géants Lumineuse pour extérieur et intérieur. Gestion de contenu.",
+    keywords: "écran LED Alsace, affichage dynamique, écran publicitaire, écran géant Lumineuse, écran extérieur, digital signage Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/ecrans-lumineuse",
     h1: "Écrans Lumineuse Publicitaires et Affichage Dynamique en Alsace",
     breadcrumb: [
