@@ -1,0 +1,144 @@
+import { Button } from '@/components/ui/button.jsx'
+import SEO from '../components/SEO.jsx'
+import Breadcrumb from '../components/Breadcrumb.jsx'
+import { ArrowRight, Gift, Check, Star } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+
+function ReferencementProGratuit() {
+  const navigate = useNavigate()
+
+  const breadcrumbItems = [
+    { name: "Accueil", url: "/" },
+    { name: "Référencement Pro Gratuit", url: "/referencement-pro-gratuit" }
+  ]
+
+  const seoData = {
+    title: "Référencement Pro Gratuit - LED Alsace",
+    description: "Profitez de notre offre de référencement professionnel gratuit pour toute commande d'enseigne ou de marquage véhicule. Améliorez votre visibilité en ligne !",
+    keywords: "référencement pro gratuit, référencement professionnel, offre spéciale, enseigne, marquage véhicule, LED Alsace",
+    canonicalUrl: "https://www.ledalsace.com/referencement-pro-gratuit"
+  }
+
+  const avantages = [
+    "Design professionnel personnalisé",
+    "Impression haute qualité",
+    "Livraison rapide",
+    "Sans engagement"
+  ]
+
+  return (
+    <div className="min-h-screen bg-white">
+
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl={seoData.canonicalUrl}
+      />
+      <Breadcrumb items={breadcrumbItems} />
+
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-yellow-400 to-yellow-600 py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full mb-6">
+              <Gift className="w-6 h-6 text-white" />
+              <span className="text-white font-bold text-lg">OFFRE EXCLUSIVE</span>
+            </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                Comment bénéficier de l'offre ?
+              </h2>        <p className="text-xl md:text-2xl text-gray-800 mb-8">
+              Profitez de notre offre promotionnelle et bénéficiez d'un référencement professionnel gratuit !
+            </p>
+            <Button 
+              onClick={() => navigate('/contact')} 
+              size="lg" 
+              className="bg-gray-900 hover:bg-black text-white font-bold text-lg px-10 py-7 shadow-2xl"
+            >
+              Profiter de l'offre <ArrowRight className="ml-2 w-6 h-6" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Détails de l'offre - CONTENU TEMPORAIRE À MODIFIER */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Un service de référencement professionnel pour votre entreprise
+              </h2>
+              <p className="text-xl text-gray-600">
+                
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-yellow-50 to-white p-10 rounded-2xl border-2 border-yellow-500 shadow-xl mb-12">
+              <div className="flex items-start gap-4 mb-6">
+                <Star className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3">Détails de l'offre de Référencement Pro Gratuit</h2>
+                  <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                    
+                  </p>
+                  <p className="text-gray-700 text-lg leading-relaxed">
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {avantages.map((avantage, index) => (
+                <div key={index} className="flex items-center gap-4 bg-gray-50 p-6 rounded-xl">
+                  <Check className="w-6 h-6 text-yellow-500 flex-shrink-0" />
+                  <span className="text-gray-800 font-medium text-lg">{avantage}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-gray-50 p-8 rounded-xl">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Comment bénéficier de l'offre ?</h3>
+              <ol className="space-y-4">
+                <li className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">1</span>
+                  <p className="text-gray-700 text-lg pt-1"></p>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">2</span>
+                  <p className="text-gray-700 text-lg pt-1"></p>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">3</span>
+                  <p className="text-gray-700 text-lg pt-1"></p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-20 bg-gradient-to-r from-gray-900 to-black">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            Boostez votre visibilité en ligne !
+          </h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            
+          </p>
+          <Button 
+            onClick={() => navigate('/contact')} 
+            size="lg" 
+            className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold text-lg px-10 py-7"
+          >
+            Profiter du Référencement Gratuit <ArrowRight className="ml-2 w-6 h-6" />
+          </Button>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default ReferencementProGratuit

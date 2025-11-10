@@ -9,7 +9,7 @@ import RealisationDetail from './pages/RealisationDetail'
 import NosClients from './pages/NosClients'
 import APropos from './pages/APropos'
 import MentionsLegales from './pages/MentionsLegales'
-import OffreCarteVisite from './pages/OffreCarteVisite'
+import ReferencementProGratuit from './pages/ReferencementProGratuit'
 
 import Catalogue from './pages/Catalogue'
 import Enseignes from './pages/services/Enseignes'
@@ -75,7 +75,7 @@ function App() {
 
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/offre-carte-visite" element={<OffreCarteVisite />} />
+          <Route path="/referencement-pro-gratuit" element={<ReferencementProGratuit />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
         </Routes>
       </Layout>

@@ -219,10 +219,10 @@ function Layout({ children }) {
                   Catalogue
                 </Link>
                 <Button 
-                  onClick={() => window.location.href = '/offre-carte-visite'}
+                  onClick={() => window.location.href = '/referencement-pro-gratuit'}
                   className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-[#1A2534] font-bold shadow-lg"
                 >
-                  🎁 Carte visite offerte
+                  ⭐ Référencement Pro Gratuit
                 </Button>
                 <Button 
                   onClick={() => window.location.href = '/contact'}
@@ -307,10 +307,10 @@ function Layout({ children }) {
                   Catalogue
                 </Link>
                 <Button 
-                  onClick={() => window.location.href = '/offre-carte-visite'}
+                  onClick={() => window.location.href = '/referencement-pro-gratuit'}
                   className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-[#1A2534] font-bold shadow-lg mb-2"
                 >
-                  🎁 Carte visite offerte
+                  ⭐ Référencement Pro Gratuit
                 </Button>
                 <Button 
                   onClick={() => window.location.href = '/contact'}

@@ -1,8 +1,3 @@
-/**
- * Configuration SEO pour toutes les pages de services
- * Contient: title, description, keywords, H1, breadcrumb, FAQs pour chaque service
- */
-
 const servicesSEOConfig = {
   enseignes: {
     title: "Enseignes Lumineuses sur Mesure en Alsace | LED Alsace",
@@ -138,47 +133,47 @@ const servicesSEOConfig = {
   },
 
   neonLED: {
-    title: "Néon Lumineuse Personnalisé en Alsace - Lettres Lumineuses",
-    description: "Fabrication de néons Lumineuse personnalisés en Alsace : lettres lumineuses, logos Lumineuse, enseignes néon. Design moderne, consommation réduite.",
-    keywords: "néon LED Alsace, lettres lumineuses, enseigne néon Lumineuse, néon personnalisé, néon Lumineuse Strasbourg",
+    title: "Néon Lumineuse sur Mesure en Alsace",
+    description: "Création de néons Lumineuse sur mesure en Alsace. Personnalisez votre intérieur, événement ou commerce avec un néon unique. Fabrication artisanale.",
+    keywords: "néon LED Alsace, néon sur mesure, néon personnalisé, enseigne néon, décoration néon, néon Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/neon-lumineuse",
-    h1: "Néon Lumineuse Personnalisé et Lettres Lumineuses en Alsace",
+    h1: "Néon Lumineuse sur Mesure en Alsace",
     breadcrumb: [
       { name: "Services", url: "/services" },
       { name: "Néon Lumineuse", url: "/services/neon-lumineuse" }
     ],
     faqs: [
-      { question: "Quelle différence entre néon Lumineuse et néon traditionnel ?", answer: "Le néon Lumineuse consomme 80% moins, ne chauffe pas, dure 10x plus longtemps (50 000h), et offre plus de couleurs. Plus sûr et écologique." },
-      { question: "Peut-on créer n'importe quelle forme en néon Lumineuse ?", answer: "Oui, le néon Lumineuse flexible permet de créer toutes les formes : lettres, logos, dessins, motifs. Seule limite : votre imagination !" },
-      { question: "Le néon Lumineuse peut-il être utilisé en extérieur ?", answer: "Oui, nos néons Lumineuse sont disponibles en version étanche IP65 pour usage extérieur. Résistants à la pluie et aux UV." },
-      { question: "Combien coûte un néon Lumineuse personnalisé ?", answer: "À partir de 150€ pour un petit néon (30cm) jusqu'à 2000€ pour de grandes installations. Prix selon taille et complexité." },
-      { question: "Quelle est la durée de vie d'un néon Lumineuse ?", answer: "Nos néons Lumineuse durent 50 000 heures, soit environ 10 ans en utilisation 12h/jour. Garantie 2 ans." }
+      { question: "Le néon Lumineuse est-il fragile ?", answer: "Non, contrairement au néon en verre, le néon Lumineuse est en silicone souple, résistant aux chocs et sans risque de casse." },
+      { question: "Quelle est la durée de vie d'un néon Lumineuse ?", answer: "Environ 50 000 heures, soit plus de 10 ans d'utilisation normale. Faible consommation électrique." },
+      { question: "Peut-on créer n'importe quelle forme en néon Lumineuse ?", answer: "Oui, nous pouvons reproduire votre logo, texte, ou dessin. La flexibilité du silicone permet une grande liberté de création." },
+      { question: "Le néon Lumineuse chauffe-t-il ?", answer: "Non, le néon Lumineuse ne dégage quasiment aucune chaleur. Il peut être touché sans danger, même après des heures d'utilisation." },
+      { question: "Comment installer un néon Lumineuse ?", answer: "Très simple ! Nos néons sont livrés avec des fixations murales ou peuvent être posés. Branchez simplement la prise secteur." }
     ]
   },
 
   impressionPapier: {
-    title: "Impression Papier Professionnelle en Alsace",
-    description: "Impression de documents professionnels en Alsace : cartes de visite, flyers, affiches, brochures, dépliants. Qualité offset et numérique.",
-    keywords: "impression papier Alsace, carte de visite, flyer, affiche, brochure, impression Strasbourg",
+    title: "Impression Papier et Supports de Communication en Alsace",
+    description: "Impression de tous vos supports de communication en Alsace : cartes de visite, flyers, dépliants, brochures, affiches. Qualité professionnelle.",
+    keywords: "impression papier Alsace, cartes de visite, flyers, dépliants, brochures, affiches, imprimerie Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/impression-papier",
-    h1: "Impression Papier Professionnelle en Alsace",
+    h1: "Impression Papier et Supports de Communication en Alsace",
     breadcrumb: [
       { name: "Services", url: "/services" },
       { name: "Impression Papier", url: "/services/impression-papier" }
     ],
     faqs: [
-      { question: "Quelle différence entre offset et numérique ?", answer: "L'offset est économique pour grandes quantités (500+) avec rendu premium. Le numérique est idéal pour petites séries et délais courts." },
-      { question: "Quels sont vos délais d'impression ?", answer: "48h à 72h pour l'impression numérique. 5 à 7 jours pour l'offset. Service express 24h disponible selon disponibilité." },
-      { question: "Proposez-vous la création graphique des supports ?", answer: "Oui, notre studio graphique crée vos supports de A à Z. Ou nous imprimons vos fichiers fournis (avec vérification technique)." },
-      { question: "Quelles finitions proposez-vous ?", answer: "Pelliculage mat/brillant, vernis sélectif, dorure, découpe sur mesure, pliage, reliure, perforation. Toutes finitions professionnelles." },
-      { question: "Quelle quantité minimum pour commander ?", answer: "Pas de minimum en numérique ! Dès 1 exemplaire. Tarifs dégressifs à partir de 50 exemplaires." }
+      { question: "Quels types de papier proposez-vous ?", answer: "Papier couché mat ou brillant, papier recyclé, papier de création (texturé, irisé). De 80g à 400g selon usage." },
+      { question: "Quelles finitions sont possibles ?", answer: "Pelliculage mat, brillant ou soft-touch, vernis sélectif, dorure à chaud, gaufrage. Pour un rendu premium." },
+      { question: "Quels sont les délais d'impression ?", answer: "Délai standard de 5 à 7 jours. Service express 48h disponible pour cartes de visite et flyers." },
+      { question: "Faut-il fournir un fichier prêt à imprimer ?", answer: "Idéalement oui (PDF avec fonds perdus). Sinon, notre studio graphique peut créer ou adapter votre fichier." },
+      { question: "Quelle quantité minimum pour une commande ?", answer: "À partir de 50 exemplaires pour les cartes de visite, 100 pour les flyers. Tarifs dégressifs." }
     ]
   },
 
   objetsPublicitaires: {
-    title: "Objets Publicitaires Personnalisés en Alsace",
-    description: "Objets publicitaires et goodies personnalisés en Alsace : stylos, mugs, clés USB, textiles. Cadeaux d'entreprise sur mesure.",
-    keywords: "objets publicitaires Alsace, goodies personnalisés, cadeaux entreprise, stylos personnalisés, mugs Strasbourg",
+    title: "Objets Publicitaires et Goodies Personnalisés en Alsace",
+    description: "Personnalisation d'objets publicitaires et goodies en Alsace : stylos, clés USB, mugs, tote bags, textiles. Marquez les esprits avec des cadeaux d'entreprise.",
+    keywords: "objets publicitaires Alsace, goodies personnalisés, cadeaux d'entreprise, stylos publicitaires, mugs personnalisés, tote bags Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/objets-publicitaires",
     h1: "Objets Publicitaires et Goodies Personnalisés en Alsace",
     breadcrumb: [
@@ -186,18 +181,18 @@ const servicesSEOConfig = {
       { name: "Objets Publicitaires", url: "/services/objets-publicitaires" }
     ],
     faqs: [
-      { question: "Quelle quantité minimum pour des objets publicitaires ?", answer: "Cela dépend du produit. Généralement 25 à 50 pièces minimum. Certains articles disponibles dès 10 pièces." },
-      { question: "Quels objets publicitaires sont les plus efficaces ?", answer: "Les objets utiles du quotidien : stylos, mugs, clés USB, sacs, textiles. Ils génèrent le plus d'impressions et de mémorisation." },
-      { question: "Peut-on personnaliser avec notre logo en couleur ?", answer: "Oui, nous reproduisons votre logo en couleurs (quadrichromie, sérigraphie, tampographie) selon l'objet et la technique." },
-      { question: "Quel délai pour recevoir des objets publicitaires ?", answer: "Comptez 2 à 4 semaines selon le produit et la quantité. Certains articles en stock disponibles sous 1 semaine." },
-      { question: "Proposez-vous des objets publicitaires écologiques ?", answer: "Oui, nous avons une gamme éco-responsable : objets recyclés, bambou, coton bio, matériaux durables. Sur demande." }
+      { question: "Quels objets publicitaires proposez-vous ?", answer: "Stylos, carnets, mugs, gourdes, clés USB, batteries externes, tote bags, parapluies, et des milliers d'autres références sur catalogue." },
+      { question: "Quelle technique de marquage utilisez-vous ?", answer: "Sérigraphie, tampographie, gravure laser, impression numérique, broderie, selon l'objet et le logo à marquer." },
+      { question: "Quelle est la quantité minimum de commande ?", answer: "Variable selon l'objet : à partir de 25 pièces pour les mugs, 100 pour les stylos. Contactez-nous pour un devis." },
+      { question: "Quel est le délai pour des objets publicitaires ?", answer: "10 à 15 jours ouvrés en moyenne après validation du BAT. Certains articles disponibles en express." },
+      { question: "Peut-on voir un échantillon avant de commander ?", answer: "Oui, nous pouvons fournir un échantillon (facturé puis déduit de la commande) ou un BAT numérique gratuit." }
     ]
   },
 
   vitrophanie: {
-    title: "Vitrophanie et Adhésifs Vitrine en Alsace",
-    description: "Vitrophanie et adhésifs vitrine professionnels en Alsace : films décoratifs, occultants, microperforés. Pose professionnelle sur vitrines de commerces.",
-    keywords: "vitrophanie Alsace, adhésif vitrine, film occultant, film microperforé, sticker vitrine, décoration vitrine Strasbourg",
+    title: "Vitrophanie et Adhésifs Vitrine Professionnels en Alsace",
+    description: "Pose de vitrophanie et adhésifs sur vitrines en Alsace. Films dépolis, microperforés, solaires, de sécurité. Décoration et confidentialité.",
+    keywords: "vitrophanie Alsace, film dépoli, adhésif microperforé, film solaire, film sécurité, pose vitrophanie Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/vitrophanie",
     h1: "Vitrophanie et Adhésifs Vitrine Professionnels en Alsace",
     breadcrumb: [
@@ -344,8 +339,25 @@ const servicesSEOConfig = {
       { question: "Comment mettre à jour le contenu de l'écran ?", answer: "Via logiciel cloud accessible depuis ordinateur ou smartphone. Changement de contenu en temps réel, programmation horaire." },
       { question: "Combien coûte un écran Lumineuse publicitaire ?", answer: "De 5000€ (petit écran intérieur) à 50000€+ (grand écran extérieur). Prix selon taille, résolution, usage. Devis sur mesure." }
     ]
+  },
+
+  referencementProGratuit: {
+    title: "Référencement Pro Gratuit - LED Alsace",
+    description: "Profitez de notre offre de référencement professionnel gratuit pour toute commande d'enseigne ou de marquage véhicule. Améliorez votre visibilité en ligne !",
+    keywords: "référencement pro gratuit, référencement professionnel, offre spéciale, enseigne, marquage véhicule, LED Alsace",
+    canonicalUrl: "https://www.ledalsace.com/referencement-pro-gratuit",
+    h1: "Offre Spéciale : Référencement Pro Gratuit",
+    breadcrumb: [
+      { name: "Accueil", url: "/" },
+      { name: "Référencement Pro Gratuit", url: "/referencement-pro-gratuit" }
+    ],
+    faqs: [
+      { question: "Qu'est-ce que le Référencement Pro Gratuit ?", answer: "C'est une offre spéciale qui vous permet de bénéficier d'un référencement de votre entreprise sur des annuaires professionnels et des plateformes locales, offert pour toute commande d'enseigne ou de marquage véhicule." },
+      { question: "Quels sont les avantages de cette offre ?", answer: "Amélioration de votre visibilité en ligne, augmentation du trafic local vers votre établissement, et renforcement de votre crédibilité professionnelle." },
+      { question: "Comment puis-je en bénéficier ?", answer: "Il suffit de passer commande d'une enseigne ou d'un marquage véhicule. Notre équipe s'occupera de votre référencement sans frais supplémentaires." },
+      { question: "L'offre est-elle limitée dans le temps ?", answer: "Oui, cette offre est limitée. Contactez-nous rapidement pour en profiter." }
+    ]
   }
 }
 
-export default servicesSEOConfig
-
+export default servicesSEOConfig;
