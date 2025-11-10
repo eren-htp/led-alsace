@@ -96,34 +96,40 @@ function EnseignesPharmacie() {
             </p>
           </div>
 
-          {/* Croix de Pharmacie */}
-          <div className="mb-16">
-            <h3 className="text-3xl font-bold text-yellow-600 mb-6 border-b-2 border-yellow-400 pb-2">Croix de Pharmacie</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 text-lg text-gray-700 list-disc list-inside ml-4">
-              <li>Écran LCD Intégré (affichage messages, heure, température)</li>
-              <li>Écran Monochrome (vert classique)</li>
-              <li>Écran Bicolore (vert et blanc ou autres combinaisons)</li>
-            </ul>
-          </div>
+          {/* Solutions en Cartes */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            {/* Croix de Pharmacie */}
+            <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-t-4 border-yellow-500">
+              <h3 className="text-3xl font-bold text-yellow-600 mb-4">Croix de Pharmacie</h3>
+              <p className="text-gray-600 mb-6">Le symbole incontournable de votre officine, modernisé par la technologie LED.</p>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start"><Check className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />Écran LCD Intégré (affichage messages, heure, température)</li>
+                <li className="flex items-start"><Check className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />Écran Monochrome (vert classique)</li>
+                <li className="flex items-start"><Check className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />Écran Bicolore (vert et blanc ou autres combinaisons)</li>
+              </ul>
+            </div>
 
-          {/* Enseignes de Pharmacie */}
-          <div className="mb-16">
-            <h3 className="text-3xl font-bold text-yellow-600 mb-6 border-b-2 border-yellow-400 pb-2">Enseignes de Pharmacie</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 text-lg text-gray-700 list-disc list-inside ml-4">
-              <li>Enseigne Rétro-éclairée (effet halo)</li>
-              <li>Enseigne Éclairée par l’avant (lettres boîtier lumineuses)</li>
-              <li>Enseigne non lumineuse (Dibond, PVC, etc.)</li>
-            </ul>
-          </div>
+            {/* Enseignes de Pharmacie */}
+            <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-t-4 border-yellow-500">
+              <h3 className="text-3xl font-bold text-yellow-600 mb-4">Enseignes de Pharmacie</h3>
+              <p className="text-gray-600 mb-6">Des solutions d'enseignes sur mesure pour une visibilité maximale de votre façade.</p>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start"><Check className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />Enseigne Rétro-éclairée (effet halo)</li>
+                <li className="flex items-start"><Check className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />Enseigne Éclairée par l’avant (lettres boîtier lumineuses)</li>
+                <li className="flex items-start"><Check className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />Enseigne non lumineuse (Dibond, PVC, etc.)</li>
+              </ul>
+            </div>
 
-          {/* Signalétique */}
-          <div className="mb-16">
-            <h3 className="text-3xl font-bold text-yellow-600 mb-6 border-b-2 border-yellow-400 pb-2">Signalétique</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 text-lg text-gray-700 list-disc list-inside ml-4">
-              <li>Panneau de parking (réservé, accès, etc.)</li>
-              <li>Signalétique de Files d’attentes (marquage au sol, potelets)</li>
-              <li>PLV (Publicité sur Lieu de Vente) pour l'intérieur</li>
-            </ul>
+            {/* Signalétique */}
+            <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-t-4 border-yellow-500">
+              <h3 className="text-3xl font-bold text-yellow-600 mb-4">Signalétique</h3>
+              <p className="text-gray-600 mb-6">Optimisez l'orientation et l'information de vos clients à l'intérieur comme à l'extérieur.</p>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start"><Check className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />Panneau de parking (réservé, accès, etc.)</li>
+                <li className="flex items-start"><Check className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />Signalétique de Files d’attentes (marquage au sol, potelets)</li>
+                <li className="flex items-start"><Check className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />PLV (Publicité sur Lieu de Vente) pour l'intérieur</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
