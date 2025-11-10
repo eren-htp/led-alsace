@@ -84,33 +84,91 @@ function EnseignesPharmacie() {
         subtitle="Des solutions LED sur mesure pour garantir la visibilité de votre officine 24h/24."
       />
 
-      {/* Contenu Principal */}
+      {/* Contenu Principal - Solutions */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              La solution LED pour votre pharmacie
+              Nos solutions d'enseignes et signalétique pour les pharmacies
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Que ce soit pour une croix de pharmacie dynamique ou une enseigne lumineuse, nous vous proposons des produits performants et conformes à la législation.
+              Une gamme complète de produits pour garantir la visibilité et la conformité de votre officine.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {avantages.map((avantage, index) => (
-              <div 
-                key={index} 
-                className="group relative bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-yellow-400 hover:-translate-y-1 text-center"
-              >
-                <div className="relative">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
-                    <avantage.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{avantage.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{avantage.description}</p>
-                </div>
-              </div>
-            ))}
+          {/* Croix de Pharmacie */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-yellow-600 mb-6 border-b-2 border-yellow-400 pb-2">Croix de Pharmacie</h3>
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 text-lg text-gray-700 list-disc list-inside ml-4">
+              <li>Écran LCD Intégré (affichage messages, heure, température)</li>
+              <li>Écran Monochrome (vert classique)</li>
+              <li>Écran Bicolore (vert et blanc ou autres combinaisons)</li>
+            </ul>
+          </div>
+
+          {/* Enseignes de Pharmacie */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-yellow-600 mb-6 border-b-2 border-yellow-400 pb-2">Enseignes de Pharmacie</h3>
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 text-lg text-gray-700 list-disc list-inside ml-4">
+              <li>Enseigne Rétro-éclairée (effet halo)</li>
+              <li>Enseigne Éclairée par l’avant (lettres boîtier lumineuses)</li>
+              <li>Enseigne non lumineuse (Dibond, PVC, etc.)</li>
+            </ul>
+          </div>
+
+          {/* Signalétique */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-yellow-600 mb-6 border-b-2 border-yellow-400 pb-2">Signalétique</h3>
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 text-lg text-gray-700 list-disc list-inside ml-4">
+              <li>Panneau de parking (réservé, accès, etc.)</li>
+              <li>Signalétique de Files d’attentes (marquage au sol, potelets)</li>
+              <li>PLV (Publicité sur Lieu de Vente) pour l'intérieur</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Milieu de Page */}
+      <section className="py-12 bg-gray-100">
+        <div className="container mx-auto px-4 text-center">
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            Besoin d'un conseil personnalisé pour votre officine ?
+          </h3>
+          <Button onClick={() => navigate('/contact')} size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold text-lg px-8 py-4">
+            Contactez-nous pour une étude gratuite<ArrowRight className="ml-2 w-5 h-5" />
+          </Button>
+        </div>
+      </section>
+
+      {/* Liste de Pharmacies Accompagnées (Références Fictives) */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Pharmacies qui nous ont fait confiance
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Quelques exemples de nos réalisations en Alsace (noms fictifs à titre d'exemple)
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
+            <div className="p-4 border rounded-lg shadow-md">
+              <h4 className="text-xl font-semibold text-gray-800">Pharmacie du Rhin</h4>
+              <p className="text-sm text-gray-500">Strasbourg</p>
+            </div>
+            <div className="p-4 border rounded-lg shadow-md">
+              <h4 className="text-xl font-semibold text-gray-800">Pharmacie Centrale</h4>
+              <p className="text-sm text-gray-500">Colmar</p>
+            </div>
+            <div className="p-4 border rounded-lg shadow-md">
+              <h4 className="text-xl font-semibold text-gray-800">Pharmacie de l'Ill</h4>
+              <p className="text-sm text-gray-500">Mulhouse</p>
+            </div>
+            <div className="p-4 border rounded-lg shadow-md">
+              <h4 className="text-xl font-semibold text-gray-800">Pharmacie de la Gare</h4>
+              <p className="text-sm text-gray-500">Sélestat</p>
+            </div>
           </div>
         </div>
       </section>
@@ -125,13 +183,13 @@ function EnseignesPharmacie() {
       <section className="py-20 bg-gradient-to-r from-gray-900 to-black">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Un projet d'enseigne ou de croix de pharmacie ?
+            Lancez votre projet d'enseigne de pharmacie en toute sérénité
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Contactez-nous pour un devis gratuit et une étude de conformité.
+            Contactez notre équipe d'experts pour un accompagnement complet, de la conception à l'installation.
           </p>
           <Button onClick={() => navigate('/contact')} size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold text-lg px-8 py-6">
-            Demander un devis<ArrowRight className="ml-2 w-5 h-5" />
+            Demander un devis gratuit<ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>
       </section>
