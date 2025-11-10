@@ -8,8 +8,8 @@ import FAQ from '../../components/FAQ';
 import HeroSlider from '../../components/HeroSlider';
 import { ArrowRight, Check, Lightbulb, MapPin } from 'lucide-react';
 
-// Assets (Placeholders pour éviter les erreurs d'importation)
-const croixPharmacie = 'https://via.placeholder.com/1920x1080/FFD700/000000?text=Croix+Pharmacie';
+// Assets
+import croixPharmacie from '../../assets/croix-pharmacie-temp.jpg';
 const enseignePharmacie = 'https://via.placeholder.com/1920x1080/FFD700/000000?text=Enseigne+Pharmacie';
 const enseignePharmacie2 = 'https://via.placeholder.com/1920x1080/FFD700/000000?text=Enseigne+Pharmacie+2';
 
