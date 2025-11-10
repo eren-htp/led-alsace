@@ -345,13 +345,13 @@ function Layout({ children }) {
                 et marquage en Alsace depuis 2014.
               </p>
               <div className="flex space-x-4">
-                <a href="https://www.instagram.com/led_alsace/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <a href="https://www.instagram.com/ledalsace/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a href="https://www.linkedin.com/company/lumineuse-alsace/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <a href="https://www.linkedin.com/company/led-alsace" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
                   <Linkedin className="w-6 h-6" />
                 </a>
-                <a href="https://www.snapchat.com/add/led_alsace" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <a href="https://www.snapchat.com/@led.alsace" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-500 transition-colors">
                   <SnapchatIcon className="w-6 h-6" />
                 </a>
               </div>
