@@ -17,6 +17,7 @@ function Layout({ children }) {
 
   const services = [
     { name: 'Enseignes', path: '/services/enseignes' },
+    { name: 'Enseignes Pharmacie', path: '/services/enseignes-pharmacie' },
     { name: 'Marquage Vitrine', path: '/services/marquage-vitrine' },
     { name: 'Impression grand format', path: '/services/impression-grand-format' },
     { name: 'Marquage véhicules', path: '/services/marquage-vehicule' },
