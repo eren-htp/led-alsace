@@ -10,6 +10,7 @@ import NosClients from './pages/NosClients'
 import APropos from './pages/APropos'
 import MentionsLegales from './pages/MentionsLegales'
 import ReferencementProGratuit from './pages/ReferencementProGratuit'
+import NotFound from './pages/NotFound'
 
 import Catalogue from './pages/Catalogue'
 import Enseignes from './pages/services/Enseignes'
@@ -77,6 +78,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/referencement-pro-gratuit" element={<ReferencementProGratuit />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </Router>
