@@ -1,20 +1,20 @@
 const servicesSEOConfig = {
   enseignes: {
-    title: "Enseignes Lumineuses sur Mesure en Alsace | LED Alsace",
-    description: "Conception, fabrication et installation d'enseignes Lumineuse lumineuses sur mesure pour commerces et entreprises en Alsace. Devis gratuit sous 24h.",
-    keywords: "enseigne Lumineuse, enseigne lumineuse Alsace, enseigne Lumineuse Strasbourg, fabrication enseigne, enseigne sur mesure",
+    title: "Enseignes Lumineuxs sur Mesure en Alsace | LED Alsace",
+    description: "Conception, fabrication et installation d'enseignes Lumineux lumineuses sur mesure pour commerces et entreprises en Alsace. Devis gratuit sous 24h.",
+    keywords: "enseigne Lumineux, enseigne lumineuse Alsace, enseigne Lumineux Strasbourg, fabrication enseigne, enseigne sur mesure",
     canonicalUrl: "https://www.ledalsace.com/services/enseignes",
-    h1: "Enseignes Lumineuses sur Mesure en Alsace",
+    h1: "Enseignes Lumineuxs sur Mesure en Alsace",
     breadcrumb: [
       { name: "Services", url: "/services" },
-      { name: "Enseignes Lumineuse", url: "/services/enseignes" }
+      { name: "Enseignes Lumineux", url: "/services/enseignes" }
     ],
     faqs: [
-      { question: "Quel est le prix d'une enseigne Lumineuse ?", answer: "Le prix d'une enseigne Lumineuse varie de 500€ à 5000€ selon la taille, le type de Lumineuse, la complexité du design et les finitions. Nous proposons un devis gratuit personnalisé sous 24h." },
-      { question: "Quelle est la durée de vie d'une enseigne Lumineuse ?", answer: "Nos enseignes Lumineuse ont une durée de vie de 50 000 heures en moyenne, soit environ 10 ans d'utilisation normale. Les Lumineuse sont garanties 3 ans." },
+      { question: "Quel est le prix d'une enseigne Lumineux ?", answer: "Le prix d'une enseigne Lumineux varie de 500€ à 5000€ selon la taille, le type de Lumineux, la complexité du design et les finitions. Nous proposons un devis gratuit personnalisé sous 24h." },
+      { question: "Quelle est la durée de vie d'une enseigne Lumineux ?", answer: "Nos enseignes Lumineux ont une durée de vie de 50 000 heures en moyenne, soit environ 10 ans d'utilisation normale. Les Lumineux sont garanties 3 ans." },
       { question: "Faut-il une autorisation pour installer une enseigne ?", answer: "Oui, une déclaration préalable en mairie est nécessaire pour l'installation d'une enseigne. Nous vous accompagnons dans les démarches administratives." },
-      { question: "Quel délai pour la fabrication d'une enseigne Lumineuse ?", answer: "Le délai de fabrication est de 2 à 4 semaines selon la complexité. Pour les projets urgents, nous proposons un service express sous 10 jours." },
-      { question: "Les enseignes Lumineuse consomment-elles beaucoup d'électricité ?", answer: "Non, les enseignes Lumineuse consomment 80% moins d'électricité que les enseignes néon traditionnelles. Une enseigne Lumineuse moyenne consomme environ 50W." }
+      { question: "Quel délai pour la fabrication d'une enseigne Lumineux ?", answer: "Le délai de fabrication est de 2 à 4 semaines selon la complexité. Pour les projets urgents, nous proposons un service express sous 10 jours." },
+      { question: "Les enseignes Lumineux consomment-elles beaucoup d'électricité ?", answer: "Non, les enseignes Lumineux consomment 80% moins d'électricité que les enseignes néon traditionnelles. Une enseigne Lumineux moyenne consomme environ 50W." }
     ]
   },
   
@@ -133,21 +133,21 @@ const servicesSEOConfig = {
   },
 
   neonLED: {
-    title: "Néon Lumineuse sur Mesure en Alsace",
-    description: "Création de néons Lumineuse sur mesure en Alsace. Personnalisez votre intérieur, événement ou commerce avec un néon unique. Fabrication artisanale.",
+    title: "Néon Lumineux sur Mesure en Alsace",
+    description: "Création de néons Lumineux sur mesure en Alsace. Personnalisez votre intérieur, événement ou commerce avec un néon unique. Fabrication artisanale.",
     keywords: "néon LED Alsace, néon sur mesure, néon personnalisé, enseigne néon, décoration néon, néon Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/neon-lumineuse",
-    h1: "Néon Lumineuse sur Mesure en Alsace",
+    h1: "Néon Lumineux sur Mesure en Alsace",
     breadcrumb: [
       { name: "Services", url: "/services" },
-      { name: "Néon Lumineuse", url: "/services/neon-lumineuse" }
+      { name: "Néon Lumineux", url: "/services/neon-lumineuse" }
     ],
     faqs: [
-      { question: "Le néon Lumineuse est-il fragile ?", answer: "Non, contrairement au néon en verre, le néon Lumineuse est en silicone souple, résistant aux chocs et sans risque de casse." },
-      { question: "Quelle est la durée de vie d'un néon Lumineuse ?", answer: "Environ 50 000 heures, soit plus de 10 ans d'utilisation normale. Faible consommation électrique." },
-      { question: "Peut-on créer n'importe quelle forme en néon Lumineuse ?", answer: "Oui, nous pouvons reproduire votre logo, texte, ou dessin. La flexibilité du silicone permet une grande liberté de création." },
-      { question: "Le néon Lumineuse chauffe-t-il ?", answer: "Non, le néon Lumineuse ne dégage quasiment aucune chaleur. Il peut être touché sans danger, même après des heures d'utilisation." },
-      { question: "Comment installer un néon Lumineuse ?", answer: "Très simple ! Nos néons sont livrés avec des fixations murales ou peuvent être posés. Branchez simplement la prise secteur." }
+      { question: "Le néon Lumineux est-il fragile ?", answer: "Non, contrairement au néon en verre, le néon Lumineux est en silicone souple, résistant aux chocs et sans risque de casse." },
+      { question: "Quelle est la durée de vie d'un néon Lumineux ?", answer: "Environ 50 000 heures, soit plus de 10 ans d'utilisation normale. Faible consommation électrique." },
+      { question: "Peut-on créer n'importe quelle forme en néon Lumineux ?", answer: "Oui, nous pouvons reproduire votre logo, texte, ou dessin. La flexibilité du silicone permet une grande liberté de création." },
+      { question: "Le néon Lumineux chauffe-t-il ?", answer: "Non, le néon Lumineux ne dégage quasiment aucune chaleur. Il peut être touché sans danger, même après des heures d'utilisation." },
+      { question: "Comment installer un néon Lumineux ?", answer: "Très simple ! Nos néons sont livrés avec des fixations murales ou peuvent être posés. Branchez simplement la prise secteur." }
     ]
   },
 
@@ -268,7 +268,7 @@ const servicesSEOConfig = {
   totemsLumineux: {
     title: "Totems Lumineux et Pylônes Publicitaires en Alsace",
     description: "Fabrication de totems lumineux et pylônes publicitaires en Alsace. Signalétique extérieure haute visibilité pour commerces et entreprises.",
-    keywords: "totem lumineux Alsace, pylône publicitaire, totem extérieur, signalétique haute, totem Lumineuse Strasbourg",
+    keywords: "totem lumineux Alsace, pylône publicitaire, totem extérieur, signalétique haute, totem Lumineux Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/totems-lumineux",
     h1: "Totems Lumineux et Pylônes Publicitaires en Alsace",
     breadcrumb: [
@@ -297,7 +297,7 @@ const servicesSEOConfig = {
     faqs: [
       { question: "Qu'est-ce qu'une enseigne drapeau ?", answer: "Une enseigne drapeau (ou perpendiculaire) est fixée perpendiculairement à la façade. Visible des deux côtés de la rue, idéale en centre-ville." },
       { question: "Quelle taille maximum pour une enseigne drapeau ?", answer: "Généralement 1m x 0,80m maximum selon réglementation locale. Nous vérifions les règles d'urbanisme de votre commune." },
-      { question: "L'enseigne drapeau peut-elle être lumineuse ?", answer: "Oui, éclairage Lumineuse intégré ou projecteurs externes. Visibilité 24h/24 pour votre commerce." },
+      { question: "L'enseigne drapeau peut-elle être lumineuse ?", answer: "Oui, éclairage Lumineux intégré ou projecteurs externes. Visibilité 24h/24 pour votre commerce." },
       { question: "Faut-il une autorisation pour une enseigne drapeau ?", answer: "Oui, déclaration préalable en mairie obligatoire. Nous gérons le dossier administratif pour vous." },
       { question: "Comment est fixée l'enseigne drapeau ?", answer: "Fixation murale par potence métallique. Nous vérifions la solidité du mur et adaptons la fixation." }
     ]
@@ -305,8 +305,8 @@ const servicesSEOConfig = {
 
   caissonAjoure: {
     title: "Caisson Ajouré et Lettres Boîtier en Alsace",
-    description: "Caissons ajourés et lettres boîtier lumineuses en Alsace. Enseignes Lumineuse relief, effet 3D premium. Fabrication sur mesure.",
-    keywords: "caisson ajouré Alsace, lettres boîtier, enseigne relief, lettres lumineuses 3D, enseigne 3D, caisson Lumineuse Strasbourg",
+    description: "Caissons ajourés et lettres boîtier lumineuses en Alsace. Enseignes Lumineux relief, effet 3D premium. Fabrication sur mesure.",
+    keywords: "caisson ajouré Alsace, lettres boîtier, enseigne relief, lettres lumineuses 3D, enseigne 3D, caisson Lumineux Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/caisson-ajoure",
     h1: "Caissons Ajourés et Enseigne Lettres Boîtier en Alsace",
     breadcrumb: [
@@ -316,28 +316,28 @@ const servicesSEOConfig = {
     faqs: [
       { question: "Quelle différence entre caisson ajouré et lettres boîtier ?", answer: "Le caisson ajouré est un panneau avec lettres découpées rétroéclairées. Les lettres boîtier sont des lettres 3D individuelles éclairées de l'intérieur." },
       { question: "Quelle profondeur pour les lettres boîtier ?", answer: "De 5cm à 20cm selon taille et effet souhaité. Plus la lettre est profonde, plus l'effet 3D est marqué." },
-      { question: "Peut-on choisir la couleur de l'éclairage ?", answer: "Oui, Lumineuse blanches, couleurs (rouge, bleu, vert, jaune) ou RGB (changement de couleur). Selon votre identité visuelle." },
+      { question: "Peut-on choisir la couleur de l'éclairage ?", answer: "Oui, Lumineux blanches, couleurs (rouge, bleu, vert, jaune) ou RGB (changement de couleur). Selon votre identité visuelle." },
       { question: "Les lettres boîtier résistent-elles en extérieur ?", answer: "Oui, fabrication étanche IP65. Aluminium ou PVC selon usage. Résistance garantie aux intempéries." },
       { question: "Combien coûtent des lettres boîtier ?", answer: "À partir de 100€/lettre selon taille et finition. Devis gratuit selon votre projet." }
     ]
   },
 
   ecransLED: {
-    title: "Écrans Lumineuse Publicitaires en Alsace",
-    description: "Écrans Lumineuse publicitaires et affichage dynamique en Alsace. Installation d'écrans géants Lumineuse pour extérieur et intérieur. Gestion de contenu.",
-    keywords: "écran LED Alsace, affichage dynamique, écran publicitaire, écran géant Lumineuse, écran extérieur, digital signage Strasbourg",
+    title: "Écrans Lumineux Publicitaires en Alsace",
+    description: "Écrans Lumineux publicitaires et affichage dynamique en Alsace. Installation d'écrans géants Lumineux pour extérieur et intérieur. Gestion de contenu.",
+    keywords: "écran LED Alsace, affichage dynamique, écran publicitaire, écran géant Lumineux, écran extérieur, digital signage Strasbourg",
     canonicalUrl: "https://www.ledalsace.com/services/ecrans-lumineuse",
-    h1: "Écrans Lumineuse Publicitaires et Affichage Dynamique en Alsace",
+    h1: "Écrans Lumineux Publicitaires et Affichage Dynamique en Alsace",
     breadcrumb: [
       { name: "Services", url: "/services" },
-      { name: "Écrans Lumineuse", url: "/services/ecrans-lumineuse" }
+      { name: "Écrans Lumineux", url: "/services/ecrans-lumineuse" }
     ],
     faqs: [
-      { question: "Quelle différence entre écran Lumineuse intérieur et extérieur ?", answer: "L'écran extérieur est plus lumineux (5000+ nits), étanche, résistant aux UV. L'intérieur est moins lumineux (1000 nits) mais résolution supérieure." },
-      { question: "Peut-on diffuser des vidéos sur un écran Lumineuse ?", answer: "Oui, vidéos, images, textes défilants, animations. Format Full HD ou 4K selon modèle. Gestion à distance via logiciel." },
-      { question: "Quelle taille d'écran Lumineuse choisir ?", answer: "Selon distance de visibilité : 1m² pour 10m de recul, 4m² pour 20m. Nous dimensionnons selon votre emplacement." },
+      { question: "Quelle différence entre écran Lumineux intérieur et extérieur ?", answer: "L'écran extérieur est plus lumineux (5000+ nits), étanche, résistant aux UV. L'intérieur est moins lumineux (1000 nits) mais résolution supérieure." },
+      { question: "Peut-on diffuser des vidéos sur un écran Lumineux ?", answer: "Oui, vidéos, images, textes défilants, animations. Format Full HD ou 4K selon modèle. Gestion à distance via logiciel." },
+      { question: "Quelle taille d'écran Lumineux choisir ?", answer: "Selon distance de visibilité : 1m² pour 10m de recul, 4m² pour 20m. Nous dimensionnons selon votre emplacement." },
       { question: "Comment mettre à jour le contenu de l'écran ?", answer: "Via logiciel cloud accessible depuis ordinateur ou smartphone. Changement de contenu en temps réel, programmation horaire." },
-      { question: "Combien coûte un écran Lumineuse publicitaire ?", answer: "De 5000€ (petit écran intérieur) à 50000€+ (grand écran extérieur). Prix selon taille, résolution, usage. Devis sur mesure." }
+      { question: "Combien coûte un écran Lumineux publicitaire ?", answer: "De 5000€ (petit écran intérieur) à 50000€+ (grand écran extérieur). Prix selon taille, résolution, usage. Devis sur mesure." }
     ]
   },
 

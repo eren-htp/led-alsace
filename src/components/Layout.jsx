@@ -22,7 +22,8 @@ function Layout({ children }) {
     { name: 'Marquage véhicules', path: '/services/marquage-vehicule' },
     { name: 'Textile et E.P.I.', path: '/services/textile-epi' },
     { name: 'Signalétique', path: '/services/signaletique' },
-    { name: 'Création Graphique', path: '/services/creation-graphique' }
+    { name: 'Création Graphique', path: '/services/creation-graphique' },
+    { name: 'Néon Lumineux', path: '/services/neon-lumineuse' }
   ]
 
   const handleMouseEnter = () => {
@@ -372,13 +373,13 @@ function Layout({ children }) {
             <div className="col-span-1 md:col-span-1">
               <h3 className="text-xl font-bold text-white mb-4">Prestations</h3>
               <ul className="space-y-2">
-                <li><Link to="/services/enseignes" className="text-gray-400 hover:text-yellow-500 transition-colors">Enseignes</Link></li>
-                <li><Link to="/services/marquage-vitrine" className="text-gray-400 hover:text-yellow-500 transition-colors">Marquage Vitrine</Link></li>
+             <li><Link to="/services/neon-lumineuse" className="text-gray-400 hover:text-yellow-500 transition-colors">Néon Lumineux</Link></li>          <li><Link to="/services/marquage-vitrine" className="text-gray-400 hover:text-yellow-500 transition-colors">Marquage Vitrine</Link></li>
                 <li><Link to="/services/impression-grand-format" className="text-gray-400 hover:text-yellow-500 transition-colors">Impression grand format</Link></li>
                 <li><Link to="/services/marquage-vehicule" className="text-gray-400 hover:text-yellow-500 transition-colors">Marquage véhicules</Link></li>
                 <li><Link to="/services/textile-epi" className="text-gray-400 hover:text-yellow-500 transition-colors">Textile et E.P.I.</Link></li>
                 <li><Link to="/services/signaletique" className="text-gray-400 hover:text-yellow-500 transition-colors">Signalétique</Link></li>
                 <li><Link to="/services/creation-graphique" className="text-gray-400 hover:text-yellow-500 transition-colors">Création Graphique</Link></li>
+                <li><Link to="/services/neon-lumineuse" className="text-gray-400 hover:text-yellow-500 transition-colors">Néon Lumineux</Link></li>
               </ul>
             </div>
 
