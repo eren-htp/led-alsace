@@ -80,10 +80,10 @@ function ReferencementProGratuit() {
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">Conditions de l'Offre Spéciale : Référencement Pro Gratuit</h2>
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                    Pour toute commande de **1000 cartes de visite** au prix de **140€ HT** (hors lamination et création graphique), nous vous offrons un service de référencement professionnel.
+                    Pour toute commande de 1000 cartes de visite au prix de 140€ HT (hors lamination et création graphique), nous vous offrons un service de référencement professionnel.
                   </p>
                   <p className="text-gray-700 text-lg leading-relaxed">
-                    Ce service comprend **1 an de référencement** sur la plateforme professionnelle **Bas-Rhin.pro**, augmentant significativement votre visibilité locale.
+                    Ce service comprend 1 an de référencement sur la plateforme professionnelle Bas-Rhin.pro, augmentant significativement votre visibilité locale.
                   </p>
                 </div>
               </div>
