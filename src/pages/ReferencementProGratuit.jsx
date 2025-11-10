@@ -20,10 +20,10 @@ function ReferencementProGratuit() {
   }
 
   const avantages = [
-    "Design professionnel personnalisé",
-    "Impression haute qualité",
-    "Livraison rapide",
-    "Sans engagement"
+    "1000 Cartes de Visite Professionnelles",
+    "Référencement 1 An sur Bas-Rhin.pro",
+    "Visibilité Locale Accrue",
+    "Offre clé en main"
   ]
 
   return (
@@ -48,7 +48,7 @@ function ReferencementProGratuit() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
                 Comment bénéficier de l'offre ?
               </h2>        <p className="text-xl md:text-2xl text-gray-800 mb-8">
-              Profitez de notre offre promotionnelle et bénéficiez d'un référencement professionnel gratuit !
+              Pour l'achat de 1000 cartes de visite à 140€ (hors lamination et création graphique), nous vous offrons 1 an de référencement professionnel sur la plateforme Bas-Rhin.pro !
             </p>
             <Button 
               onClick={() => navigate('/contact')} 
@@ -70,20 +70,20 @@ function ReferencementProGratuit() {
                 Un service de référencement professionnel pour votre entreprise
               </h2>
               <p className="text-xl text-gray-600">
-                
-              </p>
+	            Ne manquez pas cette opportunité unique de combiner vos besoins en impression avec un coup de pouce majeur pour votre présence en ligne locale.
+	          </p>
             </div>
 
             <div className="bg-gradient-to-br from-yellow-50 to-white p-10 rounded-2xl border-2 border-yellow-500 shadow-xl mb-12">
               <div className="flex items-start gap-4 mb-6">
                 <Star className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3">Détails de l'offre de Référencement Pro Gratuit</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3">Conditions de l'Offre Spéciale : Référencement Pro Gratuit</h2>
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                    
+                    Pour toute commande de **1000 cartes de visite** au prix de **140€ HT** (hors lamination et création graphique), nous vous offrons un service de référencement professionnel.
                   </p>
                   <p className="text-gray-700 text-lg leading-relaxed">
-                    
+                    Ce service comprend **1 an de référencement** sur la plateforme professionnelle **Bas-Rhin.pro**, augmentant significativement votre visibilité locale.
                   </p>
                 </div>
               </div>
@@ -103,15 +103,15 @@ function ReferencementProGratuit() {
               <ol className="space-y-4">
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">1</span>
-                  <p className="text-gray-700 text-lg pt-1"></p>
+                  <p className="text-gray-700 text-lg pt-1">Commandez vos 1000 cartes de visite (140€ HT, hors lamination et création) en nous contactant.</p>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">2</span>
-                  <p className="text-gray-700 text-lg pt-1"></p>
+                  <p className="text-gray-700 text-lg pt-1">Notre équipe valide votre commande et procède à l'impression de vos cartes.</p>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">3</span>
-                  <p className="text-gray-700 text-lg pt-1"></p>
+                  <p className="text-gray-700 text-lg pt-1">Nous activons votre référencement professionnel gratuit d'un an sur Bas-Rhin.pro.</p>
                 </li>
               </ol>
             </div>
